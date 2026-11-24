@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "description": "Official announcement discovery only; not a verified gacha feed.",
+  "sources": [
+    {
+      "id": "genshin",
+      "name": "原神",
+      "url": "https://genshin.hoyoverse.com/zh-tw/news",
+      "domain": "genshin.hoyoverse.com",
+      "enabled": true
+    },
+    {
+      "id": "hsr",
+      "name": "崩壞：星穹鐵道",
+      "url": "https://hsr.hoyoverse.com/zh-tw/news",
+      "domain": "hsr.hoyoverse.com",
+      "enabled": true
+    },
+    {
+      "id": "zzz",
+      "name": "絕區零",
+      "url": "https://zenless.hoyoverse.com/en-us/news",
+      "domain": "zenless.hoyoverse.com",
+      "enabled": true
+    },
+    {
+      "id": "wuwa",
+      "name": "鳴潮",
+      "url": null,
+      "domain": null,
+      "enabled": false,
+      "reason": "Official news listing pending endpoint verification"
+    }
+  ]
+}
