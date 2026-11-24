@@ -1,0 +1,30 @@
+name: 第十七輪 時區與來源審核
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: 取得第十六輪最新成功資料
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RUN_ID=$(gh run list --workflow normalize-banner-history.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+          test -n "$RUN_ID"
+          mkdir -p history-diagnostic
+          gh run download "$RUN_ID" -n 第十六輪-歷史卡池標準資料-待確認 -D history-diagnostic
+      - name: 檢查來源與時區缺口
+        run: python scripts/audit_banner_history.py
+      - name: 保存第十七輪審核報告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 第十七輪-時區與證據審核-待確認
+          path: history-diagnostic/第十七輪時區與證據審核.json
+          retention-days: 7
+          if-no-files-found: warn
