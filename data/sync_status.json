@@ -1,23 +1,23 @@
 {
-  "checked_at": "2026-11-24T15:03:22.510776+00:00",
+  "checked_at": "2026-11-24T15:22:18.581475+00:00",
   "games": {
     "genshin": {
       "accepted": 20,
       "rejected": 0,
       "article_errors": [],
-      "latest_url": "https://www.hoyolab.com/article/47312224"
+      "latest_url": "https://www.hoyolab.com/article/47312224?lang=zh-tw"
     },
     "hsr": {
       "accepted": 20,
       "rejected": 0,
       "article_errors": [],
-      "latest_url": "https://www.hoyolab.com/article/47526861"
+      "latest_url": "https://www.hoyolab.com/article/47526861?lang=zh-tw"
     },
     "zzz": {
       "accepted": 20,
       "rejected": 0,
       "article_errors": [],
-      "latest_url": "https://www.hoyolab.com/article/47537269"
+      "latest_url": "https://www.hoyolab.com/article/47537269?lang=zh-tw"
     }
   },
   "errors": []
