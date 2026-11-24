@@ -6,12 +6,14 @@ on:
       - 'scripts/sync_hoyolab_official.py'
       - 'scripts/parse_official_announcements.py'
       - 'scripts/collect_hoyolab_evidence.py'
-      - 'tests/test_official_sync.py'
+      - 'scripts/apply_official_versions.py'
+      - 'scripts/advance_versions.py'
+      - 'tests/**'
       - 'config/official_accounts.json'
       - '.github/workflows/sync.yml'
   schedule:
-    # GitHub cron uses UTC: Taiwan 08:00 and 20:00
-    - cron: '0 0,12 * * *'
+    # Check every hour, away from the top of the hour.
+    - cron: '17 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -32,7 +34,7 @@ jobs:
       - name: Check Python syntax
         run: python -m py_compile scripts/sync_hoyolab_official.py scripts/collect_hoyolab_evidence.py scripts/parse_official_announcements.py
       - name: Test whitelist and field-level merge
-        run: python -m unittest discover -s tests -p 'test_official_sync.py'
+        run: python -m unittest discover -s tests
       - name: Collect allowlisted official notices
         id: collect
         continue-on-error: true
@@ -41,6 +43,8 @@ jobs:
         id: legacy
         continue-on-error: true
         run: python scripts/sync.py
+      - name: Publish official version lifecycle
+        run: python scripts/apply_official_versions.py
       - name: Commit verified field-level updates
         run: |
           set -euo pipefail
@@ -49,6 +53,7 @@ jobs:
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add data/updates.json data/sync_status.json
             git commit -m 'Sync allowlisted official HoYoLAB announcements'
+            git pull --rebase
             git push
           fi
       - name: Report ingestion failures

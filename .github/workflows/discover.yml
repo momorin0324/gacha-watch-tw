@@ -1,17 +1,22 @@
 name: Discover official announcements (review only)
 on:
+  schedule:
+    - cron: '42 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
 jobs:
   discover:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Discover candidates without publishing
+        id: discover
+        continue-on-error: true
         run: python scripts/discover_official.py
       - name: Save pending candidates
         run: |
@@ -20,5 +25,9 @@ jobs:
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add data/announcement_candidates.json
             git commit -m 'Discover official announcement candidates (unverified)'
+            git pull --rebase
             git push
           fi
+      - name: Report source failures
+        if: steps.discover.outcome == 'failure'
+        run: exit 1

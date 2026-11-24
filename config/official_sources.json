@@ -26,10 +26,58 @@
     {
       "id": "wuwa",
       "name": "鳴潮",
-      "url": null,
-      "domain": null,
-      "enabled": false,
-      "reason": "Official news listing pending endpoint verification"
+      "url": "https://wutheringwaves.kurogames.com/zh-tw/main/news",
+      "domain": "wutheringwaves.kurogames.com",
+      "enabled": true
+    },
+    {
+      "id": "endfield",
+      "name": "明日方舟：終末地",
+      "url": "https://endfield.gryphline.com/zh-tw/news",
+      "domain": "endfield.gryphline.com",
+      "enabled": true
+    },
+    {
+      "id": "nte",
+      "name": "異環",
+      "url": "https://nte.iwplay.com.tw/index.html",
+      "domain": "nte.iwplay.com.tw",
+      "enabled": true
+    },
+    {
+      "id": "promilia",
+      "name": "藍色星原：旅謠",
+      "url": "https://azurpromilia.jimi-global.com/home/",
+      "domain": "azurpromilia.jimi-global.com",
+      "enabled": true
+    },
+    {
+      "id": "silver",
+      "name": "白銀之城",
+      "url": "https://silverpalace.elementagames.com/zh-tw/news",
+      "domain": "silverpalace.elementagames.com",
+      "enabled": true
+    },
+    {
+      "id": "bd2",
+      "name": "棕色塵埃2",
+      "url": "https://www.browndust2.com/zh-hant/news",
+      "domain": "www.browndust2.com",
+      "enabled": true
+    },
+    {
+      "id": "gfl2",
+      "name": "少女前線2：追放",
+      "url": "https://gf2.haoplay.com/tw/",
+      "domain": "gf2.haoplay.com",
+      "enabled": true
+    },
+    {
+      "id": "nikke",
+      "name": "勝利女神：妮姬",
+      "url": "https://nikke.hotcool.tw/",
+      "domain": "nikke.hotcool.tw",
+      "enabled": true
     }
   ],
   "hoyolab": {

@@ -4,7 +4,7 @@
 Discovery is NOT verification. Never modifies data/updates.json.
 Only official HTTPS links and titles are recorded for later review.
 """
-import datetime as dt
+from concurrent.futures import ThreadPoolExecutor
 import html
 from html.parser import HTMLParser
 import json
@@ -58,7 +58,7 @@ def discover(src):
         parts = urllib.parse.urlsplit(target)
         if parts.scheme != "https" or parts.hostname != src["domain"]:
             continue
-        title = re.sub(r"\\s+", " ", html.unescape(title)).strip()[:240]
+        title = re.sub(r"\s+", " ", html.unescape(title)).strip()[:240]
         if len(title) < 5 or not KEYWORDS.search(title):
             continue
         clean = urllib.parse.urlunsplit((parts.scheme, parts.netloc, parts.path, "", ""))
@@ -71,16 +71,17 @@ def main():
     saved = {(x["game"], x["url"]): x for x in previous.get("candidates", [])}
     errors = []
     counts = {}
-    for src in cfg["sources"]:
-        if not src.get("enabled"):
-            continue
-        try:
-            candidates = discover(src)
-            counts[src["id"]] = len(candidates)
-            for item in candidates:
-                saved.setdefault((item["game"], item["url"]), item)
-        except Exception as exc:
-            errors.append({"game": src["id"], "error": str(exc)})
+    enabled = [src for src in cfg["sources"] if src.get("enabled")]
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        pending = [(src, pool.submit(discover, src)) for src in enabled]
+        for src, check in pending:
+            try:
+                candidates = check.result()
+                counts[src["id"]] = len(candidates)
+                for item in candidates:
+                    saved.setdefault((item["game"], item["url"]), item)
+            except Exception as exc:
+                errors.append({"game": src["id"], "error": str(exc)})
     result = {"schema": 1, "candidates": sorted(saved.values(), key=lambda x: (x["game"], x["url"]))}
     if result != {"schema": 1, "candidates": previous.get("candidates", [])}:
         OUTPUT.parent.mkdir(parents=True, exist_ok=True)

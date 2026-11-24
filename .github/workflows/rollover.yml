@@ -1,7 +1,5 @@
 name: Gacha Watch version rollover
 on:
-  schedule:
-    - cron: '15 * * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -12,7 +10,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: gacha-watch-version-rollover
+  group: gacha-watch-official-sync
   cancel-in-progress: false
 jobs:
   rollover:

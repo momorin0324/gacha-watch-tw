@@ -3,6 +3,7 @@ import sys,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
 from sync_hoyolab_official import eligible,extract,merge,category,localized_url
+from parse_official_announcements import featured_candidates, verified_times
 from parse_official_announcements import parse
 class OfficialSyncTests(unittest.TestCase):
  def setUp(self):
