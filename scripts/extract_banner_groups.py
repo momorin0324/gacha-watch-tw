@@ -26,21 +26,22 @@ def extract(text):
   if not re.search(r"限定五星|四星|五星角色|五星武器|S級",passage):continue
   times=TIME.findall(passage)
   if not times:continue
+  # 對每個星級／類型群組擷取連續引號，直到下一個群組起點。
   matches=list(NAME.finditer(passage))
   items=[]
   for i,m in enumerate(matches):
-   end=matches[i+1].start() if i+1<len(matches) else len(passage)
-   # 相同稀有度/類型的連續引號同屬一個群組
-   span=passage[m.end():end]
+   boundary=matches[i+1].start() if i+1<len(matches) else len(passage)
+   fragment=passage[m.end():boundary]
    names=[m.group(3)]
-   for x in re.finditer(r"^[、，,\s]*「([^」\n]{1,90})」",span):
-    names.append(x.group(1))
+   # 只接收直接由頓號或逗號連接的連續名稱，避免抓到其他敘述中的引號。
+   for extra in re.finditer(r"[、，,]\s*「([^」\\n]{1,90})」",fragment):
+    names.append(extra.group(1))
    for name in names:
-    items.append({"星級":"五星" if m.group(1)=="限定五星" else "四星","類型":m.group(2) or "待判斷","原文名稱":name,"名稱":re.sub(r"（[^（）]*）$","",name),"是否復刻":"待確認"})
-  # 補抓相鄰連續引號；不猜測歸屬
-  for name in QUOTED.findall(passage):
-   if name not in [i["原文名稱"] for i in items]:
-    items.append({"星級":"待判斷","類型":"待判斷","原文名稱":name,"名稱":re.sub(r"（[^（）]*）$","",name),"是否復刻":"待確認"})
+    items.append({"星級":"五星" if m.group(1)=="限定五星" else "四星","類型":m.group(2) or "待判斷","原文名稱":name,"名稱":re.sub(r"（[^（）]*）$","",name),"是否復刻":"是（公告段落明示）" if re.search("復刻",passage) else "待確認"})
+  # 保留無法安全歸類的引號名稱供人工檢查，不自動指定星級。
+  unknown=[name for name in QUOTED.findall(passage) if name not in [i["原文名稱"] for i in items]]
+  for name in unknown:
+   items.append({"星級":"待判斷","類型":"待判斷","原文名稱":name,"名稱":re.sub(r"（[^（）]*）$","",name),"是否復刻":"待確認"})
   output.append({"原文時間":times[-1],"候選UP名單":items,"復刻字樣":bool(re.search("復刻",passage)),"證據原文":passage[:1600],"驗證狀態":"待人工確認","允許發布":False})
  return output
 def main():
