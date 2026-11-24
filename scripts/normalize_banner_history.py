@@ -13,8 +13,15 @@ def time_fields(raw):
         try:return datetime.datetime(*map(int,m.groups())).strftime("%Y-%m-%dT%H:%M:00")
         except ValueError:return None
     start_iso=parse(start);end_iso=parse(end)
+    start_date_match=re.search(r"(\\d{4})[/-](\\d{1,2})[/-](\\d{1,2})",start or "")
+    start_date_hint=None
+    if start_date_match:
+        try:
+            start_date_hint=datetime.date(*map(int,start_date_match.groups())).isoformat()
+        except ValueError:
+            pass
     start_event=bool(start and re.search(r"版本更新後|維護後",start))
-    return {"公告時間原文":raw,"開始時間":{"當地時刻":start_iso if not start_event else None,"日期提示":start_iso[:10] if start_iso else None,"事件條件":"版本更新後" if start_event else None,"精確時間已確認":bool(start_iso and not start_event)},"結束時間":{"當地時刻":end_iso,"精確時間已確認":bool(end_iso)},"來源時區":"待確認","台灣時間UTC+8":None,"可用於倒數":False}
+    return {"公告時間原文":raw,"開始時間":{"當地時刻":start_iso if not start_event else None,"日期提示":start_iso[:10] if start_iso else start_date_hint,"事件條件":"版本更新後" if start_event else None,"精確時間已確認":bool(start_iso and not start_event)},"結束時間":{"當地時刻":end_iso,"精確時間已確認":bool(end_iso)},"來源時區":"待確認","台灣時間UTC+8":None,"可用於倒數":False}
 def normalize(doc):
     result={"資料格式版本":1,"來源":"第十五輪官方文章候選","模式":"待人工審核，不發布","產生時間UTC":datetime.datetime.now(datetime.timezone.utc).isoformat(),"卡池紀錄":[],"統計":{}}
     for game in doc.get("遊戲",[]):
