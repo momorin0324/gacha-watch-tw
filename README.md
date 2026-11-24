@@ -1,21 +1,22 @@
-# Gacha Watch TW v132 — 自動同步基礎版
+# Gacha Watch TW — 官方公告快速同步（第一階段）
 
-## 部署
-1. 將整個資料夾（包含隱藏的 `.github`）上傳至 GitHub repository 的 `main` 分支。
-2. GitHub Settings → Pages → Source 選擇 **GitHub Actions**。
-3. `Publish Gacha Watch` 會部署網站。`Gacha Watch verified sync` 每小時第 17 分執行，亦可手動觸發。
+## 每日自動更新
+- GitHub Actions: `.github/workflows/sync.yml`，每天台灣時間 **08:00、20:00**（UTC 00:00、12:00），可手動執行。
+- `scripts/sync_hoyolab_official.py` 從 HoYoLAB 公開 API 擷取原神、崩壞：星穹鐵道、絕區零最近 20 篇公告。
+- `config/official_accounts.json` 設定官方 UID + 認證描述雙重白名單。認證不符或抓取失敗不會覆蓋舊資料。
+- 目前已自動寫入 `data/updates.json` 的欄位：`official_announcements`（公告標題、網址、分類、版本提示）、`latest_official_version_announcement`（**僅是最新版本公告，不等同目前遊戲版本**）。
+- 同步狀態在 `data/sync_status.json`。GitHub Pages 在資料 commit 後由 `pages.yml` 重新部署。
+- 舊的可信結構化 JSON 同步 `scripts/sync.py` 仍保留，不會刪除新公告欄位。
 
-## 重要：尚未接入 11 款官方公告
-`config/sources.json` 目前為空。這不是已完成的官方自動爬蟲；**沒有官方公告被自動抓取**。只有新增經核實的、支援 JSON schema 的可信來源後，才會同步新資料。官方公告多為 HTML、圖片、直播，需針對每款遊戲開發解析器及驗證規則，不能直接把未經核實文字當卡池事實。
+## 尚未完成
+- **角色／裝備 UP 名單、卡池起訖時間、前瞻直播精確時間、歷史卡池正式自動發布** 尚未接入；沒有官方證據時不會猜測。
+- 前端是否顯示 `official_announcements` 需另外確認和整合；目前保證的是 JSON 資料自動更新，不等於每個畫面都已顯示。
+- GitHub Actions 定時工作可能延遲，不能保證嚴格在 24 小時內更新。
+- HoYoLAB API 欄位與官方帳號認證可能變更；需要首輪實跑檢查白名單。
+- 既有 `config/sources.json` 仍是空的，供另外的可信 JSON feed 使用，不影響新的官方公告抓取。
 
-## 同步安全
-- 原始 v131 靜態資料內嵌在 HTML 中，更新資料在 `data/updates.json`，不會刪除舊資料。
-- 同步資料只接受 `verified: true` 的紀錄；每個 phase 需要角色、帶時區的 ISO 開始及結束時間、HTTPS 來源。
-- 若同步失敗，保留上次已驗證資料；瀏覽器離線開啟 HTML 時使用內建快照。
-- 目前新增的已核實資料會合併到前端，既有當期卡池的移轉仍依現有 `verifiedHistory` 日期邏輯；完整的跨版本自動遷移仍需要對舊資料結構做進一步整合。
-
-## JSON feed 格式範例（僅格式，非真實卡池）
-```json
-{"schema":1,"games":[{"id":"genshin","verified":true,"evidence_url":"https://example.org/official-announcement","current":"X.Y","phases":[{"characters":"示例角色","start":"2027-01-01T10:00:00+08:00","end":"2027-01-20T17:59:00+08:00","source":"https://example.org/official-announcement"}]}],"history":[]}
+## 驗證
+```bash
+python -m unittest discover -s tests -p 'test_official_sync.py'
+python scripts/sync_hoyolab_official.py
 ```
-**此範例不應當作正式資料發布。**
