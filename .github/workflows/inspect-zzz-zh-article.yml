@@ -1,0 +1,16 @@
+name: 測試絕區零繁體中文指定公告
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 讀取指定文章與圖片欄位
+        run: python scripts/inspect_zzz_zh_article.py
