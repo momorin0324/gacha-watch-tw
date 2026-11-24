@@ -1,15 +1,15 @@
 {
   "wuwa": {
-    "莉莉": "assets/pool-art/wuwa-lily.webp",
-    "椿": "assets/pool-art/wuwa-camellya.webp",
-    "洛可可": "assets/pool-art/wuwa-roccia.webp",
-    "菲比": "assets/pool-art/wuwa-phoebe.webp",
-    "布蘭特": "assets/pool-art/wuwa-brant.webp",
-    "仇遠": "assets/pool-art/wuwa-qiuyuan.webp",
-    "西格莉卡": "assets/pool-art/wuwa-sigrika.webp",
-    "秧秧·玄翎": "assets/pool-art/wuwa-yangyang-xuanling.webp",
-    "穗穗": "assets/pool-art/wuwa-suisui.webp",
-    "緋雪": "assets/pool-art/wuwa-hiyuki.webp"
+    "莉莉": "assets/pool-art/wuwa-lily-convene-v2.webp",
+    "椿": "assets/pool-art/wuwa-camellya-convene-v2.webp",
+    "洛可可": "assets/pool-art/wuwa-roccia-convene-v2.webp",
+    "菲比": "assets/pool-art/wuwa-phoebe-convene-v2.webp",
+    "布蘭特": "assets/pool-art/wuwa-brant-convene-v2.webp",
+    "仇遠": "assets/pool-art/wuwa-qiuyuan-convene-v2.webp",
+    "西格莉卡": "assets/pool-art/wuwa-sigrika-convene-v2.webp",
+    "秧秧·玄翎": "assets/pool-art/wuwa-yangyang-xuanling-convene-v2.webp",
+    "穗穗": "assets/pool-art/wuwa-suisui-convene-v2.webp",
+    "緋雪": "assets/pool-art/wuwa-hiyuki-convene-v2.webp"
   },
   "endfield": {
     "小刻": "assets/pool-art/endfield-sweetpie.webp",
@@ -17,10 +17,10 @@
     "潔爾佩塔": "assets/pool-art/endfield-gilberta.webp"
   },
   "nte": {
-    "卡厄斯": "assets/pool-art/nte-chaos.webp",
+    "卡厄斯": "assets/pool-art/nte-chaos-scene.webp",
     "曳爾沐": "assets/pool-art/nte-elyms.webp",
-    "真紅": "assets/pool-art/nte-shinku.webp",
-    "Exe": "assets/pool-art/nte-exe.webp"
+    "真紅": "assets/pool-art/nte-shinku-scene.webp",
+    "Exe": "assets/pool-art/nte-exe-scene.webp"
   },
   "bd2": {
     "勝利應援貝那卡": "assets/pool-art/bd2-venaka-cheers.webp",
@@ -33,7 +33,7 @@
     "妮基塔": "assets/pool-art/gfl2-nikketa.webp"
   },
   "nikke": {
-    "思凱": "assets/pool-art/nikke-sky.webp"
+    "思凱": "assets/pool-art/nikke-sky-on-the-rock-v2.webp"
   },
   "genshin": {
     "茲白": "assets/pool-art/gi-Zibai.webp",
