@@ -1,0 +1,28 @@
+name: 第九輪 絕區零繁體中文 PaddleOCR 測試
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: 安裝免費中文辨識模型
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install paddlepaddle==2.6.2 paddleocr==2.9.1 Pillow
+      - name: 逐張測試長圖的上中下區段
+        run: python scripts/probe_zzz_paddleocr.py
+      - name: 保存繁體中文辨識報告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 絕區零-繁體中文-PaddleOCR-診斷
+          path: paddleocr-diagnostic/
+          if-no-files-found: warn
+          retention-days: 7
