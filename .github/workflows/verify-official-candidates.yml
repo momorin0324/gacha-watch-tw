@@ -1,0 +1,29 @@
+name: 第十一輪 官方歷史資料交叉驗證
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 下載第十輪最新成功報告
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p paddleocr-diagnostic
+          RUN_ID=$(gh run list --workflow probe-zzz-full-paddleocr.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+          if [ -z "$RUN_ID" ]; then
+            echo '找不到成功的第十輪執行紀錄'; exit 1
+          fi
+          gh run download "$RUN_ID" --name '絕區零-完整長圖-待確認報告' --dir paddleocr-diagnostic
+      - name: 官方證據候選比對（不發布）
+        run: python scripts/verify_official_candidates.py
+      - name: 保存待確認報告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 第十一輪-官方交叉驗證-待確認
+          path: verification-diagnostic/
+          if-no-files-found: warn
