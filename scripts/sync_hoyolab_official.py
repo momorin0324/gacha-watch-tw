@@ -2,9 +2,9 @@
 """HoYoLAB 官方白名單快訊同步。欄位級合併，不臆測卡池日期/時區。"""
 import datetime,json,os,re,tempfile
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit,urlunsplit,parse_qsl,urlencode
 from collect_hoyolab_evidence import GAMES,fetch,details
-from parse_official_announcements import parse
+from parse_official_announcements import parse,clean
 ROOT=Path(__file__).resolve().parents[1]
 CONFIG=ROOT/"config/official_accounts.json"
 OUTPUT=ROOT/"data/updates.json"
@@ -27,17 +27,22 @@ def eligible(post,rule):
  return uid==str(rule["uid"]) and desc==rule["certification_desc"]
 def category(title):
  return next((v for k,v in CATEGORIES.items() if k in title),"news")
+def localized_url(url):
+ u=urlsplit(url)
+ if u.scheme!="https" or u.hostname!="www.hoyolab.com" or not re.fullmatch(r"/article/\d+",u.path or ""):return url
+ q=dict(parse_qsl(u.query,keep_blank_values=True));q["lang"]="zh-tw"
+ return urlunsplit((u.scheme,u.netloc,u.path,urlencode(q),u.fragment))
 def extract(post):
  title=post.get("標題") or ""
  match=VERSION.search(title)
  # 從標題提取的版本資訊屬於官方公告標題證據，不視為「已上線當前版本」
- return {"id":str(post["文章ID"]),"title":title[:240],"url":post["網址"],"published_at":post.get("發表時間"),"category":category(title),"version":match.group(1) if match else None,"traditional_chinese_excerpt":clean(post.get("內文") or "")[:1400],"excerpt_language":"zh-tw-requested-not-guaranteed",**parse(post)}
+ return {"id":str(post["文章ID"]),"title":title[:240],"url":localized_url(post["網址"]),"published_at":post.get("發表時間"),"category":category(title),"version":match.group(1) if match else None,"traditional_chinese_excerpt":clean(post.get("內文") or "")[:1400],"excerpt_language":"zh-tw-requested-not-guaranteed",**parse(post)}
 def valid_notice(n):
  u=urlsplit(n.get("url",""))
  return u.scheme=="https" and u.hostname=="www.hoyolab.com" and re.fullmatch(r"/article/\d+",u.path or "") and bool(n.get("title"))
 def merge(old,notices,gameid,now):
  game=next((g for g in old.get("games",[]) if g.get("id")==gameid),{"id":gameid})
- previous={n["id"]:n for n in game.get("official_announcements",[]) if isinstance(n,dict) and n.get("id")}
+ previous={n["id"]:{**n,"url":localized_url(n.get("url",""))} for n in game.get("official_announcements",[]) if isinstance(n,dict) and n.get("id")}
  for n in notices:
   if valid_notice(n):previous[n["id"]]=n
  # 保存最近 80 篇，避免每次抓取只剩最新十篇
