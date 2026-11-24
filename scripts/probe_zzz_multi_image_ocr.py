@@ -49,7 +49,9 @@ def main():
     if doc.get("retcode")!=0:raise ValueError("文章 API 回應異常")
     payload=(doc.get("data") or {}).get("post") or {}
     post=payload.get("post",payload)
-    imgs=post.get("image_list") or []
+    imgs=payload.get("image_list") or post.get("image_list") or []
+    print(json.dumps({"文章圖片數量":len(imgs),"文章欄位":list(payload.keys()),"內層欄位":list(post.keys())[:15]},ensure_ascii=False))
+    if not imgs: raise ValueError("未找到文章圖片：停止測試，不視為成功")
     if not isinstance(imgs,list):raise ValueError("圖片欄位格式不符")
     result={"文章編號":POST_ID,"標題":post.get("subject"),"語言要求":"zh-tw",
             "實際語言":"尚須人工核實","圖片數量":len(imgs),
