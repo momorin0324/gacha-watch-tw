@@ -1,0 +1,34 @@
+name: 第二十輪 時區與卡池時間證據關聯
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: 下載第十九輪與第十六輪資料
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          CROSS_RUN=$(gh run list --workflow crosscheck-version-evidence.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+          HISTORY_RUN=$(gh run list --workflow normalize-banner-history.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+          test -n "$CROSS_RUN"
+          test -n "$HISTORY_RUN"
+          mkdir -p verification-diagnostic history-diagnostic
+          gh run download "$CROSS_RUN" -n 第十九輪-跨公告時區與維護-待確認 -D verification-diagnostic
+          gh run download "$HISTORY_RUN" -n 第十六輪-歷史卡池標準資料-待確認 -D history-diagnostic
+      - name: 建立保守的時間證據關聯
+        run: python scripts/link_banner_time_evidence.py
+      - name: 上傳第二十輪審核報告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 第二十輪-時區與卡池時間關聯-待確認
+          path: verification-diagnostic/第二十輪時區關聯審核.json
+          retention-days: 7
+          if-no-files-found: warn
