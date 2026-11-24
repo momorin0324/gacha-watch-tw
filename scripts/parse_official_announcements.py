@@ -12,7 +12,7 @@ def clean(raw):
  try:parser.feed(str(raw or ""))
  except ValueError:return ""
  return html.unescape("".join(parser.out))
-DATE=re.compile(r"(20\\d{2})[年/.-](\\d{1,2})[月/.-](\\d{1,2})日?\\s*(?:[（(]?\\s*(?:UTC|GMT)\\s*([+-]\\d{1,2})(?::?00)?\\s*[）)]?\\s*)?(\\d{1,2}):(\\d{2})",re.I)
+DATE=re.compile(r"(20\d{2})[年/.-](\d{1,2})[月/.-](\d{1,2})日?\s*(?:[（(]?\s*(?:UTC|GMT)\s*([+-]\d{1,2})(?::?00)?\s*[）)]?\s*)?(\d{1,2}):(\d{2})",re.I)
 def verified_times(body):
  """Only absolute timestamps with explicit UTC/GMT offsets in the same date expression."""
  hits=[]
@@ -27,7 +27,7 @@ def verified_times(body):
 def featured_candidates(lines):
  """Capture explicitly labelled five-star names; keep candidates separate from verified banners."""
  result=[]
- pattern=re.compile(r"(?:5星|五星|★5|5★)\\s*(?:角色|光錐|武器|代理人)?\\s*[：:]\\s*([^。；;\\n]{1,90})")
+ pattern=re.compile(r"(?:5星|五星|★5|5★)\s*(?:角色|光錐|武器|代理人)?\s*[：:]\s*([^。；;\n]{1,90})")
  for line in lines:
   for m in pattern.finditer(line):
    val=m.group(1).strip()
