@@ -2,12 +2,15 @@
 import sys,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from sync_hoyolab_official import eligible,extract,merge,category
+from sync_hoyolab_official import eligible,extract,merge,category,localized_url
 from parse_official_announcements import parse
 class OfficialSyncTests(unittest.TestCase):
  def setUp(self):
   self.rule={"uid":"172534910","certification_desc":"HonkaiSR Official"}
   self.post={"文章ID":"47385253","網址":"https://www.hoyolab.com/article/47385253","標題":"4.7版本活動躍遷","發文者UID":"172534910","官方欄位":{"user_certification":{"desc":"HonkaiSR Official"}}}
+ def test_zh_tw_official_link(self):
+  self.assertEqual(localized_url('https://www.hoyolab.com/article/47385253'),'https://www.hoyolab.com/article/47385253?lang=zh-tw')
+  self.assertEqual(localized_url('https://www.hoyolab.com/article/47385253?lang=en-us'),'https://www.hoyolab.com/article/47385253?lang=zh-tw')
  def test_whitelist(self):
   self.assertTrue(eligible(self.post,self.rule))
   self.assertFalse(eligible({**self.post,"發文者UID":"999"},self.rule))
