@@ -1,0 +1,21 @@
+name: Probe HoYoLAB image OCR
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free OCR dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-eng tesseract-ocr-chi-tra
+          python -m pip install Pillow pytesseract
+      - name: Test one official-feed image per game (no publication)
+        run: python scripts/probe_hoyolab_ocr.py
