@@ -158,7 +158,7 @@
 
   ['character-art', 'discovered-art'].forEach(async (catalog, i) => {
     try {
-      const response = await fetch('./data/' + catalog + '.json');
+      const response = await fetch('./data/' + catalog + '.json?v=phase2', { cache: 'no-cache' });
       if (response.ok) catalogs[i] = await response.json();
       render();
       paintPhases();
