@@ -1,0 +1,34 @@
+name: 第十八輪 官方帳號與時區證據蒐集
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: 下載最近成功的文章證據與歷史候選
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          ARTICLE_RUN=$(gh run list --workflow collect-hoyolab-evidence.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+          HISTORY_RUN=$(gh run list --workflow normalize-banner-history.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+          test -n "$ARTICLE_RUN"
+          test -n "$HISTORY_RUN"
+          mkdir -p official-evidence-diagnostic history-diagnostic
+          gh run download "$ARTICLE_RUN" -n 第十二輪-官方文章證據-待確認 -D official-evidence-diagnostic
+          gh run download "$HISTORY_RUN" -n 第十六輪-歷史卡池標準資料-待確認 -D history-diagnostic
+      - name: 產生官方帳號與時區待查證清單
+        run: python scripts/collect_source_verification.py
+      - name: 上傳第十八輪證據報告
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 第十八輪-官方帳號與時區證據-待確認
+          path: verification-diagnostic/
+          retention-days: 7
+          if-no-files-found: warn
