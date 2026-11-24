@@ -1,6 +1,523 @@
 {
   "schema": 1,
-  "updated_at": null,
-  "games": [],
+  "updated_at": "2026-11-24T14:59:04.045095+00:00",
+  "games": [
+    {
+      "id": "genshin",
+      "official_announcements": [
+        {
+          "id": "47312224",
+          "title": "V7.2遊戲更新修復與優化說明 ",
+          "url": "https://www.hoyolab.com/article/47312224",
+          "published_at": 1793776587,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47306125",
+          "title": "「壞滅肇始之時」7.2版本更新說明",
+          "url": "https://www.hoyolab.com/article/47306125",
+          "published_at": 1793746805,
+          "category": "version",
+          "version": "7.2"
+        },
+        {
+          "id": "47283828",
+          "title": "7.2版本更新維護預告",
+          "url": "https://www.hoyolab.com/article/47283828",
+          "published_at": 1793589005,
+          "category": "version",
+          "version": "7.2"
+        },
+        {
+          "id": "47247786",
+          "title": "謹防釣魚網站，保護帳號安全",
+          "url": "https://www.hoyolab.com/article/47247786",
+          "published_at": 1793331007,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "46794217",
+          "title": "V7.1遊戲更新修復與優化說明 ",
+          "url": "https://www.hoyolab.com/article/46794217",
+          "published_at": 1790134614,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "46791577",
+          "title": "「往冥府的安魂歌」7.1版本更新說明",
+          "url": "https://www.hoyolab.com/article/46791577",
+          "published_at": 1790118002,
+          "category": "version",
+          "version": "7.1"
+        },
+        {
+          "id": "46771203",
+          "title": "7.1版本更新維護預告",
+          "url": "https://www.hoyolab.com/article/46771203",
+          "published_at": 1789960208,
+          "category": "version",
+          "version": "7.1"
+        },
+        {
+          "id": "46701187",
+          "title": "《原神》首次儲值雙倍返利重置說明",
+          "url": "https://www.hoyolab.com/article/46701187",
+          "published_at": 1789444803,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "46236390",
+          "title": "V7.0遊戲更新修復與優化說明 ",
+          "url": "https://www.hoyolab.com/article/46236390",
+          "published_at": 1786505394,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "46233468",
+          "title": "「無神憐愛的雪國」7.0版本更新說明",
+          "url": "https://www.hoyolab.com/article/46233468",
+          "published_at": 1786489203,
+          "category": "version",
+          "version": "7.0"
+        },
+        {
+          "id": "46208157",
+          "title": "7.0版本更新維護預告",
+          "url": "https://www.hoyolab.com/article/46208157",
+          "published_at": 1786331404,
+          "category": "version",
+          "version": "7.0"
+        },
+        {
+          "id": "45785814",
+          "title": "關於《原神》7.0版本裝置性能要求的預告",
+          "url": "https://www.hoyolab.com/article/45785814",
+          "published_at": 1783570205,
+          "category": "version",
+          "version": "7.0"
+        },
+        {
+          "id": "45673007",
+          "title": "「月之八」版本遊戲更新修復與改善說明",
+          "url": "https://www.hoyolab.com/article/45673007",
+          "published_at": 1782878701,
+          "category": "version",
+          "version": null
+        },
+        {
+          "id": "45670084",
+          "title": "「『空月之歌·諧謔』映夏！歸鄉？千靈節！」「月之八」版本更新說明",
+          "url": "https://www.hoyolab.com/article/45670084",
+          "published_at": 1782860403,
+          "category": "version",
+          "version": null
+        },
+        {
+          "id": "45647248",
+          "title": "「月之八」版本更新維護預告",
+          "url": "https://www.hoyolab.com/article/45647248",
+          "published_at": 1782702607,
+          "category": "version",
+          "version": null
+        },
+        {
+          "id": "45478660",
+          "title": "X無法登入問題說明",
+          "url": "https://www.hoyolab.com/article/45478660",
+          "published_at": 1781583887,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "45098549",
+          "title": "「月之七」版本遊戲更新修復與改善說明",
+          "url": "https://www.hoyolab.com/article/45098549",
+          "published_at": 1779247719,
+          "category": "version",
+          "version": null
+        },
+        {
+          "id": "45096719",
+          "title": "「『空月之歌·行律』虛空劫灰往世書」「月之七」版本更新說明",
+          "url": "https://www.hoyolab.com/article/45096719",
+          "published_at": 1779231604,
+          "category": "version",
+          "version": null
+        },
+        {
+          "id": "45076465",
+          "title": "「月之七」版本更新維護預告",
+          "url": "https://www.hoyolab.com/article/45076465",
+          "published_at": 1779073806,
+          "category": "version",
+          "version": null
+        },
+        {
+          "id": "44546513",
+          "title": "「月之六」版本遊戲更新修復與改善說明",
+          "url": "https://www.hoyolab.com/article/44546513",
+          "published_at": 1775635807,
+          "category": "version",
+          "version": null
+        }
+      ],
+      "official_source_verified": true,
+      "announcements_checked_at": "2026-11-24T14:59:04.045095+00:00",
+      "latest_official_version_announcement": {
+        "version": "7.2",
+        "source": "https://www.hoyolab.com/article/47306125",
+        "title": "「壞滅肇始之時」7.2版本更新說明"
+      }
+    },
+    {
+      "id": "hsr",
+      "official_announcements": [
+        {
+          "id": "47526861",
+          "title": "「次元分裂」活動：次元飾品限時雙倍掉落",
+          "url": "https://www.hoyolab.com/article/47526861",
+          "published_at": 1795320004,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47394097",
+          "title": "4.7版本「此刻，將群星付之一笑」版本更新說明",
+          "url": "https://www.hoyolab.com/article/47394097",
+          "published_at": 1794351603,
+          "category": "version",
+          "version": "4.7"
+        },
+        {
+          "id": "47385253",
+          "title": "4.7版本活動躍遷（其一）",
+          "url": "https://www.hoyolab.com/article/47385253",
+          "published_at": 1794279606,
+          "category": "version",
+          "version": "4.7"
+        },
+        {
+          "id": "47375930",
+          "title": "4.7版本更新維護預告",
+          "url": "https://www.hoyolab.com/article/47375930",
+          "published_at": 1794204004,
+          "category": "version",
+          "version": "4.7"
+        },
+        {
+          "id": "47375703",
+          "title": "「奇庫尋遺」：參與活動獲得+15五星遺器！",
+          "url": "https://www.hoyolab.com/article/47375703",
+          "published_at": 1794202208,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47375599",
+          "title": "4.7版本新增關卡",
+          "url": "https://www.hoyolab.com/article/47375599",
+          "published_at": 1794201307,
+          "category": "version",
+          "version": "4.7"
+        },
+        {
+          "id": "47375521",
+          "title": "「此刻，將群星付之一笑」任務說明",
+          "url": "https://www.hoyolab.com/article/47375521",
+          "published_at": 1794200407,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47351677",
+          "title": "4.7版本「無名勳禮」更新",
+          "url": "https://www.hoyolab.com/article/47351677",
+          "published_at": 1794024306,
+          "category": "version",
+          "version": "4.7"
+        },
+        {
+          "id": "47271769",
+          "title": "「貨幣戰爭•入畫奇航」全新賽季來襲！",
+          "url": "https://www.hoyolab.com/article/47271769",
+          "published_at": 1793505605,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47252649",
+          "title": "4.7版本商店新品上架",
+          "url": "https://www.hoyolab.com/article/47252649",
+          "published_at": 1793364904,
+          "category": "version",
+          "version": "4.7"
+        },
+        {
+          "id": "47252509",
+          "title": "「寰宇美學•幻樂秀場」服裝抽取活動說明",
+          "url": "https://www.hoyolab.com/article/47252509",
+          "published_at": 1793364307,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47252072",
+          "title": "「開場好禮先抱走」活動說明",
+          "url": "https://www.hoyolab.com/article/47252072",
+          "published_at": 1793362807,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47238004",
+          "title": "「花藏繁生」活動：擬造花萼限時雙倍掉落",
+          "url": "https://www.hoyolab.com/article/47238004",
+          "published_at": 1793242806,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47142215",
+          "title": "4.6版本活動躍遷（其二）",
+          "url": "https://www.hoyolab.com/article/47142215",
+          "published_at": 1792476008,
+          "category": "version",
+          "version": "4.6"
+        },
+        {
+          "id": "47043223",
+          "title": "「次元分裂」活動：次元飾品限時雙倍掉落",
+          "url": "https://www.hoyolab.com/article/47043223",
+          "published_at": 1791687603,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "46861607",
+          "title": "4.6版本「月升之前，與獸共舞」版本更新說明",
+          "url": "https://www.hoyolab.com/article/46861607",
+          "published_at": 1790550006,
+          "category": "version",
+          "version": "4.6"
+        },
+        {
+          "id": "46851682",
+          "title": "4.6版本活動躍遷（其一）",
+          "url": "https://www.hoyolab.com/article/46851682",
+          "published_at": 1790488804,
+          "category": "version",
+          "version": "4.6"
+        },
+        {
+          "id": "46826146",
+          "title": "4.6版本「無名勳禮」更新",
+          "url": "https://www.hoyolab.com/article/46826146",
+          "published_at": 1790307006,
+          "category": "version",
+          "version": "4.6"
+        },
+        {
+          "id": "46814308",
+          "title": "4.6版本更新維護預告",
+          "url": "https://www.hoyolab.com/article/46814308",
+          "published_at": 1790229608,
+          "category": "version",
+          "version": "4.6"
+        },
+        {
+          "id": "46814057",
+          "title": "4.6版本新增關卡",
+          "url": "https://www.hoyolab.com/article/46814057",
+          "published_at": 1790227806,
+          "category": "version",
+          "version": "4.6"
+        }
+      ],
+      "official_source_verified": true,
+      "announcements_checked_at": "2026-11-24T14:59:04.045095+00:00",
+      "latest_official_version_announcement": {
+        "version": "4.7",
+        "source": "https://www.hoyolab.com/article/47394097",
+        "title": "4.7版本「此刻，將群星付之一笑」版本更新說明"
+      }
+    },
+    {
+      "id": "zzz",
+      "official_announcements": [
+        {
+          "id": "47537269",
+          "title": "「資料懸賞-實戰模擬」活動說明",
+          "url": "https://www.hoyolab.com/article/47537269",
+          "published_at": 1795406407,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47424979",
+          "title": "「修復吧！漂流畫集」活動說明",
+          "url": "https://www.hoyolab.com/article/47424979",
+          "published_at": 1794542407,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47385589",
+          "title": "3.3版本「商城」上新說明",
+          "url": "https://www.hoyolab.com/article/47385589",
+          "published_at": 1794283206,
+          "category": "version",
+          "version": "3.3"
+        },
+        {
+          "id": "47376180",
+          "title": "「『嗯呢』從天降」活動說明",
+          "url": "https://www.hoyolab.com/article/47376180",
+          "published_at": 1794205805,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47376055",
+          "title": "「跛腳烏鴉奇蹤記」活動說明",
+          "url": "https://www.hoyolab.com/article/47376055",
+          "published_at": 1794204905,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47328314",
+          "title": "《絕區零》對iPhone Duo機型的相容性說明",
+          "url": "https://www.hoyolab.com/article/47328314",
+          "published_at": 1793858405,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47284170",
+          "title": "「先遣賞金-區域巡防」活動說明",
+          "url": "https://www.hoyolab.com/article/47284170",
+          "published_at": 1793592007,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47208493",
+          "title": "「賽博聖手，出診!」活動說明",
+          "url": "https://www.hoyolab.com/article/47208493",
+          "published_at": 1792989007,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47150315",
+          "title": "3.3版本已知問題及遊戲改善說明（更新中）",
+          "url": "https://www.hoyolab.com/article/47150315",
+          "published_at": 1792549120,
+          "category": "version",
+          "version": "3.3"
+        },
+        {
+          "id": "47149468",
+          "title": "3.3版本「重返天空的旅程」更新公告",
+          "url": "https://www.hoyolab.com/article/47149468",
+          "published_at": 1792537204,
+          "category": "version",
+          "version": "3.3"
+        },
+        {
+          "id": "47142378",
+          "title": "「怪奇詭屋驚魂記」活動說明",
+          "url": "https://www.hoyolab.com/article/47142378",
+          "published_at": 1792477804,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47142288",
+          "title": "「全新放送」活動說明",
+          "url": "https://www.hoyolab.com/article/47142288",
+          "published_at": 1792476909,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47142214",
+          "title": "3.3版本「麗都城募」說明",
+          "url": "https://www.hoyolab.com/article/47142214",
+          "published_at": 1792476007,
+          "category": "version",
+          "version": "3.3"
+        },
+        {
+          "id": "47131894",
+          "title": "新劇情：主線第三季第四章「重返天空的旅程」",
+          "url": "https://www.hoyolab.com/article/47131894",
+          "published_at": 1792391405,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47131792",
+          "title": "3.3版本「商城」上新說明",
+          "url": "https://www.hoyolab.com/article/47131792",
+          "published_at": 1792390509,
+          "category": "version",
+          "version": "3.3"
+        },
+        {
+          "id": "47131668",
+          "title": "3.3版本限時頻道（上期）",
+          "url": "https://www.hoyolab.com/article/47131668",
+          "published_at": 1792389608,
+          "category": "version",
+          "version": "3.3"
+        },
+        {
+          "id": "47130875",
+          "title": "3.3版本「重返天空的旅程」預先下載開啟&更新通知",
+          "url": "https://www.hoyolab.com/article/47130875",
+          "published_at": 1792382705,
+          "category": "version",
+          "version": "3.3"
+        },
+        {
+          "id": "47055658",
+          "title": "「資料懸賞-實戰模擬」活動說明",
+          "url": "https://www.hoyolab.com/article/47055658",
+          "published_at": 1791777606,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "47034890",
+          "title": "《絕區零》X Discord 現有帳號綁定服務調整公告",
+          "url": "https://www.hoyolab.com/article/47034890",
+          "published_at": 1791626402,
+          "category": "news",
+          "version": null
+        },
+        {
+          "id": "46913357",
+          "title": "「跛腳烏鴉奇探錄」活動說明",
+          "url": "https://www.hoyolab.com/article/46913357",
+          "published_at": 1790827206,
+          "category": "news",
+          "version": null
+        }
+      ],
+      "official_source_verified": true,
+      "announcements_checked_at": "2026-11-24T14:59:04.045095+00:00",
+      "latest_official_version_announcement": {
+        "version": "3.3",
+        "source": "https://www.hoyolab.com/article/47385589",
+        "title": "3.3版本「商城」上新說明"
+      }
+    }
+  ],
   "history": []
 }

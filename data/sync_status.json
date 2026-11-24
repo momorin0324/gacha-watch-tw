@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-24T14:59:04.045095+00:00",
+  "games": {
+    "genshin": {
+      "accepted": 20,
+      "rejected": 0,
+      "article_errors": [],
+      "latest_url": "https://www.hoyolab.com/article/47312224"
+    },
+    "hsr": {
+      "accepted": 20,
+      "rejected": 0,
+      "article_errors": [],
+      "latest_url": "https://www.hoyolab.com/article/47526861"
+    },
+    "zzz": {
+      "accepted": 20,
+      "rejected": 0,
+      "article_errors": [],
+      "latest_url": "https://www.hoyolab.com/article/47537269"
+    }
+  },
+  "errors": []
+}
