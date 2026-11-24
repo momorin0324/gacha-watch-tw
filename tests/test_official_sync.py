@@ -2,7 +2,8 @@
 import sys,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from sync_hoyolab_official import eligible,extract,merge
+from sync_hoyolab_official import eligible,extract,merge,category
+from parse_official_announcements import parse
 class OfficialSyncTests(unittest.TestCase):
  def setUp(self):
   self.rule={"uid":"172534910","certification_desc":"HonkaiSR Official"}
@@ -17,6 +18,16 @@ class OfficialSyncTests(unittest.TestCase):
   self.assertEqual(updated["current"],"4.6")
   self.assertEqual(len(updated["phases"]),1)
   self.assertEqual(updated["official_announcements"][0]["version"],"4.7")
+ def test_banner_evidence_no_guessed_time(self):
+  p={**self.post,'內文':'活動時間：2026/11/11 版本更新後～2026/12/22 15:00（伺服器時間）'}
+  x=extract(p)
+  self.assertEqual(x['category'],'banner')
+  self.assertEqual(x['banner_evidence']['characters'],[])
+  self.assertIn('待確認',x['banner_evidence']['time_status'])
+  self.assertNotIn('phases',x)
+ def test_classification_priority(self):
+  self.assertEqual(category('4.7版本活動躍遷（其一）'),'banner')
+  self.assertEqual(category('4.7版本更新維護預告'),'maintenance')
  def test_reject_untrusted_url(self):
   bad={**extract(self.post),"url":"https://example.com/article/47385253"}
   self.assertNotIn("official_announcements",merge({"games":[]} ,[bad],"hsr","now"))
