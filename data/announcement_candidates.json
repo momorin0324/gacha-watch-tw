@@ -1,4 +1,47 @@
 {
   "schema": 1,
-  "candidates": []
+  "candidates": [
+    {
+      "game": "nikke",
+      "title": "2026.09.14 9月17日版本更新公告",
+      "url": "https://nikke.hotcool.tw/News_detail-223",
+      "status": "pending_review"
+    },
+    {
+      "game": "nikke",
+      "title": "2026.10.05 10月8日版本更新公告",
+      "url": "https://nikke.hotcool.tw/News_detail-232",
+      "status": "pending_review"
+    },
+    {
+      "game": "nikke",
+      "title": "2026.10.26 10月29日版本更新公告",
+      "url": "https://nikke.hotcool.tw/News_detail-237",
+      "status": "pending_review"
+    },
+    {
+      "game": "nikke",
+      "title": "11月12日PC啟動器安全更新通知 2026.11.12",
+      "url": "https://nikke.hotcool.tw/News_detail-243",
+      "status": "pending_review"
+    },
+    {
+      "game": "nikke",
+      "title": "11月19日版本更新公告 2026.11.16",
+      "url": "https://nikke.hotcool.tw/News_detail-246",
+      "status": "pending_review"
+    },
+    {
+      "game": "nikke",
+      "title": "2023.04.19 SHIFTUP 二次創作活動準則",
+      "url": "https://nikke.hotcool.tw/News_detail-7",
+      "status": "pending_review"
+    },
+    {
+      "game": "nikke",
+      "title": "2023.03.15 台灣區限定GASH儲值回饋!珠寶88顆送給你💎💎",
+      "url": "https://nikke.hotcool.tw/act_5366_2jtpmOglooCq.html",
+      "status": "pending_review"
+    }
+  ]
 }
