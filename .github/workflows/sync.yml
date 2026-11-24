@@ -22,7 +22,7 @@ jobs:
           python-version: '3.12'
       - name: Check Python syntax
         run: python -m py_compile scripts/sync_hoyolab_official.py scripts/collect_hoyolab_evidence.py
-      - name: Collect allowlisted official notices
+      - name: Test whitelist and field-level merge\n        run: python -m unittest discover -s tests -p 'test_official_sync.py'\n      - name: Collect allowlisted official notices
         id: collect
         continue-on-error: true
         run: python scripts/sync_hoyolab_official.py
