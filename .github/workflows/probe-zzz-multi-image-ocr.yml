@@ -1,0 +1,29 @@
+name: 絕區零繁體中文多圖 OCR 測試
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 安裝繁體中文辨識套件
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-chi-tra tesseract-ocr-eng
+          python -m pip install Pillow pytesseract
+      - name: 依序辨識公告所有圖片
+        run: python scripts/probe_zzz_multi_image_ocr.py
+      - name: 保存待驗證辨識結果
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: zzz-47507255-ocr-diagnostic
+          path: ocr-diagnostic/
+          if-no-files-found: warn
+          retention-days: 7
