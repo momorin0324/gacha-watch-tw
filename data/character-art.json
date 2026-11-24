@@ -1,0 +1,52 @@
+{
+  "wuwa": {
+    "莉莉": "assets/pool-art/wuwa-lily.webp",
+    "椿": "assets/pool-art/wuwa-camellya.webp",
+    "洛可可": "assets/pool-art/wuwa-roccia.webp",
+    "菲比": "assets/pool-art/wuwa-phoebe.webp",
+    "布蘭特": "assets/pool-art/wuwa-brant.webp",
+    "仇遠": "assets/pool-art/wuwa-qiuyuan.webp",
+    "西格莉卡": "assets/pool-art/wuwa-sigrika.webp",
+    "秧秧·玄翎": "assets/pool-art/wuwa-yangyang-xuanling.webp",
+    "穗穗": "assets/pool-art/wuwa-suisui.webp",
+    "緋雪": "assets/pool-art/wuwa-hiyuki.webp"
+  },
+  "endfield": {
+    "小刻": "assets/pool-art/endfield-sweetpie.webp",
+    "明河": "assets/pool-art/endfield-minghe.webp",
+    "潔爾佩塔": "assets/pool-art/endfield-gilberta.webp"
+  },
+  "nte": {
+    "卡厄斯": "assets/pool-art/nte-chaos.webp",
+    "曳爾沐": "assets/pool-art/nte-elyms.webp",
+    "真紅": "assets/pool-art/nte-shinku.webp",
+    "Exe": "assets/pool-art/nte-exe.webp"
+  },
+  "bd2": {
+    "勝利應援貝那卡": "assets/pool-art/bd2-venaka-cheers.webp",
+    "最後希望羅安": "assets/pool-art/bd2-loen-last-hope.webp",
+    "苦甜兔女郎達麗安": "assets/pool-art/bd2-darian-bunny.webp",
+    "酷魅兔女郎艾尼爾": "assets/pool-art/bd2-eleaneer-bunny.webp"
+  },
+  "gfl2": {
+    "克萊妲": "assets/pool-art/gfl2-koleda.webp",
+    "妮基塔": "assets/pool-art/gfl2-nikketa.webp"
+  },
+  "nikke": {
+    "思凱": "assets/pool-art/nikke-sky.webp"
+  },
+  "genshin": {
+    "茲白": "assets/pool-art/gi-Zibai.webp",
+    "莉奈婭": "assets/pool-art/gi-Linnea.webp"
+  },
+  "starrail": {
+    "星神★阿哈": "assets/pool-art/hsr-1511.webp",
+    "銀狼LV.999": "assets/pool-art/hsr-1506.webp",
+    "火花": "assets/pool-art/hsr-1501.webp",
+    "爻光": "assets/pool-art/hsr-1502.webp"
+  },
+  "zzz": {
+    "賽維里安": "assets/pool-art/zzz-severian.webp",
+    "諾姆": "assets/pool-art/zzz-nom.webp"
+  }
+}
