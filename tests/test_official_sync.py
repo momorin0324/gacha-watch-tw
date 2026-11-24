@@ -11,6 +11,11 @@ class OfficialSyncTests(unittest.TestCase):
  def test_zh_tw_official_link(self):
   self.assertEqual(localized_url('https://www.hoyolab.com/article/47385253'),'https://www.hoyolab.com/article/47385253?lang=zh-tw')
   self.assertEqual(localized_url('https://www.hoyolab.com/article/47385253?lang=en-us'),'https://www.hoyolab.com/article/47385253?lang=zh-tw')
+ def test_explicit_timezone_only(self):
+  self.assertEqual(len(verified_times("2026/12/22 15:00（伺服器時間）")),0)
+  self.assertEqual(len(verified_times("2026/12/22 UTC+8 15:00")),1)
+ def test_five_star_candidates(self):
+  self.assertEqual(featured_candidates(["五星角色：測試角色"]),["測試角色"])
  def test_whitelist(self):
   self.assertTrue(eligible(self.post,self.rule))
   self.assertFalse(eligible({**self.post,"發文者UID":"999"},self.rule))
