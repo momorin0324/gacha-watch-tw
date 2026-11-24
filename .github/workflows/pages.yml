@@ -3,6 +3,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # GITHUB_TOKEN commits do not trigger push workflows; scheduled deploy publishes synced JSON.
+  schedule:
+    - cron: '*/30 * * * *'
 permissions:
   contents: read
   pages: write
