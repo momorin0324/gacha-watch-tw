@@ -13,7 +13,7 @@ def time_fields(raw):
         try:return datetime.datetime(*map(int,m.groups())).strftime("%Y-%m-%dT%H:%M:00")
         except ValueError:return None
     start_iso=parse(start);end_iso=parse(end)
-    start_date_match=re.search(r"(\\d{4})[/-](\\d{1,2})[/-](\\d{1,2})",start or "")
+    start_date_match=re.search(r"(\d{4})[/-](\d{1,2})[/-](\d{1,2})",start or "")
     start_date_hint=None
     if start_date_match:
         try:
