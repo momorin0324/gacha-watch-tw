@@ -1,0 +1,41 @@
+name: Gacha Watch version rollover
+on:
+  schedule:
+    - cron: '15 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/advance_versions.py'
+      - 'tests/test_version_rollover.py'
+      - '.github/workflows/rollover.yml'
+permissions:
+  contents: write
+concurrency:
+  group: gacha-watch-version-rollover
+  cancel-in-progress: false
+jobs:
+  rollover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test verified rollover rules
+        run: python -m unittest discover -s tests -p 'test_version_rollover.py'
+      - name: Archive and promote verified versions
+        run: python scripts/advance_versions.py
+      - name: Commit lifecycle changes
+        run: |
+          set -euo pipefail
+          if ! git diff --quiet -- data/updates.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add data/updates.json
+            git commit -m 'Archive expired versions and promote verified upcoming versions'
+            git pull --rebase
+            git push
+          fi
