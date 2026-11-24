@@ -1,0 +1,21 @@
+name: Probe Traditional Chinese and numeric OCR
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Traditional Chinese OCR
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-chi-tra tesseract-ocr-eng
+          python -m pip install Pillow pytesseract
+      - name: Evaluate Chinese and numeric recognition
+        run: python scripts/probe_hoyolab_zh_ocr.py
