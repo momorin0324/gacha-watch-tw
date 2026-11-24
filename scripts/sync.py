@@ -28,8 +28,8 @@ def fetch(url,domain):
 
 def run():
  cfg=load(CONFIG); old=load(OUTPUT)
- games={x['id']:x for x in old.get('games',[]) if isinstance(x,dict) and x.get('verified')}
- history={(x['game'],x['version']):x for x in old.get('history',[]) if isinstance(x,dict) and x.get('verified')}
+ games={x['id']:x for x in old.get('games',[]) if isinstance(x,dict) and x.get('id')}
+ history={(x['game'],x['version']):x for x in old.get('history',[]) if isinstance(x,dict) and x.get('game') and x.get('version')}
  successes=0;errors=[]
  for src in cfg.get('sources',[]):
   try:
@@ -41,7 +41,7 @@ def run():
     if g.get('id') not in GAMES or g.get('verified') is not True:continue
     if g.get('phases') and not all(valid_phase(p) for p in g['phases']):continue
     if not g.get('evidence_url','').startswith('https://'):continue
-    games[g['id']]=g
+    games[g['id']]={**games.get(g['id'],{}),**g}
    for h in doc.get('history',[]):
     if h.get('game') not in GAMES or not h.get('version') or h.get('verified') is not True:continue
     if not h.get('source','').startswith('https://') or not h.get('phases') or not all(valid_phase(p) for p in h['phases']):continue
