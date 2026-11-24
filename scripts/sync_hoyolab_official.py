@@ -4,6 +4,7 @@ import datetime,json,os,re,tempfile
 from pathlib import Path
 from urllib.parse import urlsplit
 from collect_hoyolab_evidence import GAMES,fetch,details
+from parse_official_announcements import parse
 ROOT=Path(__file__).resolve().parents[1]
 CONFIG=ROOT/"config/official_accounts.json"
 OUTPUT=ROOT/"data/updates.json"
@@ -11,7 +12,7 @@ LOG=ROOT/"data/sync_status.json"
 TZ=datetime.timezone(datetime.timedelta(hours=8))
 GAME_IDS={"原神":"genshin","崩壞：星穹鐵道":"hsr","絕區零":"zzz"}
 VERSION=re.compile(r"(?<!\d)(\d+\.\d+)\s*版本")
-CATEGORIES={"版本":"version","維護":"maintenance","躍遷":"banner","祈願":"banner","調頻":"banner","前瞻":"preview","直播":"preview"}
+CATEGORIES={"躍遷":"banner","祈願":"banner","調頻":"banner","前瞻":"preview","直播":"preview","特別節目":"preview","維護":"maintenance","版本":"version"}
 def save(path,data):
  path.parent.mkdir(parents=True,exist_ok=True)
  with tempfile.NamedTemporaryFile("w",dir=path.parent,encoding="utf-8",delete=False) as f:
@@ -30,7 +31,7 @@ def extract(post):
  title=post.get("標題") or ""
  match=VERSION.search(title)
  # 從標題提取的版本資訊屬於官方公告標題證據，不視為「已上線當前版本」
- return {"id":str(post["文章ID"]),"title":title[:240],"url":post["網址"],"published_at":post.get("發表時間"),"category":category(title),"version":match.group(1) if match else None}
+ return {"id":str(post["文章ID"]),"title":title[:240],"url":post["網址"],"published_at":post.get("發表時間"),"category":category(title),"version":match.group(1) if match else None,**parse(post)}
 def valid_notice(n):
  u=urlsplit(n.get("url",""))
  return u.scheme=="https" and u.hostname=="www.hoyolab.com" and re.fullmatch(r"/article/\d+",u.path or "") and bool(n.get("title"))
