@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "games": {
+    "genshin": {
+      "uid": "1015537",
+      "certification_desc": "Official Big Boss"
+    },
+    "hsr": {
+      "uid": "172534910",
+      "certification_desc": "HonkaiSR Official"
+    },
+    "zzz": {
+      "uid": "219270333",
+      "certification_desc": "ZZZ Official"
+    }
+  }
+}
