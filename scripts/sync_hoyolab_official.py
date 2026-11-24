@@ -31,7 +31,7 @@ def extract(post):
  title=post.get("標題") or ""
  match=VERSION.search(title)
  # 從標題提取的版本資訊屬於官方公告標題證據，不視為「已上線當前版本」
- return {"id":str(post["文章ID"]),"title":title[:240],"url":post["網址"],"published_at":post.get("發表時間"),"category":category(title),"version":match.group(1) if match else None,**parse(post)}
+ return {"id":str(post["文章ID"]),"title":title[:240],"url":post["網址"],"published_at":post.get("發表時間"),"category":category(title),"version":match.group(1) if match else None,"traditional_chinese_excerpt":clean(post.get("內文") or "")[:1400],"excerpt_language":"zh-tw-requested-not-guaranteed",**parse(post)}
 def valid_notice(n):
  u=urlsplit(n.get("url",""))
  return u.scheme=="https" and u.hostname=="www.hoyolab.com" and re.fullmatch(r"/article/\d+",u.path or "") and bool(n.get("title"))
