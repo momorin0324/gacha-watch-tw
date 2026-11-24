@@ -37,7 +37,25 @@ class LinkParser(HTMLParser):
             self.href = None
             self.text = []
 
+def brown_dust_notes():
+    endpoint = "https://webapi.browndust2.com/api/notices?locale=zh-tw&page=0&limit=5&category=update"
+    with urllib.request.urlopen(endpoint, timeout=25) as response:
+        payload = json.load(response)
+    notes = []
+    for item in payload["items"]:
+        if item.get("category") != "update" or not re.fullmatch(r"[A-Za-z0-9_-]+", str(item.get("id") or "")):
+            continue
+        notes.append({"game": "bd2", "title": item["subject"],
+                      "url": "https://www.browndust2.com/zh-tw/news/view?id=" + str(item["id"]),
+                      "status": "pending_review"})
+    if not notes:
+        raise ValueError("No Traditional Chinese developer notes returned")
+    return notes
+
+
 def discover(src):
+    if src["id"] == "bd2":
+        return brown_dust_notes()
     url = src["url"]
     parsed = urllib.parse.urlsplit(url)
     if parsed.scheme != "https" or parsed.hostname != src["domain"]:
