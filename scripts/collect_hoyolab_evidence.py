@@ -20,7 +20,15 @@ def details(post_id,gid):
     user=root.get("user") or {}
     status=post.get("post_status") or {}
     # 無法從欄位單獨確定官方認證；保留原始證據供後續查核
-    return {"文章ID":str(post_id),"網址":"https://www.hoyolab.com/article/"+str(post_id),"標題":post.get("subject",""),"內文":post.get("content","")[:100000],"發文者":user.get("nickname"),"發文者UID":str(user.get("uid","")),"官方欄位":{"post_status_is_official":status.get("is_official"),"is_official_master":root.get("is_official_master"),"user_certification":user.get("certification")},"發表時間":post.get("created_at"),"圖片數量":len(root.get("image_list") or []),"圖片來源":[x.get("url") for x in (root.get("image_list") or []) if isinstance(x,dict)],"審核狀態":"官方身分待確認","可發布":False}
+    content=post.get("content","")
+    # 部分絕區零公告 content 只回傳語言代碼 zh-tw；不可當成文章內文。
+    is_placeholder=isinstance(content,str) and content.strip().lower() in ("zh-tw","zh-cn","en-us","")
+    alternative={}
+    for key in ("structured_content","structured_content_rows","desc","introduce"):
+        value=post.get(key)
+        if value and not (isinstance(value,str) and value.strip().lower() in ("zh-tw","zh-cn","en-us")):
+            alternative[key]=value
+    return {"內文完整性":"待補抓" if is_placeholder else "已取得原始內文","替代內容欄位":alternative,"文章ID":str(post_id),"網址":"https://www.hoyolab.com/article/"+str(post_id),"標題":post.get("subject",""),"內文":("" if is_placeholder else str(content)[:100000]),"發文者":user.get("nickname"),"發文者UID":str(user.get("uid","")),"官方欄位":{"post_status_is_official":status.get("is_official"),"is_official_master":root.get("is_official_master"),"user_certification":user.get("certification")},"發表時間":post.get("created_at"),"圖片數量":len(root.get("image_list") or []),"圖片來源":[x.get("url") for x in (root.get("image_list") or []) if isinstance(x,dict)],"審核狀態":"官方身分待確認","可發布":False}
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--limit",type=int,default=10)
