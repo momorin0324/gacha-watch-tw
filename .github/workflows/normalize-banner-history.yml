@@ -1,0 +1,30 @@
+name: 第十六輪 歷史卡池標準資料格式
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: 取得第十五輪最新成功的候選資料
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RUN_ID=$(gh run list --workflow extract-banner-groups.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+          test -n "$RUN_ID"
+          mkdir -p banner-diagnostic
+          gh run download "$RUN_ID" -n 第十五輪-多卡池與UP名單-待確認 -D banner-diagnostic
+      - name: 轉換為待審歷史卡池資料
+        run: python scripts/normalize_banner_history.py
+      - name: 保存待審資料（不發布）
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 第十六輪-歷史卡池標準資料-待確認
+          path: history-diagnostic/
+          retention-days: 7
+          if-no-files-found: warn
