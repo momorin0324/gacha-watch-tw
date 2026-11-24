@@ -5,7 +5,6 @@ import json
 import re
 from functools import lru_cache
 from html.parser import HTMLParser
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlencode, urlparse
 from urllib.request import Request, urlopen
@@ -35,7 +34,6 @@ def banner_names():
     html = (ROOT / "index.html").read_text()
     games, _ = json.JSONDecoder().raw_decode(html.split("const seed=", 1)[1])
     updates = json.loads((ROOT / "data/updates.json").read_text())
-    today = datetime.now(timezone(timedelta(hours=8))).date().isoformat()
     found = set()
     for game in games + updates["games"]:
         game_id = ALIASES.get(game["id"], game["id"])
@@ -43,8 +41,6 @@ def banner_names():
         for record in records:
             for field in ("phases", "next_phases", "special_banners"):
                 for phase in record.get(field, []):
-                    if phase.get("end") and str(phase["end"])[:10] < today:
-                        continue
                     names = phase.get("characters") or phase.get("five_star") or ""
                     for name in names if isinstance(names, list) else re.split("、", names):
                         name = name.strip()
@@ -92,12 +88,13 @@ def image_url(game, name):
             char_id = next(iter(matches))
             return f"https://sp-cbt2.csxylic.com/icons/Character/GachaResultCharacter/T_GachaResultCharacter_{char_id}.png"
         return None
-    patterns = SPECIAL_FILES.get(game, []) + ["{}立绘.png", "{}立绘.jpg", "角色立绘-{}.png", "{}官方立绘.png"]
+    patterns = ["{}横版立绘.png", "{}横幅角色立绘.png", "{}横版立绘.jpg"] + SPECIAL_FILES.get(game, []) + ["{}立绘.png", "{}立绘.jpg", "角色立绘-{}.png", "{}官方立绘.png"]
     titles = [p.format(simplified) for p in patterns]
     query = urlencode({"action": "query", "format": "json", "prop": "imageinfo", "iiprop": "url|size|mime",
                        "titles": "|".join("File:" + title for title in titles)})
     result = json.loads(fetch(f"https://wiki.biligame.com/{WIKIS[game]}/api.php?{query}", 500_000))
     pages = {p["title"].split(":", 1)[-1]: p for p in result["query"]["pages"].values()}
+    candidates = []
     for title in titles:
         for img in pages.get(title, {}).get("imageinfo", []):
             url = urlparse(img["url"])
@@ -105,8 +102,10 @@ def image_url(game, name):
                     and url.path.startswith("/images/" + WIKIS[game] + "/")
                     and img["mime"] in ("image/png", "image/jpeg", "image/webp")
                     and img["size"] <= ART_LIMIT and min(img["width"], img["height"]) >= 350):
-                return img["url"]
-    return None
+                candidates.append(img)
+    # Prefer landscape illustrations, retaining game-specific title priority on ties.
+    best = max(candidates, key=lambda img: img["width"] >= 1.5 * img["height"], default=None)
+    return best["url"] if best else None
 
 
 def cache_image(data, destination):

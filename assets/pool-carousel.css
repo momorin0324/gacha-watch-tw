@@ -69,35 +69,66 @@
   .pool-slide::after { background: linear-gradient(0deg, #090c1bf2, #0b0f2280 50%, #0b0f2210); }
 }
 /* Vertical framing for each character’s landscape banner crop. */
-.pool-slide img[src$="/bd2-darian-bunny.webp"] { object-position: 72% 12%; }
-.pool-slide img[src$="/bd2-eleaneer-bunny.webp"] { object-position: 69% 47%; }
-.pool-slide img[src$="/bd2-loen-last-hope.webp"] { object-position: 70% 28%; }
-.pool-slide img[src$="/bd2-venaka-cheers.webp"] { object-position: 70% 14%; }
-.pool-slide img[src$="/endfield-gilberta.webp"] { object-position: 52% 28%; }
-.pool-slide img[src$="/endfield-minghe.webp"] { object-position: 49% 15%; }
-.pool-slide img[src$="/endfield-sweetpie.webp"] { object-position: 45% 24%; }
-.pool-slide img[src$="/gfl2-koleda.webp"] { object-position: 69% 6%; }
-.pool-slide img[src$="/gfl2-nikketa.webp"] { object-position: 70% 17%; }
-.pool-slide img[src$="/gi-Linnea.webp"] { object-position: 53% 2%; }
-.pool-slide img[src$="/gi-Zibai.webp"] { object-position: 51% 2%; }
-.pool-slide img[src$="/hsr-1501.webp"] { object-position: 61% 55%; }
-.pool-slide img[src$="/hsr-1502.webp"] { object-position: 51% 36%; }
-.pool-slide img[src$="/hsr-1506.webp"] { object-position: 51% 37%; }
-.pool-slide img[src$="/hsr-1511.webp"] { object-position: 40% 34%; }
-.pool-slide img[src$="/nikke-sky.webp"] { object-position: 69% 9%; }
-.pool-slide img[src$="/nte-chaos.webp"] { object-position: 44% 10%; }
-.pool-slide img[src$="/nte-elyms.webp"] { object-position: 38% 25%; }
-.pool-slide img[src$="/nte-exe.webp"] { object-position: 38% 35%; }
-.pool-slide img[src$="/nte-shinku.webp"] { object-position: 60% 29%; }
-.pool-slide img[src$="/wuwa-brant.webp"] { object-position: 37% 12%; }
-.pool-slide img[src$="/wuwa-camellya.webp"] { object-position: 49% 5%; }
-.pool-slide img[src$="/wuwa-hiyuki.webp"] { object-position: 51% 7%; }
-.pool-slide img[src$="/wuwa-lily.webp"] { object-position: 52% 24%; }
-.pool-slide img[src$="/wuwa-phoebe.webp"] { object-position: 64% 7%; }
-.pool-slide img[src$="/wuwa-qiuyuan.webp"] { object-position: 59% 16%; }
-.pool-slide img[src$="/wuwa-roccia.webp"] { object-position: 61% 35%; }
-.pool-slide img[src$="/wuwa-sigrika.webp"] { object-position: 53% 4%; }
-.pool-slide img[src$="/wuwa-suisui.webp"] { object-position: 50% 15%; }
-.pool-slide img[src$="/wuwa-yangyang-xuanling.webp"] { object-position: 59% 17%; }
-.pool-slide img[src$="/zzz-nom.webp"] { object-position: 36% 19%; }
-.pool-slide img[src$="/zzz-severian.webp"] { object-position: 40% 22%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/bd2-darian-bunny.webp"] { object-position: 72% 12%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/bd2-eleaneer-bunny.webp"] { object-position: 69% 47%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/bd2-loen-last-hope.webp"] { object-position: 70% 28%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/bd2-venaka-cheers.webp"] { object-position: 70% 14%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/endfield-gilberta.webp"] { object-position: 52% 28%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/endfield-minghe.webp"] { object-position: 49% 15%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/endfield-sweetpie.webp"] { object-position: 45% 24%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gfl2-koleda.webp"] { object-position: 69% 6%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gfl2-nikketa.webp"] { object-position: 70% 17%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gi-Linnea.webp"] { object-position: 53% 2%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gi-Zibai.webp"] { object-position: 51% 2%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1501.webp"] { object-position: 61% 55%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1502.webp"] { object-position: 51% 36%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1506.webp"] { object-position: 51% 37%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1511.webp"] { object-position: 40% 34%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nikke-sky.webp"] { object-position: 69% 9%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-chaos.webp"] { object-position: 44% 10%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-elyms.webp"] { object-position: 38% 25%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-exe.webp"] { object-position: 38% 35%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-shinku.webp"] { object-position: 60% 29%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-brant.webp"] { object-position: 37% 12%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-camellya.webp"] { object-position: 49% 5%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-hiyuki.webp"] { object-position: 51% 7%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-lily.webp"] { object-position: 52% 24%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-phoebe.webp"] { object-position: 64% 7%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-qiuyuan.webp"] { object-position: 59% 16%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-roccia.webp"] { object-position: 61% 35%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-sigrika.webp"] { object-position: 53% 4%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-suisui.webp"] { object-position: 50% 15%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-yangyang-xuanling.webp"] { object-position: 59% 17%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/zzz-nom.webp"] { object-position: 36% 19%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/zzz-severian.webp"] { object-position: 40% 22%; }
+
+.illustrated-phase { position: relative; isolation: isolate; }
+.phase-backdrop {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  z-index: -1;
+  pointer-events: none;
+}
+.phase-backdrop img {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 72%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+}
+.phase-backdrop:has(img)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,#17263e 18%,#17263ee8 36%,#17263e75 60%,#101a2c2b);
+}
+.illustrated-phase .phase-copy { text-shadow: 0 1px 4px #10182b; }
+@media(max-width: 600px) {
+  .phase-backdrop img { width: 100%; }
+  .phase-backdrop:has(img)::after { background: linear-gradient(90deg,#17263ef5,#17263eb0 52%,#17263e66); }
+}
+:is(.pool-slide,.phase-backdrop) img[src$="/gi-Mitya.webp"] { object-position: 49% 22%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gi-Furina.webp"] { object-position: 53% 23%; }

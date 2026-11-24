@@ -106,11 +106,62 @@
     }
   }
 
+  const phaseStates = new WeakMap();
+  const failedUrls = new Set();
+
+  function paintPhase(layer, advance) {
+    let state = phaseStates.get(layer);
+    if (!state) {
+      state = { names: JSON.parse(layer.dataset.names), current: '', pending: '' };
+      phaseStates.set(layer, state);
+    }
+    const game = seed.find(game => game.id === layer.dataset.game);
+    if (!game) return;
+    const urls = [...new Set(state.names.map(name =>
+      sources({ game, name, phase: {} }).find(url => !failedUrls.has(url))
+    ).filter(Boolean))];
+    const poster = layer.dataset.poster;
+    if (!urls.length && poster && !failedUrls.has(poster)) urls.push(poster);
+    if (!urls.length || state.pending) return;
+    const index = urls.indexOf(state.current);
+    const next = urls[index < 0 ? 0 : (index + Number(advance)) % urls.length];
+    if (next === state.current) return;
+    state.pending = next;
+    const img = new Image();
+    img.alt = '';
+    img.onload = () => {
+      state.pending = '';
+      if (!layer.isConnected) return;
+      const old = layer.lastElementChild;
+      if (old && advance && !reducedMotion.matches) {
+        old.classList.remove('pool-enter');
+        old.classList.add('pool-exit');
+        img.classList.add('pool-enter');
+        setTimeout(() => old.remove(), 560);
+      } else layer.replaceChildren();
+      layer.append(img);
+      state.current = next;
+    };
+    img.onerror = () => {
+      failedUrls.add(next);
+      state.pending = '';
+      if (layer.isConnected) paintPhase(layer, false);
+    };
+    img.src = next;
+  }
+
+  function paintPhases(advance = false) {
+    document.querySelectorAll('.phase-backdrop').forEach(layer => paintPhase(layer, advance));
+  }
+
+  new MutationObserver(() => paintPhases()).observe(document.getElementById('app'), { childList: true });
+
   ['character-art', 'discovered-art'].forEach(async (catalog, i) => {
     try {
       const response = await fetch('./data/' + catalog + '.json');
       if (response.ok) catalogs[i] = await response.json();
       render();
+      paintPhases();
     } catch { /* Existing card data remains available offline. */ }
   });
   let timer;
@@ -118,7 +169,8 @@
     clearInterval(timer);
     if (document.hidden) return;
     render();
-    timer = setInterval(() => render(true), 4000);
+    paintPhases();
+    timer = setInterval(() => { render(true); paintPhases(true); }, 4000);
   }
   document.addEventListener('visibilitychange', resume);
   resume();
