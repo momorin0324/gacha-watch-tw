@@ -6,7 +6,7 @@
     "菲比": "assets/pool-art/wuwa-phoebe-convene-v2.webp",
     "布蘭特": "assets/pool-art/wuwa-brant-convene-v2.webp",
     "仇遠": "assets/pool-art/wuwa-qiuyuan-convene-v2.webp",
-    "西格莉卡": "assets/pool-art/wuwa-sigrika-showcase.webp",
+    "西格莉卡": "assets/pool-art/wuwa-sigrika-hall.webp",
     "秧秧·玄翎": "assets/pool-art/wuwa-yangyang-xuanling-convene-v2.webp",
     "穗穗": "assets/pool-art/wuwa-suisui-convene-v2.webp",
     "緋雪": "assets/pool-art/wuwa-hiyuki-convene-v2.webp"
@@ -17,10 +17,10 @@
     "潔爾佩塔": "assets/pool-art/endfield-gilberta.webp"
   },
   "nte": {
-    "卡厄斯": "assets/pool-art/nte-chaos-scene.webp",
+    "卡厄斯": "assets/pool-art/nte-chaos-board.webp",
     "曳爾沐": "assets/pool-art/nte-elyms.webp",
-    "真紅": "assets/pool-art/nte-shinku-scene.webp",
-    "Exe": "assets/pool-art/nte-exe-scene.webp"
+    "真紅": "assets/pool-art/nte-shinku-board.webp",
+    "Exe": "assets/pool-art/nte-exe-board.webp"
   },
   "bd2": {
     "勝利應援貝那卡": "assets/pool-art/bd2-venaka-cheers.webp",

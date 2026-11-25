@@ -85,10 +85,10 @@
 :is(.pool-slide,.phase-backdrop) img[src$="/hsr-1506.webp"] { object-position: 51% 37%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/hsr-1511.webp"] { object-position: 40% 34%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/nikke-sky-on-the-rock-v2.webp"] { object-position: 27% 28%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/nte-chaos-scene.webp"] { object-position: 70% 50%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-chaos-board.webp"] { object-position: 56% 22%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/nte-elyms.webp"] { object-position: 38% 25%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/nte-exe-scene.webp"] { object-position: 70% 50%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/nte-shinku-scene.webp"] { object-position: 70% 50%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-exe-board.webp"] { object-position: 54% 22%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-shinku-board.webp"] { object-position: 53% 18%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-brant-convene-v2.webp"] { object-position: 64% 23%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-camellya-convene-v2.webp"] { object-position: 63% 18%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-hiyuki-convene-v2.webp"] { object-position: 71% 18%; }
@@ -96,7 +96,7 @@
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-phoebe-convene-v2.webp"] { object-position: 72% 8%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-qiuyuan-convene-v2.webp"] { object-position: 65% 29%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-roccia-convene-v2.webp"] { object-position: 76% 55%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-sigrika-showcase.webp"] { object-position: 71% 31%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-sigrika-hall.webp"] { object-position: 50% 17%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-suisui-convene-v2.webp"] { object-position: 55% 12%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-yangyang-xuanling-convene-v2.webp"] { object-position: 72% 26%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/zzz-nom.webp"] { object-position: 36% 19%; }
