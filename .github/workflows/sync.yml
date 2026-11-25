@@ -8,8 +8,10 @@ on:
       - 'scripts/collect_hoyolab_evidence.py'
       - 'scripts/apply_official_versions.py'
       - 'scripts/advance_versions.py'
+      - 'scripts/sync_endfield.py'
       - 'tests/**'
       - 'config/official_accounts.json'
+      - 'data/verified-releases.json'
       - '.github/workflows/sync.yml'
   schedule:
     # Check every hour, away from the top of the hour.
@@ -43,6 +45,10 @@ jobs:
         id: legacy
         continue-on-error: true
         run: python scripts/sync.py
+      - name: Sync Endfield official news
+        id: endfield
+        continue-on-error: true
+        run: python scripts/sync_endfield.py
       - name: Publish official version lifecycle
         run: python scripts/apply_official_versions.py
       - name: Commit verified field-level updates
@@ -52,12 +58,12 @@ jobs:
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add data/updates.json data/sync_status.json
-            git commit -m 'Sync allowlisted official HoYoLAB announcements'
+            git commit -m 'Sync official game announcements'
             git pull --rebase
             git push
           fi
       - name: Report ingestion failures
-        if: steps.collect.outcome == 'failure' || steps.legacy.outcome == 'failure'
+        if: steps.collect.outcome == 'failure' || steps.legacy.outcome == 'failure' || steps.endfield.outcome == 'failure'
         run: |
           echo 'Some sources failed. Existing data was preserved; inspect data/sync_status.json.'
           exit 1

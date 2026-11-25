@@ -30,8 +30,8 @@ class OfficialVersionPublicationTests(unittest.TestCase):
         self.assertIsNone(active["games"][0]["next_version"])
         now = self.before + dt.timedelta(days=25)
         ended = publish(active, now)
-        self.assertIsNone(ended["games"][0]["current_version"])
-        self.assertEqual([record["version"] for record in ended["history"]], ["9.9"])
+        self.assertEqual(ended["games"][0]["current_version"]["version"], "9.9")
+        self.assertEqual(ended["history"], [])
         self.assertEqual(publish(ended, now), ended)
 
     def test_ignore_maintenance_and_unknown_timezone(self):

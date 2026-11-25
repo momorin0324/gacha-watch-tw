@@ -175,3 +175,52 @@
   document.addEventListener('visibilitychange', resume);
   resume();
 })();
+
+// Official records may have a confirmed opening time and a pending closing time.
+{
+  const parseDatedVersion = syncedVersion;
+  syncedVersion = function (record) {
+    const dated = parseDatedVersion(record);
+    if (dated || record?.end !== null) return dated;
+    const start = verifiedTime(record.start);
+    if (!start) return null;
+    const temporaryEnd = new Date(Date.parse(start) + 60000).toISOString();
+    const parsed = parseDatedVersion({ ...record, end: temporaryEnd });
+    if (!parsed) return null;
+    return { ...parsed, end: null, phases: parsed.phases.map(p => ({
+      ...p, end: p.end || p.end_note || null
+    })) };
+  };
+
+  const applyOfficialFeed = applyVersionFeed;
+  applyVersionFeed = function (game, patch) {
+    const incoming = syncedVersion(patch.current_version);
+    if (incoming && incoming.version !== game.current && game.version_start) {
+      const localStart = verifiedTime(game.version_start) ||
+        verifiedTime(game.version_start.replace(/^(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}).*$/, '$1T$2:00+08:00'));
+      if (localStart && Date.parse(localStart) > Date.parse(incoming.start)) return true;
+      Object.assign(game, {
+        next: incoming.version,
+        next_version_start: incoming.start,
+        next_version_end: incoming.end,
+        next_version_source: incoming.source,
+        next_phases: incoming.phases
+      });
+      advanceWebsiteVersions();
+    }
+    const displayedPhases = game.phases || [];
+    const applied = applyOfficialFeed(game, patch);
+    if (incoming) game.phases = game.phases.map(p => ({ ...p, end: p.end || p.end_note || null }));
+    if (applied && incoming?.version === game.current) {
+      game.source_status = '官方版本公告';
+      game.phases = mergeHistoryPhases(displayedPhases, game.phases);
+      game.banner = game.phases.map(p => p.characters).join('、') || '待官方公布';
+    }
+    if (!game.preview_date && patch.upcoming_preview) {
+      const previewStart = verifiedTime(patch.upcoming_preview.start);
+      game.preview_date = previewStart && Date.parse(previewStart) >= Date.now() ? displayTime(previewStart) : null;
+      game.preview_url = game.preview_date ? officialURL(patch.upcoming_preview?.url) : null;
+    }
+    return applied || Boolean(game.preview_date && patch.upcoming_preview);
+  };
+}

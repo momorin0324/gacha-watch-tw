@@ -20,5 +20,9 @@
       "latest_url": "https://www.hoyolab.com/article/47537269?lang=zh-tw"
     }
   },
-  "errors": []
+  "errors": [],
+  "endfield": {
+    "status": "ok",
+    "checked_at": "2026-11-25T09:03:49.023155+00:00"
+  }
 }

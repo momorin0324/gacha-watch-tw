@@ -23,41 +23,41 @@ def timestamp(value):
 def valid_version(v):
  if not isinstance(v,dict) or not isinstance(v.get("version"),str) or not v["version"].strip():return False
  a,b=timestamp(v.get("start")),timestamp(v.get("end"))
- return bool(a and b and a<b and v.get("verified") is True and isinstance(v.get("source"),str) and v["source"].startswith("https://"))
+ return bool(a and ((b and a<b) or v.get("end") is None) and
+             v.get("verified") is True and isinstance(v.get("source"),str) and
+             v["source"].startswith("https://"))
 
-def advance(doc,now):
- """Only move verified version records; preserve every other game field."""
- result=dict(doc)
- history=list(doc.get("history") or [])
- seen={(h.get("game"),h.get("version")) for h in history if isinstance(h,dict)}
- games=[]
- changed=False
- for original in doc.get("games",[]):
-  g=dict(original)
-  current=g.get("current_version")
-  upcoming=g.get("next_version")
-  if not valid_version(current) and not valid_version(upcoming):
-   games.append(g);continue
-  if valid_version(current) and timestamp(current["end"])<=now:
-   key=(g["id"],current["version"])
-   if key not in seen:
-    history.append({"game":g["id"],**current});seen.add(key)
-   g["current_version"]=None
-   changed=True
-  if valid_version(upcoming) and timestamp(upcoming["start"])<=now and (g.get("current_version") is None):
-   # Do not promote a version that has already ended. Archive it instead.
-   if timestamp(upcoming["end"])<=now:
-    key=(g["id"],upcoming["version"])
-    if key not in seen:history.append({"game":g["id"],**upcoming});seen.add(key)
-   else:g["current_version"]=upcoming
-   g["next_version"]=None
-   changed=True
-  games.append(g)
- if changed:
-  result["games"]=games
-  result["history"]=history
-  result["updated_at"]=now.isoformat()
- return result,changed
+def advance(doc, now):
+ """Use the successor's opening time as the handover and archive boundary."""
+ history = {(h["game"], h["version"]): h for h in doc.get("history", [])}
+ games = []
+ for original in doc.get("games", []):
+  game = dict(original)
+  current = game.get("current_version")
+  upcoming = game.get("next_version")
+  if (valid_version(upcoming) and timestamp(upcoming["start"]) <= now and
+      (not valid_version(current) or timestamp(current["start"]) < timestamp(upcoming["start"]))):
+   if valid_version(current):
+    key = (game["id"], current["version"])
+    end = current.get("end") or upcoming.get("previous_end")
+    if not timestamp(end) or not timestamp(current["start"]) < timestamp(end) <= timestamp(upcoming["start"]):
+     end = upcoming["start"]
+    previous = history.get(key, {})
+    history[key] = {**previous, **current, "game": game["id"], "end": end,
+                    "phases": current.get("phases") or previous.get("phases", [])}
+   game["current_version"] = upcoming
+   game["next_version"] = None
+   end = timestamp(upcoming.get("end"))
+   if end and end <= now:
+    key = (game["id"], upcoming["version"])
+    history.setdefault(key, {"game": game["id"], **upcoming})
+    game["current_version"] = None
+  games.append(game)
+ changed = games != doc.get("games", [])
+ if not changed:
+  return doc, False
+ return {**doc, "games": games, "history": list(history.values()),
+         "updated_at": now.isoformat()}, True
 
 def run():
  if not DATA.exists():return

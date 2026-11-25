@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-24T14:59:04.045095+00:00",
+  "updated_at": "2026-11-25T09:03:49.023155+00:00",
   "games": [
     {
       "id": "genshin",
@@ -517,7 +517,100 @@
         "source": "https://www.hoyolab.com/article/47385589",
         "title": "3.3版本「商城」上新說明"
       }
+    },
+    {
+      "id": "endfield",
+      "next_version": null,
+      "current_version": {
+        "version": "1.7",
+        "title": "穿越甚大蘑境與你相逢",
+        "start": "2026-11-25T12:00:00+08:00",
+        "end": null,
+        "previous_end": "2026-11-25T06:00:00+08:00",
+        "source": "https://endfield.gryphline.com/zh-tw/news/0740",
+        "verified": true,
+        "phases": [
+          {
+            "label": "鍛砧、行囊與蜜糖",
+            "characters": "小刻",
+            "start": "2026-11-25T12:00:00+08:00",
+            "end": "2026-12-23T11:59:00+08:00",
+            "end_note": null,
+            "source": "https://endfield.gryphline.com/zh-tw/news/5204",
+            "banner_image": "https://web-static.hg-cdn.com/upload/image/20261123/551eb614bd6ccca9cd9b3b957386c787.png",
+            "rerun_characters": []
+          },
+          {
+            "label": "致每一個飄遊之願",
+            "characters": "潔爾佩塔",
+            "start": "2026-11-25T12:00:00+08:00",
+            "end": "2026-12-16T11:59:00+08:00",
+            "end_note": null,
+            "source": "https://endfield.gryphline.com/zh-tw/news/0740",
+            "banner_image": null,
+            "rerun_characters": [
+              "潔爾佩塔"
+            ]
+          },
+          {
+            "label": "緋紅瑰寶",
+            "characters": "洛西",
+            "start": "2026-12-16T12:00:00+08:00",
+            "end": null,
+            "end_note": "版本更新維護前",
+            "source": "https://endfield.gryphline.com/zh-tw/news/0740",
+            "banner_image": null,
+            "rerun_characters": [
+              "洛西"
+            ]
+          }
+        ]
+      }
     }
   ],
-  "history": []
+  "history": [
+    {
+      "game": "endfield",
+      "version": "1.6",
+      "start": "2026-10-15T12:00:00+08:00",
+      "end": "2026-11-25T06:00:00+08:00",
+      "source": "https://endfield.gryphline.com/zh-tw/news/9560",
+      "verified": true,
+      "phases": [
+        {
+          "label": "上半",
+          "characters": "祀",
+          "start": "2026-10-15T12:00:00+08:00",
+          "end": "2026-11-05T11:59:00+08:00",
+          "status": "「丹青渡」官方版本公告",
+          "source": "https://endfield.gryphline.com/zh-tw/news/9560",
+          "rerun_characters": [],
+          "new_characters": [
+            "祀"
+          ],
+          "disable_inferred_rerun": true
+        },
+        {
+          "label": "下半",
+          "characters": "明河",
+          "start": "2026-11-05T12:00:00+08:00",
+          "end": "2026-11-25T06:00:00+08:00",
+          "status": "官方公告結束於維護前；維護開始 06:00",
+          "source": "https://endfield.gryphline.com/zh-tw/news/7012"
+        },
+        {
+          "label": "同期復刻",
+          "characters": "湯湯",
+          "start": "2026-10-29T12:00:00+08:00",
+          "end": "2026-11-19T11:59:00+08:00",
+          "status": "官方復刻尋訪公告；亞洲服 UTC+8",
+          "source": "https://endfield.gryphline.com/zh-tw/news/6179",
+          "rerun_characters": [
+            "湯湯"
+          ],
+          "is_rerun_banner": true
+        }
+      ]
+    }
+  ]
 }
