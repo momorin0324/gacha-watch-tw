@@ -23,6 +23,7 @@ en=dict(zip('奧古斯塔 珂萊塔 守岸人 熾霞 釉瑚 淵武 尤諾 夏空
 old=json.loads(Path('data/history-art-additional.json').read_text())
 en.update({'鎖暝':'Suoming','清宵':'Qingxiao','景燃':'Jingran','心':'Hsin'})
 nte=dict(zip('埃德嘉 阿德勒 哈尼婭 海月 翳 安魂曲 伊洛伊 殘虹 靈可 黑羽 明音凜'.split(),'edgar adler haniel aurelia skia lacrimosa iroi zankou linko blackbird akane-rin'.split()))
+old.get('nte',{}).pop('哈尼婭',None)
 from html.parser import HTMLParser
 class Imgs(HTMLParser):
     def __init__(self):super().__init__();self.tags=[]
@@ -35,6 +36,9 @@ def variants(g,n):
             yield 'https://static.wikia.nocookie.net/wutheringwaves/images/'+h[0]+'/'+h[:2]+'/'+f+'/revision/latest'
     if g=='nte' and n in nte:
         key=nte[n]
+        yield 'https://www.ntebuild.com/images/characters/'+key+'/gacha.webp?v=2'
+        yield 'https://ntegame.net/img/characters/'+key+'-card.webp'
+        yield 'https://ntegame.net/img/characters/'+key+'.webp'
         for root in ['https://ntegame.net/characters/'+key+'/','https://www.ntebuild.com/characters/'+key,'https://www.ntegame.com/character/'+key+'/']:
             try: markup=txt(root)
             except Exception as ex:print(root,ex);continue
@@ -46,7 +50,7 @@ def variants(g,n):
                     from urllib.parse import parse_qs,urlparse
                     u=parse_qs(urlparse(u).query).get('url',[u])[0]
                 desc=(u+' '+t.get('alt','')).lower()
-                if not any(x in desc for x in (key,key.replace('-',' '),n)) or any(x in desc for x in ('skill','item','weapon','team','material','favicon','logo','outfit','skin','awakening')):continue
+                if not any(x in desc for x in (key,key.replace('-',' '),n)) or any(x in desc for x in ('bond-rewards','friendship','skill','item','weapon','team','material','favicon','logo','outfit','skin','awakening')):continue
                 if not any(x in u.lower() for x in ('.png','.jpg','.webp','.avif')):continue
                 cand.append((int('splash' in desc or 'portrait' in desc or 'hero' in desc),urljoin(root,u)))
             print('website art',n,root,[i[1] for i in cand[:3]])
