@@ -158,3 +158,6 @@
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-sigrika-convene-v2.webp"] { --character-focus: 61% 8%; --character-mobile-focus: 60% 8%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-suisui.webp"] { --character-focus: 52% 20%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-yangyang-xuanling.webp"] { --character-focus: 55% 13%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/zzz-6cc5e43b1b248e514d80.webp"] { --character-focus: 57% 7%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/zzz-a9d229e29d12962079c5.webp"] { --character-focus: 60% 6%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/zzz-ef90693b4ea8956f8b95.webp"] { --character-focus: 60% 12%; }
