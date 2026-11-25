@@ -14,7 +14,8 @@
   "endfield": {
     "小刻": "assets/pool-art/endfield-sweetpie.webp",
     "明河": "assets/pool-art/endfield-minghe.webp",
-    "潔爾佩塔": "assets/pool-art/endfield-gilberta.webp"
+    "潔爾佩塔": "assets/pool-art/endfield-gilberta.webp",
+    "祀": "assets/pool-art/endfield-si.webp"
   },
   "nte": {
     "卡厄斯": "assets/pool-art/nte-chaos-board.webp",
@@ -30,7 +31,8 @@
   },
   "gfl2": {
     "克萊妲": "assets/pool-art/gfl2-koleda.webp",
-    "妮基塔": "assets/pool-art/gfl2-nikketa.webp"
+    "妮基塔": "assets/pool-art/gfl2-nikketa.webp",
+    "亞斯特莉亞": "assets/pool-art/gfl2-asteria.webp"
   },
   "nikke": {
     "思凱": "assets/pool-art/nikke-sky-on-the-rock-v2.webp"
@@ -45,10 +47,18 @@
     "星神★阿哈": "assets/pool-art/hsr-1511.webp",
     "銀狼LV.999": "assets/pool-art/hsr-1506.webp",
     "火花": "assets/pool-art/hsr-1501.webp",
-    "爻光": "assets/pool-art/hsr-1502.webp"
+    "爻光": "assets/pool-art/hsr-1502.webp",
+    "黃泉": "assets/pool-art/hsr-1308.webp",
+    "丹恆・飲月": "assets/pool-art/hsr-1213.webp",
+    "景元": "assets/pool-art/hsr-1204.webp"
   },
   "zzz": {
     "賽維里安": "assets/pool-art/zzz-severian.webp",
-    "諾姆": "assets/pool-art/zzz-nom.webp"
+    "諾姆": "assets/pool-art/zzz-nom.webp",
+    "菲歐妮": "assets/pool-art/zzz-fione.webp",
+    "維琳娜": "assets/pool-art/zzz-velina.webp"
+  },
+  "promilia": {
+    "源千代": "assets/pool-art/promilia-minamoto-chiyo.webp"
   }
 }

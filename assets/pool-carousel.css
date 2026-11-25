@@ -134,3 +134,11 @@
 }
 :is(.pool-slide,.phase-backdrop) img[src$="/gi-Mitya.webp"] { object-position: 49% 22%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/gi-Furina.webp"] { object-position: 53% 23%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/promilia-minamoto-chiyo.webp"] { object-position: 70% 48%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1308.webp"] { object-position: 50% 17%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1213.webp"] { object-position: 58% 26%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1204.webp"] { object-position: 50% 35%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/zzz-fione.webp"] { object-position: 65% 23%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/zzz-velina.webp"] { object-position: 52% 4%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/endfield-si.webp"] { object-position: 43% 30%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gfl2-asteria.webp"] { object-position: 40% 7%; }
