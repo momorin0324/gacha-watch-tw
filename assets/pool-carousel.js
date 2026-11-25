@@ -154,6 +154,50 @@
     document.querySelectorAll('.phase-backdrop').forEach(layer => paintPhase(layer, advance));
   }
 
+  const originalHistoryRelease = isHistoryReleased;
+  isHistoryReleased = function (entry) {
+    if (!originalHistoryRelease(entry) || entry.mergedIntoVersion) return false;
+    const now = Date.now();
+    const game = seed.find(item => item.id === entry.game);
+    const scheduled = [...(game?.phases || []), ...(game?.special_banners || []), ...(game?.next_phases || [])];
+    return (entry.phases || []).every(phase => {
+      const end = instant(phase.end || phase.end_date, true);
+      if (Number.isFinite(end) && now < end) return false;
+      const matching = scheduled.find(item => historyPhaseKey(item) === historyPhaseKey(phase));
+      if (!matching) return true;
+      const scheduledEnd = instant(matching.end, true);
+      return Number.isFinite(scheduledEnd) && scheduledEnd <= now;
+    });
+  };
+
+  function historyPhaseKey(phase) {
+    const start = displayTime(phase.start || phase.start_date);
+    const names = String(phase.characters || phase.five_star || '').split('、').map(name => name.trim()).sort();
+    return [String(start || '').slice(0, 10), names.join('、')].join('|');
+  }
+
+  function mergeHistoricalBannerDetails() {
+    const versions = new Map();
+    for (const entry of verifiedHistory) {
+      if (!/^\d+\.\d+(?:\.\d+)?$/.test(entry.version)) continue;
+      for (const phase of entry.phases || []) {
+        versions.set(entry.game + '|' + historyPhaseKey(phase), phase);
+      }
+    }
+    for (const entry of verifiedHistory) {
+      if (/^\d+\.\d+(?:\.\d+)?$/.test(entry.version) || !entry.phases?.length) continue;
+      const pairs = entry.phases.map(phase => [phase, versions.get(entry.game + '|' + historyPhaseKey(phase))]);
+      if (pairs.some(([, canonical]) => !canonical)) continue;
+      for (const [earlier, canonical] of pairs) {
+        for (const [key, value] of Object.entries(earlier)) {
+          if (value != null && (canonical[key] == null || canonical[key] === '')) canonical[key] = value;
+        }
+        if (earlier.banner_image) canonical.banner_image = earlier.banner_image;
+      }
+      entry.mergedIntoVersion = true;
+    }
+  }
+
   function restoreHistoryPosters() {
     let changed = false;
     for (const entry of verifiedHistory) {
@@ -182,6 +226,7 @@
 
   const renderSite = window.render;
   window.render = function () {
+    if (tab === 'history' || tab === 'quality') mergeHistoricalBannerDetails();
     if (tab === 'history') restoreHistoryPosters();
     return renderSite();
   };
@@ -256,4 +301,44 @@
     }
     return applied || Boolean(game.preview_date && patch.upcoming_preview);
   };
+}
+
+// Field-level editorial updates remain available while official feeds catch up.
+{
+  let snapshot = {};
+  const applyFeed = applyVersionFeed;
+
+  function applySnapshot(game) {
+    const row = snapshot[game.id];
+    if (!row || (game.current !== row.for_version && game.current !== row.current)) return false;
+    const { for_version, next, date, status, next_phases, next_version_start,
+      next_version_source, preview_date, preview_url, ...current } = row;
+    if (current.phases) {
+      current.phases = current.phases.length ? mergeHistoryPhases(game.phases, current.phases) : [];
+    }
+    Object.assign(game, current);
+    if (!game.next_version_start || game.next_version_start === next_version_start) {
+      Object.assign(game, { next, date, status });
+      if (next_phases) game.next_phases = next_phases;
+      if (next_version_start) Object.assign(game, { next_version_start, next_version_source });
+      if (preview_date && !game.preview_date) game.preview_date = preview_date;
+      if (preview_url) game.preview_url = preview_url;
+    }
+    return true;
+  }
+
+  applyVersionFeed = function (game, patch) {
+    const applied = applyFeed(game, patch);
+    return applySnapshot(game) || applied;
+  };
+
+  fetch('./data/site-snapshot.json', { cache: 'no-cache' }).then(async response => {
+    if (!response.ok) return;
+    const payload = await response.json();
+    if (payload.schema !== 1) return;
+    snapshot = payload.games;
+    seed.forEach(applySnapshot);
+    advanceWebsiteVersions();
+    window.render();
+  }).catch(error => console.warn('Gacha snapshot:', error.message));
 }
