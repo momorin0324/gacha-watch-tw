@@ -54,8 +54,8 @@ function estimatedUpdate(game, today) {
       line-height: 1.15;
       padding: 3px 8px;
     }
-    .history-character-backdrop img.history-banner-art { object-position: center 42%; }
-    .history-character-backdrop img.history-nikke-art { object-position: right 36%; }
+    .history-character-backdrop img.history-banner-art { object-position: var(--character-focus, center 42%); }
+    .history-character-backdrop img.history-nikke-art { object-position: var(--character-focus, right 36%); }
     .history-costume-phase { min-height: 248px; }
     .history-costume-phase .phase-copy { max-width: 56%; }
     .history-costume-phase .phase-backdrop img { width: 61%; object-fit: contain; object-position: right center; mask-image: none; }
@@ -70,6 +70,8 @@ function estimatedUpdate(game, today) {
         background: linear-gradient(180deg, transparent 145px, #17263e 195px);
       }
       .pool-slide img.pool-narrow-art { object-fit: contain; object-position: right center; }
+      .history-character-backdrop img.history-banner-art { object-position: var(--character-mobile-focus, var(--character-focus, center 42%)); }
+      .history-character-backdrop img.history-nikke-art { object-position: var(--character-mobile-focus, var(--character-focus, right 36%)); }
       .history-character-backdrop img.history-narrow-art { object-fit: contain; object-position: right center; }
     }
     .cards > .card > .overview-heading { display: grid; gap: 9px; }
@@ -164,7 +166,11 @@ function estimatedUpdate(game, today) {
           if (++urlIndex < urls.length) image.src = urls[urlIndex];
           else image.remove();
         };
-        image.onload = () => image.classList.toggle('pool-narrow-art', image.naturalWidth < image.naturalHeight);
+        image.onload = () => {
+          image.classList.toggle('pool-narrow-art', image.naturalWidth < image.naturalHeight);
+          const art = artForName(historyArt[item.game.id], item.game.id, item.name);
+          if (art?.focus && art.background === urls[urlIndex]) image.style.setProperty('--character-focus', art.focus);
+        };
         image.src = urls[0];
         slide.append(image);
       }
@@ -233,6 +239,10 @@ function estimatedUpdate(game, today) {
     state.pending = item.url;
     const img = new Image();
     img.alt = '';
+    const namedArt = artForName(historyArt[game.id], game.id, item.name);
+    if (namedArt?.focus && namedArt.background === item.url) {
+      img.style.setProperty('--character-focus', namedArt.focus);
+    }
     if (layer.classList.contains('history-character-backdrop') && game.id !== 'bd2') {
       img.classList.add('history-banner-art');
     }

@@ -29,7 +29,7 @@
 }
 .pool-slide img {
   object-fit: cover;
-  object-position: var(--pool-position, 50% 34%);
+  object-position: var(--character-focus, var(--pool-position, 50% 34%));
   z-index: -2;
 }
 .pool-slide::after {
@@ -65,42 +65,42 @@
 @keyframes pool-up-out { to { transform: translateY(-100%); } }
 @media (max-width: 600px) {
   .pool-slide { padding-bottom: 22px; }
-  .pool-slide img { object-position: var(--pool-mobile-position, 62% 32%); }
+  .pool-slide img { object-position: var(--character-mobile-focus, var(--character-focus, var(--pool-mobile-position, 62% 32%))); }
   .pool-slide::after { background: linear-gradient(0deg, #090c1bf2, #0b0f2280 50%, #0b0f2210); }
 }
 /* Vertical framing for each character’s landscape banner crop. */
-:is(.pool-slide,.phase-backdrop) img[src$="/bd2-darian-bunny.webp"] { object-position: 72% 12%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/bd2-eleaneer-bunny.webp"] { object-position: 69% 47%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/bd2-loen-last-hope.webp"] { object-position: 70% 28%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/bd2-venaka-cheers.webp"] { object-position: 70% 14%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/endfield-gilberta.webp"] { object-position: 52% 28%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/endfield-minghe.webp"] { object-position: 49% 15%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/endfield-sweetpie.webp"] { object-position: 45% 24%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/gfl2-koleda.webp"] { object-position: 69% 6%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/gfl2-nikketa.webp"] { object-position: 70% 17%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/gi-Linnea.webp"] { object-position: 53% 2%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/gi-Zibai.webp"] { object-position: 51% 2%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1501.webp"] { object-position: 61% 55%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1502.webp"] { object-position: 51% 36%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1506.webp"] { object-position: 51% 37%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1511.webp"] { object-position: 40% 34%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/nikke-sky-on-the-rock-v2.webp"] { object-position: 27% 28%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/nte-chaos-board.webp"] { object-position: 56% 22%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/nte-elyms.webp"] { object-position: 38% 25%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/nte-exe-board.webp"] { object-position: 54% 22%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/nte-shinku-board.webp"] { object-position: 53% 18%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-brant-convene-v2.webp"] { object-position: 64% 23%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-camellya-convene-v2.webp"] { object-position: 63% 18%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-hiyuki-convene-v2.webp"] { object-position: 71% 18%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-lily-convene-v2.webp"] { object-position: 68% 41%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-phoebe-convene-v2.webp"] { object-position: 72% 8%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-qiuyuan-convene-v2.webp"] { object-position: 65% 29%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-roccia-convene-v2.webp"] { object-position: 76% 55%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-sigrika-hall.webp"] { object-position: 50% 17%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-suisui-convene-v2.webp"] { object-position: 55% 12%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-yangyang-xuanling-convene-v2.webp"] { object-position: 72% 26%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/zzz-nom.webp"] { object-position: 36% 19%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/zzz-severian.webp"] { object-position: 40% 22%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/bd2-darian-bunny.webp"] { --character-focus: 72% 12%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/bd2-eleaneer-bunny.webp"] { --character-focus: 69% 47%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/bd2-loen-last-hope.webp"] { --character-focus: 70% 28%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/bd2-venaka-cheers.webp"] { --character-focus: 70% 14%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/endfield-gilberta.webp"] { --character-focus: 52% 28%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/endfield-minghe.webp"] { --character-focus: 49% 15%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/endfield-sweetpie.webp"] { --character-focus: 45% 24%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gfl2-koleda.webp"] { --character-focus: 69% 6%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gfl2-nikketa.webp"] { --character-focus: 70% 17%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gi-Linnea.webp"] { --character-focus: 53% 2%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gi-Zibai.webp"] { --character-focus: 51% 2%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1501.webp"] { --character-focus: 61% 55%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1502.webp"] { --character-focus: 51% 36%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1506.webp"] { --character-focus: 51% 37%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1511.webp"] { --character-focus: 40% 34%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nikke-sky-on-the-rock-v2.webp"] { --character-focus: 27% 28%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-chaos-board.webp"] { --character-focus: 56% 22%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-elyms.webp"] { --character-focus: 38% 25%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-exe-board.webp"] { --character-focus: 54% 22%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-shinku-board.webp"] { --character-focus: 53% 18%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-brant-convene-v2.webp"] { --character-focus: 64% 23%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-camellya-convene-v2.webp"] { --character-focus: 63% 18%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-hiyuki-convene-v2.webp"] { --character-focus: 71% 18%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-lily-convene-v2.webp"] { --character-focus: 68% 41%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-phoebe-convene-v2.webp"] { --character-focus: 72% 8%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-qiuyuan-convene-v2.webp"] { --character-focus: 65% 29%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-roccia-convene-v2.webp"] { --character-focus: 80% 55%; --character-mobile-focus: 89% 55%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-sigrika-hall.webp"] { --character-focus: 50% 17%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-suisui-convene-v2.webp"] { --character-focus: 55% 12%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-yangyang-xuanling-convene-v2.webp"] { --character-focus: 72% 26%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/zzz-nom.webp"] { --character-focus: 36% 19%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/zzz-severian.webp"] { --character-focus: 40% 22%; }
 
 .illustrated-phase { position: relative; isolation: isolate; }
 .phase-backdrop {
@@ -119,7 +119,7 @@
   mask-image: linear-gradient(90deg, transparent, #000 36%);
   height: 100%;
   object-fit: cover;
-  object-position: center 28%;
+  object-position: var(--character-focus, center 28%);
 }
 .phase-backdrop:has(img)::after {
   content: '';
@@ -132,13 +132,29 @@
   .phase-backdrop img { width: 100%; }
   .phase-backdrop:has(img)::after { background: linear-gradient(90deg,#17263ef5,#17263eb0 52%,#17263e66); }
 }
-:is(.pool-slide,.phase-backdrop) img[src$="/gi-Mitya.webp"] { object-position: 49% 22%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/gi-Furina.webp"] { object-position: 53% 23%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/promilia-minamoto-chiyo.webp"] { object-position: 70% 48%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1308.webp"] { object-position: 50% 17%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1213.webp"] { object-position: 58% 26%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1204.webp"] { object-position: 50% 35%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/zzz-fione.webp"] { object-position: 65% 23%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/zzz-velina.webp"] { object-position: 52% 4%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/endfield-si.webp"] { object-position: 43% 30%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/gfl2-asteria.webp"] { object-position: 40% 7%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gi-Mitya.webp"] { --character-focus: 49% 22%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gi-Furina.webp"] { --character-focus: 53% 23%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/promilia-minamoto-chiyo.webp"] { --character-focus: 70% 48%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1308.webp"] { --character-focus: 50% 17%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1213.webp"] { --character-focus: 58% 26%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/hsr-1204.webp"] { --character-focus: 50% 35%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/zzz-fione.webp"] { --character-focus: 65% 23%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/zzz-velina.webp"] { --character-focus: 52% 4%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/endfield-si.webp"] { --character-focus: 43% 30%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/gfl2-asteria.webp"] { --character-focus: 40% 7%; }
+
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-chaos.webp"] { --character-focus: 62% 2%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-exe.webp"] { --character-focus: 57% 26%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-exe-scene.webp"] { --character-focus: 72% 36%; --character-mobile-focus: 79% 36%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-shinku-scene.webp"] { --character-focus: 67% 25%; --character-mobile-focus: 83% 25%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/nte-shinku.webp"] { --character-focus: 66% 23%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-brant.webp"] { --character-focus: 62% 7%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-camellya.webp"] { --character-focus: 58% 2%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-hiyuki.webp"] { --character-focus: 52% 4%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-lily.webp"] { --character-focus: 56% 24%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-phoebe.webp"] { --character-focus: 57% 5%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-qiuyuan.webp"] { --character-focus: 54% 19%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-sigrika.webp"] { --character-focus: 62% 4%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-sigrika-convene-v2.webp"] { --character-focus: 61% 8%; --character-mobile-focus: 60% 8%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-suisui.webp"] { --character-focus: 52% 20%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-yangyang-xuanling.webp"] { --character-focus: 55% 13%; }
