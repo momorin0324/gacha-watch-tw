@@ -129,6 +129,9 @@
     state.pending = next;
     const img = new Image();
     img.alt = '';
+    if (layer.classList.contains('history-character-backdrop')) {
+      img.style.objectPosition = 'center 22%';
+    }
     img.onload = () => {
       state.pending = '';
       if (!layer.isConnected) return;
@@ -224,11 +227,116 @@
     return changed;
   }
 
+  const historyLabels = {
+    genshin: ['五星角色', '五星武器'],
+    starrail: ['五星角色', '五星光錐'],
+    zzz: ['S級代理人', 'S級音擎'],
+    wuwa: ['五星共鳴者', '五星武器'],
+    endfield: ['六星幹員', '六星武器'],
+    nte: ['S級角色', 'S級弧盤']
+  };
+
+  const endfieldArmory = {
+    '祀|2026-10-15': {
+      pool: '篆玉申領', name: '玉中身', start: '2026-10-15 12:00',
+      end: '自「萬物更新」起，第 3 次特許尋訪結束後',
+      source: 'https://endfield.gryphline.com/zh-tw/news/2652'
+    },
+    '明河|2026-11-05': {
+      pool: '月映申領', name: '喚月', start: '2026-11-05 12:00',
+      end: '自「煙火邀星河」起，第 3 次特許尋訪結束後',
+      source: 'https://endfield.gryphline.com/zh-tw/news/6178'
+    }
+  };
+
+  function historicalArmory(pool) {
+    const key = [pool.five_star || pool.characters, String(displayTime(pool.start || pool.start_date) || '').slice(0, 10)].join('|');
+    const correction = endfieldArmory[key];
+    const records = (pool.weapon_pools || []).map(item => correction?.pool === item.pool ? { ...item, ...correction } : item);
+    if (correction && !records.some(item => item.pool === correction.pool)) records.push(correction);
+    return [...new Map(records.map(item => [[item.pool, item.name, item.start].join('|'), item])).values()];
+  }
+
+  function renderHistoryDetails() {
+    const labels = historyLabels[gameFilter];
+    if (!labels) return;
+    const records = verifiedHistory.filter(entry =>
+      entry.game === gameFilter && isHistoryReleased(entry) &&
+      JSON.stringify(entry).toLowerCase().includes(q.toLowerCase())
+    ).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+    const cards = app.querySelectorAll('article[data-history-game]');
+    if (cards.length !== records.length) return;
+
+    cards.forEach((card, index) => {
+      const entry = records[index];
+      const boxes = card.querySelector('.phasehistory');
+      if (!boxes) return;
+      boxes.replaceChildren();
+      for (const pool of entry.phases || []) {
+        const box = document.createElement('div');
+        box.className = 'phasebox history-phase illustrated-phase';
+        const name = pool.five_star || pool.characters || '';
+        const names = (Array.isArray(name) ? name : name.split('、')).map(value => value.trim()).filter(Boolean);
+        if (names.length || pool.banner_image) {
+          const layer = document.createElement('div');
+          layer.className = 'phase-backdrop history-character-backdrop';
+          layer.dataset.game = entry.game;
+          layer.dataset.names = JSON.stringify(names);
+          layer.dataset.poster = pool.banner_image || '';
+          layer.setAttribute('aria-hidden', 'true');
+          box.style.minHeight = '128px';
+          box.append(layer);
+        }
+        const copy = document.createElement('div');
+        copy.className = 'history-phase-copy phase-copy';
+        addText(copy, 'b', '', pool.banner_name || pool.phase || pool.label || '限定卡池');
+        const start = displayTime(pool.start || pool.start_date) || '待核對';
+        const end = displayTime(pool.end || pool.end_date) || '待核對';
+        addText(copy, 'div', 'small', start + ' ～ ' + end);
+        const characters = document.createElement('div');
+        characters.append(labels[0] + '：');
+        names.forEach((value, i) => {
+          if (i) characters.append('、');
+          characters.append(value);
+          if ((pool.rerun_characters || []).includes(value)) addText(characters, 'span', 'rerun-tag', '復刻');
+        });
+        if (!names.length) characters.append('待核對');
+        copy.append(characters);
+        if (entry.game === 'endfield') {
+          const armory = historicalArmory(pool);
+          if (!armory.length) addText(copy, 'div', '', labels[1] + '：' + (pool.weapons || '申領資料待核對'));
+          for (const weapon of armory) {
+            const line = document.createElement('div');
+            line.className = 'weapon-line';
+            addText(line, 'strong', '', (weapon.pool || '武器申領') + '：' + (weapon.name || '待核對'));
+            addText(line, 'div', 'small', (weapon.start || '開始待核對') + ' ～ ' + (weapon.end || '結束待核對'));
+            if (officialURL(weapon.source)) {
+              const link = document.createElement('a');
+              link.href = weapon.source;
+              link.target = '_blank';
+              link.rel = 'noopener noreferrer';
+              link.textContent = '武器申領公告';
+              line.append(link);
+            }
+            copy.append(line);
+          }
+        } else {
+          addText(copy, 'div', '', labels[1] + '：' + (pool.weapons || '待核對'));
+          if (pool.weapon_banner_name) addText(copy, 'div', 'small', pool.weapon_banner_name);
+        }
+        box.append(copy);
+        boxes.append(box);
+      }
+    });
+  }
+
   const renderSite = window.render;
   window.render = function () {
     if (tab === 'history' || tab === 'quality') mergeHistoricalBannerDetails();
     if (tab === 'history') restoreHistoryPosters();
-    return renderSite();
+    const result = renderSite();
+    if (tab === 'history') renderHistoryDetails();
+    return result;
   };
 
   new MutationObserver(() => paintPhases()).observe(document.getElementById('app'), { childList: true });
