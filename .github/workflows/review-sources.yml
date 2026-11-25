@@ -18,9 +18,10 @@ jobs:
           from PIL import Image,ImageDraw
           from pathlib import Path
           sources={
-           'exe-board':'https://www.appbank.net/wp-content/uploads/2026/11/20261111_124200_871_06.webp',
-           'chiz-board':'https://www.appbank.net/wp-content/uploads/2026/11/20261111_124201_063_07.webp',
-           'chaos-board':'https://www.appbank.net/wp-content/uploads/2026/11/20261111_124201_249_08.webp'}
+           'sig-hall':'https://static.allthings.how/content/images/2026/03/Screenshot-2026-03-20-090634-2-1.png',
+           'sig-day':'https://pbs.twimg.com/media/HA4nQTJa4AAPwTH.jpg?name=orig',
+           'sig-close':'https://pbs.twimg.com/media/HDqdP8BagAAw0pi.jpg?name=orig',
+           'sig-film':'https://pbs.twimg.com/media/HDqeK9CbEAIeHcR.jpg?name=orig'}
           dest=Path('assets/pool-art/review');dest.mkdir(exist_ok=True)
           def get(entry):
            k,u=entry
@@ -38,7 +39,7 @@ jobs:
             if im:
              im.thumbnail((365,170));out.paste(im,(i%2*375,i//2*200))
             draw.text((i%2*375,i//2*200+171),k+' '+str(size),fill='white')
-          out.save(dest/'board.jpg');(dest/'board.json').write_text(json.dumps(stats))
+          out.save(dest/'sig.jpg');(dest/'sig.json').write_text(json.dumps(stats))
           PY
           git add assets/pool-art/review
           git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -m 'Prepare illustration samples for framing review'
