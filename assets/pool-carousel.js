@@ -8,11 +8,22 @@ function poolIsRerun(pool, name) {
     (pool.is_rerun_banner === true && !pool.new_characters?.includes(name));
 }
 
+function poolBadgeClass(label) {
+  return 'rerun-tag pool-badge-' + ({ NEW: 'new', 當期PU: 'pickup', 復刻: 'rerun' }[label]);
+}
+
 function poolDuration(rerun) {
   return rerun ? 3500 : 10000;
 }
 
 (function poolCarousel() {
+  const badgeStyles = document.createElement('style');
+  badgeStyles.textContent = `
+    .rerun-tag.pool-badge-new { color: #b6ffca; background: #123d2e; border-color: #67d697; }
+    .rerun-tag.pool-badge-pickup { color: #bcecff; background: #12374e; border-color: #70c9f0; }
+    .rerun-tag.pool-badge-rerun { color: #ffe0a6; background: #4a321c; border-color: #d49a57; }
+  `;
+  document.head.append(badgeStyles);
   const hero = document.querySelector('.pool-hero');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const catalogs = [{}, {}];
@@ -98,7 +109,8 @@ function poolDuration(rerun) {
       addText(slide, 'span', 'pool-game', item.game.name);
       addText(slide, 'span', 'pool-label', item.phase.label || '當期角色卡池');
       addText(slide, 'h1', '', item.name);
-      addText(slide, 'span', 'rerun-tag', poolIsRerun(item.phase, item.name) ? '復刻' : '當期PU');
+      const label = poolIsRerun(item.phase, item.name) ? '復刻' : '當期PU';
+      addText(slide, 'span', poolBadgeClass(label), label);
       addText(slide, 'strong', 'pool-time', remaining(item.end, now));
     } else {
       addText(slide, 'h1', '', '目前沒有可倒數的卡池');
@@ -160,6 +172,23 @@ function poolDuration(rerun) {
     img.alt = '';
     if (layer.classList.contains('history-character-backdrop')) {
       img.style.objectPosition = 'center 24%';
+    }
+    if (layer.classList.contains('history-character-backdrop') && !item.portrait) {
+      if (item.url.includes('/image/character_portrait/')) {
+        const focus = node => ({
+          '1415': '52% 59%', '1401': '54% 49%', '1225': '42% 49%', '1317': '62% 49%'
+        })[node] || 'center 53%';
+        img.style.width = 'min(60%, 310px)';
+        img.style.objectPosition = focus(item.url.split('/').at(-1).split('.')[0]);
+        img.style.maskImage = 'linear-gradient(90deg, transparent, black 18%)';
+      } else if (game.id === 'bd2') {
+        img.style.width = '44%';
+        img.style.objectFit = 'contain';
+        img.style.objectPosition = 'right center';
+        img.style.maskImage = 'none';
+      } else if (game.id === 'nikke') {
+        img.style.objectPosition = 'right 36%';
+      }
     }
     if (item.portrait) {
       img.style.width = 'min(32%, 135px)';
@@ -293,6 +322,27 @@ function poolDuration(rerun) {
   };
 
   const endfieldArmory = {
+    ...Object.fromEntries([
+      ['萊萬汀','2026-01-22','熔火灼痕','熔鑄申領','熔鑄火焰','https://endfield.hypergryph.com/news/9352'],
+      ['潔爾佩塔','2026-02-07','輕飄飄的信使','迅行申領','使命必達','https://www.animattoys.com/detail/6Yp9Vdj3/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F%E7%B5%82%E6%9C%AB%E5%9C%B010%E7%89%88%E6%9C%AC%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF'],
+      ['伊馮','2026-02-24','熱烈色彩','繪塗申領','藝術暴君','https://endfield.hypergryph.com/news/3811'],
+      ['湯湯','2026-03-12','河流的女兒','新芽申領','落草','8907'],
+      ['洛西','2026-03-29','狼珀','緋珀申領','狼之緋','8907'],
+      ['莊方宜','2026-04-17','春雷動，萬物生','行舟申領','孤舟','0751'],
+      ['弭弗','2026-06-05','拳出無悔','絳結申領','赤纓','0758'],
+      ['卡繆','2026-06-26','逐罪者','染赤申領','鍍紅祝福','0758'],
+      ['訣','2026-07-16','臨淵望北','軍列申領','四二式·肅陣','5200'],
+      ['小刻','2026-11-25','鍛砧、行囊與蜜糖','恣遊申領','甜美交易','0740']
+    ].map(([operator, start, origin, pool, name, source]) => [
+      operator + '|' + start, { origin, pool, name, start,
+        end: '自「' + origin + '」起，第 3 次特許尋訪結束後',
+        source: source.startsWith('https://') ? source : 'https://endfield.gryphline.com/zh-tw/news/' + source }
+    ])),
+    '伊馮|2026-09-24': {
+      origin: '絢麗異彩', pool: '點繪申領（重構）', name: '藝術暴君',
+      start: '2026-09-24 12:00', end: '版本更新維護前',
+      source: 'https://endfield.gryphline.com/zh-tw/news/5208'
+    },
     '梨諾|2026-08-09': {
       origin: '晨星於此閃耀', pool: '明曜申領', name: '曜夜的首演',
       start: '2026-08-09 12:00', end: '自「晨星於此閃耀」起，第 3 次特許尋訪結束後',
@@ -329,6 +379,12 @@ function poolDuration(rerun) {
       return verified ? { ...item, ...verified } : item;
     });
     if (correction && !records.some(item => item.pool === correction.pool)) records.push(correction);
+    if (key === '萊萬汀、潔爾佩塔|2026-05-14') {
+      records.push(...[['熔灼申領','熔鑄火焰'], ['疾行申領','使命必達']].map(([pool, name]) => ({
+        pool, name, start: '2026-05-14 12:00', end: '「輝光慶典」特殊尋訪結束後',
+        source: 'https://endfield.gryphline.com/zh-tw/news/0751'
+      })));
+    }
     return [...new Map(records.map(item => [[item.pool, item.name, item.start].join('|'), item])).values()];
   }
 
@@ -376,7 +432,7 @@ function poolDuration(rerun) {
         const art = historyArt[entry.game]?.[name];
         const portrait = portraitList.length === names.length ? portraitList[index] : null;
         image[name] = {
-          background: art?.byVersion?.[entry.version] || art?.background || (names.length === 1 ? pool.banner_image : null),
+          background: art?.byVersion?.[entry.version] || art?.background || (entry.game !== 'wuwa' && names.length === 1 ? pool.banner_image : null),
           portrait: art?.portrait || portrait || (names.length === 1 ? pool.portrait_image : null)
         };
       });
@@ -424,10 +480,12 @@ function poolDuration(rerun) {
           layer.dataset.names = JSON.stringify(names);
           layer.dataset.art = JSON.stringify(pool.character_art || {});
           layer.dataset.reruns = JSON.stringify(names.filter(name => poolIsRerun(pool, name)));
-          layer.dataset.poster = pool.banner_image || pool.portrait_image || '';
+          // Wuthering Waves multi-character pool art must come from the named
+          // resonator's announcement, never a shared phase image.
+          layer.dataset.poster = entry.game === 'wuwa' ? '' : pool.banner_image || pool.portrait_image || '';
           if (!pool.banner_image && pool.portrait_image) layer.classList.add('history-portrait-backdrop');
           layer.setAttribute('aria-hidden', 'true');
-          box.style.minHeight = '128px';
+          box.style.minHeight = ['bd2', 'starrail'].includes(entry.game) ? '160px' : '128px';
           box.append(layer);
         }
         const copy = document.createElement('div');
@@ -441,7 +499,8 @@ function poolDuration(rerun) {
         names.forEach((value, i) => {
           if (i) characters.append('、');
           characters.append(value);
-          addText(characters, 'span', 'rerun-tag', poolIsRerun(pool, value) ? '復刻' : '當期PU');
+          const label = poolIsRerun(pool, value) ? '復刻' : '當期PU';
+          addText(characters, 'span', poolBadgeClass(label), label);
         });
         if (!names.length) characters.append('待核對');
         copy.append(characters);
@@ -620,8 +679,8 @@ function poolDuration(rerun) {
         const rerun = reruns.includes(name);
         if (rerun || known.includes(name) || pool.new_characters?.includes(name) || (explicit && !/待|預告/.test(name))) {
           const badge = document.createElement('span');
-          badge.className = 'rerun-tag';
           badge.textContent = rerun ? '復刻' : 'NEW';
+          badge.className = poolBadgeClass(badge.textContent);
           heading.append(badge);
         }
       });
