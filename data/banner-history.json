@@ -8577,7 +8577,9 @@
         "rerun_characters": [],
         "start_date": "2025-01-30 11:00",
         "end_date": "2025-02-19 22:59",
-        "portraits": [],
+        "portraits": [
+          "https://bannerhistory.app/icons/nikke/characters/mast-romantic-maid.webp"
+        ],
         "source": "https://nikke-en.com/newsdetail.html?content_id=6e7665d4a7d81a4e51a9124a0de7a9c25943&sid=494&from=list&col_name=IMPORTANT",
         "banner_image": null
       },
