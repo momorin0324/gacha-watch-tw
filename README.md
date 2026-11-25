@@ -24,3 +24,5 @@ python scripts/sync_hoyolab_official.py
 <!-- Trigger a fresh GitHub Pages deployment. -->
 
 <!-- Publish banner timing and artwork corrections. -->
+
+<!-- Trigger Pages deployment with the artifact wait enabled. -->
