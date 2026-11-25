@@ -1,0 +1,339 @@
+{
+ "shapes": [
+  [
+   "charSet",
+   1,
+   "{'charSet': 'utf-8'}"
+  ]
+ ],
+ "article_count": 20,
+ "page_text": "NIKKE 卡池時間表 🏠 綜合數據中心 📅 卡池時間表 📊 復刻表 👑 復刻排行 🏜️ 久旱排行 🛒 取得途徑 📐 招募公式 🏅 強度榜製作 i 如何閱讀此表 依日期列出卡池開閉、誰在UP、以及過往復刻。可依類型、屬性和年份篩選。 特殊招募卡池時間表 — 依屬性、爆裂篩選。查看目前 UP、每期起訖時間與往期 UP 紀錄。 根據公開公告彙總，每週核對。 若發現錯誤請聯繫我們 前往 显示选项 重置 91 个招募 Sky 特殊招募 Sky 鐵甲 1爆裂 狙擊槍 · 支援型 開始 2026- 11-19 ( 週四 ) 17:00 CST 結束 2026- 12-03 ( 週四 ) 03:59 CST 4週年 朝聖者 瑪麗安：女王 灼熱 3爆裂 機槍 · 火力型 開始 2026- 10-29 ( 週四 ) 17:00 CST 結束 2026- 11-19 ( 週四 ) 03:59 CST 免費贈送 長髮公主：庇護所 灼熱 2爆裂 火箭筒 · 支援型 開始 2026- 10-29 ( 週四 ) 1",
+ "bottom": "卡厄思夢境 卡池時間表 復刻表 獲取方式 卡池規律 異環 卡池時間表 復刻表 獲取方式 卡池規律 我獨自升級：ARISE 卡池時間表 復刻表 獲取方式 卡池規律 戀與深空 卡池時間表 復刻表 獲取方式 UP公式 BannerHistory 粉絲站點 · 與各發行商無關 · 素材版權歸各權利方所有。 分析依您的同意結果執行。 BannerHistory 爲粉絲站點，與各遊戲發行商、開發商無合作、贊助或認可關係。 網站資訊 指南 隱私權政策 使用條款 關於本站 方法論 調查履歷 聯繫我們 遊戲名稱、標誌、角色、圖標、圖片等相關素材版權歸各權利方所有，本網站不主張權利，僅用於信息展示。 Google Analytics 僅在您同意分析或 Google CMP 確認不適用同意要求後執行。在尚未選擇、拒絕或無法確認狀態時不會執行。分析可能包括頁面瀏覽、大致地區和指令碼錯誤。 © 2026 WaterBeetles . All rights reserved.",
+ "head_flight": "1:\"$Sreact.fragment\"\n2:I[57121,[],\"\"]\n3:I[74581,[],\"\"]\n5:I[88242,[\"9756\",\"static/chunks/9756-31185d1e80d35162.js\",\"8437\",\"static/chunks/8437-f59c6bc63dc76521.js\",\"6325\",\"static/chunks/6325-2084e6e3f61a4ed9.js\",\"5034\",\"static/chunks/5034-00351a25dcc21f44.js\",\"4389\",\"static/chunks/4389-34bc33a156d91935.js\",\"3269\",\"static/chunks/3269-260d079fc47ec7c8.js\",\"3099\",\"static/chunks/app/%5Blocale%5D/(site)/layout-012689ce6bfa2a46.js\"],\"default\"]\n6:I[79930,[\"9756\",\"static/chunks/9756-31185d1e80d35162.js\",\"6325\",\"static/chunks/6325-2084e6e3f61a4ed9.js\",\"5034\",\"static/chunks/5034-00351a25dcc21f44.js\",\"4389\",\"static/chunks/4389-34bc33a156d91935.js\",\"4865\",\"static/chunks/app/%5Blocale%5D/(site)/error-fd0159222dc1353c.js\"],\"default\"]\n7:I[26124,[\"9756\",\"static/chunks/9756-31185d1e80d35162.js\",\"6325\",\"static/chunks/6325-2084e6e3f61a4ed9.js\",\"5034\",\"static/chunks/5034-00351a25dcc21f44.js\",\"4389\",\"static/ch",
+ "contexts": {
+  "sky-temp": "\":\"SR\",\"ko\":\"저격소총\",\"ja\":\"狙撃銃\",\"zh\":\"狙击枪\",\"tw\":\"狙擊槍\"},\"class\":\"supporter\",\"classLabels\":{\"en\":\"Supporter\",\"ko\":\"지원형\",\"ja\":\"支援型\",\"zh\":\"支援型\",\"tw\":\"支援型\"},\"color\":\"#e0a93f\",\"icon\":\"/icons/nikke/characters/sky-temp.webp\"}],\"groups\":[{\"id\":\"P202611-02\",\"bannerTypes\":[\"standard\"],\"runKind\":\"original\",\"isPilgrim\":false,\"isOverspec\":false,\"start\":\"2026-11-19\",\"end\":\"2026-12-03\",\"startAt\":1795078800000,\"endAt\":1796241599000,\"characters\":[\"$8:2:props:children:props:data:pickups:0:characters:0\"],\"links\":[{\"locale\":\"en\",\"url\":\"https://x.com/NIKKE_en/status/2121407772864524787\",\"title\":\"Pick Up Recruitment Notice: Sky\",\"role\":\"character_intro\",\"characterIds\":\"$undefined\"},{\"locale\":\"en\",\"url\":\"https://nikke-en.com/newsdetail.html?content_id=c3704a96a4ecaa46c1a83a9a32018766e11d&sid=494&from=list&col_name=IMPORTANT\",\"title\":\"Update on November 19\",\"role\":\"update\",\"characterIds\":\"$undefined\"},{\"locale\":\"ko\",\"url\":\"https://game.naver.com/lounge/nikke/board/detail/8459250\",\"title\":\"⭐️ Pick Up 모집 안내 - 「스카이」 ⭐️\",\"role\":\"character_intro\",\"characterIds\":\"$undefined\"},{\"locale\":\"ko\",\"url\":\"https://nikke-kr.com/newsdetail.html?content_id=2a769139ac962a4ec4ab1a2a229f9271ee39&sid=494&from=list&col_name=IMPORTANT\",\"title\":\"11월 19일 업데이트 공지(11월 19일 공지 수정)\\u0005\",\"role\":\"update\",\"characterIds\":\"$undefined\"},{\"l",
+  "2026-11-19": "\",null,{\"data\":{\"pickups\":[{\"id\":\"P202611-02\",\"eventId\":\"$undefined\",\"labels\":\"$undefined\",\"bannerTypes\":[\"standard\"],\"runKinds\":[\"original\"],\"isPilgrim\":false,\"isOverspec\":false,\"year\":2026,\"start\":\"2026-11-19\",\"end\":\"2026-12-03\",\"startAt\":1795078800000,\"endAt\":1796241599000,\"characters\":[{\"id\":\"Sky\",\"enName\":\"Sky\",\"koName\":\"스카이\",\"jaName\":\"スカイ\",\"zhName\":\"Sky\",\"twName\":\"Sky\",\"fullNames\":\"$undefined\",\"element\":\"Iron\",\"elementLabels\":{\"en\":\"Iron\",\"ko\":\"철갑\",\"ja\":\"鉄甲\",\"zh\":\"铁甲\",\"tw\":\"鐵甲\"},\"elementIcon\":\"/icons/nikke/elements/iron.svg\",\"burst\":\"1\",\"burstLabels\":{\"en\":\"B1\",\"ko\":\"1버스트\",\"ja\":\"1バースト\",\"zh\":\"1爆裂\",\"tw\":\"1爆裂\"},\"burstIcon\":\"/icons/nikke/bursts/1.webp\",\"weapon\":\"SR\",\"weaponLabels\":{\"en\":\"SR\",\"ko\":\"저격소총\",\"ja\":\"狙撃銃\",\"zh\":\"狙击枪\",\"tw\":\"狙擊槍\"},\"class\":\"supporter\",\"classLabels\":{\"en\":\"Supporter\",\"ko\":\"지원형\",\"ja\":\"支援型\",\"zh\":\"支援型\",\"tw\":\"支援型\"},\"color\":\"#e0a93f\",\"icon\":\"/icons/nikke/characters/sky-temp.webp\"}],\"groups\":[{\"id\":\"P202611-02\",\"bannerTypes\":[\"standard\"],\"runKind\":\"original\",\"isPilgrim\":false,\"isOverspec\":false,\"start\":\"2026-11-19\",\"end\":\"2026-12-03\",\"startAt\":1795078800000,\"endAt\":1796241599000,\"characters\":[\"$8:2:props:children:props:data:pickups:0:characters:0\"],\"links\":[{\"locale\":\"en\",\"url\":\"https://x.com/NIKKE_en/status/2121407772864524787\",\"title\":\"Pick Up Recruitment Notic",
+  "Sky": "Types\":[\"standard\"],\"runKinds\":[\"original\"],\"isPilgrim\":false,\"isOverspec\":false,\"year\":2026,\"start\":\"2026-11-19\",\"end\":\"2026-12-03\",\"startAt\":1795078800000,\"endAt\":1796241599000,\"characters\":[{\"id\":\"Sky\",\"enName\":\"Sky\",\"koName\":\"스카이\",\"jaName\":\"スカイ\",\"zhName\":\"Sky\",\"twName\":\"Sky\",\"fullNames\":\"$undefined\",\"element\":\"Iron\",\"elementLabels\":{\"en\":\"Iron\",\"ko\":\"철갑\",\"ja\":\"鉄甲\",\"zh\":\"铁甲\",\"tw\":\"鐵甲\"},\"elementIcon\":\"/icons/nikke/elements/iron.svg\",\"burst\":\"1\",\"burstLabels\":{\"en\":\"B1\",\"ko\":\"1버스트\",\"ja\":\"1バースト\",\"zh\":\"1爆裂\",\"tw\":\"1爆裂\"},\"burstIcon\":\"/icons/nikke/bursts/1.webp\",\"weapon\":\"SR\",\"weaponLabels\":{\"en\":\"SR\",\"ko\":\"저격소총\",\"ja\":\"狙撃銃\",\"zh\":\"狙击枪\",\"tw\":\"狙擊槍\"},\"class\":\"supporter\",\"classLabels\":{\"en\":\"Supporter\",\"ko\":\"지원형\",\"ja\":\"支援型\",\"zh\":\"支援型\",\"tw\":\"支援型\"},\"color\":\"#e0a93f\",\"icon\":\"/icons/nikke/characters/sky-temp.webp\"}],\"groups\":[{\"id\":\"P202611-02\",\"bannerTypes\":[\"standard\"],\"runKind\":\"original\",\"isPilgrim\":false,\"isOverspec\":false,\"start\":\"2026-11-19\",\"end\":\"2026-12-03\",\"startAt\":1795078800000,\"endAt\":1796241599000,\"characters\":[\"$8:2:props:children:props:data:pickups:0:characters:0\"],\"links\":[{\"locale\":\"en\",\"url\":\"https://x.com/NIKKE_en/status/2121407772864524787\",\"title\":\"Pick Up Recruitment Notice: Sky\",\"role\":\"character_intro\",\"characterIds\":\"$undefined\"},{\"locale\":\"en\",\"url\":\"https://nikke-",
+  "招募": "\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://bannerhistory.app/tw/nikke-pickup-history#webpage\",\"url\":\"https://bannerhistory.app/tw/nikke-pickup-history\",\"name\":\"NIKKE 卡池時間表 · 特殊招募歷史\",\"description\":\"勝利女神：妮姬卡池時間表與特殊招募歷史。查看 SSR UP 的圖示、屬性、爆裂、起訖時間與歷史復刻。\",\"inLanguage\":\"zh-Hant\",\"isPartOf\":{\"@id\":\"https://bannerhistory.app/tw#website\"},\"breadcrumb\":{\"@id\":\"https://bannerhistory.app/tw/nikke-pickup-history#breadcrumb\"},\"primaryImageOfPage\":{\"@type\":\"ImageObject\",\"url\":\"https://assets.bannerhistory.app/og/nikke-pickup-history.png\",\"width\":1200,\"height\":630,\"caption\":\"NIKKE 卡池時間表 · 特殊招募歷史\"},\"dateModified\":\"2026-11-20\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://bannerhistory.app/tw/nikke-pickup-history#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"BannerHistory\",\"item\":\"https://bannerhistory.app/tw\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"NIKKE\",\"item\":\"https://bannerhistory.app/tw/nikke-banners\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"NIKKE 卡池時間表 · 特殊招募歷史\"}]},{\"@type\":\"Organization\",\"@id\":\"https://bannerhistory.app/#publisher\",\"name\":\"WaterBeetles\",\"url\":\"https://bannerhistory.app\"},{\"@type\":\"Dataset\",\"@id\":\"https://bannerhistory.app/tw/nikke-pickup-history#dataset\",\"name\":\"NIKKE 卡池時間表 · 特殊招募歷史\",\"description\":\"勝利女神：妮姬卡池時間表與特殊招募歷史。查看 SSR U",
+  "startAt": ":\"P202611-02\",\"eventId\":\"$undefined\",\"labels\":\"$undefined\",\"bannerTypes\":[\"standard\"],\"runKinds\":[\"original\"],\"isPilgrim\":false,\"isOverspec\":false,\"year\":2026,\"start\":\"2026-11-19\",\"end\":\"2026-12-03\",\"startAt\":1795078800000,\"endAt\":1796241599000,\"characters\":[{\"id\":\"Sky\",\"enName\":\"Sky\",\"koName\":\"스카이\",\"jaName\":\"スカイ\",\"zhName\":\"Sky\",\"twName\":\"Sky\",\"fullNames\":\"$undefined\",\"element\":\"Iron\",\"elementLabels\":{\"en\":\"Iron\",\"ko\":\"철갑\",\"ja\":\"鉄甲\",\"zh\":\"铁甲\",\"tw\":\"鐵甲\"},\"elementIcon\":\"/icons/nikke/elements/iron.svg\",\"burst\":\"1\",\"burstLabels\":{\"en\":\"B1\",\"ko\":\"1버스트\",\"ja\":\"1バースト\",\"zh\":\"1爆裂\",\"tw\":\"1爆裂\"},\"burstIcon\":\"/icons/nikke/bursts/1.webp\",\"weapon\":\"SR\",\"weaponLabels\":{\"en\":\"SR\",\"ko\":\"저격소총\",\"ja\":\"狙撃銃\",\"zh\":\"狙击枪\",\"tw\":\"狙擊槍\"},\"class\":\"supporter\",\"classLabels\":{\"en\":\"Supporter\",\"ko\":\"지원형\",\"ja\":\"支援型\",\"zh\":\"支援型\",\"tw\":\"支援型\"},\"color\":\"#e0a93f\",\"icon\":\"/icons/nikke/characters/sky-temp.webp\"}],\"groups\":[{\"id\":\"P202611-02\",\"bannerTypes\":[\"standard\"],\"runKind\":\"original\",\"isPilgrim\":false,\"isOverspec\":false,\"start\":\"2026-11-19\",\"end\":\"2026-12-03\",\"startAt\":1795078800000,\"endAt\":1796241599000,\"characters\":[\"$8:2:props:children:props:data:pickups:0:characters:0\"],\"links\":[{\"locale\":\"en\",\"url\":\"https://x.com/NIKKE_en/status/2121407772864524787\",\"title\":\"Pick Up Recruitment Notice: Sky\",\"role\":\"character_intro\"",
+  "pickups": "e 卡池計時器\",\"妮姬 卡池時間表\",\"妮姬 卡池計時器\"]}]}8:[[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"$1a\"}}],\"$undefined\",[\"$\",\"$L1b\",null,{\"children\":[\"$\",\"$L1c\",null,{\"data\":{\"pickups\":[{\"id\":\"P202611-02\",\"eventId\":\"$undefined\",\"labels\":\"$undefined\",\"bannerTypes\":[\"standard\"],\"runKinds\":[\"original\"],\"isPilgrim\":false,\"isOverspec\":false,\"year\":2026,\"start\":\"2026-11-19\",\"end\":\"2026-12-03\",\"startAt\":1795078800000,\"endAt\":1796241599000,\"characters\":[{\"id\":\"Sky\",\"enName\":\"Sky\",\"koName\":\"스카이\",\"jaName\":\"スカイ\",\"zhName\":\"Sky\",\"twName\":\"Sky\",\"fullNames\":\"$undefined\",\"element\":\"Iron\",\"elementLabels\":{\"en\":\"Iron\",\"ko\":\"철갑\",\"ja\":\"鉄甲\",\"zh\":\"铁甲\",\"tw\":\"鐵甲\"},\"elementIcon\":\"/icons/nikke/elements/iron.svg\",\"burst\":\"1\",\"burstLabels\":{\"en\":\"B1\",\"ko\":\"1버스트\",\"ja\":\"1バースト\",\"zh\":\"1爆裂\",\"tw\":\"1爆裂\"},\"burstIcon\":\"/icons/nikke/bursts/1.webp\",\"weapon\":\"SR\",\"weaponLabels\":{\"en\":\"SR\",\"ko\":\"저격소총\",\"ja\":\"狙撃銃\",\"zh\":\"狙击枪\",\"tw\":\"狙擊槍\"},\"class\":\"supporter\",\"classLabels\":{\"en\":\"Supporter\",\"ko\":\"지원형\",\"ja\":\"支援型\",\"zh\":\"支援型\",\"tw\":\"支援型\"},\"color\":\"#e0a93f\",\"icon\":\"/icons/nikke/characters/sky-temp.webp\"}],\"groups\":[{\"id\":\"P202611-02\",\"bannerTypes\":[\"standard\"],\"runKind\":\"original\",\"isPilgrim\":false,\"isOverspec\":false,\"start\":\"2026-11-19\",\"end\":\"2026-12-03\",\"startAt\":1795078800000,\"endAt\":1796241599000,\"cha",
+  "banners": "ListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"BannerHistory\",\"item\":\"https://bannerhistory.app/tw\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"NIKKE\",\"item\":\"https://bannerhistory.app/tw/nikke-banners\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"NIKKE 卡池時間表 · 特殊招募歷史\"}]},{\"@type\":\"Organization\",\"@id\":\"https://bannerhistory.app/#publisher\",\"name\":\"WaterBeetles\",\"url\":\"https://bannerhistory.app\"},{\"@type\":\"Dataset\",\"@id\":\"https://bannerhistory.app/tw/nikke-pickup-history#dataset\",\"name\":\"NIKKE 卡池時間表 · 特殊招募歷史\",\"description\":\"勝利女神：妮姬卡池時間表與特殊招募歷史。查看 SSR UP 的圖示、屬性、爆裂、起訖時間與歷史復刻。\",\"url\":\"https://bannerhistory.app/tw/nikke-pickup-history\",\"inLanguage\":\"zh-Hant\",\"isAccessibleForFree\":true,\"license\":\"https://creativecommons.org/licenses/by/4.0/\",\"creator\":{\"@id\":\"https://bannerhistory.app/#publisher\"},\"dateModified\":\"2026-11-20\",\"temporalCoverage\":\"2022-11-10/2026-12-03\",\"keywords\":[\"NIKKE\",\"Goddess of Victory: Nikke\",\"妮姬\",\"NIKKE 卡池時間表\",\"NIKKE 卡池計時器\",\"Goddess of Victory: Nikke 卡池時間表\",\"Goddess of Victory: Nikke 卡池計時器\",\"妮姬 卡池時間表\",\"妮姬 卡池計時器\"]}]}8:[[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"$1a\"}}],\"$undefined\",[\"$\",\"$L1b\",null,{\"children\":[\"$\",\"$L1c\",null,{\"data\":{\"pickups\":[{\"id\":\"P202611-02\",\"eventId\":\"$undefined\",\"labels\":\"$undefined\",\"bannerTy",
+  "characters": "\"$undefined\",\"bannerTypes\":[\"standard\"],\"runKinds\":[\"original\"],\"isPilgrim\":false,\"isOverspec\":false,\"year\":2026,\"start\":\"2026-11-19\",\"end\":\"2026-12-03\",\"startAt\":1795078800000,\"endAt\":1796241599000,\"characters\":[{\"id\":\"Sky\",\"enName\":\"Sky\",\"koName\":\"스카이\",\"jaName\":\"スカイ\",\"zhName\":\"Sky\",\"twName\":\"Sky\",\"fullNames\":\"$undefined\",\"element\":\"Iron\",\"elementLabels\":{\"en\":\"Iron\",\"ko\":\"철갑\",\"ja\":\"鉄甲\",\"zh\":\"铁甲\",\"tw\":\"鐵甲\"},\"elementIcon\":\"/icons/nikke/elements/iron.svg\",\"burst\":\"1\",\"burstLabels\":{\"en\":\"B1\",\"ko\":\"1버스트\",\"ja\":\"1バースト\",\"zh\":\"1爆裂\",\"tw\":\"1爆裂\"},\"burstIcon\":\"/icons/nikke/bursts/1.webp\",\"weapon\":\"SR\",\"weaponLabels\":{\"en\":\"SR\",\"ko\":\"저격소총\",\"ja\":\"狙撃銃\",\"zh\":\"狙击枪\",\"tw\":\"狙擊槍\"},\"class\":\"supporter\",\"classLabels\":{\"en\":\"Supporter\",\"ko\":\"지원형\",\"ja\":\"支援型\",\"zh\":\"支援型\",\"tw\":\"支援型\"},\"color\":\"#e0a93f\",\"icon\":\"/icons/nikke/characters/sky-temp.webp\"}],\"groups\":[{\"id\":\"P202611-02\",\"bannerTypes\":[\"standard\"],\"runKind\":\"original\",\"isPilgrim\":false,\"isOverspec\":false,\"start\":\"2026-11-19\",\"end\":\"2026-12-03\",\"startAt\":1795078800000,\"endAt\":1796241599000,\"characters\":[\"$8:2:props:children:props:data:pickups:0:characters:0\"],\"links\":[{\"locale\":\"en\",\"url\":\"https://x.com/NIKKE_en/status/2121407772864524787\",\"title\":\"Pick Up Recruitment Notice: Sky\",\"role\":\"character_intro\",\"characterIds\":\"$undefined\"},{\"locale\":\"en\",\""
+ },
+ "shapeAll": [
+  [
+   "children",
+   21,
+   "{'children': [['locale', 'tw', 'd', None], {'children': ['(site)', {'children': ['nikke-pickup-history', {'children': ['__PAGE__', {}]}]}]}, '$undefined', '$undefined', 16]}"
+  ],
+  [
+   "name,content",
+   15,
+   "{'name': 'next-size-adjust', 'content': ''}"
+  ],
+  [
+   "",
+   14,
+   "{}"
+  ],
+  [
+   "className,children",
+   11,
+   "{'className': 'mt-6 border-t border-bh-border/80 pt-5', 'children': [['$', 'h3', None, {'className': 'text-sm font-semibold text-bh-heading md:text-base', 'children': '閱讀NIKKE紀錄前須知'}], ['$', 'div', None, {'className': 'mt-3 grid gap-3 md:grid-cols-3', 'style': {'--hue': '#dc2626'}, 'children': [['$', 'section', 'structure', {'className': 'bh-card-hue rounded-xl border px-4 py-3.5', 'children': [['$', 'h4', None, {'className': 'flex items-center gap-1.5 text-xs font-bold text-bh-strong', 'children': [['$', 'span', None, {'aria-hidden': 'true', 'children': '🎰'}], '卡池結構']}], ['$', 'p', None, {'className': 'mt-2 text-sm leading-relaxed text-bh-secondary ', 'children': '妮姬沒有版本號，大約每兩週開啟一次新的特殊招募，因此"
+  ],
+  [
+   "property,content",
+   10,
+   "{'property': 'og:title', 'content': 'NIKKE 卡池時間表 · 特殊招募歷史'}"
+  ],
+  [
+   "rel,hrefLang,href",
+   6,
+   "{'rel': 'alternate', 'hrefLang': 'ko', 'href': 'https://bannerhistory.app/ko/nikke-pickup-history'}"
+  ],
+  [
+   "parallelRouterKey,error,errorStyles,errorScripts,template,templateStyles,templateScripts,notFound,forbidden,unauthorized",
+   4,
+   "{'parallelRouterKey': 'children', 'error': '$undefined', 'errorStyles': '$undefined', 'errorScripts': '$undefined', 'template': ['$', '$L3', None, {}], 'templateStyles': '$undefined', 'templateScripts': '$undefined', 'notFound': [[['$', 'title', None, {'children': '404: This page could not be found.'}], ['$', 'div', None, {'style': {'fontFamily': 'system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"', 'height': '100vh', 'textAlign': 'center', 'display': 'flex', 'flexDirection': 'column', 'alignItems': 'center', 'justifyContent': 'center'}, 'children': ['$', 'div', None, {'children': [['$', 'style', None, {'dangerouslySetInnerHTML': {'__html': 'body{colo"
+  ],
+  [
+   "rel,href,precedence,crossOrigin,nonce",
+   4,
+   "{'rel': 'stylesheet', 'href': '/_next/static/css/15730e9f7c5c55ef.css', 'precedence': 'next', 'crossOrigin': '$undefined', 'nonce': '$undefined'}"
+  ],
+  [
+   "style,children",
+   3,
+   "{'style': {'fontFamily': 'system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"', 'height': '100vh', 'textAlign': 'center', 'display': 'flex', 'flexDirection': 'column', 'alignItems': 'center', 'justifyContent': 'center'}, 'children': ['$', 'div', None, {'children': [['$', 'style', None, {'dangerouslySetInnerHTML': {'__html': 'body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}'}}], ['$', 'h1', None, {'className': 'next-error-h1', 'style': {'display': 'inline-block', 'margin': '0 20px 0 "
+  ],
+  [
+   "aria-hidden,children",
+   3,
+   "{'aria-hidden': 'true', 'children': '🎰'}"
+  ],
+  [
+   "__html",
+   2,
+   "{'__html': 'body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}'}"
+  ],
+  [
+   "className,style,children",
+   2,
+   "{'className': 'next-error-h1', 'style': {'display': 'inline-block', 'margin': '0 20px 0 0', 'padding': '0 23px 0 0', 'fontSize': 24, 'fontWeight': 500, 'verticalAlign': 'top', 'lineHeight': '49px'}, 'children': 404}"
+  ],
+  [
+   "name,children",
+   2,
+   "{'name': 'Next.MetadataOutlet', 'children': '$@b'}"
+  ],
+  [
+   "rel,href,type,sizes",
+   2,
+   "{'rel': 'icon', 'href': '/icon.png?67e11a6af60c3d02', 'type': 'image/png', 'sizes': '380x380'}"
+  ],
+  [
+   "P,c,q,i,f,m,G,S,h,s,l,p,d,b",
+   1,
+   "{'P': None, 'c': ['', 'tw', 'nikke-pickup-history'], 'q': '', 'i': False, 'f': [[['', {'children': [['locale', 'tw', 'd', None], {'children': ['(site)', {'children': ['nikke-pickup-history', {'children': ['__PAGE__', {}]}]}]}, '$undefined', '$undefined', 16]}], [['$', '$1', 'c', {'children': [None, ['$', '$L2', None, {'parallelRouterKey': 'children', 'error': '$undefined', 'errorStyles': '$undefined', 'errorScripts': '$undefined', 'template': ['$', '$L3', None, {}], 'templateStyles': '$undefined', 'templateScripts': '$undefined', 'notFound': [[['$', 'title', None, {'children': '404: This page could not be found.'}], ['$', 'div', None, {'style': {'fontFamily': 'system-ui,\"Segoe UI\",Roboto,Hel"
+  ],
+  [
+   "fontFamily,height,textAlign,display,flexDirection,alignItems,justifyContent",
+   1,
+   "{'fontFamily': 'system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"', 'height': '100vh', 'textAlign': 'center', 'display': 'flex', 'flexDirection': 'column', 'alignItems': 'center', 'justifyContent': 'center'}"
+  ],
+  [
+   "dangerouslySetInnerHTML",
+   1,
+   "{'dangerouslySetInnerHTML': {'__html': 'body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}'}}"
+  ],
+  [
+   "display,margin,padding,fontSize,fontWeight,verticalAlign,lineHeight",
+   1,
+   "{'display': 'inline-block', 'margin': '0 20px 0 0', 'padding': '0 23px 0 0', 'fontSize': 24, 'fontWeight': 500, 'verticalAlign': 'top', 'lineHeight': '49px'}"
+  ],
+  [
+   "display",
+   1,
+   "{'display': 'inline-block'}"
+  ],
+  [
+   "fontSize,fontWeight,lineHeight,margin",
+   1,
+   "{'fontSize': 14, 'fontWeight': 400, 'lineHeight': '49px', 'margin': 0}"
+  ],
+  [
+   "hidden,children",
+   1,
+   "{'hidden': True, 'children': ['$', '$Lf', None, {'children': ['$', '$a', None, {'name': 'Next.Metadata', 'children': '$L10'}]}]}"
+  ],
+  [
+   "lang,data-locale,data-scroll-behavior,suppressHydrationWarning,children",
+   1,
+   "{'lang': 'zh-Hant', 'data-locale': 'tw', 'data-scroll-behavior': 'smooth', 'suppressHydrationWarning': True, 'children': ['$', 'body', None, {'className': '__variable_8eaea4 __variable_8c25df antialiased bg-bh-base text-bh-body', 'suppressHydrationWarning': True, 'children': [['$', '$L13', None, {}], ['$', '$L14', None, {'gaId': 'G-4V29EQSMER'}], ['$', '$L15', None, {}], ['$', '$L16', None, {'initialLocale': 'tw', 'children': [[['$', 'script', None, {'type': 'application/ld+json', 'dangerouslySetInnerHTML': {'__html': '{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"@id\":\"https://bannerhistory.app/tw#website\",\"name\":\"BannerHistory\",\"url\":\"https://bannerhistory.app/tw\",\"description\":\"原神、崩"
+  ],
+  [
+   "className,suppressHydrationWarning,children",
+   1,
+   "{'className': '__variable_8eaea4 __variable_8c25df antialiased bg-bh-base text-bh-body', 'suppressHydrationWarning': True, 'children': [['$', '$L13', None, {}], ['$', '$L14', None, {'gaId': 'G-4V29EQSMER'}], ['$', '$L15', None, {}], ['$', '$L16', None, {'initialLocale': 'tw', 'children': [[['$', 'script', None, {'type': 'application/ld+json', 'dangerouslySetInnerHTML': {'__html': '{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"@id\":\"https://bannerhistory.app/tw#website\",\"name\":\"BannerHistory\",\"url\":\"https://bannerhistory.app/tw\",\"description\":\"原神、崩壞：星穹鐵道、絕區零、鳴潮、NIKKE、戀與深空、棕色塵埃2、第七史詩的抽卡卡池歷史圖表。\",\"inLanguage\":\"zh-Hant\",\"publisher\":{\"@type\":\"Organization\",\"@id\":\"https://bannerhistory.app/#p"
+  ],
+  [
+   "gaId",
+   1,
+   "{'gaId': 'G-4V29EQSMER'}"
+  ],
+  [
+   "initialLocale,children",
+   1,
+   "{'initialLocale': 'tw', 'children': [[['$', 'script', None, {'type': 'application/ld+json', 'dangerouslySetInnerHTML': {'__html': '{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"@id\":\"https://bannerhistory.app/tw#website\",\"name\":\"BannerHistory\",\"url\":\"https://bannerhistory.app/tw\",\"description\":\"原神、崩壞：星穹鐵道、絕區零、鳴潮、NIKKE、戀與深空、棕色塵埃2、第七史詩的抽卡卡池歷史圖表。\",\"inLanguage\":\"zh-Hant\",\"publisher\":{\"@type\":\"Organization\",\"@id\":\"https://bannerhistory.app/#publisher\",\"name\":\"WaterBeetles\",\"url\":\"https://bannerhistory.app\"}}'}}], ['$', '$L2', None, {'parallelRouterKey': 'children', 'error': '$undefined', 'errorStyles': '$undefined', 'errorScripts': '$undefined', 'template': ['$', '$L3', None, {}], 'template"
+  ],
+  [
+   "type,dangerouslySetInnerHTML",
+   1,
+   "{'type': 'application/ld+json', 'dangerouslySetInnerHTML': {'__html': '{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"@id\":\"https://bannerhistory.app/tw#website\",\"name\":\"BannerHistory\",\"url\":\"https://bannerhistory.app/tw\",\"description\":\"原神、崩壞：星穹鐵道、絕區零、鳴潮、NIKKE、戀與深空、棕色塵埃2、第七史詩的抽卡卡池歷史圖表。\",\"inLanguage\":\"zh-Hant\",\"publisher\":{\"@type\":\"Organization\",\"@id\":\"https://bannerhistory.app/#publisher\",\"name\":\"WaterBeetles\",\"url\":\"https://bannerhistory.app\"}}'}}"
+  ],
+  [
+   "path,locale,children",
+   1,
+   "{'path': '/nikke-pickup-history', 'locale': 'tw', 'children': ['$', 'div', None, {'className': 'mt-6 border-t border-bh-border/80 pt-5', 'children': [['$', 'h3', None, {'className': 'text-sm font-semibold text-bh-heading md:text-base', 'children': '閱讀NIKKE紀錄前須知'}], ['$', 'div', None, {'className': 'mt-3 grid gap-3 md:grid-cols-3', 'style': {'--hue': '#dc2626'}, 'children': [['$', 'section', 'structure', {'className': 'bh-card-hue rounded-xl border px-4 py-3.5', 'children': [['$', 'h4', None, {'className': 'flex items-center gap-1.5 text-xs font-bold text-bh-strong', 'children': [['$', 'span', None, {'aria-hidden': 'true', 'children': '🎰'}], '卡池結構']}], ['$', 'p', None, {'className': 'mt-2 tex"
+  ],
+  [
+   "--hue",
+   1,
+   "{'--hue': '#dc2626'}"
+  ],
+  [
+   "className,href,children",
+   1,
+   "{'className': 'mt-1 inline-flex min-h-8 items-center text-xs text-bh-accent-text underline underline-offset-4', 'href': 'https://nikke-en.com/news.html', 'children': ['官方網站', ' ↗']}"
+  ],
+  [
+   "charSet",
+   1,
+   "{'charSet': 'utf-8'}"
+  ],
+  [
+   "rel,href,crossOrigin",
+   1,
+   "{'rel': 'manifest', 'href': '/manifest.webmanifest', 'crossOrigin': '$undefined'}"
+  ],
+  [
+   "rel,href",
+   1,
+   "{'rel': 'canonical', 'href': 'https://bannerhistory.app/tw/nikke-pickup-history'}"
+  ]
+ ],
+ "start": [
+  [
+   "1:\"$Sreact.fragment\"",
+   20
+  ],
+  [
+   "2:I[57121,[],\"\"]",
+   16
+  ],
+  [
+   "3:I[74581,[],\"\"]",
+   16
+  ],
+  [
+   "5:I[88242,[\"9756\",\"static/chunks/9756-31185d1e80d35162.js\",\"8437\",\"static/chunks/8437-f59c6bc63dc76521.js\",\"6325\",\"static/chunks/6",
+   384
+  ],
+  [
+   "6:I[79930,[\"9756\",\"static/chunks/9756-31185d1e80d35162.js\",\"6325\",\"static/chunks/6325-2084e6e3f61a4ed9.js\",\"5034\",\"static/chunks/5",
+   287
+  ],
+  [
+   "7:I[26124,[\"9756\",\"static/chunks/9756-31185d1e80d35162.js\",\"6325\",\"static/chunks/6325-2084e6e3f61a4ed9.js\",\"5034\",\"static/chunks/5",
+   291
+  ],
+  [
+   "9:I[90484,[],\"OutletBoundary\"]",
+   30
+  ],
+  [
+   "a:\"$Sreact.suspense\"",
+   20
+  ],
+  [
+   "d:I[90484,[],\"ViewportBoundary\"]",
+   32
+  ],
+  [
+   "f:I[90484,[],\"MetadataBoundary\"]",
+   32
+  ],
+  [
+   "11:I[54690,[\"9756\",\"static/chunks/9756-31185d1e80d35162.js\",\"6325\",\"static/chunks/6325-2084e6e3f61a4ed9.js\",\"5034\",\"static/chunks/",
+   275
+  ],
+  [
+   ":HL[\"/_next/static/media/22a5144ee8d83bca-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]",
+   99
+  ],
+  [
+   ":HL[\"/_next/static/media/7d4881bb7e1bf84d-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]",
+   99
+  ],
+  [
+   ":HL[\"/_next/static/css/15730e9f7c5c55ef.css\",\"style\"]",
+   53
+  ],
+  [
+   ":HL[\"/_next/static/css/cf8f844d182cfc2b.css\",\"style\"]",
+   53
+  ],
+  [
+   "0:{\"P\":null,\"c\":[\"\",\"tw\",\"nikke-pickup-history\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[[\"locale\",\"tw\",\"d\",null],{\"children\":[\"(s",
+   3663
+  ],
+  [
+   "12:[]",
+   5
+  ],
+  [
+   "c:\"$W12\"",
+   8
+  ],
+  [
+   "13:I[79937,[\"8450\",\"static/chunks/app/%5Blocale%5D/layout-88702ad4a1638e89.js\"],\"default\"]",
+   90
+  ],
+  [
+   "14:I[6490,[\"8450\",\"static/chunks/app/%5Blocale%5D/layout-88702ad4a1638e89.js\"],\"default\"]",
+   89
+  ],
+  [
+   "15:I[10158,[\"8450\",\"static/chunks/app/%5Blocale%5D/layout-88702ad4a1638e89.js\"],\"default\"]",
+   90
+  ],
+  [
+   "16:I[28754,[\"8450\",\"static/chunks/app/%5Blocale%5D/layout-88702ad4a1638e89.js\"],\"default\"]",
+   90
+  ],
+  [
+   "17:I[42389,[\"8450\",\"static/chunks/app/%5Blocale%5D/layout-88702ad4a1638e89.js\"],\"default\"]",
+   90
+  ],
+  [
+   "18:I[93963,[\"8450\",\"static/chunks/app/%5Blocale%5D/layout-88702ad4a1638e89.js\"],\"default\"]",
+   90
+  ],
+  [
+   "19:I[55487,[\"8450\",\"static/chunks/app/%5Blocale%5D/layout-88702ad4a1638e89.js\"],\"default\"]",
+   90
+  ],
+  [
+   "4:[\"$\",\"html\",null,{\"lang\":\"zh-Hant\",\"data-locale\":\"tw\",\"data-scroll-behavior\":\"smooth\",\"suppressHydrationWarning\":true,\"children\"",
+   1301
+  ],
+  [
+   "1b:I[48186,[\"9756\",\"static/chunks/9756-31185d1e80d35162.js\",\"6325\",\"static/chunks/6325-2084e6e3f61a4ed9.js\",\"5034\",\"static/chunks/",
+   740
+  ],
+  [
+   "1c:I[31829,[\"9756\",\"static/chunks/9756-31185d1e80d35162.js\",\"6325\",\"static/chunks/6325-2084e6e3f61a4ed9.js\",\"5034\",\"static/chunks/",
+   740
+  ],
+  [
+   "1a:T855,{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://bannerhistory.app/tw/nikke-pickup-history#web",
+   266172
+  ],
+  [
+   "20:I[56662,[\"9756\",\"static/chunks/9756-31185d1e80d35162.js\",\"6325\",\"static/chunks/6325-2084e6e3f61a4ed9.js\",\"5034\",\"static/chunks/",
+   740
+  ],
+  [
+   "21:I[93942,[\"9756\",\"static/chunks/9756-31185d1e80d35162.js\",\"6325\",\"static/chunks/6325-2084e6e3f61a4ed9.js\",\"5034\",\"static/chunks/",
+   740
+  ],
+  [
+   "1d:[\"$\",\"$L20\",null,{}]",
+   23
+  ],
+  [
+   "1e:null",
+   7
+  ],
+  [
+   "1f:[\"$\",\"$L21\",null,{\"path\":\"/nikke-pickup-history\",\"locale\":\"tw\",\"children\":[\"$\",\"div\",null,{\"className\":\"mt-6 border-t border-bh",
+   1864
+  ],
+  [
+   "e:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]",
+   125
+  ],
+  [
+   "22:I[86869,[],\"IconMark\"]",
+   25
+  ],
+  [
+   "b:null",
+   6
+  ],
+  [
+   "10:[[\"$\",\"title\",\"0\",{\"children\":\"NIKKE 卡池時間表 · 特殊招募歷史 | BannerHistory\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"勝利女神：妮姬",
+   3285
+  ]
+ ]
+}
