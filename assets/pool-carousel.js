@@ -154,6 +154,31 @@
     document.querySelectorAll('.phase-backdrop').forEach(layer => paintPhase(layer, advance));
   }
 
+  function restoreHistoryPosters() {
+    let changed = false;
+    for (const entry of verifiedHistory) {
+      for (const phase of entry.phases || []) {
+        if (phase.banner_image) continue;
+        const names = String(phase.five_star || phase.characters || '').split('、');
+        const sources = names.map(name => name.trim()).flatMap(name => [
+          catalogs[0][entry.game]?.[name], catalogs[1][entry.game]?.[name]
+        ]);
+        const poster = sources.find(Boolean);
+        if (poster) {
+          phase.banner_image = poster;
+          changed = true;
+        }
+      }
+    }
+    return changed;
+  }
+
+  const renderSite = window.render;
+  window.render = function () {
+    if (tab === 'history') restoreHistoryPosters();
+    return renderSite();
+  };
+
   new MutationObserver(() => paintPhases()).observe(document.getElementById('app'), { childList: true });
 
   ['character-art', 'discovered-art'].forEach(async (catalog, i) => {
@@ -161,6 +186,7 @@
       const response = await fetch('./data/' + catalog + '.json?v=phase2', { cache: 'no-cache' });
       if (response.ok) catalogs[i] = await response.json();
       render();
+      if (tab === 'history' && restoreHistoryPosters()) window.render();
       paintPhases();
     } catch { /* Existing card data remains available offline. */ }
   });
