@@ -160,10 +160,17 @@
       for (const phase of entry.phases || []) {
         if (phase.banner_image) continue;
         const names = String(phase.five_star || phase.characters || '').split('、');
+        const game = seed.find(game => game.id === entry.game);
+        const startDay = displayTime(phase.start || phase.start_date)?.slice(0, 10);
+        const matchingBanner = startDay && [
+          ...(game?.phases || []), ...(game?.special_banners || []), ...(game?.next_phases || [])
+        ].find(banner => banner.banner_image && banner.characters === names.join('、') &&
+          displayTime(banner.start)?.slice(0, 10) === startDay);
         const sources = names.map(name => name.trim()).flatMap(name => [
-          catalogs[0][entry.game]?.[name], catalogs[1][entry.game]?.[name]
+          catalogs[0][entry.game]?.[name], catalogs[1][entry.game]?.[name],
+          game?.character_art?.[name]
         ]);
-        const poster = sources.find(Boolean);
+        const poster = matchingBanner?.banner_image || sources.find(Boolean);
         if (poster) {
           phase.banner_image = poster;
           changed = true;
