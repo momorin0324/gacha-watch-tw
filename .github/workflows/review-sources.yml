@@ -18,11 +18,9 @@ jobs:
           from PIL import Image,ImageDraw
           from pathlib import Path
           sources={
-           'sigrika-hope':'https://i.ytimg.com/vi/C_amj23Ucys/maxresdefault.jpg',
-           'chaos-original':'https://img.gamewith.net/img/d74f3aa84dda11ea5cf76e358eaf52bf.png',
-           'chiz-original':'https://img.gamewith.jp/img/original_9f25bdc846d5ee14ea7587f5c92c5b13.png',
-           'exe-original':'https://img.gamewith.net/img/393c48121fbe5d2e5a0d7c441152d886.png',
-           'exe-promo':'https://i.verb.tw/EcfGkjeI.jpg','chiz-promo':'https://i.verb.tw/sddUJWOr.jpg','chaos-promo':'https://i.meee.com.tw/Xv2y76C.jpg'}
+           'exe-board':'https://www.appbank.net/wp-content/uploads/2026/11/20261111_124200_871_06.webp',
+           'chiz-board':'https://www.appbank.net/wp-content/uploads/2026/11/20261111_124201_063_07.webp',
+           'chaos-board':'https://www.appbank.net/wp-content/uploads/2026/11/20261111_124201_249_08.webp'}
           dest=Path('assets/pool-art/review');dest.mkdir(exist_ok=True)
           def get(entry):
            k,u=entry
@@ -40,7 +38,7 @@ jobs:
             if im:
              im.thumbnail((365,170));out.paste(im,(i%2*375,i//2*200))
             draw.text((i%2*375,i//2*200+171),k+' '+str(size),fill='white')
-          out.save(dest/'sheet.jpg');(dest/'stats.json').write_text(json.dumps(stats))
+          out.save(dest/'board.jpg');(dest/'board.json').write_text(json.dumps(stats))
           PY
           git add assets/pool-art/review
           git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -m 'Prepare illustration samples for framing review'
