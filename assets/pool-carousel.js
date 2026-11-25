@@ -25,24 +25,53 @@ function poolDuration(rerun) {
 
 function estimatedUpdate(game, today) {
   if (/^\d{4}-\d{2}-\d{2}$/.test(game.date || '')) return null;
-  if (!['genshin', 'starrail', 'zzz'].includes(game.id)) return null;
+  const gap = { genshin: 2, starrail: 2, zzz: 2, nte: 0, endfield: 0 }[game.id];
+  if (gap === undefined) return null;
   const pools = [...(game.phases || []), ...(game.special_banners || [])];
   const dates = pools.filter(pool => !pool.time_unverified &&
+    (game.id === 'endfield'
+      ? /版本維護開始/.test(pool.end || '')
+      : /下半|招募二|特殊跨期招募/.test(pool.label || '')) &&
     !/自選|免費|贈送|獨立|集錄/.test(pool.label || ''))
     .map(pool => String(displayTime(pool.end) || '').match(/^\d{4}-\d{2}-\d{2}/)?.[0])
     .filter(Boolean).sort();
   const end = dates.at(-1);
   if (!end) return null;
   const epoch = Date.parse(end + 'T00:00:00Z');
-  if (!Number.isFinite(epoch)) return null;
-  const estimate = new Date(epoch + 86400000).toISOString().slice(0, 10);
+  if (!Number.isFinite(epoch) || new Date(epoch).toISOString().slice(0, 10) !== end) return null;
+  const estimate = new Date(epoch + gap * 86400000).toISOString().slice(0, 10);
   return estimate >= today ? estimate : null;
 }
 
 (function poolCarousel() {
   const badgeStyles = document.createElement('style');
   badgeStyles.textContent = `
-    .pool-slide > .rerun-tag { justify-self: start; width: max-content; max-width: 100%; }
+    .pool-slide > .rerun-tag {
+      align-self: flex-start;
+      width: max-content;
+      max-width: 100%;
+      font-size: clamp(1rem, 1.7vw, 1.22rem);
+      line-height: 1.15;
+      padding: 3px 8px;
+    }
+    .history-character-backdrop img.history-banner-art { object-position: center 42%; }
+    .history-character-backdrop img.history-nikke-art { object-position: right 36%; }
+    .history-costume-phase { min-height: 248px; }
+    .history-costume-phase .phase-copy { max-width: 56%; }
+    .history-costume-phase .phase-backdrop img { width: 61%; object-fit: contain; object-position: right center; mask-image: none; }
+    .history-costume-phase .phase-backdrop:has(img)::after {
+      background: linear-gradient(90deg, #17263e 20%, #17263ec9 40%, transparent 71%);
+    }
+    @media (max-width: 600px) {
+      .history-costume-phase:has(img) { padding-top: 182px; }
+      .history-costume-phase .phase-copy { max-width: none; }
+      .history-costume-phase .phase-backdrop img { width: 100%; height: 190px; object-position: center; }
+      .history-costume-phase .phase-backdrop:has(img)::after {
+        background: linear-gradient(180deg, transparent 145px, #17263e 195px);
+      }
+      .pool-slide img.pool-narrow-art { object-fit: contain; object-position: right center; }
+      .history-character-backdrop img.history-narrow-art { object-fit: contain; object-position: right center; }
+    }
     .cards > .card > .overview-heading { display: grid; gap: 9px; }
     .overview-heading > .row { min-width: 0; }
     .overview-heading .logo { flex: 0 0 auto; }
@@ -135,6 +164,7 @@ function estimatedUpdate(game, today) {
           if (++urlIndex < urls.length) image.src = urls[urlIndex];
           else image.remove();
         };
+        image.onload = () => image.classList.toggle('pool-narrow-art', image.naturalWidth < image.naturalHeight);
         image.src = urls[0];
         slide.append(image);
       }
@@ -203,8 +233,8 @@ function estimatedUpdate(game, today) {
     state.pending = item.url;
     const img = new Image();
     img.alt = '';
-    if (layer.classList.contains('history-character-backdrop')) {
-      img.style.objectPosition = 'center 42%';
+    if (layer.classList.contains('history-character-backdrop') && game.id !== 'bd2') {
+      img.classList.add('history-banner-art');
     }
     if (layer.classList.contains('history-character-backdrop') && !item.portrait) {
       if (item.url.includes('/image/character_portrait/')) {
@@ -214,13 +244,8 @@ function estimatedUpdate(game, today) {
         img.style.width = 'min(60%, 310px)';
         img.style.objectPosition = focus(item.url.split('/').at(-1).split('.')[0]);
         img.style.maskImage = 'linear-gradient(90deg, transparent, black 18%)';
-      } else if (game.id === 'bd2') {
-        img.style.width = '40%';
-        img.style.objectFit = 'contain';
-        img.style.objectPosition = 'right center';
-        img.style.maskImage = 'none';
       } else if (game.id === 'nikke') {
-        img.style.objectPosition = 'right 36%';
+        img.classList.add('history-nikke-art');
       }
     }
     if (item.portrait) {
@@ -231,6 +256,9 @@ function estimatedUpdate(game, today) {
     img.onload = () => {
       state.pending = '';
       if (!layer.isConnected) return;
+      if (!item.portrait && img.naturalWidth < img.naturalHeight && game.id !== 'bd2') {
+        img.classList.add('history-narrow-art');
+      }
       const old = layer.lastElementChild;
       if (old && advance && !reducedMotion.matches) {
         old.classList.remove('pool-enter');
@@ -506,6 +534,7 @@ function estimatedUpdate(game, today) {
         const box = document.createElement('div');
         box.className = 'phasebox history-phase illustrated-phase';
         const names = poolNames(pool);
+        if (entry.game === 'bd2') box.classList.add('history-costume-phase');
         if (names.length || pool.banner_image) {
           const layer = document.createElement('div');
           layer.className = 'phase-backdrop history-character-backdrop';
@@ -518,7 +547,7 @@ function estimatedUpdate(game, today) {
           layer.dataset.poster = entry.game === 'wuwa' ? '' : pool.banner_image || pool.portrait_image || '';
           if (!pool.banner_image && pool.portrait_image) layer.classList.add('history-portrait-backdrop');
           layer.setAttribute('aria-hidden', 'true');
-          box.style.minHeight = ['bd2', 'starrail'].includes(entry.game) ? '160px' : '128px';
+          if (entry.game !== 'bd2') box.style.minHeight = entry.game === 'starrail' ? '160px' : '128px';
           box.append(layer);
         }
         const copy = document.createElement('div');
