@@ -1,0 +1,232 @@
+{
+ "status": 200,
+ "size": 615474,
+ "h2": [
+  "Sky ç¹æ®æå",
+  "4é±å¹´",
+  "è²æ´å¡ï¼åçå¥³å·« ç¹æ®æå",
+  "COIN RUSH SHOWDOWN",
+  "GREAT VILLAIN UNION",
+  "PERSONA ON FRONTLINE",
+  "PROJECT: MATIS",
+  "æ¹èé»è²éä¿  ç¹æ®æå",
+  "WAVE TO YOU",
+  "æ®èå¡ ç¹æ®æå",
+  "æç¹ ç¹æ®æå",
+  "åææªæ¡",
+  "3.5é±å¹´",
+  "ç½é¶´ ç¹æ®æå",
+  "é¿ç¾å¡å¨ï¼å½éä¼´ä¾¶ ç¹æ®æå"
+ ],
+ "links": [],
+ "scripts": [
+  [
+   "/_next/static/chunks/4bd1b696-e356ca5ba0218e27.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/3794-75a175389e2996a0.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/main-app-f3695ac71a206947.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/9756-31185d1e80d35162.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/8437-f59c6bc63dc76521.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/6325-2084e6e3f61a4ed9.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/5034-00351a25dcc21f44.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/4389-34bc33a156d91935.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/3269-260d079fc47ec7c8.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/app/%5Blocale%5D/(site)/layout-012689ce6bfa2a46.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/app/%5Blocale%5D/(site)/error-fd0159222dc1353c.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/app/%5Blocale%5D/(site)/not-found-2c7dbcdd2a6e29f8.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/app/global-error-06370454623e4f61.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/app/%5Blocale%5D/layout-88702ad4a1638e89.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/8921-4c780cd44e24d1d7.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/9574-be6176352dfc88fe.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/3882-25327f59fc0885cb.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/1253-07151094a516efaf.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/7895-1f3d07f1a8d18476.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/1570-722d3860520191f4.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/1034-ab6f9fa63d32227c.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/1829-044e9040575fc3a8.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/app/%5Blocale%5D/(site)/nikke-pickup-history/page-2f626e93ad510d9d.js",
+   ""
+  ],
+  [
+   "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+   ""
+  ],
+  [
+   "",
+   "try{var t=localStorage.getItem(\"bannerhistory-theme\");if(t===\"light\")document.documentElement.setAttribute(\"data-theme\",\"light\");else if(t===\"dark\")document.documentElement.removeAttribute(\"data-theme\")}catch(e){}"
+  ],
+  [
+   "",
+   "(() => {\n    if (window.__bhConsent) return;\n    const id = \"G-4V29EQSMER\";\n    let pathname = window.location.pathname;\n    try { pathname = decodeURIComponent(pathname); } catch { /* Keep malformed URLs unchanged. */ }\n    const path = pathname.replace(/^\\/(en|ko|ja|zh|tw)(?=\\/|$)/, '').replace(/\\/+$/, '');\n    const state = window.__bh"
+  ],
+  [
+   "",
+   "(function(){try{var p=JSON.parse(localStorage.getItem(\"bh-adfree\")||\"null\");if(p&&p.exp>Date.now()){document.documentElement.dataset.adfree=\"1\";var m=document.createElement(\"meta\");m.httpEquiv=\"Content-Security-Policy\";m.content=\"script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://www.googletagmanager.com https://*.google-analyt"
+  ],
+  [
+   "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8006809093915459",
+   ""
+  ],
+  [
+   "",
+   "{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"@id\":\"https://bannerhistory.app/tw#website\",\"name\":\"BannerHistory\",\"url\":\"https://bannerhistory.app/tw\",\"description\":\"åç¥ãå´©å£ï¼æç©¹éµéãçµåé¶ãé³´æ½®ãNIKKEãæèæ·±ç©ºãæ£è²å¡µå2ãç¬¬ä¸å²è©©çæ½å¡å¡æ± æ­·å²åè¡¨ã\",\"inLanguage\":\"zh-Hant\",\"publishe"
+  ],
+  [
+   "",
+   "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://bannerhistory.app/tw/nikke-pickup-history#webpage\",\"url\":\"https://bannerhistory.app/tw/nikke-pickup-history\",\"name\":\"NIKKE å¡æ± æéè¡¨ Â· ç¹æ®æåæ­·å²\",\"description\":\"åå©å¥³ç¥ï¼å¦®å§¬å¡æ± æéè¡¨èç¹æ®æåæ­·å²ãæ¥ç SSR UP çåç¤ºã"
+  ],
+  [
+   "",
+   "requestAnimationFrame(function(){$RT=performance.now()});"
+  ],
+  [
+   "/_next/static/chunks/webpack-4a30216689d5b4b1.js",
+   ""
+  ],
+  [
+   "",
+   "$RB=[];$RV=function(a){$RT=performance.now();for(var b=0;b<a.length;b+=2){var c=a[b],e=a[b+1];null!==e.parentNode&&e.parentNode.removeChild(e);var f=c.parentNode;if(f){var g=c.previousSibling,h=0;do{if(c&&8===c.nodeType){var d=c.data;if(\"/$\"===d||\"/&\"===d)if(0===h)break;else h--;else\"$\"!==d&&\"$?\"!==d&&\"$~\"!==d&&\"$!\"!==d&&\"&\"!==d||h++}d=c."
+  ],
+  [
+   "",
+   "try{var t=localStorage.getItem(\"bannerhistory-theme\");if(t===\"light\")document.documentElement.setAttribute(\"data-theme\",\"light\");else if(t===\"dark\")document.documentElement.removeAttribute(\"data-theme\")}catch(e){}"
+  ],
+  [
+   "",
+   "(self.__next_f=self.__next_f||[]).push([0])"
+  ],
+  [
+   "",
+   "try{var t=localStorage.getItem(\"bannerhistory-theme\");if(t===\"light\")document.documentElement.setAttribute(\"data-theme\",\"light\");else if(t===\"dark\")document.documentElement.removeAttribute(\"data-theme\")}catch(e){}"
+  ],
+  [
+   "",
+   "self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[57121,[],\\\"\\\"]\\n3:I[74581,[],\\\"\\\"]\\n5:I[88242,[\\\"9756\\\",\\\"static/chunks/9756-31185d1e80d35162.js\\\",\\\"8437\\\",\\\"static/chunks/8437-f59c6bc63dc76521.js\\\",\\\"6325\\\",\\\"static/chunks/6325-2084e6e3f61a4ed9.js\\\",\\\"5034\\\",\\\"static/chunks/5034-00351a25dcc21f44.js\\\",\\\"4389\\\",\\\"static/chunks/4389-34bc"
+  ],
+  [
+   "",
+   "try{var t=localStorage.getItem(\"bannerhistory-theme\");if(t===\"light\")document.documentElement.setAttribute(\"data-theme\",\"light\");else if(t===\"dark\")document.documentElement.removeAttribute(\"data-theme\")}catch(e){}"
+  ],
+  [
+   "",
+   "self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"c\\\":[\\\"\\\",\\\"tw\\\",\\\"nikke-pickup-history\\\"],\\\"q\\\":\\\"\\\",\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[[\\\"locale\\\",\\\"tw\\\",\\\"d\\\",null],{\\\"children\\\":[\\\"(site)\\\",{\\\"children\\\":[\\\"nikke-pickup-history\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]}]},\\\"$undefined\\\",\\\"$undefined\\\",16]}],[[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":["
+  ],
+  [
+   "",
+   "try{var t=localStorage.getItem(\"bannerhistory-theme\");if(t===\"light\")document.documentElement.setAttribute(\"data-theme\",\"light\");else if(t===\"dark\")document.documentElement.removeAttribute(\"data-theme\")}catch(e){}"
+  ]
+ ],
+ "ancestors": [
+  [
+   "img",
+   "['h-[4.5rem]', 'w-[4.5rem]', 'rounded-full', 'object-cover', 'ring-2', 'ring-bh-veil']",
+   "<img alt=\"Sky\" class=\"h-[4.5rem] w-[4.5rem] rounded-full object-cover ring-2 ring-bh-veil\" height=\"72\" loading=\"lazy\" referrerpolicy=\"no-referrer\" src=\"/icons/nikke/characters/sky-temp.webp\" style=\"box-shadow:0 0 0 2px #e0a93f55\" title=\"Sky\" width=\"72\"/>"
+  ],
+  [
+   "div",
+   "['flex', 'flex-col', 'items-center', 'gap-1.5', 'px-1', 'py-1.5', 'text-center']",
+   "<div class=\"flex flex-col items-center gap-1.5 px-1 py-1.5 text-center\"><img alt=\"Sky\" class=\"h-[4.5rem] w-[4.5rem] rounded-full object-cover ring-2 ring-bh-veil\" height=\"72\" loading=\"lazy\" referrerpolicy=\"no-referrer\" src=\"/icons/nikke/characters/sky-temp.webp\" style=\"box-shadow:0 0 0 2px #e0a93f55\" title=\"Sky\" width=\"72\"/><div class=\"w-full max-w-[11rem] text-center text-[13px] font-semibold leading-snug text-bh-body break-keep\" title=\"Sky\">Sky</div><div class=\"flex flex-wrap items-center justify-center gap-x-2.5 gap-y-0.5 text-[11px] text-bh-secondary\"><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/elements/iron.svg\" width=\"18\"/><span>éµç²</span></span><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/bursts/1.webp\" width=\"18\"/><span>1çè£</span></span></div><div class=\"text-[10.5px] text-bh-faint\">çææ§ Â· æ¯æ´å</div></div>"
+  ],
+  [
+   "li",
+   "['min-w-0']",
+   "<li class=\"min-w-0\"><div class=\"flex flex-col items-center gap-1.5 px-1 py-1.5 text-center\"><img alt=\"Sky\" class=\"h-[4.5rem] w-[4.5rem] rounded-full object-cover ring-2 ring-bh-veil\" height=\"72\" loading=\"lazy\" referrerpolicy=\"no-referrer\" src=\"/icons/nikke/characters/sky-temp.webp\" style=\"box-shadow:0 0 0 2px #e0a93f55\" title=\"Sky\" width=\"72\"/><div class=\"w-full max-w-[11rem] text-center text-[13px] font-semibold leading-snug text-bh-body break-keep\" title=\"Sky\">Sky</div><div class=\"flex flex-wrap items-center justify-center gap-x-2.5 gap-y-0.5 text-[11px] text-bh-secondary\"><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/elements/iron.svg\" width=\"18\"/><span>éµç²</span></span><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/bursts/1.webp\" width=\"18\"/><span>1çè£</span></span></div><div class=\"text-[10.5px] text-bh-faint\">çææ§ Â· æ¯æ´å</div></div></li>"
+  ],
+  [
+   "ul",
+   "['grid', 'gap-x-1', 'gap-y-2', 'grid-cols-1']",
+   "<ul class=\"grid gap-x-1 gap-y-2 grid-cols-1\"><li class=\"min-w-0\"><div class=\"flex flex-col items-center gap-1.5 px-1 py-1.5 text-center\"><img alt=\"Sky\" class=\"h-[4.5rem] w-[4.5rem] rounded-full object-cover ring-2 ring-bh-veil\" height=\"72\" loading=\"lazy\" referrerpolicy=\"no-referrer\" src=\"/icons/nikke/characters/sky-temp.webp\" style=\"box-shadow:0 0 0 2px #e0a93f55\" title=\"Sky\" width=\"72\"/><div class=\"w-full max-w-[11rem] text-center text-[13px] font-semibold leading-snug text-bh-body break-keep\" title=\"Sky\">Sky</div><div class=\"flex flex-wrap items-center justify-center gap-x-2.5 gap-y-0.5 text-[11px] text-bh-secondary\"><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/elements/iron.svg\" width=\"18\"/><span>éµç²</span></span><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/bursts/1.webp\" width=\"18\"/><span>1çè£</span></span></div><div class=\"text-[10.5px] text-bh-faint\">çææ§ Â· æ¯æ´å</div></div></li></ul>"
+  ],
+  [
+   "div",
+   "['space-y-1.5']",
+   "<div class=\"space-y-1.5\"><ul class=\"grid gap-x-1 gap-y-2 grid-cols-1\"><li class=\"min-w-0\"><div class=\"flex flex-col items-center gap-1.5 px-1 py-1.5 text-center\"><img alt=\"Sky\" class=\"h-[4.5rem] w-[4.5rem] rounded-full object-cover ring-2 ring-bh-veil\" height=\"72\" loading=\"lazy\" referrerpolicy=\"no-referrer\" src=\"/icons/nikke/characters/sky-temp.webp\" style=\"box-shadow:0 0 0 2px #e0a93f55\" title=\"Sky\" width=\"72\"/><div class=\"w-full max-w-[11rem] text-center text-[13px] font-semibold leading-snug text-bh-body break-keep\" title=\"Sky\">Sky</div><div class=\"flex flex-wrap items-center justify-center gap-x-2.5 gap-y-0.5 text-[11px] text-bh-secondary\"><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/elements/iron.svg\" width=\"18\"/><span>éµç²</span></span><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/bursts/1.webp\" width=\"18\"/><span>1çè£</span></span></div><div class=\"text-[10.5px] text-bh-faint\">çææ§ Â· æ¯æ´å</div></div></li></ul></div>"
+  ],
+  [
+   "div",
+   "['flex', 'flex-col', 'justify-between', 'space-y-1.5', 'rounded-md', 'border', 'border-bh-active', 'bg-bh-panel', 'px-2.5', 'py-2', 'col-span-1']",
+   "<div class=\"flex flex-col justify-between space-y-1.5 rounded-md border border-bh-active bg-bh-panel px-2.5 py-2 col-span-1\"><div class=\"space-y-1.5\"><ul class=\"grid gap-x-1 gap-y-2 grid-cols-1\"><li class=\"min-w-0\"><div class=\"flex flex-col items-center gap-1.5 px-1 py-1.5 text-center\"><img alt=\"Sky\" class=\"h-[4.5rem] w-[4.5rem] rounded-full object-cover ring-2 ring-bh-veil\" height=\"72\" loading=\"lazy\" referrerpolicy=\"no-referrer\" src=\"/icons/nikke/characters/sky-temp.webp\" style=\"box-shadow:0 0 0 2px #e0a93f55\" title=\"Sky\" width=\"72\"/><div class=\"w-full max-w-[11rem] text-center text-[13px] font-semibold leading-snug text-bh-body break-keep\" title=\"Sky\">Sky</div><div class=\"flex flex-wrap items-center justify-center gap-x-2.5 gap-y-0.5 text-[11px] text-bh-secondary\"><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/elements/iron.svg\" width=\"18\"/><span>éµç²</span></span><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/bursts/1.webp\" width=\"18\"/><span>1çè£</span></span></div><div class=\"text-[10.5px] text-bh-faint\">çææ§ Â· æ¯æ´å</div></div></li></ul></div><dl class=\"space-y-0.5 border-t border-bh-border pt-1.5 text-[12.5px]\"><div class=\"flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5 text-[12px]\"><dt class=\"shrink-0 text-[11px] text-bh-muted\">éå§</dt><dd class=\"flex flex-wrap items-baseline justify-end gap-x-1 gap-y-0.5 text-right\"><span class=\"tabular-nums\"><span class=\"text-bh-faint\">2026-</span><span class=\"text-bh-body\">11-19</span></span><span class=\"text-[11px] text-bh-muted\">(<!-- -->é±å<!-- -->)</span><span class=\"tabular-nums font-medium text-bh-strong\">17:00</span><span class=\"text-[10.5px] text-bh-faint\">CST</span></dd></div><div class=\"flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5 text-[12px]\"><dt class=\"shrink-0 text-[11px] text-bh-muted\">çµæ</dt><dd class=\"flex flex-wrap items-baseline justify-end gap-x-1 gap-y-0.5 text-right\"><span class=\"tabular-nums\"><span class=\"text-bh-faint\">2026-</span><span class=\"text-bh-body\">12-03</span></span><span class=\"text-[11px] text-bh-muted\">(<!-- -->é±å<!-- -->)</span><span class=\"tabular-nums font-medium text-bh-strong\">03:59</span><span class=\"text-[10.5px] text-bh-faint\">CST</span></dd></div></dl></div>"
+  ],
+  [
+   "div",
+   "['order-2', 'grid', 'grid-cols-1', 'gap-2', 'text-[12.5px]', 'sm:grid-cols-2', 'md:order-none', 'md:mt-1.5']",
+   "<div class=\"order-2 grid grid-cols-1 gap-2 text-[12.5px] sm:grid-cols-2 md:order-none md:mt-1.5\"><div class=\"flex flex-col justify-between space-y-1.5 rounded-md border border-bh-active bg-bh-panel px-2.5 py-2 col-span-1\"><div class=\"space-y-1.5\"><ul class=\"grid gap-x-1 gap-y-2 grid-cols-1\"><li class=\"min-w-0\"><div class=\"flex flex-col items-center gap-1.5 px-1 py-1.5 text-center\"><img alt=\"Sky\" class=\"h-[4.5rem] w-[4.5rem] rounded-full object-cover ring-2 ring-bh-veil\" height=\"72\" loading=\"lazy\" referrerpolicy=\"no-referrer\" src=\"/icons/nikke/characters/sky-temp.webp\" style=\"box-shadow:0 0 0 2px #e0a93f55\" title=\"Sky\" width=\"72\"/><div class=\"w-full max-w-[11rem] text-center text-[13px] font-semibold leading-snug text-bh-body break-keep\" title=\"Sky\">Sky</div><div class=\"flex flex-wrap items-center justify-center gap-x-2.5 gap-y-0.5 text-[11px] text-bh-secondary\"><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/elements/iron.svg\" width=\"18\"/><span>éµç²</span></span><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/bursts/1.webp\" width=\"18\"/><span>1çè£</span></span></div><div class=\"text-[10.5px] text-bh-faint\">çææ§ Â· æ¯æ´å</div></div></li></ul></div><dl class=\"space-y-0.5 border-t border-bh-border pt-1.5 text-[12.5px]\"><div class=\"flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5 text-[12px]\"><dt class=\"shrink-0 text-[11px] text-bh-muted\">éå§</dt><dd class=\"flex flex-wrap items-baseline justify-end gap-x-1 gap-y-0.5 text-right\"><span class=\"tabular-nums\"><span class=\"text-bh-faint\">2026-</span><span class=\"text-bh-body\">11-19</span></span><span class=\"text-[11px] text-bh-muted\">(<!-- -->é±å<!-- -->)</span><span class=\"tabular-nums font-medium text-bh-strong\">17:00</span><span class=\"text-[10.5px] text-bh-faint\">CST</span></dd></div><div class=\"flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5 text-[12px]\"><dt class=\"shrink-0 text-[11px] text-bh-muted\">çµæ</dt><dd class=\"flex flex-wrap items-baseline justify-end gap-x-1 gap-y-0.5 text-right\"><span class=\"tabular-nums\"><span class=\"text-bh-faint\">2026-</span><span class=\"text-bh-body\">12-03</span></span><span class=\"text-[11px] text-bh-muted\">(<!-- -->é±å<!-- -->)</span><span class=\"tabular-nums font-medium text-bh-strong\">03:59</span><span class=\"text-[10.5px] text-bh-faint\">CST</span></dd></div></dl></div></div>"
+  ],
+  [
+   "div",
+   "['contents', 'md:block', 'md:space-y-1.5']",
+   "<div class=\"contents md:block md:space-y-1.5\"><div class=\"order-first flex items-start gap-2 md:order-none\" data-pickup-scroll-anchor=\"true\"><h2 aria-label=\"Sky ç¹æ®æå\" class=\"min-w-0 flex-1 text-[15px] font-semibold leading-snug text-bh-body\">Sky ç¹æ®æå</h2></div><div class=\"order-2 grid grid-cols-1 gap-2 text-[12.5px] sm:grid-cols-2 md:order-none md:mt-1.5\"><div class=\"flex flex-col justify-between space-y-1.5 rounded-md border border-bh-active bg-bh-panel px-2.5 py-2 col-span-1\"><div class=\"space-y-1.5\"><ul class=\"grid gap-x-1 gap-y-2 grid-cols-1\"><li class=\"min-w-0\"><div class=\"flex flex-col items-center gap-1.5 px-1 py-1.5 text-center\"><img alt=\"Sky\" class=\"h-[4.5rem] w-[4.5rem] rounded-full object-cover ring-2 ring-bh-veil\" height=\"72\" loading=\"lazy\" referrerpolicy=\"no-referrer\" src=\"/icons/nikke/characters/sky-temp.webp\" style=\"box-shadow:0 0 0 2px #e0a93f55\" title=\"Sky\" width=\"72\"/><div class=\"w-full max-w-[11rem] text-center text-[13px] font-semibold leading-snug text-bh-body break-keep\" title=\"Sky\">Sky</div><div class=\"flex flex-wrap items-center justify-center gap-x-2.5 gap-y-0.5 text-[11px] text-bh-secondary\"><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/elements/iron.svg\" width=\"18\"/><span>éµç²</span></span><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/bursts/1.webp\" width=\"18\"/><span>1çè£</span></span></div><div class=\"text-[10.5px] text-bh-faint\">çææ§ Â· æ¯æ´å</div></div></li></ul></div><dl class=\"space-y-0.5 border-t border-bh-border pt-1.5 text-[12.5px]\"><div class=\"flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5 text-[12px]\"><dt class=\"shrink-0 text-[11px] text-bh-muted\">éå§</dt><dd class=\"flex flex-wrap items-baseline justify-end gap-x-1 gap-y-0.5 text-right\"><span class=\"tabular-nums\"><span class=\"text-bh-faint\">2026-</span><span class=\"text-bh-body\">11-19</span></span><span class=\"text-[11px] text-bh-muted\">(<!-- -->é±å<!-- -->)</span><span class=\"tabular-nums font-medium text-bh-strong\">17:00</span><span class=\"text-[10.5px] text-bh-faint\">CST</span></dd></div><div class=\"flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5 text-[12px]\"><dt class=\"shrink-0 text-[11px] text-bh-muted\">çµæ</dt><dd class=\"flex flex-wrap items-baseline justify-end gap-x-1 gap-y-0.5 text-right\"><span class=\"tabular-nums\"><span class=\"text-bh-faint\">2026-</span><span class=\"text-bh-body\">12-03</span></span><span class=\"text-[11px] text-bh-muted\">(<!-- -->é±å<!-- -->)</span><span class=\"tabular-nums font-medium text-bh-strong\">03:59</span><span class=\"text-[10.5px] text-bh-faint\">CST</span></dd></div></dl></div></div></div>"
+  ],
+  [
+   "div",
+   "['contents', 'min-h-0', 'min-w-0', 'flex-col', 'text-[12.5px]', 'md:flex']",
+   "<div class=\"contents min-h-0 min-w-0 flex-col text-[12.5px] md:flex\"><div class=\"contents md:block md:space-y-1.5\"><div class=\"order-first flex items-start gap-2 md:order-none\" data-pickup-scroll-anchor=\"true\"><h2 aria-label=\"Sky ç¹æ®æå\" class=\"min-w-0 flex-1 text-[15px] font-semibold leading-snug text-bh-body\">Sky ç¹æ®æå</h2></div><div class=\"order-2 grid grid-cols-1 gap-2 text-[12.5px] sm:grid-cols-2 md:order-none md:mt-1.5\"><div class=\"flex flex-col justify-between space-y-1.5 rounded-md border border-bh-active bg-bh-panel px-2.5 py-2 col-span-1\"><div class=\"space-y-1.5\"><ul class=\"grid gap-x-1 gap-y-2 grid-cols-1\"><li class=\"min-w-0\"><div class=\"flex flex-col items-center gap-1.5 px-1 py-1.5 text-center\"><img alt=\"Sky\" class=\"h-[4.5rem] w-[4.5rem] rounded-full object-cover ring-2 ring-bh-veil\" height=\"72\" loading=\"lazy\" referrerpolicy=\"no-referrer\" src=\"/icons/nikke/characters/sky-temp.webp\" style=\"box-shadow:0 0 0 2px #e0a93f55\" title=\"Sky\" width=\"72\"/><div class=\"w-full max-w-[11rem] text-center text-[13px] font-semibold leading-snug text-bh-body break-keep\" title=\"Sky\">Sky</div><div class=\"flex flex-wrap items-center justify-center gap-x-2.5 gap-y-0.5 text-[11px] text-bh-secondary\"><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/elements/iron.svg\" width=\"18\"/><span>éµç²</span></span><span class=\"inline-flex items-center gap-1 text-bh-body\"><img alt=\"\" class=\"h-[18px] w-[18px] object-contain\" height=\"18\" src=\"/icons/nikke/bursts/1.webp\" width=\"18\"/><span>1çè£</span></span></div><div class=\"text-[10.5px] text-bh-faint\">çææ§ Â· æ¯æ´å</div></div></li></ul></div><dl class=\"space-y-0.5 border-t border-bh-border pt-1.5 text-[12.5px]\"><div class=\"flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5 text-[12px]\"><dt class=\"shrink-0 text-[11px] text-bh-muted\">éå§</dt><dd class=\"flex flex-wrap items-baseline justify-end gap-x-1 gap-y-0.5 text-right\"><span class=\"tabular-nums\"><span class=\"text-bh-faint\">2026-</span><span class=\"text-bh-body\">11-19</span></span><span class=\"text-[11px] text-bh-muted\">(<!-- -->é±å<!-- -->)</span><span class=\"tabular-nums font-medium text-bh-strong\">17:00</span><span class=\"text-[10.5px] text-bh-faint\">CST</span></dd></div><div class=\"flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5 text-[12px]\"><dt class=\"shrink-0 text-[11px] text-bh-muted\">çµæ</dt><dd class=\"flex flex-wrap items-baseline justify-end gap-x-1 gap-y-0.5 text-right\"><span class=\"tabular-nums\"><span class=\"text-bh-faint\">2026-</span><span class=\"text-bh-body\">12-03</span></span><span class=\"text-[11px] text-bh-muted\">(<!-- -->é±å<!-- -->)</span><span class=\"tabular-nums font-medium text-bh-strong\">03:59</span><span class=\"text-[10.5px] text-bh-faint\">CST</span></dd></div></dl></div></div></div></div>"
+  ]
+ ],
+ "sample": "<main class=\"relative z-0 min-w-0 flex-1 bg-bh-base\"><div class=\"relative\"><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://bannerhistory.app/tw/nikke-pickup-history#webpage\",\"url\":\"https://bannerhistory.app/tw/nikke-pickup-history\",\"name\":\"NIKKE å¡æ± æéè¡¨ Â· ç¹æ®æåæ­·å²\",\"description\":\"åå©å¥³ç¥ï¼å¦®å§¬å¡æ± æéè¡¨èç¹æ®æåæ­·å²ãæ¥ç SSR UP çåç¤ºãå±¬æ§ãçè£ãèµ·è¨æéèæ­·å²å¾©å»ã\",\"inLanguage\":\"zh-Hant\",\"isPartOf\":{\"@id\":\"https://bannerhistory.app/tw#website\"},\"breadcrumb\":{\"@id\":\"https://bannerhistory.app/tw/nikke-pickup-history#breadcrumb\"},\"primaryImageOfPage\":{\"@type\":\"ImageObject\",\"url\":\"https://assets.bannerhistory.app/og/nikke-pickup-history.png\",\"width\":1200,\"height\":630,\"caption\":\"NIKKE å¡æ± æéè¡¨ Â· ç¹æ®æåæ­·å²\"},\"dateModified\":\"2026-11-20\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://bannerhistory.app/tw/nikke-pickup-history#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"BannerHistory\",\"item\":\"https://bannerhistory.app/tw\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"NIKKE\",\"item\":\"https://bannerhistory.app/tw/nikke-banners\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"NIKKE å¡æ± æéè¡¨ Â· ç¹æ®æåæ­·å²\"}]},{\"@type\":\"Organization\",\"@id\":\"https://bannerhistory.app/#publisher\",\"name\":\"WaterBeetles\",\"url\":\"https://bannerhistory.app\"},{\"@type\":\"Dataset\",\"@id\":\"https://bannerhistory.app/tw/nikke-pickup-history#dataset\",\"name\":\"NIKKE å¡æ± æéè¡¨ Â· ç¹æ®æåæ­·å²\",\"description\":\"åå©å¥³ç¥ï¼å¦®å§¬å¡æ± æéè¡¨èç¹æ®æåæ­·å²ãæ¥ç SSR UP çåç¤ºãå±¬æ§ãçè£ãèµ·è¨æéèæ­·å²å¾©å»ã\",\"url\":\"https://bannerhistory.app/tw/nikke-pickup-history\",\"inLanguage\":\"zh-Hant\",\"isAccessibleForFree\":true,\"license\":\"https://creativecommons.org/licenses/by/4.0/\",\"creator\":{\"@id\":\"https://bannerhistory.app/#publisher\"},\"dateModified\":\"2026-11-20\",\"temporalCoverage\":\"2022-11-10/2026-12-03\",\"keywords\":[\"NIKKE\",\"Goddess of Victory: Nikke\",\"å¦®å§¬\",\"NIKKE å¡æ± æéè¡¨\",\"NIKKE å¡æ± è¨æå¨\",\"Goddess of Victory: Nikke å¡æ± æéè¡¨\",\"Goddess of Victory: Nikke å¡æ± è¨æå¨\",\"å¦®å§¬ å¡æ± æéè¡¨\",\"å¦®å§¬ å¡æ± è¨æå¨\"]}]}</script><div class=\"mx-auto max-w-[1400px] px-3 pb-4 pt-4 md:px-6\"><header class=\"mb-5 border-b border-bh-border pb-4\"><div class=\"flex items-start justify-between gap-3\"><h1 class=\"min-w-0 text-xl sm:text-2xl font-bold tracking-tight text-bh-accent-text\">NIKKE å¡æ± æéè¡¨</h1><div class=\"flex shrink-0 items-center gap-2\"><button aria-label=\"åäº«\" class=\"flex h-[26px] w-[26px] items-center justify-center rounded-md border border-bh-border bg-bh-surface text-bh-secondary hover:border-bh-accent/40 hover:text-bh-heading\" title=\"åäº«å«å½åç­éçé¾æ¥\" type=\"button\"><svg aria-hidden=\"true\" class=\"h-3.5 w-3.5\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewbox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 3v12\"></path><path d=\"m7 8 5-5 5 5\"></path><path d=\"M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4\"></path></svg></button></div></div><div class=\"mt-2 min-w-0\"><div class=\"min-w-0\"><nav aria-label=\"NIKKE pages navigation\" class=\"bh-nav-scroll data-[fade-end]:[mask-image:linear-gradient(to_right,#000_calc(100%-3rem),transparent)] data-[fade-start]:[mask-image:linear-gradient(to_right,transparent,#000_3rem)] data-[fade-start]:data-[fade-end]:[mask-image:linear-gradient(to_right,transparent,#000_3rem,#000_calc(100%-3rem),transparent)] -mx-1 flex w-auto min-w-0 flex-nowrap items-center gap-1.5 overflow-x-auto px-1 pb-0.5 md:mx-0 md:flex-wrap md:overflow-visible md:px-0 md:pb-0\" data-bh-game-nav=\"\" style=\"--hue:#dc2626\"><a class=\"bh-pill bh-hue-text inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] tracking-wide font-semibold transition-colors shrink-0\" href=\"/tw/nikke\"><span aria-hidden=\"true\">ð </span><span>ç¶åæ¸æä¸­å¿</span></a><span aria-current=\"page\" class=\"bh-pill bh-hue-text inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] tracking-wide bh-pill-active font-extrabold shrink-0\"><span aria-hidden=\"true\">ð</span><span>å¡æ± æéè¡¨</span></span><a class=\"bh-pill bh-hue-text inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] tracking-wide font-semibold transition-colors shrink-0\" href=\"/tw/nikke-banners\"><span aria-hidden=\"true\">ð</span><span>å¾©å»è¡¨</span></a><a class=\"bh-pill bh-hue-text inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] tracking-wide font-semibold transition-colors shrink-0\" href=\"/tw/nikke-rerun-ranking\"><span aria-hidden=\"true\">ð</span><span>å¾©å»æè¡</span></a><a class=\"bh-pill bh-hue-text inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] tracking-wide font-semibold transition-colors shrink-0\" href=\"/tw/nikke-rerun-drought\"><span aria-hidden=\"true\">ðï¸</span><span>ä¹æ±æè¡</span></a><a class=\"bh-pill bh-hue-text inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] tracking-wide font-semibold transition-colors shrink-0\" href=\"/tw/nikke-acquisition\"><span aria-hidden=\"true\">ð</span><span>åå¾éå¾</span></a><a class=\"bh-pill bh-hue-text inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] tracking-wide font-semibold transition-colors shrink-0\" href=\"/tw/nikke-pickup-formula\"><span aria-hidden=\"true\">ð</span><span>æåå¬å¼</span></a><a class=\"bh-pill bh-hue-text inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] tracking-wide font-semibold transition-colors shrink-0\" href=\"/tw/nikke-tier-list-builder\"><span aria-hidden=\"true\">ð</span><span>å¼·åº¦æ¦è£½ä½</span></a></nav></div></div><details class=\"group rounded-lg border border-bh-border bg-bh-panel text-[13px] leading-relaxed mt-3\"><summary class=\"flex cursor-pointer list-none flex-wrap items-center gap-x-3 gap-y-1 px-3 py-2 marker:hidden [&amp;::-webkit-details-marker]:hidden\"><span class=\"inline-flex items-center gap-1.5 font-semibold text-bh-body\"><span class=\"inline-flex h-4 w-4 items-center justify-center rounded-full border border-bh-border-strong text-[10px] font-bold text-bh-muted\">i</span>å¦ä½é±è®æ­¤è¡¨<svg aria-hidden=\"true\" class=\"h-3.5 w-3.5 text-bh-muted transition-transform group-open:rotate-180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" viewbox=\"0 0 24 24\"><path d=\"M19.5 8.25l-7.5 7.5-7.5-7.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></span></summary><div class=\"space-y-2 border-t border-bh-border/70 px-3 py-3\"><div><div class=\"text-bh-strong\">ä¾æ¥æååºå¡æ± ééãèª°å¨UPãä»¥åéå¾å¾©å»ãå¯ä¾é¡åãå±¬æ§åå¹´ä»½ç¯©é¸ã</div></div><div><div class=\"text-bh-secondary\">ç¹æ®æåå¡æ± æéè¡¨ â ä¾å±¬æ§ãçè£ç¯©é¸ãæ¥çç®å UPãæ¯æèµ·è¨æéèå¾æ UP ç´éã</div></div><p class=\"flex flex-wrap "
+}
