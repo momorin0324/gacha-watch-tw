@@ -20,7 +20,38 @@ def end_assets():
 try: ef=end_assets()
 except Exception as ex: print('Endfield',str(ex));ef={}
 en=dict(zip('奧古斯塔 珂萊塔 守岸人 熾霞 釉瑚 淵武 尤諾 夏空 秋水 白芷 桃祈 嘉貝莉娜 露帕 散華 莫特斐 燈燈 贊妮 秧秧 丹瑾 千咲 弗洛洛 坎特蕾拉 卜靈 琳奈 莫寧 卡提希婭 愛彌斯 陸·赫斯 達妮婭 露西 蕾貝卡 洛瑟菈 忌炎 吟霖 今汐 長離 折枝 相里要'.split(),'Augusta Carlotta Shorekeeper Chixia Youhu Yuanwu Iuno Ciaccona Aalto Baizhi Taoqi Galbrena Lupa Sanhua Mortefi Lumi Zani Yangyang Danjin Chisa Phrolova Cantarella Buling Lynae Mornye Cartethyia Aemeath Luuk_Herssen Denia Lucy Rebecca Lucilla Jiyan Yinlin Jinhsi Changli Zhezhi Xiangli_Yao'.split()))
+old=json.loads(Path('data/history-art-additional.json').read_text())
+en.update({'鎖暝':'Suoming','清宵':'Qingxiao','景燃':'Jingran','心':'Hsin'})
+nte=dict(zip('埃德嘉 阿德勒 哈尼婭 海月 翳 安魂曲 伊洛伊 殘虹 靈可 黑羽 明音凜'.split(),'edgar adler haniel aurelia skia lacrimosa iroi zankou linko blackbird akane-rin'.split()))
+from html.parser import HTMLParser
+class Imgs(HTMLParser):
+    def __init__(self):super().__init__();self.tags=[]
+    def handle_starttag(self,t,attrs):
+        if t in ('img','meta'):self.tags.append(dict(attrs))
 def variants(g,n):
+    if g=='wuwa' and n in en:
+        for suffix in ('Convene_Still','Splash_Art','Full_Sprite','Card'):
+            f=en[n]+'_'+suffix+'.png';h=hashlib.md5(f.encode()).hexdigest()
+            yield 'https://static.wikia.nocookie.net/wutheringwaves/images/'+h[0]+'/'+h[:2]+'/'+f+'/revision/latest'
+    if g=='nte' and n in nte:
+        key=nte[n]
+        for root in ['https://ntegame.net/characters/'+key+'/','https://www.ntebuild.com/characters/'+key,'https://www.ntegame.com/character/'+key+'/']:
+            try: markup=txt(root)
+            except Exception as ex:print(root,ex);continue
+            imgs=Imgs();imgs.feed(markup)
+            cand=[]
+            for t in imgs.tags:
+                u=t.get('src') or t.get('content') or ''
+                if 'url=' in u and '_next/image' in u:
+                    from urllib.parse import parse_qs,urlparse
+                    u=parse_qs(urlparse(u).query).get('url',[u])[0]
+                desc=(u+' '+t.get('alt','')).lower()
+                if not any(x in desc for x in (key,key.replace('-',' '),n)) or any(x in desc for x in ('skill','item','weapon','team','material','favicon','logo','outfit','skin','awakening')):continue
+                if not any(x in u.lower() for x in ('.png','.jpg','.webp','.avif')):continue
+                cand.append((int('splash' in desc or 'portrait' in desc or 'hero' in desc),urljoin(root,u)))
+            print('website art',n,root,[i[1] for i in cand[:3]])
+            for _,u in sorted(cand,reverse=True):yield u
+
     if g=='endfield' and n in ef: yield ef[n]
     if g=='wuwa' and n in en:
         f=en[n]+'_Convene_Still.png';h=hashlib.md5(f.encode()).hexdigest()
@@ -36,7 +67,7 @@ def variants(g,n):
                 yield u.rsplit('/',1)[0].replace('/thumb/','/') if '/thumb/' in u else u
 def find(row):
     g,n=row
-    for mapping in (art,disc):
+    for mapping in (art,disc,old):
         if n in mapping.get(g,{}):return g,n,mapping[g][n]
     try:
         for u in variants(g,n):
