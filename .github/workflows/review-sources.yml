@@ -1,0 +1,47 @@
+name: Review character artwork
+on:
+  push:
+    branches: [art-review-sigrika-nte]
+    paths: ['.github/workflows/review-sources.yml']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install Pillow
+      - name: Prepare reference images
+        run: |
+          python - <<'PY'
+          import io,json,urllib.request,concurrent.futures
+          from PIL import Image,ImageDraw
+          from pathlib import Path
+          sources={
+           'sigrika-hope':'https://i.ytimg.com/vi/C_amj23Ucys/maxresdefault.jpg',
+           'chaos-original':'https://img.gamewith.net/img/d74f3aa84dda11ea5cf76e358eaf52bf.png',
+           'chiz-original':'https://img.gamewith.jp/img/original_9f25bdc846d5ee14ea7587f5c92c5b13.png',
+           'exe-original':'https://img.gamewith.net/img/393c48121fbe5d2e5a0d7c441152d886.png',
+           'exe-promo':'https://i.verb.tw/EcfGkjeI.jpg','chiz-promo':'https://i.verb.tw/sddUJWOr.jpg','chaos-promo':'https://i.meee.com.tw/Xv2y76C.jpg'}
+          dest=Path('assets/pool-art/review');dest.mkdir(exist_ok=True)
+          def get(entry):
+           k,u=entry
+           try:
+            req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0'})
+            with urllib.request.urlopen(req,timeout=12) as response: im=Image.open(io.BytesIO(response.read(24000000))).convert('RGB')
+            size=im.size; assert im.width>=600 and im.height>=320
+            im.thumbnail((2200,2200));im.save(dest/(k+'.webp'),quality=92)
+            return k,size,im
+           except Exception as e: return k,str(e),None
+          out=Image.new('RGB',(750,4*200));draw=ImageDraw.Draw(out);stats={}
+          with concurrent.futures.ThreadPoolExecutor(7) as ex:
+           for i,(k,size,im) in enumerate(ex.map(get,sources.items())):
+            stats[k]=size
+            if im:
+             im.thumbnail((365,170));out.paste(im,(i%2*375,i//2*200))
+            draw.text((i%2*375,i//2*200+171),k+' '+str(size),fill='white')
+          out.save(dest/'sheet.jpg');(dest/'stats.json').write_text(json.dumps(stats))
+          PY
+          git add assets/pool-art/review
+          git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -m 'Prepare illustration samples for framing review'
+          git push
