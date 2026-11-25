@@ -1,0 +1,43 @@
+name: Inspect history sources in staging
+on:
+  push:
+    branches: [staging/history-bd2-gfl2-nikke-20261125]
+    paths: ['.github/workflows/stage-three-history.yml','scripts/stage_three_history.py']
+permissions:
+  contents: write
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip -q install beautifulsoup4 requests
+      - name: Inspect source markup
+        run: |
+          mkdir -p evidence/three-history
+          python - <<'PY'
+          import requests,json
+          from bs4 import BeautifulSoup
+          from pathlib import Path
+          for game in ['bd2','gf2','nikke']:
+              u='https://bannerhistory.app/tw/'+game+'-pickup-history'
+              r=requests.get(u,timeout=30)
+              s=BeautifulSoup(r.text,'html.parser')
+              out={'status':r.status_code,'size':len(r.content),'h2':[a.get_text(' ',strip=True) for a in s.find_all('h2')[:15]],'links':[str(a)[:350] for a in s.select('a[href]') if any(k in str(a) for k in ['下一','下頁','下一頁','?page','page='])][:60],'scripts':[(str(a.get('src','')),a.get_text()[:340]) for a in s.find_all('script')][:40]}
+              for i in s.find_all('img'):
+                  if any(x in i.get('src','') for x in ('/characters/','/icons/nikke','/icons/gf2','/icons/bd2')):
+                      chain=[i]
+                      for n in range(8):chain.append(chain[-1].parent)
+                      out['ancestors']=[(x.name,str(x.get('class',''))[:300],str(x)[:4300]) for x in chain]
+                      break
+              out['sample']=str(s.find('main'))[:7000]
+              Path('evidence/three-history/'+game+'.json').write_text(json.dumps(out,ensure_ascii=False,indent=1))
+          PY
+          if test -f scripts/stage_three_history.py; then python scripts/stage_three_history.py; fi
+      - name: Keep staging results
+        if: always()
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add evidence/three-history
+          if test -d data/history; then git add data/history; fi
+          if ! git diff --cached --quiet; then git commit -m 'Collect three history sources on staging'; git push; fi
