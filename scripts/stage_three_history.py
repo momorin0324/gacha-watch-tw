@@ -33,3 +33,12 @@ for slug in ("bd2","gf2","nikke"):
             if keys not in examples:examples[keys]=str(obj)[:2400]
     report={"shapes":[[k,shapes[k],examples[k]] for k in shapes if any(t in k.lower() for t in ["date","start","char","banner","costume","nikke","region","page"])][:65],"article_count":len(soup.select("article")),"page_text":soup.find("main").get_text(" ",strip=True)[:450],"bottom":soup.find("main").get_text(" ",strip=True)[-430:],"head_flight":flight[:900]}
     Path("evidence/three-history/"+slug+"-shape.json").write_text(json.dumps(report,ensure_ascii=False,indent=1))
+
+    if slug == "nikke":
+        report["contexts"]={}
+        for word in ["sky-temp","2026-11-19","Sky","招募","startAt","pickups","banners","characters","rows"]:
+            idx=flight.find(word)
+            if idx != -1:report["contexts"][word]=flight[max(0,idx-200):idx+1100]
+        report["shapeAll"]=[[k,n,examples[k][:700]] for k,n in shapes.most_common(48)]
+        report["start"]=[(line[:130],len(line)) for line in flight.splitlines()][:150]
+        Path("evidence/three-history/nikke-debug.json").write_text(json.dumps(report,ensure_ascii=False,indent=1))
