@@ -157,7 +157,21 @@
       "source": "https://wutheringwaves.kurogames.com/zh-tw/main/news/detail/5753",
       "next": "待官方公布",
       "date": null,
-      "status": "待官方公布"
+      "status": "待官方公布",
+      "phase_art": {
+        "莉莉": {
+          "start": "2026-11-12 11:00",
+          "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+        },
+        "西格莉卡、仇遠": {
+          "start": "2026-11-12 11:00",
+          "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+        },
+        "椿、洛可可、菲比、布蘭特": {
+          "start": "2026-11-12 11:00",
+          "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+        }
+      }
     },
     "endfield": {
       "for_version": "1.7",

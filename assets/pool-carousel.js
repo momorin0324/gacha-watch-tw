@@ -25,7 +25,7 @@ function poolDuration(rerun) {
 
 function estimatedUpdate(game, today) {
   if (/^\d{4}-\d{2}-\d{2}$/.test(game.date || '')) return null;
-  const gap = { genshin: 1, starrail: 1, zzz: 1, nte: 0, endfield: 0 }[game.id];
+  const gap = { genshin: 1, starrail: 1, zzz: 1, wuwa: 1, nte: 0, endfield: 0 }[game.id];
   if (gap === undefined) return null;
   const pools = [...(game.phases || []), ...(game.special_banners || [])];
   const dates = pools.filter(pool => !pool.time_unverified &&
@@ -58,19 +58,19 @@ function estimatedUpdate(game, today) {
     .history-character-backdrop img.history-nikke-art { object-position: var(--character-focus, right 36%); }
     .history-costume-phase.phasebox { min-height: 0; }
     .history-costume-phase.phasebox:has(img) {
-      min-height: clamp(285px, 34vw, 390px) !important;
+      min-height: clamp(240px, 26vw, 320px) !important;
       display: flex !important;
       align-items: end;
     }
     .history-costume-phase .phase-copy { max-width: 56%; }
-    .history-costume-phase .phase-backdrop img { width: 66%; object-fit: cover; object-position: 67% 24%; mask-image: linear-gradient(90deg, transparent, black 23%); }
+    .history-costume-phase .phase-backdrop img { width: 55%; object-fit: scale-down; object-position: center; mask-image: none; }
     .history-costume-phase .phase-backdrop:has(img)::after {
       background: linear-gradient(90deg, #17263e 20%, #17263ec9 40%, transparent 71%);
     }
     @media (max-width: 600px) {
       .history-costume-phase.phasebox:has(img) { min-height: 0 !important; padding-top: 248px !important; }
       .history-costume-phase .phase-copy { max-width: none; }
-      .history-costume-phase .phase-backdrop img { width: 100%; height: 260px; object-position: center 24%; mask-image: none; }
+      .history-costume-phase .phase-backdrop img { width: 100%; height: 240px; object-position: center; mask-image: none; }
       .history-costume-phase .phase-backdrop:has(img)::after {
         background: linear-gradient(180deg, transparent 160px, #17263e 263px);
       }
@@ -264,7 +264,7 @@ function estimatedUpdate(game, today) {
       }
     }
     if (item.portrait && game.id === 'bd2') {
-      img.style.objectFit = 'contain';
+      img.style.objectFit = 'scale-down';
     } else if (item.portrait) {
       img.style.width = 'min(32%, 135px)';
       img.style.objectFit = 'contain';
