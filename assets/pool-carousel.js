@@ -1,3 +1,17 @@
+function poolNames(pool) {
+  const value = pool.five_star || pool.characters || '';
+  return (Array.isArray(value) ? value : value.split('、')).map(name => name.trim()).filter(Boolean);
+}
+
+function poolIsRerun(pool, name) {
+  return (pool.rerun_characters || []).includes(name) ||
+    (pool.is_rerun_banner === true && !pool.new_characters?.includes(name));
+}
+
+function poolDuration(rerun) {
+  return rerun ? 3500 : 10000;
+}
+
 (function poolCarousel() {
   const hero = document.querySelector('.pool-hero');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
@@ -5,6 +19,8 @@
   let currentKey;
   let currentSlide = hero.firstElementChild;
   let preloaded;
+  let heroUntil = 0;
+  let historyArt = {};
  function instant(value,isStart){
   const str=String(value||'');
   if(/^\d{4}-\d\d-\d\dT.*(?:Z|[+-]\d\d:\d\d)$/.test(str))return Date.parse(str);
@@ -82,6 +98,7 @@
       addText(slide, 'span', 'pool-game', item.game.name);
       addText(slide, 'span', 'pool-label', item.phase.label || '當期角色卡池');
       addText(slide, 'h1', '', item.name);
+      addText(slide, 'span', 'rerun-tag', poolIsRerun(item.phase, item.name) ? '復刻' : '當期PU');
       addText(slide, 'strong', 'pool-time', remaining(item.end, now));
     } else {
       addText(slide, 'h1', '', '目前沒有可倒數的卡池');
@@ -98,6 +115,7 @@
     } else outgoing.remove();
     hero.append(slide);
     currentKey = key;
+    heroUntil = now + poolDuration(item && poolIsRerun(item.phase, item.name));
     currentSlide = slide;
     const next = items.length > 1 && sources(items[(index + 1) % items.length])[0];
     if (next) {
@@ -112,30 +130,41 @@
   function paintPhase(layer, advance) {
     let state = phaseStates.get(layer);
     if (!state) {
-      state = { names: JSON.parse(layer.dataset.names), current: '', pending: '' };
+      state = { names: JSON.parse(layer.dataset.names), current: '', pending: '', until: 0 };
       phaseStates.set(layer, state);
     }
     const game = seed.find(game => game.id === layer.dataset.game);
-    if (!game) return;
-    const urls = [...new Set(state.names.map(name =>
-      sources({ game, name, phase: {} }).find(url => !failedUrls.has(url))
-    ).filter(Boolean))];
+    const bounds = layer.getBoundingClientRect();
+    if (bounds.bottom < -200 || bounds.top > window.innerHeight + 200) return;
+    if (!game || state.pending || (state.current && (!advance || Date.now() < state.until))) return;
     const poster = layer.dataset.poster;
-    if (poster && !failedUrls.has(poster)) urls.splice(0, urls.length, poster);
-    if (!urls.length || state.pending) return;
-    const index = urls.indexOf(state.current);
-    const next = urls[index < 0 ? 0 : (index + Number(advance)) % urls.length];
-    if (next === state.current) return;
-    state.pending = next;
+    const perName = JSON.parse(layer.dataset.art || '{}');
+    const reruns = JSON.parse(layer.dataset.reruns || '[]');
+    const entries = state.names.map((name, index) => {
+      const art = perName[name];
+      const candidates = [
+        art?.background, index === 0 ? poster : null,
+        ...sources({ game, name, phase: {} }), art?.portrait
+      ];
+      const url = candidates.find(value => value && !failedUrls.has(value));
+      return { name, url, portrait: url === art?.portrait ||
+        (url === poster && layer.classList.contains('history-portrait-backdrop')) };
+    }).filter(item => item.url);
+    if (!entries.length && poster && !failedUrls.has(poster)) entries.push({ name: '', url: poster });
+    if (!entries.length) return;
+    const index = entries.findIndex(item => item.name === state.current);
+    const item = entries[index < 0 ? 0 : (index + 1) % entries.length];
+    if (item.name === state.current && layer.firstElementChild) return;
+    state.pending = item.url;
     const img = new Image();
     img.alt = '';
     if (layer.classList.contains('history-character-backdrop')) {
-      img.style.objectPosition = 'center 22%';
-      if (layer.classList.contains('history-portrait-backdrop')) {
-        img.style.width = 'min(32%, 135px)';
-        img.style.objectFit = 'contain';
-        img.style.objectPosition = 'center';
-      }
+      img.style.objectPosition = 'center 24%';
+    }
+    if (item.portrait) {
+      img.style.width = 'min(32%, 135px)';
+      img.style.objectFit = 'contain';
+      img.style.objectPosition = 'center';
     }
     img.onload = () => {
       state.pending = '';
@@ -148,14 +177,15 @@
         setTimeout(() => old.remove(), 560);
       } else layer.replaceChildren();
       layer.append(img);
-      state.current = next;
+      state.current = item.name;
+      state.until = Date.now() + poolDuration(reruns.includes(item.name));
     };
     img.onerror = () => {
-      failedUrls.add(next);
+      failedUrls.add(item.url);
       state.pending = '';
-      if (layer.isConnected) paintPhase(layer, false);
+      if (layer.isConnected) paintPhase(layer, true);
     };
-    img.src = next;
+    img.src = item.url;
   }
 
   function paintPhases(advance = false) {
@@ -259,7 +289,7 @@
     zzz: ['S級代理人', 'S級音擎'],
     wuwa: ['五星共鳴者', '五星武器'],
     endfield: ['六星幹員', '六星武器'],
-    nte: ['S級角色', 'S級弧盤']
+    nte: ['S級角色', 'S級弧盤'], bd2: ['服裝'], gfl2: ['精英人形'], nikke: ['SSR 角色']
   };
 
   const endfieldArmory = {
@@ -330,6 +360,40 @@
     }
   }
 
+  function archivedPools(entry) {
+    const groups = new Map();
+    for (const pool of entry.phases || []) {
+      const start = String(displayTime(pool.start || pool.start_date) || '');
+      const end = String(displayTime(pool.end || pool.end_date) || '');
+      const label = String(pool.phase || pool.label || '');
+      const exceptional = entry.game === 'endfield' || pool.pool_type || /自選|集錄|獨立|贈送|特殊/.test(label);
+      const key = start && end && !exceptional ? [start, end].join('|') : pool;
+      const previous = groups.get(key);
+      const names = poolNames(pool);
+      const portraitList = pool.portraits || [];
+      const image = {};
+      names.forEach((name, index) => {
+        const art = historyArt[entry.game]?.[name];
+        const portrait = portraitList.length === names.length ? portraitList[index] : null;
+        image[name] = {
+          background: art?.byVersion?.[entry.version] || art?.background || (names.length === 1 ? pool.banner_image : null),
+          portrait: art?.portrait || portrait || (names.length === 1 ? pool.portrait_image : null)
+        };
+      });
+      const reruns = names.filter(name => poolIsRerun(pool, name));
+      if (previous) {
+        const merged = [...new Set([...poolNames(previous), ...names])];
+        previous.five_star = merged.join('、');
+        previous.rerun_characters = [...new Set([...previous.rerun_characters, ...reruns])];
+        previous.character_art = { ...previous.character_art, ...image };
+        previous.weapons = [...new Set([previous.weapons, pool.weapons].filter(Boolean))].join('、');
+      } else {
+        groups.set(key, { ...pool, five_star: names.join('、'), rerun_characters: reruns, character_art: image });
+      }
+    }
+    return [...groups.values()];
+  }
+
   function renderHistoryDetails() {
     const labels = historyLabels[gameFilter];
     if (!labels) return;
@@ -349,16 +413,17 @@
       const boxes = card.querySelector('.phasehistory');
       if (!boxes) return;
       boxes.replaceChildren();
-      for (const pool of entry.phases || []) {
+      for (const pool of archivedPools(entry)) {
         const box = document.createElement('div');
         box.className = 'phasebox history-phase illustrated-phase';
-        const name = pool.five_star || pool.characters || '';
-        const names = (Array.isArray(name) ? name : name.split('、')).map(value => value.trim()).filter(Boolean);
+        const names = poolNames(pool);
         if (names.length || pool.banner_image) {
           const layer = document.createElement('div');
           layer.className = 'phase-backdrop history-character-backdrop';
           layer.dataset.game = entry.game;
           layer.dataset.names = JSON.stringify(names);
+          layer.dataset.art = JSON.stringify(pool.character_art || {});
+          layer.dataset.reruns = JSON.stringify(names.filter(name => poolIsRerun(pool, name)));
           layer.dataset.poster = pool.banner_image || pool.portrait_image || '';
           if (!pool.banner_image && pool.portrait_image) layer.classList.add('history-portrait-backdrop');
           layer.setAttribute('aria-hidden', 'true');
@@ -376,7 +441,7 @@
         names.forEach((value, i) => {
           if (i) characters.append('、');
           characters.append(value);
-          if ((pool.rerun_characters || []).includes(value)) addText(characters, 'span', 'rerun-tag', '復刻');
+          addText(characters, 'span', 'rerun-tag', poolIsRerun(pool, value) ? '復刻' : '當期PU');
         });
         if (!names.length) characters.append('待核對');
         copy.append(characters);
@@ -399,7 +464,7 @@
             copy.append(line);
           }
         } else {
-          addText(copy, 'div', '', labels[1] + '：' + (pool.weapons || '待核對'));
+          if (labels[1]) addText(copy, 'div', '', labels[1] + '：' + (pool.weapons || '待核對'));
           if (pool.weapon_banner_name) addText(copy, 'div', 'small', pool.weapon_banner_name);
           if (entry.game === 'zzz' && officialURL(pool.weapon_source)) {
             const link = document.createElement('a');
@@ -413,7 +478,7 @@
         box.append(copy);
         boxes.append(box);
       }
-      const slug = { starrail: 'hsr' }[entry.game] || entry.game;
+      const slug = { starrail: 'hsr', gfl2: 'gf2' }[entry.game] || entry.game;
       const reference = document.createElement('a');
       reference.href = 'https://bannerhistory.app/tw/' + slug + '-pickup-history';
       reference.target = '_blank';
@@ -448,13 +513,19 @@
       paintPhases();
     } catch { /* Existing card data remains available offline. */ }
   });
+  fetch('./data/history-character-art.json', { cache: 'no-cache' }).then(async response => {
+    if (!response.ok) return;
+    historyArt = await response.json();
+    if (tab === 'history') window.render();
+  }).catch(error => console.warn('Historical character images:', error.message));
+
   let timer;
   function resume() {
     clearInterval(timer);
     if (document.hidden) return;
     render();
     paintPhases();
-    timer = setInterval(() => { render(true); paintPhases(true); }, 4000);
+    timer = setInterval(() => { render(Date.now() >= heroUntil); paintPhases(true); }, 250);
   }
   document.addEventListener('visibilitychange', resume);
   resume();
@@ -517,14 +588,45 @@
   let snapshot = {};
   const applyFeed = applyVersionFeed;
   const renderPhase = phase;
+  const confirmedDebuts = {
+    starrail: { '4.7': ['星神★阿哈'] },
+    endfield: { '1.6': ['祀', '明河'], '1.7': ['小刻'] },
+    promilia: { '1.0 公測': ['塗山小玉', '源千代'] },
+    nikke: { 'SKY ON THE ROCK': ['思凱'] },
+    zzz: { '3.4': ['挽晝', '知更鳥', '卡芙卡'] },
+    gfl2: { '伊利昂之圍・中篇': ['亞斯特莉亞'] }
+  };
   phase = function (game, pool) {
-    const names = String(pool.characters || '').split('、').filter(Boolean);
+    const names = poolNames(pool);
+    const reruns = names.filter(name => poolIsRerun(pool, name));
+    const version = game.next_phases?.includes(pool) ? game.next : game.current;
+    const known = confirmedDebuts[game.id]?.[version] || [];
     const explicit = Array.isArray(pool.rerun_characters);
-    return renderPhase(game, explicit ? {
+    const markup = renderPhase(game, explicit ? {
       ...pool,
       disable_inferred_rerun: false,
-      new_characters: names.filter(name => !pool.rerun_characters.includes(name.trim()))
+      new_characters: names.filter(name => !reruns.includes(name))
     } : pool);
+    const template = document.createElement('template');
+    template.innerHTML = markup;
+    const layer = template.content.querySelector('.phase-backdrop');
+    if (layer) layer.dataset.reruns = JSON.stringify(reruns);
+    const heading = template.content.querySelector('.phase-heading strong');
+    if (heading && names.length) {
+      heading.textContent = pool.label + ' · ';
+      names.forEach((name, index) => {
+        if (index) heading.append('、');
+        heading.append(name);
+        const rerun = reruns.includes(name);
+        if (rerun || known.includes(name) || pool.new_characters?.includes(name) || (explicit && !/待|預告/.test(name))) {
+          const badge = document.createElement('span');
+          badge.className = 'rerun-tag';
+          badge.textContent = rerun ? '復刻' : 'NEW';
+          heading.append(badge);
+        }
+      });
+    }
+    return template.innerHTML;
   };
 
   function arrangeBanners(game) {
