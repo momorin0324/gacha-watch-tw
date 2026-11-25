@@ -25,7 +25,7 @@ function poolDuration(rerun) {
 
 function estimatedUpdate(game, today) {
   if (/^\d{4}-\d{2}-\d{2}$/.test(game.date || '')) return null;
-  const gap = { genshin: 2, starrail: 2, zzz: 2, nte: 0, endfield: 0 }[game.id];
+  const gap = { genshin: 1, starrail: 1, zzz: 1, nte: 0, endfield: 0 }[game.id];
   if (gap === undefined) return null;
   const pools = [...(game.phases || []), ...(game.special_banners || [])];
   const dates = pools.filter(pool => !pool.time_unverified &&
@@ -56,18 +56,23 @@ function estimatedUpdate(game, today) {
     }
     .history-character-backdrop img.history-banner-art { object-position: var(--character-focus, center 42%); }
     .history-character-backdrop img.history-nikke-art { object-position: var(--character-focus, right 36%); }
-    .history-costume-phase { min-height: 248px; }
+    .history-costume-phase.phasebox { min-height: 0; }
+    .history-costume-phase.phasebox:has(img) {
+      min-height: clamp(285px, 34vw, 390px) !important;
+      display: flex !important;
+      align-items: end;
+    }
     .history-costume-phase .phase-copy { max-width: 56%; }
-    .history-costume-phase .phase-backdrop img { width: 61%; object-fit: contain; object-position: right center; mask-image: none; }
+    .history-costume-phase .phase-backdrop img { width: 66%; object-fit: cover; object-position: 67% 24%; mask-image: linear-gradient(90deg, transparent, black 23%); }
     .history-costume-phase .phase-backdrop:has(img)::after {
       background: linear-gradient(90deg, #17263e 20%, #17263ec9 40%, transparent 71%);
     }
     @media (max-width: 600px) {
-      .history-costume-phase:has(img) { padding-top: 182px; }
+      .history-costume-phase.phasebox:has(img) { min-height: 0 !important; padding-top: 248px !important; }
       .history-costume-phase .phase-copy { max-width: none; }
-      .history-costume-phase .phase-backdrop img { width: 100%; height: 190px; object-position: center; }
+      .history-costume-phase .phase-backdrop img { width: 100%; height: 260px; object-position: center 24%; mask-image: none; }
       .history-costume-phase .phase-backdrop:has(img)::after {
-        background: linear-gradient(180deg, transparent 145px, #17263e 195px);
+        background: linear-gradient(180deg, transparent 160px, #17263e 263px);
       }
       .pool-slide img.pool-narrow-art { object-fit: contain; object-position: right center; }
       .history-character-backdrop img.history-banner-art { object-position: var(--character-mobile-focus, var(--character-focus, center 42%)); }
@@ -110,7 +115,8 @@ function estimatedUpdate(game, today) {
       for (const phase of phases) {
         const end = instant(phase.end, false);
         if (phase.time_unverified || !(instant(phase.start, true) <= now && now < end)) continue;
-        for (const name of String(phase.characters || '').split('、').map(n => n.trim()).filter(Boolean)) {
+        for (const name of poolNames(phase)) {
+          if (poolIsRerun(phase, name)) continue;
           const key = [game.id, name, end].join('|');
           if (!items.has(key)) items.set(key, { key, name, game, phase, end });
         }
@@ -177,8 +183,7 @@ function estimatedUpdate(game, today) {
       addText(slide, 'span', 'pool-game', item.game.name);
       addText(slide, 'span', 'pool-label', item.phase.label || '當期角色卡池');
       addText(slide, 'h1', '', item.name);
-      const label = poolIsRerun(item.phase, item.name) ? '復刻' : '當期PU';
-      addText(slide, 'span', poolBadgeClass(label), label);
+      addText(slide, 'span', poolBadgeClass('當期PU'), '當期PU');
       addText(slide, 'strong', 'pool-time', remaining(item.end, now));
     } else {
       addText(slide, 'h1', '', '目前沒有可倒數的卡池');
@@ -258,7 +263,9 @@ function estimatedUpdate(game, today) {
         img.classList.add('history-nikke-art');
       }
     }
-    if (item.portrait) {
+    if (item.portrait && game.id === 'bd2') {
+      img.style.objectFit = 'contain';
+    } else if (item.portrait) {
       img.style.width = 'min(32%, 135px)';
       img.style.objectFit = 'contain';
       img.style.objectPosition = 'center';
