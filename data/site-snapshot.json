@@ -104,30 +104,34 @@
       "preview_url": "https://zenless.hoyoverse.com/zh-tw/news/167399",
       "next_phases": [
         {
-          "label": "限時調頻",
+          "label": "上半限時調頻",
           "characters": "挽晝",
-          "start": "2026-12-02（版本更新後）",
-          "end": null,
+          "start": "2026-12-02 11:00",
+          "end": "2027-01-12 14:59",
           "source": "https://zenless.hoyoverse.com/zh-tw/news/167400",
-          "status": "精確起訖依調頻公告"
+          "status": "起訖時間依 BannerHistory（台灣時間）",
+          "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
         },
         {
           "label": "聯動限時調頻",
           "characters": "卡芙卡",
-          "start": "2027-01-01（時刻待公告）",
-          "end": null,
-          "source": "https://zenless.hoyoverse.com/zh-tw/news/167400"
+          "start": "2027-01-01 12:00",
+          "end": "2027-01-21 14:59",
+          "source": "https://zenless.hoyoverse.com/zh-tw/news/167400",
+          "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history",
+          "status": "起訖時間依 BannerHistory（台灣時間）"
         },
         {
-          "label": "復刻調頻",
+          "label": "下半復刻",
           "characters": "愛麗絲",
-          "start": "2027-01-01（前瞻整理）",
-          "end": null,
+          "start": "2027-01-01 12:00",
+          "end": "2027-01-12 14:59",
           "source": "https://uu-top.com/zh-hant/blog/zzz-3-4-banners",
-          "time_unverified": true,
           "rerun_characters": [
             "愛麗絲"
-          ]
+          ],
+          "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history",
+          "status": "起訖時間依 BannerHistory（台灣時間）"
         },
         {
           "label": "聯動免費領取",
@@ -150,14 +154,16 @@
         "知更鳥": {
           "banner_image": "assets/pool-art/discovered/zzz-ef90693b4ea8956f8b95.webp"
         }
-      }
+      },
+      "next_version_start": "2026-12-02T11:00:00+08:00",
+      "next_version_source": "https://zenless.hoyoverse.com/zh-tw/news/167400"
     },
     "wuwa": {
       "for_version": "3.8",
       "source": "https://wutheringwaves.kurogames.com/zh-tw/main/news/detail/5753",
-      "next": "待官方公布",
-      "date": null,
-      "status": "待官方公布",
+      "next": "永明的燼焰",
+      "date": "2026-12-22",
+      "status": "官方已公布年度篇章上線日；維護時刻待公告",
       "phase_art": {
         "莉莉": {
           "start": "2026-11-12 11:00",
@@ -171,7 +177,8 @@
           "start": "2026-11-12 11:00",
           "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
         }
-      }
+      },
+      "next_version_source": "https://new-federation.kurogames-global.com/?lang=zh-tw"
     },
     "endfield": {
       "for_version": "1.7",
