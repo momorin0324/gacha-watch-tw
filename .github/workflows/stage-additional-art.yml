@@ -1,0 +1,20 @@
+name: Resolve additional historical character artwork
+on:
+  push:
+    branches: ['stage/historical-wuwa-endfield-nte-art']
+    paths: ['.github/workflows/stage-additional-art.yml', 'scripts/stage_history_art_additional.py']
+permissions:
+  contents: write
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install --quiet Pillow opencc-python-reimplemented
+      - run: python scripts/stage_history_art_additional.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history-art-additional.json history-art-missing.json
+          git commit -m "Cache validated historical character art mapping"
+          git push
