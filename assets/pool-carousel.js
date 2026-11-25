@@ -121,7 +121,7 @@
       sources({ game, name, phase: {} }).find(url => !failedUrls.has(url))
     ).filter(Boolean))];
     const poster = layer.dataset.poster;
-    if (!urls.length && poster && !failedUrls.has(poster)) urls.push(poster);
+    if (poster && !failedUrls.has(poster)) urls.splice(0, urls.length, poster);
     if (!urls.length || state.pending) return;
     const index = urls.indexOf(state.current);
     const next = urls[index < 0 ? 0 : (index + Number(advance)) % urls.length];
@@ -307,14 +307,55 @@
 {
   let snapshot = {};
   const applyFeed = applyVersionFeed;
+  const renderPhase = phase;
+  phase = function (game, pool) {
+    const names = String(pool.characters || '').split('、').filter(Boolean);
+    const explicit = Array.isArray(pool.rerun_characters);
+    return renderPhase(game, explicit ? {
+      ...pool,
+      disable_inferred_rerun: false,
+      new_characters: names.filter(name => !pool.rerun_characters.includes(name.trim()))
+    } : pool);
+  };
+
+  function arrangeBanners(game) {
+    const isRerun = pool => {
+      const names = String(pool.characters || '').split('、').map(name => name.trim()).filter(Boolean);
+      return names.length > 0 && names.every(name => pool.rerun_characters?.includes(name));
+    };
+    const row = snapshot[game.id];
+    const matchesVersion = row && (game.current === row.for_version || game.current === row.current ||
+      (game.id === 'promilia' && game.current === row.next));
+    const snapshotArt = matchesVersion ? row.phase_art || {} : {};
+    for (const pool of [...game.phases, ...(game.special_banners || []), ...(game.next_phases || [])]) {
+      const detail = snapshotArt[pool.characters];
+      if (detail) Object.assign(pool, detail);
+    }
+    const currentReruns = game.phases.filter(isRerun);
+    if (currentReruns.length) {
+      const special = [...(game.special_banners || []), ...currentReruns];
+      game.special_banners = mergeHistoryPhases([], special);
+      game.phases = game.phases.filter(pool => !isRerun(pool));
+    }
+    if (game.next_phases) {
+      game.next_phases = [...game.next_phases.filter(pool => !isRerun(pool)), ...game.next_phases.filter(isRerun)];
+    }
+  }
 
   function applySnapshot(game) {
     const row = snapshot[game.id];
     if (!row || (game.current !== row.for_version && game.current !== row.current)) return false;
-    const { for_version, next, date, status, next_phases, next_version_start,
+    const { for_version, replace_phases, phase_art, next, date, status, next_phases, next_version_start,
       next_version_source, preview_date, preview_url, ...current } = row;
     if (current.phases) {
-      current.phases = current.phases.length ? mergeHistoryPhases(game.phases, current.phases) : [];
+      if (replace_phases) {
+        current.phases = current.phases.map(pool => {
+          const previous = game.phases.find(item => item.characters === pool.characters && item.start === pool.start);
+          return { ...previous, ...pool, banner_image: pool.banner_image || previous?.banner_image };
+        });
+      } else {
+        current.phases = current.phases.length ? mergeHistoryPhases(game.phases, current.phases) : [];
+      }
     }
     Object.assign(game, current);
     if (!game.next_version_start || game.next_version_start === next_version_start) {
@@ -329,7 +370,15 @@
 
   applyVersionFeed = function (game, patch) {
     const applied = applyFeed(game, patch);
-    return applySnapshot(game) || applied;
+    const refreshed = applySnapshot(game);
+    arrangeBanners(game);
+    return refreshed || applied;
+  };
+
+  const renderSite = window.render;
+  window.render = function () {
+    seed.forEach(arrangeBanners);
+    return renderSite();
   };
 
   fetch('./data/site-snapshot.json', { cache: 'no-cache' }).then(async response => {
@@ -339,6 +388,7 @@
     snapshot = payload.games;
     seed.forEach(applySnapshot);
     advanceWebsiteVersions();
+    seed.forEach(arrangeBanners);
     window.render();
   }).catch(error => console.warn('Gacha snapshot:', error.message));
 }

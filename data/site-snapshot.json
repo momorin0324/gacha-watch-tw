@@ -17,21 +17,65 @@
           "weapons": "秘星典諭、靜水流湧之輝",
           "banner_image_title": "萬序衍盈 · 米提亞",
           "banner_image_reference": "https://bannerhistory.app/tw/genshin-pickup-history"
+        }
+      ],
+      "next": "待官方公布",
+      "date": null,
+      "status": "待官方公布",
+      "replace_phases": true,
+      "special_banners": [
+        {
+          "label": "上半復刻",
+          "characters": "芙寧娜",
+          "start": "2026-11-04（版本更新後）",
+          "end": "2026-11-24 17:59",
+          "status": "官方公告轉載已核對",
+          "rerun_characters": [
+            "芙寧娜"
+          ],
+          "source": "https://genshininfo.reh.tw/archives/10793",
+          "four_star": "瓦列里、夏洛蒂、蘿莎莉亞",
+          "weapons": "秘星典諭、靜水流湧之輝",
+          "is_rerun_banner": true,
+          "banner_image_label": "眾水的頌詩 · 芙寧娜"
         },
         {
-          "label": "下半",
-          "characters": "茲白、莉奈婭",
+          "label": "下半復刻 · 華黍由儀",
+          "characters": "茲白",
           "start": "2026-11-24 18:00",
           "end": "2026-12-15 14:59",
           "status": "官方第二期祈願公告",
           "source": "https://genshin.hoyoverse.com/zh-tw/news/detail/167370",
           "four_star": "葉洛亞、愛諾、凝光",
-          "weapons": "朏魄含光、霜結的誓金枝"
+          "weapons": "朏魄含光、霜結的誓金枝",
+          "rerun_characters": [
+            "茲白"
+          ],
+          "banner_image": "assets/pool-art/gi-Zibai.webp"
+        },
+        {
+          "label": "下半復刻",
+          "characters": "莉奈婭",
+          "start": "2026-11-24 18:00",
+          "end": "2026-12-15 14:59",
+          "status": "官方第二期祈願公告",
+          "source": "https://genshin.hoyoverse.com/zh-tw/news/detail/167370",
+          "four_star": "葉洛亞、愛諾、凝光",
+          "weapons": "朏魄含光、霜結的誓金枝",
+          "rerun_characters": [
+            "莉奈婭"
+          ],
+          "banner_image": "assets/pool-art/gi-Linnea.webp"
         }
       ],
-      "next": "待官方公布",
-      "date": null,
-      "status": "待官方公布"
+      "phase_art": {
+        "芙寧娜": {
+          "banner_image": "assets/pool-art/gi-Furina.webp"
+        },
+        "米提亞": {
+          "banner_image": "assets/pool-art/gi-Mitya.webp"
+        }
+      }
     },
     "starrail": {
       "for_version": "4.7",
@@ -92,7 +136,21 @@
           "end": null,
           "source": "https://zenless.hoyoverse.com/zh-tw/news/167400"
         }
-      ]
+      ],
+      "phase_art": {
+        "挽晝": {
+          "banner_image": "https://hngameguide.com/wp-content/uploads/2026/11/3c74d371f8ea48b1b9ef2c23c70a35161792748111.webp"
+        },
+        "卡芙卡": {
+          "banner_image": "assets/pool-art/discovered/zzz-6cc5e43b1b248e514d80.webp"
+        },
+        "愛麗絲": {
+          "banner_image": "assets/pool-art/discovered/zzz-a9d229e29d12962079c5.webp"
+        },
+        "知更鳥": {
+          "banner_image": "assets/pool-art/discovered/zzz-ef90693b4ea8956f8b95.webp"
+        }
+      }
     },
     "wuwa": {
       "for_version": "3.8",
@@ -107,7 +165,22 @@
       "date": null,
       "status": "已公開前瞻，開放日期待公告",
       "preview_date": "2026-11-21 19:30",
-      "preview_url": "https://www.youtube.com/watch?v=7YZ4VIUwn5c"
+      "preview_url": "https://www.youtube.com/watch?v=7YZ4VIUwn5c",
+      "phase_art": {
+        "小刻": {
+          "banner_image": "https://web-static.hg-cdn.com/upload/image/20261123/551eb614bd6ccca9cd9b3b957386c787.png",
+          "weapons": "甜美交易（武庫申領）"
+        },
+        "潔爾佩塔": {
+          "banner_image": "https://web-static.hg-cdn.com/upload/image/20261123/b476a15ac2371934b0806d4a23bf466e.png",
+          "weapons": "使命必達",
+          "source": "https://endfield.gryphline.com/zh-tw/news/8992"
+        },
+        "洛西": {
+          "banner_image": "https://static.icy-veins.com/images/arknights-endfield/operators/rossi-splash.jpg",
+          "weapons": "狼之緋"
+        }
+      }
     },
     "nte": {
       "for_version": "1.5",
@@ -161,7 +234,15 @@
           "source": "https://www.sina.cn/news/detail/5367427077768159.html",
           "time_unverified": true
         }
-      ]
+      ],
+      "phase_art": {
+        "塗山小玉": {
+          "banner_image": "assets/pool-art/discovered/promilia-39cda128624cbb7fda86.webp"
+        },
+        "源千代": {
+          "banner_image": "assets/pool-art/promilia-minamoto-chiyo.webp"
+        }
+      }
     },
     "silver": {
       "for_version": "未開服",
@@ -191,7 +272,69 @@
           "source": "https://stargamebuy.com/%E5%B0%91%E5%A5%B3%E5%89%8D%E7%B7%9A-2%EF%BC%9A%E8%BF%BD%E6%94%BE%E5%9C%8B%E9%9A%9B%E6%9C%8D%E3%80%8C%E4%BC%8A%E5%88%A9%E6%98%82%E4%B9%8B%E5%9C%8D%E3%80%8D%E4%BA%8C%E5%91%A8%E5%B9%B4%E5%A4%A7%E7%89%88/",
           "time_unverified": true,
           "weapons": "懺悔羅盤",
-          "status": "國際服預告；台港澳正式招募公告待確認"
+          "status": "國際服預告；台港澳正式招募公告待確認",
+          "banner_image": "assets/pool-art/gfl2-asteria.webp"
+        }
+      ],
+      "replace_phases": true,
+      "phases": [
+        {
+          "label": "定向採購",
+          "characters": "克萊妲",
+          "weapons": "切爾諾伯格",
+          "banner_image": "assets/pool-art/gfl2-koleda.webp",
+          "rerun_characters": [],
+          "start": "2026-11-19T09:00:00+08:00",
+          "end": "2026-12-09T18:59:00+08:00",
+          "source": "https://steamcommunity.com/app/3308670/allnews/?l=tchinese",
+          "status": "11/19 更新公告 · 標準人形 UP：莉塔拉、科謝尼婭"
+        }
+      ],
+      "special_banners": [
+        {
+          "label": "復刻定向採購",
+          "characters": "OTs-14",
+          "weapons": "卡庇托林",
+          "banner_image": "https://res.17996cdn.net/gf2/kr/images/home/roles/allroles-roles-1074.png",
+          "rerun_characters": [
+            "OTs-14"
+          ],
+          "start": "2026-11-19T09:00:00+08:00",
+          "end": "2026-12-09T18:59:00+08:00",
+          "source": "https://steamcommunity.com/app/3308670/allnews/?l=tchinese",
+          "status": "11/19 更新公告 · 標準人形 UP：克羅麗科、納美西絲"
+        },
+        {
+          "label": "復刻定向採購",
+          "characters": "妮基塔",
+          "weapons": "護夢銀翼",
+          "banner_image": "assets/pool-art/gfl2-nikketa.webp",
+          "rerun_characters": [
+            "妮基塔"
+          ],
+          "start": "2026-11-19T09:00:00+08:00",
+          "end": "2026-12-09T18:59:00+08:00",
+          "source": "https://steamcommunity.com/app/3308670/allnews/?l=tchinese",
+          "status": "11/19 更新公告 · 標準人形 UP：克羅麗科、納美西絲"
+        },
+        {
+          "label": "自選採購 · 人形與軍備",
+          "characters": "威瑪西娜、春田、羅蕾萊、櫻花、萊婭、路易士、海倫",
+          "weapons": "6P71、信仰棘光、潮湧夜曲、緋紅契約、狡狐、玩具匠、謐語永護",
+          "banner_image": "https://res.17996cdn.net/gf2/kr/images/home/roles/allroles-roles-1066.png",
+          "rerun_characters": [
+            "威瑪西娜",
+            "春田",
+            "羅蕾萊",
+            "櫻花",
+            "萊婭",
+            "路易士",
+            "海倫"
+          ],
+          "start": "2026-11-19T09:00:00+08:00",
+          "end": "2026-12-30T18:59:00+08:00",
+          "source": "https://steamcommunity.com/app/3308670/allnews/?l=tchinese",
+          "status": "各選 1 名精英人形與 1 把精英武器，各限一次；背景使用候選人形威瑪西娜立繪"
         }
       ]
     },
@@ -203,7 +346,9 @@
           "characters": "紅蓮：弒神",
           "start": "2026-11-05T04:00:00+08:00",
           "end": "2026-11-26T03:59:59+08:00",
-          "source": "https://nikke.hotcool.tw/m/News_detail-237"
+          "source": "https://nikke.hotcool.tw/m/News_detail-237",
+          "banner_image": "https://www.sukaon.com/wp-content/uploads/2026/11/kode-redeem-nikke-scarlet-goddeath-resmi.webp",
+          "rerun_characters": []
         }
       ],
       "next": "待官方公布",
