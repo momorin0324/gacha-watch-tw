@@ -131,6 +131,11 @@
     img.alt = '';
     if (layer.classList.contains('history-character-backdrop')) {
       img.style.objectPosition = 'center 22%';
+      if (layer.classList.contains('history-portrait-backdrop')) {
+        img.style.width = 'min(32%, 135px)';
+        img.style.objectFit = 'contain';
+        img.style.objectPosition = 'center';
+      }
     }
     img.onload = () => {
       state.pending = '';
@@ -227,6 +232,27 @@
     return changed;
   }
 
+  let reviewedHistory = {};
+  fetch('./data/history-reviewed.json', { cache: 'no-cache' }).then(async response => {
+    if (!response.ok) return;
+    const data = await response.json();
+    if (data.schema !== 1) return;
+    reviewedHistory = data.games;
+    if (tab === 'history') window.render();
+  }).catch(error => console.warn('Historical banner artwork:', error.message));
+
+  function applyReviewedHistory() {
+    for (const entry of verifiedHistory) {
+      const fixes = reviewedHistory[entry.game];
+      if (!fixes) continue;
+      for (const pool of entry.phases || []) {
+        const key = [entry.version, String(pool.start_date || pool.start || '').slice(0, 10),
+          pool.five_star || pool.characters || ''].join('|');
+        if (fixes[key]) Object.assign(pool, fixes[key]);
+      }
+    }
+  }
+
   const historyLabels = {
     genshin: ['五星角色', '五星武器'],
     starrail: ['五星角色', '五星光錐'],
@@ -237,13 +263,28 @@
   };
 
   const endfieldArmory = {
+    '梨諾|2026-08-09': {
+      origin: '晨星於此閃耀', pool: '明曜申領', name: '曜夜的首演',
+      start: '2026-08-09 12:00', end: '自「晨星於此閃耀」起，第 3 次特許尋訪結束後',
+      source: 'https://endfield.gryphline.com/zh-tw/news/5200'
+    },
+    '提弗洛斯|2026-09-02': {
+      origin: '冬獵', pool: '幽寒申領', name: '寒夜幽影',
+      start: '2026-09-02（版本更新後）', end: '自「冬獵」起，第 3 次特許尋訪結束後',
+      source: 'https://endfield.gryphline.com/zh-tw/news/5208'
+    },
+    '湯湯|2026-10-29': {
+      origin: '祖泉的新流', pool: '細枝申領（重構）', name: '落草',
+      start: '2026-10-29 12:00', end: '2026-11-19 11:59',
+      source: 'https://endfield.gryphline.com/zh-tw/news/6179'
+    },
     '祀|2026-10-15': {
-      pool: '篆玉申領', name: '玉中身', start: '2026-10-15 12:00',
+      origin: '萬物更新', pool: '篆玉申領', name: '玉中身', start: '2026-10-15 12:00',
       end: '自「萬物更新」起，第 3 次特許尋訪結束後',
       source: 'https://endfield.gryphline.com/zh-tw/news/2652'
     },
     '明河|2026-11-05': {
-      pool: '月映申領', name: '喚月', start: '2026-11-05 12:00',
+      origin: '煙火邀星河', pool: '月映申領', name: '喚月', start: '2026-11-05 12:00',
       end: '自「煙火邀星河」起，第 3 次特許尋訪結束後',
       source: 'https://endfield.gryphline.com/zh-tw/news/6178'
     }
@@ -252,7 +293,11 @@
   function historicalArmory(pool) {
     const key = [pool.five_star || pool.characters, String(displayTime(pool.start || pool.start_date) || '').slice(0, 10)].join('|');
     const correction = endfieldArmory[key];
-    const records = (pool.weapon_pools || []).map(item => correction?.pool === item.pool ? { ...item, ...correction } : item);
+    const records = (pool.weapon_pools || []).map(item => {
+      const verified = Object.values(endfieldArmory).find(value =>
+        value.pool === item.pool || value.origin === item.origin);
+      return verified ? { ...item, ...verified } : item;
+    });
     if (correction && !records.some(item => item.pool === correction.pool)) records.push(correction);
     return [...new Map(records.map(item => [[item.pool, item.name, item.start].join('|'), item])).values()];
   }
@@ -282,7 +327,8 @@
           layer.className = 'phase-backdrop history-character-backdrop';
           layer.dataset.game = entry.game;
           layer.dataset.names = JSON.stringify(names);
-          layer.dataset.poster = pool.banner_image || '';
+          layer.dataset.poster = pool.banner_image || pool.portrait_image || '';
+          if (!pool.banner_image && pool.portrait_image) layer.classList.add('history-portrait-backdrop');
           layer.setAttribute('aria-hidden', 'true');
           box.style.minHeight = '128px';
           box.append(layer);
@@ -327,12 +373,23 @@
         box.append(copy);
         boxes.append(box);
       }
+      const slug = { starrail: 'hsr' }[entry.game] || entry.game;
+      const reference = document.createElement('a');
+      reference.href = 'https://bannerhistory.app/tw/' + slug + '-pickup-history';
+      reference.target = '_blank';
+      reference.rel = 'noopener noreferrer';
+      reference.textContent = '繁中卡池比對';
+      reference.style.marginInlineStart = '12px';
+      card.append(reference);
     });
   }
 
   const renderSite = window.render;
   window.render = function () {
-    if (tab === 'history' || tab === 'quality') mergeHistoricalBannerDetails();
+    if (tab === 'history' || tab === 'quality') {
+      applyReviewedHistory();
+      mergeHistoricalBannerDetails();
+    }
     if (tab === 'history') restoreHistoryPosters();
     const result = renderSite();
     if (tab === 'history') renderHistoryDetails();
