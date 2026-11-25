@@ -187,7 +187,7 @@
   function mergeHistoricalBannerDetails() {
     const versions = new Map();
     for (const entry of verifiedHistory) {
-      if (!/^\d+\.\d+(?:\.\d+)?$/.test(entry.version)) continue;
+      if (entry.game === 'endfield' || !/^\d+\.\d+(?:\.\d+)?$/.test(entry.version)) continue;
       for (const phase of entry.phases || []) {
         versions.set(entry.game + '|' + historyPhaseKey(phase), phase);
       }
@@ -210,7 +210,7 @@
     let changed = false;
     for (const entry of verifiedHistory) {
       for (const phase of entry.phases || []) {
-        if (phase.banner_image) continue;
+        if (phase.banner_image || phase.portrait_image) continue;
         const names = String(phase.five_star || phase.characters || '').split('、');
         const game = seed.find(game => game.id === entry.game);
         const startDay = displayTime(phase.start || phase.start_date)?.slice(0, 10);
@@ -302,6 +302,34 @@
     return [...new Map(records.map(item => [[item.pool, item.name, item.start].join('|'), item])).values()];
   }
 
+  const endfieldVersions = [
+    ['2026-11-25', '1.7'], ['2026-10-15', '1.6'], ['2026-09-02', '1.5'],
+    ['2026-07-16', '1.4'], ['2026-06-05', '1.3'], ['2026-04-17', '1.2'],
+    ['2026-03-12', '1.1'], ['2026-01-22', '1.0']
+  ];
+
+  function prepareEndfieldHistory() {
+    const entries = verifiedHistory.filter(entry => entry.game === 'endfield');
+    const named = new Map(entries.filter(entry => !/^\d+\.\d+$/.test(entry.version))
+      .flatMap(entry => (entry.phases || []).map(pool => [historyPhaseKey(pool), pool])));
+    for (const entry of entries) {
+      if (!/^\d+\.\d+$/.test(entry.version)) {
+        entry.version_number = endfieldVersions.find(([start]) => entry.date >= start)?.[1];
+        continue;
+      }
+      // Archive feed and named historical records can contain the same pools.
+      const matches = (entry.phases || []).map(pool => [pool, named.get(historyPhaseKey(pool))]);
+      if (!matches.length || matches.some(([, target]) => !target)) continue;
+      entry.mergedIntoVersion = true;
+      for (const [source, target] of matches) {
+        if (source.start) target.start = source.start;
+        if (source.end) target.end = source.end;
+        if (!target.banner_image && source.banner_image) target.banner_image = source.banner_image;
+        if (!target.source && source.source) target.source = source.source;
+      }
+    }
+  }
+
   function renderHistoryDetails() {
     const labels = historyLabels[gameFilter];
     if (!labels) return;
@@ -314,6 +342,10 @@
 
     cards.forEach((card, index) => {
       const entry = records[index];
+      if (entry.game === 'endfield' && entry.version_number) {
+        const heading = card.querySelector(':scope > .row strong');
+        if (heading) heading.textContent += '（' + entry.version_number + '）';
+      }
       const boxes = card.querySelector('.phasehistory');
       if (!boxes) return;
       boxes.replaceChildren();
@@ -369,6 +401,14 @@
         } else {
           addText(copy, 'div', '', labels[1] + '：' + (pool.weapons || '待核對'));
           if (pool.weapon_banner_name) addText(copy, 'div', 'small', pool.weapon_banner_name);
+          if (entry.game === 'zzz' && officialURL(pool.weapon_source)) {
+            const link = document.createElement('a');
+            link.href = pool.weapon_source;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = '音擎資料來源';
+            copy.append(link);
+          }
         }
         box.append(copy);
         boxes.append(box);
@@ -389,6 +429,7 @@
     if (tab === 'history' || tab === 'quality') {
       applyReviewedHistory();
       mergeHistoricalBannerDetails();
+      prepareEndfieldHistory();
     }
     if (tab === 'history') restoreHistoryPosters();
     const result = renderSite();
