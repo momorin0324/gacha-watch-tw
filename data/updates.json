@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_at": "2026-11-25T09:03:49.023155+00:00",
+  "updated_at": "2026-11-25T09:56:22.062511+00:00",
   "games": [
     {
       "id": "genshin",
@@ -565,6 +565,15 @@
             ]
           }
         ]
+      }
+    },
+    {
+      "id": "bd2",
+      "upcoming_preview": {
+        "version": "3.5 週年",
+        "start": "2026-11-27T18:00:00+08:00",
+        "url": null,
+        "source": "https://www.browndust2.com/en-us/news/view?id=01M7QMQWCJSWQEXTKYC3B1PX5Z"
       }
     }
   ],
