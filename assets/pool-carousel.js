@@ -287,7 +287,10 @@
       advanceWebsiteVersions();
     }
     const displayedPhases = game.phases || [];
-    const applied = applyOfficialFeed(game, patch);
+    // A rejected record cannot replace a previously displayed version.
+    const { current_version, ...otherFields } = patch;
+    const accepted = !current_version || incoming ? patch : otherFields;
+    const applied = applyOfficialFeed(game, accepted);
     if (incoming) game.phases = game.phases.map(p => ({ ...p, end: p.end || p.end_note || null }));
     if (applied && incoming?.version === game.current) {
       game.source_status = '官方版本公告';
@@ -392,3 +395,6 @@
     window.render();
   }).catch(error => console.warn('Gacha snapshot:', error.message));
 }
+
+// A cached feed can finish before this script installs the open-ended version parser.
+gachaSyncV132();
