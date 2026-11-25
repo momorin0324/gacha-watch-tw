@@ -20,3 +20,5 @@
 python -m unittest discover -s tests -p 'test_official_sync.py'
 python scripts/sync_hoyolab_official.py
 ```
+
+<!-- Trigger a fresh GitHub Pages deployment. -->
