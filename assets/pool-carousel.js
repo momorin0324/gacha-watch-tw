@@ -12,13 +12,44 @@ function poolBadgeClass(label) {
   return 'rerun-tag pool-badge-' + ({ NEW: 'new', 當期PU: 'pickup', 復刻: 'rerun' }[label]);
 }
 
+function artForName(entries, gameId, name) {
+  if (entries?.[name] || gameId !== 'starrail') return entries?.[name];
+  const normalize = value => value.replace(/[\s·・•･‧]/g, '');
+  const key = Object.keys(entries || {}).find(candidate => normalize(candidate) === normalize(name));
+  return entries?.[key];
+}
+
 function poolDuration(rerun) {
   return rerun ? 3500 : 10000;
+}
+
+function estimatedUpdate(game, today) {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(game.date || '')) return null;
+  if (!['genshin', 'starrail', 'zzz'].includes(game.id)) return null;
+  const pools = [...(game.phases || []), ...(game.special_banners || [])];
+  const dates = pools.filter(pool => !pool.time_unverified &&
+    !/自選|免費|贈送|獨立|集錄/.test(pool.label || ''))
+    .map(pool => String(displayTime(pool.end) || '').match(/^\d{4}-\d{2}-\d{2}/)?.[0])
+    .filter(Boolean).sort();
+  const end = dates.at(-1);
+  if (!end) return null;
+  const epoch = Date.parse(end + 'T00:00:00Z');
+  if (!Number.isFinite(epoch)) return null;
+  const estimate = new Date(epoch + 86400000).toISOString().slice(0, 10);
+  return estimate >= today ? estimate : null;
 }
 
 (function poolCarousel() {
   const badgeStyles = document.createElement('style');
   badgeStyles.textContent = `
+    .pool-slide > .rerun-tag { justify-self: start; width: max-content; max-width: 100%; }
+    .cards > .card > .overview-heading { display: grid; gap: 9px; }
+    .overview-heading > .row { min-width: 0; }
+    .overview-heading .logo { flex: 0 0 auto; }
+    .overview-heading .name { overflow-wrap: normal; word-break: normal; }
+    .overview-heading .countdown-head { justify-content: flex-start; }
+    .overview-heading .countdown-head .pill { white-space: normal; max-width: 100%; }
+    .overview-estimated-date { margin-top: 5px; color: #b9cff0; font-size: .87rem; }
     .rerun-tag.pool-badge-new { color: #b6ffca; background: #123d2e; border-color: #67d697; }
     .rerun-tag.pool-badge-pickup { color: #bcecff; background: #12374e; border-color: #70c9f0; }
     .rerun-tag.pool-badge-rerun { color: #ffe0a6; background: #4a321c; border-color: #d49a57; }
@@ -58,8 +89,9 @@ function poolDuration(rerun) {
   }
 
   function sources({ game, name, phase }) {
-    return [...new Set([catalogs[0][game.id]?.[name], catalogs[1][game.id]?.[name],
-      game.character_art?.[name], phase.banner_image].filter(Boolean))];
+    return [...new Set([['starrail', 'nikke'].includes(game.id) ? artForName(historyArt[game.id], game.id, name)?.background : null,
+      artForName(catalogs[0][game.id], game.id, name), artForName(catalogs[1][game.id], game.id, name),
+      artForName(game.character_art, game.id, name), phase.banner_image].filter(Boolean))];
   }
 
   function remaining(end, now) {
@@ -154,9 +186,10 @@ function poolDuration(rerun) {
     const reruns = JSON.parse(layer.dataset.reruns || '[]');
     const entries = state.names.map((name, index) => {
       const art = perName[name];
+      const matching = sources({ game, name, phase: {} });
       const candidates = [
-        art?.background, index === 0 ? poster : null,
-        ...sources({ game, name, phase: {} }), art?.portrait
+        art?.background, ...(game.id === 'starrail' ? matching : []),
+        index === 0 ? poster : null, ...matching, art?.portrait
       ];
       const url = candidates.find(value => value && !failedUrls.has(value));
       return { name, url, portrait: url === art?.portrait ||
@@ -171,18 +204,18 @@ function poolDuration(rerun) {
     const img = new Image();
     img.alt = '';
     if (layer.classList.contains('history-character-backdrop')) {
-      img.style.objectPosition = 'center 24%';
+      img.style.objectPosition = 'center 42%';
     }
     if (layer.classList.contains('history-character-backdrop') && !item.portrait) {
       if (item.url.includes('/image/character_portrait/')) {
         const focus = node => ({
-          '1415': '52% 59%', '1401': '54% 49%', '1225': '42% 49%', '1317': '62% 49%'
+          '1213': '56% 50%', '1507': '55% 48%', '1415': '52% 59%', '1401': '54% 49%', '1225': '42% 49%', '1317': '62% 49%'
         })[node] || 'center 53%';
         img.style.width = 'min(60%, 310px)';
         img.style.objectPosition = focus(item.url.split('/').at(-1).split('.')[0]);
         img.style.maskImage = 'linear-gradient(90deg, transparent, black 18%)';
       } else if (game.id === 'bd2') {
-        img.style.width = '44%';
+        img.style.width = '40%';
         img.style.objectFit = 'contain';
         img.style.objectPosition = 'right center';
         img.style.maskImage = 'none';
@@ -429,10 +462,10 @@ function poolDuration(rerun) {
       const portraitList = pool.portraits || [];
       const image = {};
       names.forEach((name, index) => {
-        const art = historyArt[entry.game]?.[name];
+        const art = artForName(historyArt[entry.game], entry.game, name);
         const portrait = portraitList.length === names.length ? portraitList[index] : null;
         image[name] = {
-          background: art?.byVersion?.[entry.version] || art?.background || (entry.game !== 'wuwa' && names.length === 1 ? pool.banner_image : null),
+          background: art?.byVersion?.[entry.version] || art?.background || (entry.game !== 'starrail' && entry.game !== 'wuwa' && names.length === 1 ? pool.banner_image : null),
           portrait: art?.portrait || portrait || (names.length === 1 ? pool.portrait_image : null)
         };
       });
@@ -510,7 +543,15 @@ function poolDuration(rerun) {
           for (const weapon of armory) {
             const line = document.createElement('div');
             line.className = 'weapon-line';
-            addText(line, 'strong', '', (weapon.pool || '武器申領') + '：' + (weapon.name || '待核對'));
+            const text = document.createElement('strong');
+            text.append((weapon.pool || '武器申領') + '：' + (weapon.name || '待核對'));
+            const date = String(start).slice(0, 10);
+            const own = endfieldArmory[names.join('、') + '|' + date];
+            if ((own && weapon.pool === own.pool && weapon.name === own.name) ||
+                (entry.version === '輝光慶典' && ['熔灼申領','疾行申領'].includes(weapon.pool))) {
+              addText(text, 'span', poolBadgeClass('當期PU'), '當期PU');
+            }
+            line.append(text);
             addText(line, 'div', 'small', (weapon.start || '開始待核對') + ' ～ ' + (weapon.end || '結束待核對'));
             if (officialURL(weapon.source)) {
               const link = document.createElement('a');
@@ -548,6 +589,30 @@ function poolDuration(rerun) {
     });
   }
 
+  const sortKnownDates = sortGames;
+  sortGames = function (a, b) {
+    const today = taiwanTodayISO();
+    return sortKnownDates(
+      { date: a.date || estimatedUpdate(a, today) },
+      { date: b.date || estimatedUpdate(b, today) }
+    );
+  };
+
+  function decorateOverview() {
+    const today = taiwanTodayISO();
+    for (const button of app.querySelectorAll('[data-open]')) {
+      const card = button.closest('article');
+      const game = seed.find(item => item.id === button.dataset.open);
+      if (!card || !game) continue;
+      card.querySelector(':scope > .row')?.classList.add('overview-heading');
+      const estimate = estimatedUpdate(game, today);
+      if (!estimate) continue;
+      const date = card.querySelector('.summaryline .date');
+      if (!date) continue;
+      addText(date.parentElement, 'div', 'overview-estimated-date', '預計更新日期：' + estimate + '（依卡池時程推估）');
+    }
+  }
+
   const renderSite = window.render;
   window.render = function () {
     if (tab === 'history' || tab === 'quality') {
@@ -558,6 +623,7 @@ function poolDuration(rerun) {
     if (tab === 'history') restoreHistoryPosters();
     const result = renderSite();
     if (tab === 'history') renderHistoryDetails();
+    if (tab === 'timeline') decorateOverview();
     return result;
   };
 
