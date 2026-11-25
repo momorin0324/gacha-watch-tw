@@ -14,32 +14,24 @@ jobs:
       - name: Prepare reference images
         run: |
           python - <<'PY'
-          import io,json,urllib.request,concurrent.futures
-          from PIL import Image,ImageDraw
           from pathlib import Path
-          sources={
-           'sig-hall':'https://static.allthings.how/content/images/2026/03/Screenshot-2026-03-20-090634-2-1.png',
-           'sig-day':'https://pbs.twimg.com/media/HA4nQTJa4AAPwTH.jpg?name=orig',
-           'sig-close':'https://pbs.twimg.com/media/HDqdP8BagAAw0pi.jpg?name=orig',
-           'sig-film':'https://pbs.twimg.com/media/HDqeK9CbEAIeHcR.jpg?name=orig'}
-          dest=Path('assets/pool-art/review');dest.mkdir(exist_ok=True)
-          def get(entry):
-           k,u=entry
-           try:
-            req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0'})
-            with urllib.request.urlopen(req,timeout=12) as response: im=Image.open(io.BytesIO(response.read(24000000))).convert('RGB')
-            size=im.size; assert im.width>=600 and im.height>=320
-            im.thumbnail((2200,2200));im.save(dest/(k+'.webp'),quality=92)
-            return k,size,im
-           except Exception as e: return k,str(e),None
-          out=Image.new('RGB',(750,4*200));draw=ImageDraw.Draw(out);stats={}
-          with concurrent.futures.ThreadPoolExecutor(7) as ex:
-           for i,(k,size,im) in enumerate(ex.map(get,sources.items())):
-            stats[k]=size
-            if im:
-             im.thumbnail((365,170));out.paste(im,(i%2*375,i//2*200))
-            draw.text((i%2*375,i//2*200+171),k+' '+str(size),fill='white')
-          out.save(dest/'sig.jpg');(dest/'sig.json').write_text(json.dumps(stats))
+          from PIL import Image,ImageDraw,ImageOps
+          d=Path('assets/pool-art/review')
+          # Original character focus and art-directed crop, without enlarging the source.
+          shots=[
+           ('sig-day','wuwa-sigrika-hall',(0,0,1,1),(.50,.17)),
+           ('exe-board','nte-exe-board',(.38,.14,.92,.69),(.54,.18)),
+           ('chiz-board','nte-shinku-board',(.42,.06,1,.65),(.53,.18)),
+           ('chaos-board','nte-chaos-board',(.40,.085,.97,.65),(.56,.17))]
+          out=Image.new('RGB',(790,4*130),'#19283c')
+          for row,(src,slug,box,focus) in enumerate(shots):
+           im=Image.open(d/(src+'.webp'));w,h=im.size
+           im=im.crop((round(box[0]*w),round(box[1]*h),round(box[2]*w),round(box[3]*h)));im.thumbnail((1800,1200))
+           im.save(d/(slug+'.webp'),quality=93,method=6)
+           for x,width,height in [(0,370,82),(375,285,57),(665,125,72)]:
+            thumb=ImageOps.fit(im,(width,height),centering=focus);out.paste(thumb,(x,row*130))
+           ImageDraw.Draw(out).text((1,row*130+87),slug+' '+str(im.size))
+          out.save(d/'crops.jpg',quality=90)
           PY
           git add assets/pool-art/review
           git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -m 'Prepare illustration samples for framing review'
