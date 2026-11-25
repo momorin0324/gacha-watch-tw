@@ -96,7 +96,7 @@
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-phoebe-convene-v2.webp"] { object-position: 72% 8%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-qiuyuan-convene-v2.webp"] { object-position: 65% 29%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-roccia-convene-v2.webp"] { object-position: 76% 55%; }
-:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-sigrika-convene-v2.webp"] { object-position: 59% 49%; }
+:is(.pool-slide,.phase-backdrop) img[src$="/wuwa-sigrika-showcase.webp"] { object-position: 71% 31%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-suisui-convene-v2.webp"] { object-position: 55% 12%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/wuwa-yangyang-xuanling-convene-v2.webp"] { object-position: 72% 26%; }
 :is(.pool-slide,.phase-backdrop) img[src$="/zzz-nom.webp"] { object-position: 36% 19%; }
@@ -115,6 +115,8 @@
   position: absolute;
   inset: 0 0 0 auto;
   width: 72%;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 36%);
+  mask-image: linear-gradient(90deg, transparent, #000 36%);
   height: 100%;
   object-fit: cover;
   object-position: center 28%;
