@@ -513,7 +513,10 @@
         "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
       },
       "5.6|2025-05-27|神里綾華、神里綾人、宵宮、千織、八重神子、荒瀧一斗、珊瑚宮心海、楓原萬葉": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/156044/37bcb767b11dd6d985b61a586efcd783_6852418448913392865.png"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/156044/37bcb767b11dd6d985b61a586efcd783_6852418448913392865.png",
+        "start_date": "2025-05-27 18:00",
+        "end_date": "2025-06-17 14:59",
+        "timing_source": "https://genshin.hoyoverse.com/news/detail/155991"
       },
       "5.7|2025-06-18|絲柯克、申鶴": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/156954/88b5e726a2d75980c4c84a4dc56bb400_8886553313817337155.jpg",
@@ -558,7 +561,10 @@
         "timing_source": "https://senseos.gg/guides/genshin-impact/genshin-epitomized-path-and-chronicled-wish/"
       },
       "6.1|2025-10-22|奈芙爾、芙寧娜": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/160338/abceb2371599d782a88d6ba6673f594d_2284469706523727795.jpg"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/160338/abceb2371599d782a88d6ba6673f594d_2284469706523727795.jpg",
+        "start_date": "2025-10-22（版本更新後）",
+        "end_date": "2025-11-11 17:59",
+        "timing_source": "https://genshin.hoyoverse.com/en/news/detail/160338"
       },
       "6.1|2025-11-11|阿蕾奇諾、鍾離": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/160749/9e0c6f676844d78aa719fd4279d76ebc_6405883342379691153.jpg"
