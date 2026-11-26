@@ -381,7 +381,10 @@
         "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
       },
       "4.5|2024-03-13|優菈、莫娜、阿貝多、可莉、迪盧克、琴": {
-        "banner_image": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210514/2021051417153326710.jpg"
+        "banner_image": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210514/2021051417153326710.jpg",
+        "start_date": "2024-03-13（版本更新後）",
+        "end_date": "2024-04-02 17:59",
+        "timing_source": "https://genshin.hoyoverse.com/en/news/detail/122791"
       },
       "4.6|2024-04-24|阿蕾奇諾、林尼": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/123336/770c96567487ee634ee5d792e5c7df35_2937749118682141014.jpg",
@@ -468,7 +471,10 @@
         "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
       },
       "5.3|2025-01-21|白朮、申鶴、刻晴、甘雨、七七、達達利亞、魈": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/129515/c12257354fe730c3cde287a12bd05dc1_1315307346992756195.png"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/129515/c12257354fe730c3cde287a12bd05dc1_1315307346992756195.png",
+        "start_date": "2025-01-21 18:00",
+        "end_date": "2025-02-11 14:59",
+        "timing_source": "https://genshin.hoyoverse.com/en/news/detail/127691"
       },
       "5.4|2025-02-12|夢見月瑞希、希格雯": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/129799/5583f19800ed2c801679c1ebe77709cf_24552743300169214.jpg",
