@@ -585,10 +585,16 @@
         "timing_source": "https://genshin.hoyoverse.com/en/news/detail/161521"
       },
       "6.3|2026-01-14|哥倫比婭、伊涅芙": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162089/eedde25e32165a1c0829888c21fe737b_8299427508651113220.jpg"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162089/eedde25e32165a1c0829888c21fe737b_8299427508651113220.jpg",
+        "start_date": "2026-01-14（版本更新後）",
+        "end_date": "2026-02-03 17:59",
+        "timing_source": "https://genshin.hoyoverse.com/id/news/detail/162089"
       },
       "6.3|2026-02-03|茲白、那維萊特": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162090/7fe2a3f0157b3045f78bb92f69a7db3a_1432435110450683522.jpg"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162090/7fe2a3f0157b3045f78bb92f69a7db3a_1432435110450683522.jpg",
+        "start_date": "2026-02-03 18:00",
+        "end_date": "2026-02-24 14:59",
+        "timing_source": "https://genshinfans.com/blogs/wish-banner/version-luna-iv-event-wishes-2"
       },
       "6.4|2026-02-25|法爾伽、菲林斯": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162721/4df08696633a4db92b369711589dd84e_540306179551982814.jpg"
