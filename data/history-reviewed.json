@@ -570,10 +570,16 @@
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/160749/9e0c6f676844d78aa719fd4279d76ebc_6405883342379691153.jpg"
       },
       "6.2|2025-12-03|杜林、溫迪": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/161137/dbb335dd511336231da36235983c9de6_8006377043810746848.jpg"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/161137/dbb335dd511336231da36235983c9de6_8006377043810746848.jpg",
+        "start_date": "2025-12-03（版本更新後）",
+        "end_date": "2025-12-23 17:59",
+        "timing_source": "https://www.hoyolab.com/article/42563930"
       },
       "6.2|2025-12-23|瓦雷莎、希諾寧": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/161521/eb628cc1fa1c710d7514e88347efb33b_2407999175219513982.jpg"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/161521/eb628cc1fa1c710d7514e88347efb33b_2407999175219513982.jpg",
+        "start_date": "2025-12-23 18:00",
+        "end_date": "2026-01-13 14:59",
+        "timing_source": "https://genshin.hoyoverse.com/en/news/detail/161521"
       },
       "6.3|2026-01-14|哥倫比婭、伊涅芙": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162089/eedde25e32165a1c0829888c21fe737b_8299427508651113220.jpg"
