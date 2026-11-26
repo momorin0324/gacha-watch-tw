@@ -1395,7 +1395,15 @@
       "1.4|2024-12-18|星見雅、淺羽悠真": {
         "portrait_image": "https://enka.network/ui/zzz/IconRoleCircle13.png",
         "weapons": "霰落星殿、殘心青囊",
-        "weapon_source": "https://wiki.biligame.com/zzz/调频"
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "end_date": "2025-01-21 14:59",
+        "timing_source": "https://www.hoyolab.com/article/35429564",
+        "timing_sources": [
+          "https://www.youtube.com/watch?v=AtidbOho0M0",
+          "https://www.youtube.com/watch?v=jba07-WiFEQ",
+          "https://forum.gamer.com.tw/Co.php?bPage=0&bsn=74860&sn=21271&subbsn=12"
+        ],
+        "timing_note": "亞洲服 UTC+8；2024-12-18 版本更新後同時開池，官方僅公布預計維護完成時間，精確開池時分尚未核實；收池 2025-01-21 14:59:59。"
       },
       "2.1|2025-07-16|浮波柚葉、星見雅": {
         "portrait_image": "https://enka.network/ui/zzz/IconRoleCircle47.png",
