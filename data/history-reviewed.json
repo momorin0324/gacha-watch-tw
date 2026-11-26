@@ -597,13 +597,22 @@
         "timing_source": "https://genshinfans.com/blogs/wish-banner/version-luna-iv-event-wishes-2"
       },
       "6.4|2026-02-25|法爾伽、菲林斯": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162721/4df08696633a4db92b369711589dd84e_540306179551982814.jpg"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162721/4df08696633a4db92b369711589dd84e_540306179551982814.jpg",
+        "start_date": "2026-02-25（版本更新後）",
+        "end_date": "2026-03-17 17:59",
+        "timing_source": "https://genshin.hoyoverse.com/en/news/detail/162721"
       },
       "6.4|2026-03-17|絲柯克、愛可菲": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/163094/ddd1ed22534d993acbacc0404ee97be7_8857687299707474410.jpg"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/163094/ddd1ed22534d993acbacc0404ee97be7_8857687299707474410.jpg",
+        "start_date": "2026-03-17 18:00",
+        "end_date": "2026-04-07 14:59",
+        "timing_source": "https://genshin.hoyoverse.com/en/news/detail/163094"
       },
       "6.4|2026-02-25|優菈、莫娜、阿貝多、可莉、迪盧克、琴": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162724/97c31ec3c126dd649ce00bfd43f77cb1_5918528908610101554.png"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162724/97c31ec3c126dd649ce00bfd43f77cb1_5918528908610101554.png",
+        "start_date": "2026-02-25（版本更新後）",
+        "end_date": "2026-03-17 17:59",
+        "timing_source": "https://genshin.hoyoverse.com/en/news/detail/162721"
       },
       "6.5|2026-04-08|莉奈婭、恰斯卡": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/163415/305178679df350e4d7bb142f35652d7e_1146057269290493062.jpg"
