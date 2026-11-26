@@ -875,5 +875,61 @@ function estimatedUpdate(game, today) {
   }).catch(error => console.warn('Gacha snapshot:', error.message));
 }
 
+// Search results rebuild the page, so keep the input in place until IME commits.
+(function bindCompositionSafeSearch() {
+  const isSearch = el => el?.id === 'search' || el?.id === 'history-search';
+  let composing = null;
+  let pendingRender = false;
+  let commitTimer;
+  const renderPage = window.render;
+
+  window.render = function () {
+    if (composing?.isConnected) {
+      pendingRender = true;
+      return;
+    }
+    pendingRender = false;
+    const field = document.activeElement;
+    const selection = isSearch(field) && [field.selectionStart, field.selectionEnd, field.selectionDirection];
+    renderPage();
+    if (!selection) return;
+    const replacement = document.getElementById(field.id);
+    if (!replacement || replacement === field) return;
+    replacement.focus({ preventScroll: true });
+    replacement.setSelectionRange(...selection);
+  };
+
+  function applySearch(field) {
+    if (field.value === q && !pendingRender) return;
+    q = field.value;
+    window.render();
+  }
+
+  app.addEventListener('compositionstart', event => {
+    if (!isSearch(event.target)) return;
+    clearTimeout(commitTimer);
+    composing = event.target;
+  });
+
+  app.addEventListener('compositionend', event => {
+    const field = event.target;
+    if (composing !== field) return;
+    // Allow the final input event to update the value before reading it.
+    commitTimer = setTimeout(() => {
+      composing = null;
+      if (field.isConnected) applySearch(field);
+      else if (pendingRender) window.render();
+    }, 0);
+  });
+
+  app.addEventListener('input', event => {
+    const field = event.target;
+    if (!isSearch(field)) return;
+    event.stopImmediatePropagation();
+    if (event.isComposing || composing === field) return;
+    applySearch(field);
+  }, true);
+})();
+
 // A cached feed can finish before this script installs the open-ended version parser.
 gachaSyncV132();
