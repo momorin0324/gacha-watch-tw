@@ -998,7 +998,10 @@
         "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
       },
       "3.7|2025-11-05|昔漣": {
-        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1415.png"
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1415.png",
+        "start_date": "2025-11-05（版本更新後）",
+        "end_date": "2025-12-16 15:00",
+        "timing_source": "https://www.hoyolab.com/article/42482837"
       },
       "3.7|2025-11-05|風堇、遐蝶、緹寶": {
         "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1403.png",
