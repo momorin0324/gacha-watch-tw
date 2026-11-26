@@ -567,7 +567,10 @@
         "timing_source": "https://genshin.hoyoverse.com/en/news/detail/160338"
       },
       "6.1|2025-11-11|阿蕾奇諾、鍾離": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/160749/9e0c6f676844d78aa719fd4279d76ebc_6405883342379691153.jpg"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/160749/9e0c6f676844d78aa719fd4279d76ebc_6405883342379691153.jpg",
+        "start_date": "2025-11-11 18:00",
+        "end_date": "2025-12-02 14:59",
+        "timing_source": "https://genshinfans.com/blogs/wish-banner/version-luna-ii-wish-banner-2"
       },
       "6.2|2025-12-03|杜林、溫迪": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/161137/dbb335dd511336231da36235983c9de6_8006377043810746848.jpg",
