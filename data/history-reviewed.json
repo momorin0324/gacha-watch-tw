@@ -1,1 +1,2017 @@
-{"schema":1,"games":{"genshin":{"1.0|2020-09-28|溫迪":{"banner_image":"https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210313/2021031319365596101.jpg","start_date":"2020-09-28 10:00","end_date":"2020-10-18 17:59","timing_source":"https://genshin-impact.fandom.com/wiki/Ballad_in_Goblets/2020-09-28"},"1.0|2020-10-20|可莉":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/06/07/1015537/bf8645444de96287d9d66a813d9f0aa4_2451975548209649534.png","start_date":"2020-10-20 18:00","end_date":"2020-11-10 14:59","timing_source":"https://genshin-impact.fandom.com/wiki/Sparkling_Steps/2020-10-20"},"1.1|2020-11-11|達達利亞":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/04/02/1015537/b23dda81b6b9b0bb8a46b9adcd0e2a70_1479948151736832476.jpg","start_date":"2020-11-11（版本更新後）","end_date":"2020-12-01 15:59","timing_source":"https://genshin.hoyoverse.com/m/en/news/detail/6638"},"1.1|2020-12-01|鍾離":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2020/11/29/1015537/be76b7138352885ab450dcce536a8881_5237494670584433976.png","start_date":"2020-12-01 18:00","end_date":"2020-12-22 14:59","timing_source":"https://genshin-impact.fandom.com/wiki/Gentry_of_Hermitage/2020-12-01"},"1.2|2020-12-23|阿貝多":{"banner_image":"https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20201220/2020122019331828388.jpg","start_date":"2020-12-23 10:00","end_date":"2021-01-12 15:59","timing_source":"https://genshin-impact.fandom.com/wiki/Secretum_Secretorum/2020-12-23"},"1.2|2021-01-12|甘雨":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/01/10/1015537/a4a8e792d76b342c43a3e7f4eb284890_7429454184524275542.jpg","start_date":"2021-01-12 18:00","end_date":"2021-02-02 14:59","timing_source":"https://genshin-impact.fandom.com/wiki/Adrift_in_the_Harbor/2021-01-12"},"1.3|2021-02-03|魈":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/12/29/1015537/a4520be259d355fae87c79a0d67bb567_3206780791230177565.jpg","start_date":"2021-02-03（版本更新後）","end_date":"2021-02-17 15:59","timing_source":"https://genshin.hoyoverse.com/en/news/detail/103838"},"1.3|2021-02-17|刻晴":{"banner_image":"https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210215/2021021513032984210.jpg","start_date":"2021-02-17 18:00","end_date":"2021-03-02 15:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"1.3|2021-03-02|胡桃":{"banner_image":"https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210226/2021022618132123378.jpg","start_date":"2021-03-02 18:00","end_date":"2021-03-16 14:59","timing_source":"https://genshin-impact.fandom.com/wiki/Moment_of_Bloom/2021-03-02"},"1.4|2021-03-17|溫迪":{"banner_image":"https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210313/2021031319365596101.jpg","start_date":"2021-03-17（版本更新後）","end_date":"2021-04-06 15:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"1.4|2021-04-06|達達利亞":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/04/02/1015537/b23dda81b6b9b0bb8a46b9adcd0e2a70_1479948151736832476.jpg","start_date":"2021-04-06 18:00","end_date":"2021-04-27 14:59","timing_source":"https://genshin-impact.fandom.com/wiki/Farewell_of_Snezhnaya/2021-04-06"},"1.5|2021-04-28|鍾離":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/04/25/1015537/5800bc8cae272566c0c70b2a3a4c452d_8480392818056458896.jpg","start_date":"2021-04-28（版本更新後）","end_date":"2021-05-18 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"1.5|2021-05-18|優菈":{"banner_image":"https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210514/2021051417153326710.jpg","start_date":"2021-05-18 18:00","end_date":"2021-06-08 14:59","timing_source":"https://genshin.hoyoverse.com/en/news/detail/12736"},"1.6|2021-06-09|可莉":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/06/07/1015537/bf8645444de96287d9d66a813d9f0aa4_2451975548209649534.png","start_date":"2021-06-09（版本更新後）","end_date":"2021-06-29 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"1.6|2021-06-29|楓原萬葉":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/06/25/1015537/c10e1b2bf369543924d7574cbe89ed2d_7365316316733556345.png","start_date":"2021-06-29 18:00","end_date":"2021-07-20 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.0|2021-07-21|神里綾華":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/07/19/1015537/9c6070da0fe23081c6ad3389b8ee010d_8307924212594573588.jpg","start_date":"2021-07-21（版本更新後）","end_date":"2021-08-10 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.0|2021-08-10|宵宮":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/08/08/1015373/1c615fe28f7e1920c59c2809a26ebc99_5547908425434361125.jpg","start_date":"2021-08-10 18:00","end_date":"2021-08-31 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.1|2021-09-01|雷電將軍":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/08/28/1015373/67bcd4d5a5a42fd86e2b96df0e2b459a_791772669412183147.jpg","start_date":"2021-09-01（版本更新後）","end_date":"2021-09-21 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.1|2021-09-21|珊瑚宮心海":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/09/19/1015537/1e2277fafba0b0f055dfb08a119ed40a_3673021516991038137.jpg","start_date":"2021-09-21 18:00","end_date":"2021-10-12 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.2|2021-10-13|達達利亞":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/10/11/1015537/4dd10fc2a720107ae7a4afa11de2b862_1912484706458659522.jpg","start_date":"2021-10-13（版本更新後）","end_date":"2021-11-02 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.2|2021-11-02|胡桃":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/10/29/1015537/3629f5ba1c68abe0dff2461d770a6185_129758626640373609.jpg","start_date":"2021-11-02 18:00","end_date":"2021-11-23 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.3|2021-11-24|阿貝多、優菈":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/11/20/1015537/e3c26b0c3cd25383e5a827c93d20b37a_8392711207637783524.jpg","start_date":"2021-11-24（版本更新後）","end_date":"2021-12-14 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.3|2021-12-14|荒瀧一斗":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/12/10/1015537/ae7545f9e7407a1182b2f4e7f1e0e51b_629993800131712238.jpg","start_date":"2021-12-14 18:00","end_date":"2022-01-04 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.4|2022-01-05|申鶴、魈":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/12/29/1015537/faf4e342339d80440222508d22873f25_7872237798698738193.jpg","start_date":"2022-01-05（版本更新後）","end_date":"2022-01-25 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.4|2022-01-25|鍾離、甘雨":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2021/12/29/1015537/132a86dd74435c3feadaefccc3c3e9ca_5724518092295364200.jpg","start_date":"2022-01-25 18:00","end_date":"2022-02-15 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.5|2022-02-16|八重神子":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2022/02/14/1015537/b6041665822fb84ab5672dcb29d762c9_4681556231863356769.jpg","start_date":"2022-02-16（版本更新後）","end_date":"2022-03-08 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.5|2022-03-08|雷電將軍、珊瑚宮心海":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2022/03/03/1015537/a2a74707cf9b73e79664ea6888be49b6_230241886780402968.jpg","start_date":"2022-03-08 18:00","end_date":"2022-03-29 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.6|2022-03-30|神里綾人、溫迪":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2022/03/27/1015373/85d4daed523982619be5a3d689040033_5901542234509684844.jpg","start_date":"2022-03-30（版本更新後）","end_date":"2022-04-19 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.6|2022-04-19|神里綾華":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2022/04/13/1015373/a104296d128ca9ec33566493e9975ddc_1135313010584367193.jpg","start_date":"2022-04-19 18:00","end_date":"2022-05-31 05:59","timing_source":"https://genshin-impact.fandom.com/wiki/The_Heron%27s_Court/2022-04-19"},"2.7|2022-05-31|夜蘭、魈":{"banner_image":"https://act-webstatic.hoyoverse.com/upload/contentweb/2022/05/28/94f2b1d1225e8b686bff935facfd3e55_8844013541772774375.jpg","start_date":"2022-05-31（版本更新後）","end_date":"2022-06-21 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.7|2022-06-21|荒瀧一斗":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2022/06/16/1015537/e724870fe983eed6b5ee20d63e846dc7_7142067552885359265.jpg","start_date":"2022-06-21 18:00","end_date":"2022-07-12 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.8|2022-07-13|楓原萬葉、可莉":{"banner_image":"https://act-webstatic.hoyoverse.com/upload/contentweb/2022/07/11/8cdf1c48c400e6e269aa988f55b42eba_3100291845721747708.jpg","start_date":"2022-07-13（版本更新後）","end_date":"2022-08-02 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"2.8|2022-08-02|宵宮":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2022/07/27/1015537/fc4d38f81af84c331f4c4e16b57c47ef_1593622248482350774.jpg","start_date":"2022-08-02 18:00","end_date":"2022-08-23 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.0|2022-08-24|提納里、鍾離":{"banner_image":"https://act-webstatic.hoyoverse.com/upload/contentweb/2022/08/22/892f660b771572d75dcc4363912b1dd1_1326359272126447739.jpg","start_date":"2022-08-24（版本更新後）","end_date":"2022-09-09 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.0|2022-09-09|甘雨、珊瑚宮心海":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2022/09/08/023eff0e468971eb1ab46f732c5b2cb7_5533267745780253501.jpg","start_date":"2022-09-09 18:00","end_date":"2022-09-27 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.1|2022-09-28|賽諾、溫迪":{"banner_image":"https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210313/2021031319365596101.jpg","start_date":"2022-09-28（版本更新後）","end_date":"2022-10-14 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.1|2022-10-14|妮露、阿貝多":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2022/10/11/dbd2747ccc9a421c9ba125b4364c935d_7659433574774098925.jpg","start_date":"2022-10-14 18:00","end_date":"2022-11-01 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.2|2022-11-02|納西妲、宵宮":{"banner_image":"https://act-webstatic.hoyoverse.com/upload/contentweb/2022/10/31/1430189d0125119e75d56156a1793744_2860040185433974888.jpg","start_date":"2022-11-02（版本更新後）","end_date":"2022-11-18 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.2|2022-11-18|八重神子、達達利亞":{"banner_image":"https://act-webstatic.hoyoverse.com/upload/contentweb/2022/11/15/ecab82cdb9f0bfd9544524fb972be34f_7435423374847538647.jpg","start_date":"2022-11-18 18:00","end_date":"2022-12-06 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.3|2022-12-07|流浪者、荒瀧一斗":{"banner_image":"https://act-webstatic.hoyoverse.com/upload/contentweb/2022/12/05/1f6504598a3252f61b81319577c45e5d_2698771862057237625.png","start_date":"2022-12-07（版本更新後）","end_date":"2022-12-27 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.3|2022-12-27|雷電將軍、神里綾人":{"banner_image":"https://act-webstatic.hoyoverse.com/upload/contentweb/2022/12/22/d86321bf31581abf9af9bc1149fc26bf_6437044065009388280.jpg","start_date":"2022-12-27 18:00","end_date":"2023-01-17 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.4|2023-01-18|艾爾海森、魈":{"banner_image":"https://webstatic.hoyoverse.com/upload/op-public/2023/01/16/0fd8fe929ab05435b9f1d21c9dd91a54_7360062799986720852.jpg","start_date":"2023-01-18（版本更新後）","end_date":"2023-02-07 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.4|2023-02-07|胡桃、夜蘭":{"banner_image":"https://webstatic.hoyoverse.com/upload/op-public/2023/01/17/e26579255f5f3b5fcaa3a09a2d596911_2884126442287165301.jpg","start_date":"2023-02-07 18:00","end_date":"2023-02-28 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.5|2023-03-01|迪希雅、賽諾":{"banner_image":"https://webstatic.hoyoverse.com/upload/op-public/2023/02/27/7757e97cefe768b52c6ea86f8e6599b3_4884972013692035883.jpg","start_date":"2023-03-01（版本更新後）","end_date":"2023-03-21 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.5|2023-03-21|申鶴、神里綾華":{"banner_image":"https://webstatic.hoyoverse.com/upload/op-public/2023/03/16/58d1a6a5ed756159be8605384d6fa77d_7004535443777210169.jpg","start_date":"2023-03-21 18:00","end_date":"2023-04-11 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.6|2023-04-12|納西妲、妮露":{"banner_image":"https://webstatic.hoyoverse.com/upload/op-public/2023/04/10/94ef1529e1355a7290b95e63dfd34935_1985823497995094765.jpg","start_date":"2023-04-12（版本更新後）","end_date":"2023-05-02 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.6|2023-05-02|白朮、甘雨":{"banner_image":"https://webstatic.hoyoverse.com/upload/op-public/2023/04/27/79528f18588e1d335f029d1675f6a9f7_8590544420560843185.jpg","start_date":"2023-05-02 18:00","end_date":"2023-05-23 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.7|2023-05-24|宵宮、八重神子":{"banner_image":"https://webstatic.hoyoverse.com/upload/op-public/2023/05/22/d21da495d4bdb50161d70d88d3fd8366_1407393040631012851.png","start_date":"2023-05-24（版本更新後）","end_date":"2023-06-13 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.7|2023-06-13|艾爾海森、楓原萬葉":{"banner_image":"https://webstatic.hoyoverse.com/upload/op-public/2023/06/08/d40d19ba390ebc7c40402f2f243d38e6_4037643072598960729.jpg","start_date":"2023-06-13 18:00","end_date":"2023-07-04 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.8|2023-07-05|優菈、可莉":{"banner_image":"https://webstatic.hoyoverse.com/upload/op-public/2023/07/03/25446994304b8d399156e7612160f417_7166828042530150258.jpg","start_date":"2023-07-05（版本更新後）","end_date":"2023-07-25 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"3.8|2023-07-25|珊瑚宮心海、流浪者":{"banner_image":"https://webstatic.hoyoverse.com/upload/op-public/2023/07/20/65c16961f07fb8cacd54f6b3e68509c2_6964341508932784714.jpg","start_date":"2023-07-25 18:00","end_date":"2023-08-15 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.0|2023-08-16|林尼、夜蘭":{"banner_image":"https://webstatic.hoyoverse.com/upload/op-public/2023/08/14/3880712a38f99075324e40b7a448da79_458458336640996940.jpg","start_date":"2023-08-16（版本更新後）","end_date":"2023-09-05 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.0|2023-09-05|達達利亞、鍾離":{"banner_image":"https://webstatic.hoyoverse.com/upload/op-public/2023/08/30/37d78c6e07faa870449d0cc8cc4662cf_6224223362133020386.jpg","start_date":"2023-09-05 18:00","end_date":"2023-09-26 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.1|2023-09-27|那維萊特、胡桃":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/113105/54f2d96ea6697d99e86381c35c43989d_1102713878045702769.jpg","start_date":"2023-09-27（版本更新後）","end_date":"2023-10-17 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.1|2023-10-17|萊歐斯利、溫迪":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/113289/704fada8793c214b79bb06e595be21a8_4200873020895531608.jpg","start_date":"2023-10-17 18:00","end_date":"2023-11-07 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.2|2023-11-08|芙寧娜、白朮":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/113503/00802797e7aaaa2f5614edddbb8fe376_4556067203225414488.jpg","start_date":"2023-11-08（版本更新後）","end_date":"2023-11-28 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.2|2023-11-28|賽諾、神里綾人":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/113745/1db0f7a275f5dd6feeaaa41624ab8a50_8099312157487016150.jpg","start_date":"2023-11-28 18:00","end_date":"2023-12-19 14:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.3|2023-12-20|娜維婭、神里綾華":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/114060/209c04023f451a316e32656502716d08_6841544611433264127.jpg","start_date":"2023-12-20（版本更新後）","end_date":"2024-01-09 17:59","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.3|2024-01-09|雷電將軍、宵宮":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/114231/111286cb12cc93e504afb6aaa4bcd902_762062850060941634.jpg","start_date":"2024-01-09 18:00","end_date":"2024-01-30 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.4|2024-01-31|閒雲、納西妲":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/122075/0f4712b0e5db12907e014603f312c006_5989586417227275692.jpg","start_date":"2024-01-31（版本更新後）","end_date":"2024-02-20 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.4|2024-02-20|魈、八重神子":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/122137/c35aa1238526cbb8eac956ef117f5c59_7748220764482164761.jpg","start_date":"2024-02-20 18:00","end_date":"2024-03-12 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.5|2024-03-13|千織、荒瀧一斗":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/122791/2c96bf55703d236ae16cf7b893f670cb_7927316319015024455.jpg","start_date":"2024-03-13（版本更新後）","end_date":"2024-04-02 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.5|2024-04-02|那維萊特、楓原萬葉":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/123027/592a6dbaee282628cb43210d0d48d27a_4094900642456856370.jpg","start_date":"2024-04-02 18:00","end_date":"2024-04-23 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.5|2024-03-13|優菈、莫娜、阿貝多、可莉、迪盧克、琴":{"banner_image":"https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210514/2021051417153326710.jpg"},"4.6|2024-04-24|阿蕾奇諾、林尼":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/123336/770c96567487ee634ee5d792e5c7df35_2937749118682141014.jpg","start_date":"2024-04-24（版本更新後）","end_date":"2024-05-14 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.6|2024-05-14|流浪者、白朮":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/123628/1cc75478c83a137fd2f3d09950108677_418936878502539736.jpg","start_date":"2024-05-14 18:00","end_date":"2024-06-04 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.7|2024-06-05|克洛琳德、艾爾海森":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/123933/27246894b10413f620c3709356c985ad_7870637348518835519.jpg","start_date":"2024-06-05（版本更新後）","end_date":"2024-06-25 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.7|2024-06-25|希格雯、芙寧娜":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/124188/d61b935a156b62483d5921c48a8f2238_5362735306607665600.jpg","start_date":"2024-06-25 18:00","end_date":"2024-07-16 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.8|2024-07-17|娜維婭、妮露":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/124773/98811c3ba93483a4bceb7cdca21c3012_896521160865660852.jpg","start_date":"2024-07-17（版本更新後）","end_date":"2024-08-06 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"4.8|2024-08-06|艾梅莉埃、夜蘭":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/125075/0d67aa5d097ccc42cc20de31c9ff858d_6828043456457858634.jpg","start_date":"2024-08-06 18:00","end_date":"2024-08-27 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.0|2024-08-28|瑪拉妮、楓原萬葉":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/125473/bfa495ff5f233dabea9030432ddcd2e9_249835867014740548.jpg","start_date":"2024-08-28（版本更新後）","end_date":"2024-09-17 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.0|2024-09-17|基尼奇、雷電將軍":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/125821/ac90fede702d4e09857cc9179f7d9c31_3584919884275519924.jpg","start_date":"2024-09-17 18:00","end_date":"2024-10-08 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.1|2024-10-09|希諾寧、千織":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/126240/31aff420de7ef6f4776165c27da1e137_5201527505511463320.jpg","start_date":"2024-10-09（版本更新後）","end_date":"2024-10-29 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.1|2024-10-29|納西妲、胡桃":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/126570/6e78bb9be3941d46ec7977bda7cd8e6b_877500593505277452.jpg","start_date":"2024-10-29 18:00","end_date":"2024-11-19 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.2|2024-11-20|恰斯卡、林尼":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/126974/0695d4ba0c64a506ec7f7f0120f6d81b_4218518119602844141.jpg","start_date":"2024-11-20（版本更新後）","end_date":"2024-12-10 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.2|2024-12-10|那維萊特、鍾離":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/127244/99fca291201a9c0bf039d7a7ad93f2c1_665276559861393829.jpg","start_date":"2024-12-10 18:00","end_date":"2024-12-31 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.3|2025-01-01|瑪薇卡、茜特菈莉":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/127690/c30ee9b7def3ab740534d6f812512bfc_2924427954654319034.jpg","start_date":"2025-01-01（版本更新後）","end_date":"2025-01-21 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.3|2025-01-21|阿蕾奇諾、克洛琳德":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/127691/d6cf82b30f32f2045a0f167e3e95926c_7289956646079898680.jpg","start_date":"2025-01-21 18:00","end_date":"2025-02-11 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.3|2025-01-21|白朮、申鶴、刻晴、甘雨、七七、達達利亞、魈":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/129515/c12257354fe730c3cde287a12bd05dc1_1315307346992756195.png"},"5.4|2025-02-12|夢見月瑞希、希格雯":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/129799/5583f19800ed2c801679c1ebe77709cf_24552743300169214.jpg","start_date":"2025-02-12（版本更新後）","end_date":"2025-03-04 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.4|2025-03-04|萊歐斯利、芙寧娜":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/154505/0b5551e0599781c5eec20bfde653b3c4_5573697336580646696.jpg","start_date":"2025-03-04 18:00","end_date":"2025-03-25 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.5|2025-03-26|瓦雷莎、閒雲":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/155096/3481f6ce31c8b2ffcd72c945d21767f5_5506259103594417611.jpg","start_date":"2025-03-26（版本更新後）","end_date":"2025-04-15 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.5|2025-04-15|希諾寧、溫迪":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/155416/ce132746c72b942a105d8564696f619a_5934595809720303608.jpg","start_date":"2025-04-15 18:00","end_date":"2025-05-06 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.6|2025-05-07|愛可菲、娜維婭":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/155725/e1d9d6bfd3b7ee33ff4ca4cfcf5c3b61_4219801420954022132.jpg","start_date":"2025-05-07（版本更新後）","end_date":"2025-05-27 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.6|2025-05-27|基尼奇、雷電將軍":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/155991/d228d4df8b81032aa51c8736257b02d0_8360065577781911929.jpg","start_date":"2025-05-27 18:00","end_date":"2025-06-17 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.6|2025-05-27|神里綾華、神里綾人、宵宮、千織、八重神子、荒瀧一斗、珊瑚宮心海、楓原萬葉":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/156044/37bcb767b11dd6d985b61a586efcd783_6852418448913392865.png"},"5.7|2025-06-18|絲柯克、申鶴":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/156954/88b5e726a2d75980c4c84a4dc56bb400_8886553313817337155.jpg","start_date":"2025-06-18（版本更新後）","end_date":"2025-07-08 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.7|2025-07-08|瑪薇卡、艾梅莉埃":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2025/07/03/2ed72b08d782b8cc9e192fc1d296ad71_1585789215226926584.jpg","start_date":"2025-07-08 18:00","end_date":"2025-07-29 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.8|2025-07-30|伊涅芙、茜特菈莉":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2025/07/25/f2e3fe80a78a4c7bf653cc1b68e36faf_1732138280627252103.jpg","start_date":"2025-07-30（版本更新後）","end_date":"2025-08-19 17:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"5.8|2025-08-19|瑪拉妮、恰斯卡":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/158611/aab402d2f096aa723a455f05f9e53316_1089512484034853780.jpg","start_date":"2025-08-19 18:00","end_date":"2025-09-09 14:58","timing_source":"https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"},"6.0|2025-09-10|菈烏瑪、納西妲":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/159274/20c9649fdc7d4b38740ffad6f101a3b9_7907033836477809766.jpg"},"6.0|2025-09-30|菲林斯、夜蘭":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/159690/2b90bda809e0d618cb3cb4600863a0c3_5075993642325331394.jpg"},"6.0|2025-09-10|迪希雅、艾爾海森、流浪者、賽諾、妮露、提納里":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/159317/a868d0ad1836d4bfcabe938232378b06_1693868332740989455.png"},"6.1|2025-10-22|奈芙爾、芙寧娜":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/160338/abceb2371599d782a88d6ba6673f594d_2284469706523727795.jpg"},"6.1|2025-11-11|阿蕾奇諾、鍾離":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/160749/9e0c6f676844d78aa719fd4279d76ebc_6405883342379691153.jpg"},"6.2|2025-12-03|杜林、溫迪":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/161137/dbb335dd511336231da36235983c9de6_8006377043810746848.jpg"},"6.2|2025-12-23|瓦雷莎、希諾寧":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/161521/eb628cc1fa1c710d7514e88347efb33b_2407999175219513982.jpg"},"6.3|2026-01-14|哥倫比婭、伊涅芙":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/162089/eedde25e32165a1c0829888c21fe737b_8299427508651113220.jpg"},"6.3|2026-02-03|茲白、那維萊特":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/162090/7fe2a3f0157b3045f78bb92f69a7db3a_1432435110450683522.jpg"},"6.4|2026-02-25|法爾伽、菲林斯":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/162721/4df08696633a4db92b369711589dd84e_540306179551982814.jpg"},"6.4|2026-03-17|絲柯克、愛可菲":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/163094/ddd1ed22534d993acbacc0404ee97be7_8857687299707474410.jpg"},"6.4|2026-02-25|優菈、莫娜、阿貝多、可莉、迪盧克、琴":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/162724/97c31ec3c126dd649ce00bfd43f77cb1_5918528908610101554.png"},"6.5|2026-04-08|莉奈婭、恰斯卡":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/163415/305178679df350e4d7bb142f35652d7e_1146057269290493062.jpg"},"6.5|2026-04-28|菈烏瑪、奈芙爾":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/163629/2c8aba63e76d41f7a2c082625073df79_4981352531336011739.jpg"},"6.5|2026-04-28|艾梅莉埃、克洛琳德、希格雯、娜維婭、林尼":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/163709/2fdae09cbc6d40f523a7be9ec0044d25_5841109901595416063.png"},"6.6|2026-05-20|尼可、杜林":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/164019/ce384ca2689c9356df0fab91463be352_1367925047952731926.jpg"},"6.6|2026-06-09|洛恩、瑪薇卡":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/164591/1392aae07e669a1e8bb781d1feb225b6_7912709754901886684.jpg"},"6.7|2026-07-01|桑多涅、茜特菈莉":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/165007/ac5fe206ee89540671f542ac3bb66048_4188342911236425303.jpg","start_date":"2026-07-01 11:00","end_date":"2026-07-21 18:00","timing_source":"https://bannerhistory.app/tw/genshin-pickup-history"},"6.7|2026-07-21|哥倫比婭、雷電將軍":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/165236/06fd5d94ace32d945d34b92b89c2527c_5409157336254630054.jpg","start_date":"2026-07-21 18:00","end_date":"2026-08-11 15:00","timing_source":"https://bannerhistory.app/tw/genshin-pickup-history"},"6.7|2026-07-01|夢見月瑞希、萊歐斯利、賽諾、八重神子、七七":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/129515/a71f33ff7783c675072d587a4453e526_3299948793820144314.png"},"7.0|2026-08-12|奧黛塔、阿蕾奇諾":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/165610/b02047a69257265e6c200d5a3d44046e_388112146566520043.jpg","start_date":"2026-08-12 11:00","end_date":"2026-09-01 18:00","timing_source":"https://bannerhistory.app/tw/genshin-pickup-history"},"7.0|2026-09-01|菲林斯、伊涅芙":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/165901/c323ecc98ebf14befd4eb5ca308e1ead_4371924170254337005.jpg","start_date":"2026-09-01 18:00","end_date":"2026-09-22 15:00","timing_source":"https://bannerhistory.app/tw/genshin-pickup-history"},"7.1|2026-09-23|薇斯納、沃雅妮莎":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/166228/1f0d10c301d4801a10cc8db444438c48_1764871263734950261.jpg","start_date":"2026-09-23 11:00","end_date":"2026-10-13 18:00","timing_source":"https://bannerhistory.app/tw/genshin-pickup-history"},"7.1|2026-10-13|絲柯克、愛可菲":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/166634/4d11b9bdf4120ca7a78f6e09a635eb1d_2851191510710715503.jpg","start_date":"2026-10-13 18:00","end_date":"2026-11-03 15:00","timing_source":"https://bannerhistory.app/tw/genshin-pickup-history"},"7.2|2026-11-04|米提亞、芙寧娜":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/167139/60f9a8c762e392eb8ad659a9133b7c65_2801098210872423311.jpg","start_date":"2026-11-04 11:00","end_date":"2026-11-24 18:00","timing_source":"https://bannerhistory.app/tw/genshin-pickup-history"},"7.2|2026-11-24|茲白、莉奈婭":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/162090/7fe2a3f0157b3045f78bb92f69a7db3a_1432435110450683522.jpg","start_date":"2026-11-24 18:00","end_date":"2026-12-15 15:00","timing_source":"https://bannerhistory.app/tw/genshin-pickup-history"},"7.2|2026-11-24|瓦雷莎、恰斯卡、希諾寧、瑪拉妮、基尼奇":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/hk4e/125821/ac90fede702d4e09857cc9179f7d9c31_3584919884275519924.jpg"}},"starrail":{"4.7|2026-11-11|銀狼LV.999、火花、爻光":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1501.png","start_date":"2026-11-11 11:00","end_date":"2026-12-02 11:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.7|2026-12-02|黃泉、丹恆・飲月、景元":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1213.png","start_date":"2026-12-02 12:00","end_date":"2026-12-22 15:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.6|2026-09-28|真珠":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1503.png","start_date":"2026-09-28 11:00","end_date":"2026-11-10 15:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.6|2026-09-28|緋英":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1505.png","start_date":"2026-09-28 11:00","end_date":"2026-10-21 11:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.6|2026-10-21|千冶・刃":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1507.png","start_date":"2026-10-21 12:00","end_date":"2026-11-11 03:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.5|2026-08-26|知更鳥・晴歌、風堇":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1512.png","start_date":"2026-08-26 11:00","end_date":"2026-09-12 11:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.5|2026-09-12|砂金・戲浪、不死途":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1504.png","start_date":"2026-09-12 12:00","end_date":"2026-09-28 03:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.4|2026-07-15|姬子・啟行":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1510.png","start_date":"2026-07-15 11:00","end_date":"2026-08-26 03:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.4|2026-07-15|火花、丹恆・騰荒、長夜月":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1414.png","start_date":"2026-07-15 11:00","end_date":"2026-08-05 11:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.4|2026-08-05|刻律德菈、那刻夏、砂金":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1412.png","start_date":"2026-08-05 12:00","end_date":"2026-08-26 03:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.3|2026-06-01|千冶・刃、爻光":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1507.png","start_date":"2026-06-01 11:00","end_date":"2026-06-24 11:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.3|2026-06-24|昔漣、白厄":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1415.png","start_date":"2026-06-24 12:00","end_date":"2026-07-15 03:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.2|2026-04-22|銀狼LV.999、大理花、遐蝶、流螢":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1321.png","start_date":"2026-04-22 11:00","end_date":"2026-05-13 11:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.2|2026-05-13|緋英、緹寶、星期日、飛霄":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1313.png","start_date":"2026-05-13 12:00","end_date":"2026-06-01 03:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.0|2023-04-26|希兒":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1102.png","start_date":"2023-04-26 11:00","end_date":"2023-05-17 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.0|2023-05-17|景元":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1204.png","start_date":"2023-05-17 12:00","end_date":"2023-06-07 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.1|2023-06-07|銀狼":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1006.png","start_date":"2023-06-07 11:00","end_date":"2023-06-28 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.1|2023-06-28|羅剎":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1203.png","start_date":"2023-06-28 12:00","end_date":"2023-07-19 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.2|2023-07-19|刃":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1205.png","start_date":"2023-07-19 11:00","end_date":"2023-08-09 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.2|2023-08-09|卡芙卡":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1005.png","start_date":"2023-08-09 12:00","end_date":"2023-08-30 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.3|2023-08-30|丹恆·飲月":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1213.png","start_date":"2023-08-30 11:00","end_date":"2023-09-20 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.3|2023-09-20|符玄":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1208.png","start_date":"2023-09-20 12:00","end_date":"2023-10-11 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.4|2023-10-11|鏡流":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1212.png","start_date":"2023-10-11 11:00","end_date":"2023-10-27 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.4|2023-10-27|托帕&帳帳、希兒":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1102.png","start_date":"2023-10-27 12:00","end_date":"2023-11-15 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.5|2023-11-15|藿藿":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1217.png","start_date":"2023-11-15 11:00","end_date":"2023-12-06 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.5|2023-12-06|銀枝、銀狼":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1302.png","start_date":"2023-12-06 12:00","end_date":"2023-12-27 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.6|2023-12-27|阮·梅、刃":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1205.png","start_date":"2023-12-27 11:00","end_date":"2024-01-17 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"1.6|2024-01-17|真理醫生、卡芙卡":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1005.png","start_date":"2024-01-17 12:00","end_date":"2024-02-06 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.0|2024-02-06|黑天鵝、丹恆·飲月":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1213.png","start_date":"2024-02-06 11:00","end_date":"2024-02-29 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.0|2024-02-29|花火、景元":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1204.png","start_date":"2024-02-29 12:00","end_date":"2024-03-27 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.1|2024-03-27|黃泉、羅剎":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1203.png","start_date":"2024-03-27 11:00","end_date":"2024-04-17 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.1|2024-04-17|砂金、鏡流":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1304.png","start_date":"2024-04-17 12:00","end_date":"2024-05-08 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.2|2024-05-08|知更鳥、托帕&帳帳":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1112.png","start_date":"2024-05-08 11:00","end_date":"2024-05-29 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.2|2024-05-29|波提歐、符玄":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1315.png","start_date":"2024-05-29 12:00","end_date":"2024-06-19 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.3|2024-06-19|流螢、阮·梅":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1310.png","start_date":"2024-06-19 11:00","end_date":"2024-07-10 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.3|2024-07-10|翡翠、銀枝":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1314.png","start_date":"2024-07-10 12:00","end_date":"2024-07-31 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.4|2024-07-31|雲璃、藿藿":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1217.png","start_date":"2024-07-31 11:00","end_date":"2024-08-21 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.4|2024-08-21|椒丘、花火":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1218.png","start_date":"2024-08-21 12:00","end_date":"2024-09-10 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.5|2024-09-10|飛霄、卡芙卡、黑天鵝、知更鳥":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1005.png","start_date":"2024-09-10 11:00","end_date":"2024-10-02 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.5|2024-10-02|靈砂、托帕&帳帳":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1112.png","start_date":"2024-10-02 12:00","end_date":"2024-10-23 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.6|2024-10-23|亂破、丹恆·飲月":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1213.png","start_date":"2024-10-23 11:00","end_date":"2024-11-13 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.6|2024-11-13|黃泉、砂金":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1304.png","start_date":"2024-11-13 12:00","end_date":"2024-12-04 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.7|2024-12-04|星期日、景元":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1313.png","start_date":"2024-12-04 11:00","end_date":"2024-12-25 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"2.7|2024-12-25|忘歸人、流螢":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1225.png","start_date":"2024-12-25 12:00","end_date":"2025-01-15 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.0|2025-01-15|大黑塔、靈砂、飛霄、翡翠":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1401.png","start_date":"2025-01-15 11:00","end_date":"2025-02-05 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.0|2025-02-05|阿格萊雅、波提歐、知更鳥、銀狼":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1315.png","start_date":"2025-02-05 12:00","end_date":"2025-02-26 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.1|2025-02-26|緹寶、雲璃":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1403.png","start_date":"2025-02-26 11:00","end_date":"2025-03-19 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.1|2025-03-19|萬敵、藿藿":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1404.png","start_date":"2025-03-19 12:00","end_date":"2025-04-09 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.2|2025-04-09|遐蝶、忘歸人、椒丘、黃泉":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1225.png","start_date":"2025-04-09 11:00","end_date":"2025-04-30 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.2|2025-04-30|那刻夏、真理醫生":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1305.png","start_date":"2025-04-30 12:00","end_date":"2025-05-21 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.3|2025-05-21|風堇、大黑塔":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1401.png","start_date":"2025-05-21 11:00","end_date":"2025-06-11 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.3|2025-06-11|賽飛兒、阿格萊雅":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1406.png","start_date":"2025-06-11 12:00","end_date":"2025-07-02 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.4|2025-07-02|白厄、緹寶、星期日、花火":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1313.png","start_date":"2025-07-02 11:00","end_date":"2025-07-23 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.4|2025-07-23|流螢、鏡流、刃":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1205.png","start_date":"2025-07-23 12:00","end_date":"2025-08-13 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.5|2025-08-13|海瑟音、卡芙卡":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1005.png","start_date":"2025-08-13 11:00","end_date":"2025-09-02 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.5|2025-09-02|刻律德菈、銀狼":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1412.png","start_date":"2025-09-02 12:00","end_date":"2025-09-24 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.6|2025-09-24|長夜月、大黑塔":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1401.png","start_date":"2025-09-24 11:00","end_date":"2025-10-15 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.6|2025-10-15|丹恆•騰荒、那刻夏":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1414.png","start_date":"2025-10-15 12:00","end_date":"2025-11-05 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.7|2025-11-05|昔漣":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1415.png"},"3.7|2025-11-05|風堇、遐蝶、緹寶":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1403.png","start_date":"2025-11-05 11:00","end_date":"2025-11-26 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.7|2025-11-26|白厄、賽飛兒、萬敵":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1408.png","start_date":"2025-11-26 12:00","end_date":"2025-12-17 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.8|2025-12-17|大理花、流螢":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1321.png","start_date":"2025-12-17 11:00","end_date":"2026-01-07 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.8|2026-01-07|忘歸人、靈砂":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1225.png","start_date":"2026-01-07 12:00","end_date":"2026-01-28 12:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"3.8|2026-01-28|阿格萊雅、星期日":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1313.png","start_date":"2026-01-28 12:00","end_date":"2026-02-13 11:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.0|2026-02-13|爻光":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1502.png","start_date":"2026-02-13 11:00","end_date":"2026-03-24 15:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.0|2026-02-13|長夜月、海瑟音、黑天鵝":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1410.png","start_date":"2026-02-13 11:00","end_date":"2026-03-03 11:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.0|2026-03-03|火花、刻律德菈、亂破、花火":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1317.png","start_date":"2026-03-03 12:00","end_date":"2026-03-24 15:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.1|2026-03-24|不死途":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1504.png","start_date":"2026-03-25 11:00","end_date":"2026-04-21 15:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.1|2026-03-24|風堇":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1409.png","start_date":"2026-03-25 11:00","end_date":"2026-04-08 11:59","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.1|2026-04-08|波提歐":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1315.png","start_date":"2026-04-08 12:00","end_date":"2026-04-21 15:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.7|2026-11-11|星神★阿哈":{"portrait_image":"https://assets.bannerhistory.app/temp/hsr/aha-portrait-s-chart.webp","start_date":"2026-11-11 11:00","end_date":"2026-12-22 15:00","timing_source":"https://bannerhistory.app/tw/hsr-pickup-history"},"4.4|2026-07-24|遠坂凜、吉爾伽美什":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1509.png"},"3.4|2025-07-11|Saber、Archer":{"portrait_image":"https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1014.png"}},"zzz":{"3.3|2026-10-21|菲歐妮、維琳娜":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/166926/0edc3cb88d9e6fd04d8c085442e5358f_5864864883691406076.png","start_date":"2026-10-21 11:00","end_date":"2026-11-11 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"3.3|2026-11-11|賽維里安、諾姆":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/165144/346038b2c6df6a924343a1827920deb0_2375386380768463979.jpg","start_date":"2026-11-11 12:00","end_date":"2026-12-01 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.0|2024-07-04|艾蓮":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/124566/6690500950645fa41139f3e533c4bb13_5538933341638210280.png","weapons":"深海訪客","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2024-07-04 10:00","end_date":"2024-07-24 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.0|2024-07-24|朱鳶":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/124925/156583f2d499d14d11b03a3e0bab1821_6798407832684405864.png","weapons":"防暴者Ⅵ型","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2024-07-24 12:00","end_date":"2024-08-13 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.1|2024-08-14|青衣":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/125222/8df3d00cc2ee13dba5242eca391da9e0_6610946314099956179.png","weapons":"玉壺青冰","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2024-08-14 11:00","end_date":"2024-09-04 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.1|2024-09-04|簡":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/125645/4e5bc1a866459aa969f57f0b67a26129_372577246553953403.png","weapons":"淬鋒鉗刺","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2024-09-04 12:00","end_date":"2024-09-24 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.2|2024-09-25|凱撒":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/126046/0383bd862ed3b124e31ca97f641a378e_1408612074907269964.png","weapons":"奔襲獠牙","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2024-09-25 11:00","end_date":"2024-10-16 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.2|2024-10-16|柏妮思":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/126371/5931baecea5255d29e8f5a15ddab4df2_5254352602091193855.png","weapons":"灼心搖壺","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2024-10-16 12:00","end_date":"2024-11-05 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.3|2024-11-27|萊特":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/127095/b9ec41e005b51a6f01ddfd345865d268_284778689061583084.png","weapons":"焰心桂冠","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2024-11-27 12:00","end_date":"2024-12-17 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.5|2025-01-22|耀嘉音、艾蓮":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/129524/241e6ee794ddee585caa9aa17cc20da7_6201044687533944823.png","weapons":"玲瓏妝匣、深海訪客","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2025-01-22 11:00","end_date":"2025-02-12 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.5|2025-02-12|伊芙琳、青衣":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/129810/7a706bc195ea42c9703a370422bd3403_8121675792245089343.png","weapons":"心弦夜響、玉壺青冰","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2025-02-12 12:00","end_date":"2025-03-11 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.6|2025-03-12|零號·安比、柏妮思":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/154645/4e575367e042880dfec71b698c4e4425_4280605289498071002.png","weapons":"犧牲潔純、灼心搖壺","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2025-03-12 11:00","end_date":"2025-04-02 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.6|2025-04-02|扳機、朱鳶":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/155217/85a49d5c73a13e8b7426549567adf65a_1597100842366383277.png","weapons":"索魂影眸、防暴者Ⅵ型","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2025-04-02 12:00","end_date":"2025-04-22 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.7|2025-04-22|薇薇安、簡":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/155563/4f09d58aa739294223e24d1afd9a931d_3688322018399982365.png","weapons":"飛鳥星夢、淬鋒鉗刺","weapon_source":"https://wiki.biligame.com/zzz/调频"},"1.7|2025-05-14|雨果、萊特":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/155886/581ff7e6c86b38dd5c5a6ef905985e13_92531493403002508.png","weapons":"千面日隕、焰心桂冠","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2025-05-14 12:00","end_date":"2025-06-05 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.0|2025-06-06|儀玄、耀嘉音":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/156655/aa76db1d9d747447ca9ea8cc71a8372c_8151134226565730066.jpg","weapons":"青溟籠舍、玲瓏妝匣","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2025-06-06 11:00","end_date":"2025-06-25 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.0|2025-06-25|橘福福、凱撒":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/157218/657edbe059d12b1fea4649f62946d426_4037669996525531976.png","weapons":"福虓爐爐、奔襲獠牙","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2025-06-25 12:00","end_date":"2025-07-15 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.1|2025-08-06|愛麗絲、月城柳":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/158277/a4ca66c8223f9a74be836c86fdfb58a6_6988252616934886147.png","weapons":"十方鍛星、時流賢者","start_date":"2025-08-06 12:00","end_date":"2025-09-03 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.2|2025-09-04|席德、扳機":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/159104/34cb4b3bfe2d07c700bf65448b5ec743_3295361101747142471.png","weapons":"機巧心種、索魂影眸","start_date":"2025-09-04 11:00","end_date":"2025-09-24 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.2|2025-09-24|奧菲絲＆鬼火、伊芙琳":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/159564/00105f0622c5f5d771a3a1d24bb69083_1518908807518446373.png","weapons":"囂槍喧焰、心弦夜響","start_date":"2025-09-24 12:00","end_date":"2025-10-14 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.3|2025-10-15|盧西婭、薇薇安":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/160175/1c03d70400747cffa5452e2aca58403c_1806410311691087421.png","weapons":"鑄夢爐歌、飛鳥星夢","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2025-10-15 11:00","end_date":"2025-11-05 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.3|2025-11-05|伊德海莉、橘福福":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/160694/0de1dbb7f0b3438e4364d06a7c0594a4_4279588225733249962.png","weapons":"海妖搖籃、福虓爐爐","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2025-11-05 12:00","end_date":"2025-11-25 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.4|2025-11-26|琉音、雨果":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/161024/39cf32195994ed9420ceafc201fde180_4601098215687373633.png","weapons":"昨夜來電、千面日隕","start_date":"2025-11-26 11:00","end_date":"2025-12-17 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.4|2025-12-17|般岳、艾蓮":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/161417/a295cb4d0ccac7a3264ecd785ad0e223_6505619767004865721.png","weapons":"怒目金剛、深海訪客","start_date":"2025-12-17 12:00","end_date":"2025-12-29 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.5|2025-12-30|葉瞬光、照":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/161695/0d0a61177da0a6952405ea15b96aa78b_2764242073633468333.jpg","weapons":"葉瞬光：雲霓孤光；照：半糖雪兔"},"2.5|2026-01-21|愛麗絲、零號·安比、耀嘉音":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/158277/a4ca66c8223f9a74be836c86fdfb58a6_6988252616934886147.png"},"2.6|2026-02-06|千夏、儀玄":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/162496/3c69a39563d368e743457becba5730fb_5064207579422581159.png","weapons":"思絡成歌、青溟籠舍","start_date":"2026-02-06 11:00","end_date":"2026-03-04 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.6|2026-03-04|愛芮、浮波柚葉":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/162981/df85bb171901d1eea20dee1f8a409778_4323668885994146757.png","weapons":"殼中之靈、狸法七變化","start_date":"2026-03-04 12:00","end_date":"2026-03-23 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.7|2026-03-24|南宮羽、伊德海莉":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/163213/4c09062c55bf47e59c69333e368c3c5c_2568728396917084140.jpg","weapons":"霓虹妄想、海妖搖籃","weapon_source":"https://zzz.mihoyo.com/news/163223","start_date":"2026-03-24 11:00","end_date":"2026-04-15 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.7|2026-04-15|希希芙、席德":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/163500/596b6bbc7c49bd6f7b57b1672dfc86cf_1937256738523311625.jpg","weapons":"鱗齒尋蹤、機巧心種","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2026-04-15 12:00","end_date":"2026-05-05 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.8|2026-05-06|普羅米婭、盧西婭":{"banner_image":"https://upload-os-bbs.hoyolab.com/upload/2026/05/03/0/90ec60183998e42b77f9cd85fd5c67cb_6732805449643983417.jpeg","weapons":"朔月裁霜、鑄夢爐歌","weapon_source":"https://forum.gamer.com.tw/C.php?bsn=74860&snA=9713","start_date":"2026-05-06 11:00","end_date":"2026-05-27 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"2.8|2026-05-27|星徽·比利、奧菲絲＆鬼火":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/164330/6d368614286e33d6e750beab3f9bb73b_2466420938756427228.jpg","weapons":"輝騎面鎧、囂槍喧焰","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2026-05-27 12:00","end_date":"2026-06-16 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"3.0|2026-06-17|維琳娜、葉瞬光":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/164735/550969565e87d6a2f6a8622796d5f5ea_8892739416197635705.png","weapons":"琳琅鎏心、雲霓孤光","start_date":"2026-06-17 11:00","end_date":"2026-07-08 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"3.0|2026-07-08|諾姆、千夏":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/165144/346038b2c6df6a924343a1827920deb0_2375386380768463979.jpg","weapons":"首席跟班、思絡成歌","start_date":"2026-07-08 12:00","end_date":"2026-07-28 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"3.1|2026-07-29|蕾米埃爾、愛芮":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/165363/10ca157238ee5795dba7276fbc6341e2_7463094576976141626.jpg","weapons":"空羽復歸之詩、殼中之靈","weapon_source":"https://zenless.hoyoverse.com/zh-cn/news/165414","start_date":"2026-07-29 11:00","end_date":"2026-08-19 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"3.1|2026-08-19|希格莉德、浮波柚葉、琉音、淺羽悠真":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/165737/d86ea0a7107168583f124033ac2b9eb4_6699219052946017732.jpg","weapons":"驍騎禮讚、狸法七變化、昨夜來電、殘心青囊","weapon_source":"https://zenless.hoyoverse.com/zh-tw/news/165797","start_date":"2026-08-19 12:00","end_date":"2026-09-08 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"3.2|2026-09-09|克拉蕾、南宮羽":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/165979/c87ef18d2981062b3828264a589b63d3_3605722833347990474.jpg","weapons":"猩紅渴望、霓虹妄想","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2026-09-09 11:00","end_date":"2026-09-30 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"3.2|2026-09-30|洛克茜、普羅米婭":{"banner_image":"https://fastcdn.hoyoverse.com/content-v2/nap/166475/3adcbc882541583651ffdb25c92c7cc2_9146969361439404532.jpg","start_date":"2026-09-30 12:00","end_date":"2026-10-20 14:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.3|2024-11-06|月城柳":{"portrait_image":"https://enka.network/ui/zzz/IconRoleCircle31.png","weapons":"時流賢者","weapon_source":"https://wiki.biligame.com/zzz/调频","start_date":"2024-11-06 11:00","end_date":"2024-11-27 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"},"1.4|2024-12-18|星見雅、淺羽悠真":{"portrait_image":"https://enka.network/ui/zzz/IconRoleCircle13.png","weapons":"霰落星殿、殘心青囊","weapon_source":"https://wiki.biligame.com/zzz/调频"},"2.1|2025-07-16|浮波柚葉、星見雅":{"portrait_image":"https://enka.network/ui/zzz/IconRoleCircle47.png","weapons":"狸法七變化、霰落星殿","start_date":"2025-07-16 11:00","end_date":"2025-08-06 11:59","timing_source":"https://bannerhistory.app/tw/zzz-pickup-history"}},"wuwa":{"2.6|2025-08-28|奧古斯塔、珂萊塔、守岸人":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Augusta.png","start_date":"2025-08-28 11:00","end_date":"2025-09-17 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.6|2025-09-17|尤諾、夏空":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Ciaccona.png","start_date":"2025-09-17 10:00","end_date":"2025-10-08 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.7|2025-10-09|嘉貝莉娜、露帕":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Galbrena.png","start_date":"2025-10-09 11:00","end_date":"2025-10-30 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.7|2025-10-30|仇遠、贊妮":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Qiuyuan.png","start_date":"2025-10-30 10:00","end_date":"2025-11-19 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.8|2025-11-20|千咲、菲比":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Chisa.png","start_date":"2025-11-20 11:00","end_date":"2025-12-11 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.8|2025-12-11|弗洛洛、坎特蕾拉":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Cantarella.png","start_date":"2025-12-11 10:00","end_date":"2025-12-24 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.0|2025-12-25|琳奈、尤諾、奧古斯塔":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Augusta.png","start_date":"2025-12-25 11:00","end_date":"2026-01-15 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.0|2026-01-15|莫寧、卡提希婭、夏空":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Cartethyia.png","start_date":"2026-01-15 10:00","end_date":"2026-02-04 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.1|2026-02-05|愛彌斯、千咲、露帕":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Chisa.png","start_date":"2026-02-05 11:00","end_date":"2026-02-26 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.1|2026-02-26|陸·赫斯、嘉貝莉娜":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Galbrena.png","start_date":"2026-02-26 10:00","end_date":"2026-03-18 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.2|2026-03-19|西格莉卡、仇遠":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Qiuyuan.png","start_date":"2026-03-19 11:00","end_date":"2026-04-09 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.2|2026-04-09|琳奈、贊妮、菲比":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Lynae.png","start_date":"2026-04-09 10:00","end_date":"2026-04-29 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.3|2026-04-30|緋雪、莫寧、尤諾":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Iuno.png","start_date":"2026-04-30 11:00","end_date":"2026-05-21 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.3|2026-05-21|達妮婭、千咲、弗洛洛":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Chisa.png","start_date":"2026-05-21 10:00","end_date":"2026-06-07 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.4|2026-06-08|露西、蕾貝卡":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Rebecca.png"},"3.4|2026-06-18|洛瑟菈、卡提希婭":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Cartethyia.png","start_date":"2026-06-13 10:00","end_date":"2026-07-09 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.5|2026-07-10|秧秧·玄翎、琳奈、陸·赫斯":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Lynae.png","start_date":"2026-07-10 11:00","end_date":"2026-07-30 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.5|2026-07-10|忌炎、吟霖、今汐、長離、折枝、相里要":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Jinhsi.png"},"3.5|2026-07-30|穗穗、愛彌斯":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Aemeath.png","start_date":"2026-07-30 10:00","end_date":"2026-08-19 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.6|2026-08-20|清宵、達妮婭":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Qingxiao.png","start_date":"2026-08-20 11:00","end_date":"2026-09-10 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.6|2026-09-10|景燃、緋雪、莫寧":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Jingran.png","start_date":"2026-09-10 10:00","end_date":"2026-09-29 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"1.0|2024-05-23|忌炎":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Jiyan.png","start_date":"2024-05-23 10:00","end_date":"2024-06-06 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"1.0|2024-06-06|吟霖":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/object/1717516800000/k728ccfz5m48kut8ee-1717568493574.jpg","start_date":"2024-06-06 10:00","end_date":"2024-06-26 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"1.1|2024-06-28|今汐":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/object/1719331200000/vusacu2tw8c1ppy1kl-1719403598791.jpg","start_date":"2024-06-28 13:00","end_date":"2024-07-22 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"1.1|2024-07-22|長離":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/object/1721318400000/vuiqa3cwlu4zt8kwyg-1721390463277.jpg","start_date":"2024-07-22 10:00","end_date":"2024-08-14 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"1.2|2024-08-15|折枝":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/object/1723564800000/yoq89u5fb5d4ao6wrl-1723603901422.jpg","start_date":"2024-08-15 13:00","end_date":"2024-09-07 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"1.2|2024-09-07|相里要":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/object/1725465600000/pe26x9l707rtujyfwi-1725539964845.jpg","start_date":"2024-09-07 10:00","end_date":"2024-09-28 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"1.3|2024-09-29|守岸人":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/object/1727366400000/m1c4gvgrard5xa0wsc-1727430656221.jpg","start_date":"2024-09-29 11:00","end_date":"2024-10-24 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"1.3|2024-10-24|忌炎":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/object/1729612800000/1wh1luzryp88y92t3e-1729647964108.jpg","start_date":"2024-10-24 10:00","end_date":"2024-11-13 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"1.4|2024-11-14|椿":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/akiwebsite/website2.0/images/1731340800000/d72k0pfp98uof3thhd-1731404326754.jpg","start_date":"2024-11-14 11:00","end_date":"2024-12-12 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"1.4|2024-12-12|吟霖、相里要":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Yinlin.png","start_date":"2024-12-12 10:00","end_date":"2025-01-01 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.0|2025-01-02|珂萊塔、折枝":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Zhezhi.png"},"2.0|2025-01-23|洛可可、今汐":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Jinhsi.png","start_date":"2025-01-23 10:00","end_date":"2025-02-12 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.1|2025-02-13|菲比":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/akiwebsite/website2.0/images/1739289600000/waj8ht5srhgh7364d3-1739354326471.jpg","start_date":"2025-02-13 11:00","end_date":"2025-03-06 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.1|2025-03-06|布蘭特、長離":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Brant.png","start_date":"2025-03-06 10:00","end_date":"2025-03-26 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.2|2025-03-27|坎特蕾拉、椿":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Cantarella.png","start_date":"2025-03-27 11:00","end_date":"2025-04-17 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.2|2025-04-17|守岸人":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/object/1744732800000/b9xt5bwhft5l6ks7us-1744786364184.jpg","start_date":"2025-04-17 10:00","end_date":"2025-04-28 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.3|2025-04-29|贊妮、忌炎、吟霖、折枝、相里要、菲比":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/object/1745769600000/dlv4701rnu1n19fv6a-1745835323743.jpg","start_date":"2025-04-29 11:00","end_date":"2025-05-22 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.3|2025-05-22|夏空、今汐、長離、珂萊塔、洛可可、布蘭特":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/object/1747670400000/ah053z8u3tnh6a1buo-1747739790191.jpg","start_date":"2025-05-22 10:00","end_date":"2025-06-11 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.4|2025-06-12|卡提希婭":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/object/1749484800000/yom52jj33nd0fiz7kv-1749549866445.jpg","start_date":"2025-06-12 11:00","end_date":"2025-07-03 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.4|2025-07-03|露帕":{"banner_image":"https://hw-media-cdn-mingchao.kurogame.com/object/1751385600000/uim4gaz6v5fo924vsp-1751429032404.jpg","start_date":"2025-07-03 10:00","end_date":"2025-07-23 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.5|2025-07-24|弗洛洛、洛可可":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Phrolova.png","start_date":"2025-07-24 11:00","end_date":"2025-08-14 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"2.5|2025-08-14|坎特蕾拉、布蘭特":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Cantarella.png","start_date":"2025-08-14 10:00","end_date":"2025-08-27 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.7|2026-09-30|心、尤諾、千咲":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Chisa.png","start_date":"2026-09-30 11:00","end_date":"2026-10-22 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.7|2026-10-22|鎖暝、洛瑟菈、琳奈":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Lucilla.png","start_date":"2026-10-22 10:00","end_date":"2026-11-11 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.8|2026-11-12|莉莉、西格莉卡、仇遠":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Qiuyuan.png","start_date":"2026-11-12 11:00","end_date":"2026-12-03 09:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.8|2026-12-03|秧秧·玄翎、穗穗、緋雪":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Yangyang_Xuanling.png","start_date":"2026-12-03 10:00","end_date":"2026-12-21 11:59","timing_source":"https://bannerhistory.app/tw/wuwa-pickup-history"},"3.8|2026-11-12|椿、洛可可、菲比、布蘭特":{"portrait_image":"https://bannerhistory.app/icons/wuwa/characters/Brant.png"}},"endfield":{"熔火灼痕|2026-01-22|萊萬汀":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/6339ac9472f49290.webp","start_date":"2026-01-22 11:00","end_date":"2026-02-07 11:59","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"輕飄飄的信使|2026-02-07|潔爾佩塔":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/883f48117caf33f8.webp","start_date":"2026-02-07 12:00","end_date":"2026-02-24 11:59","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"熱烈色彩|2026-02-24|伊馮":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/98d69bbd7449c6b2.webp","start_date":"2026-02-24 12:00","end_date":"2026-03-12 06:00","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"河流的女兒|2026-03-12|湯湯":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/260c8171d4504104.webp","start_date":"2026-03-12 12:00","end_date":"2026-03-29 11:59","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"狼珀|2026-03-29|洛西":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/ccf7a69e6d0476cb.webp","start_date":"2026-03-29 12:00","end_date":"2026-04-17 06:00","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"春雷動，萬物生|2026-04-17|莊方宜":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/922e9cfc8055d7dc.webp","start_date":"2026-04-17 12:00","end_date":"2026-05-22 11:59","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"輝光慶典|2026-05-14|萊萬汀、潔爾佩塔":{"portrait_image":"https://assets.bannerhistory.app/icons/endfield/characters/Gilberta.png","start_date":"2026-05-14 12:00","end_date":"2026-06-05 06:00","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"拳出無悔|2026-06-05|弭弗":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/aa3825def577e8c8.webp","start_date":"2026-06-05 12:00","end_date":"2026-06-26 11:59","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"逐罪者|2026-06-26|卡繆":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/16430d439c9e4f76.webp","start_date":"2026-06-26 12:00","end_date":"2026-07-16 06:00","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"臨淵望北|2026-07-16|訣":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/9c1400a1c0d21d16.webp","start_date":"2026-07-16 12:00","end_date":"2026-08-09 11:59","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"晨星於此閃耀|2026-08-09|梨諾":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/c233d21eb8ab9cef.webp","start_date":"2026-08-09 12:00","end_date":"2026-09-02 06:00","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"冬獵|2026-09-02|提弗洛斯":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/0e915d55ddfb7344.webp","start_date":"2026-09-02 12:00","end_date":"2026-09-30 11:59","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"絢麗異彩|2026-09-24|伊馮":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/8d25be9a27f070e0.webp","start_date":"2026-09-24 12:00","end_date":"2026-10-15 06:00","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"萬物更新|2026-10-15|祀":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/91593c3a03756f02.webp","start_date":"2026-10-15 12:00","end_date":"2026-11-05 11:59","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"祖泉的新流|2026-10-29|湯湯":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/163c99f775c93cef.webp","start_date":"2026-10-29 12:00","end_date":"2026-11-19 11:59","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"煙火邀星河|2026-11-05|明河":{"banner_image":"https://assets.bannerhistory.app/icons/endfield/banners/4bbe7f55b127118c.webp","start_date":"2026-11-05 12:00","end_date":"2026-11-25 06:00","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"},"鍛砧、行囊與蜜糖|2026-11-25|小刻":{"start_date":"2026-11-25 12:00","end_date":"2026-12-23 11:59","timing_source":"https://bannerhistory.app/tw/endfield-pickup-history"}},"nte":{"1.0|2026-04-29|娜娜莉":{"banner_image":"https://assets.bannerhistory.app/icons/nte/banners/b73c223bd58786e6.webp","start_date":"2026-04-29 11:00","end_date":"2026-05-13 05:59","timing_source":"https://bannerhistory.app/tw/nte-pickup-history"},"1.0|2026-05-13|潯":{"banner_image":"https://assets.bannerhistory.app/icons/nte/banners/baa07682de972e67.webp","start_date":"2026-05-13 11:00","end_date":"2026-06-03 05:59","timing_source":"https://bannerhistory.app/tw/nte-pickup-history"},"1.1|2026-06-03|安魂曲":{"banner_image":"https://assets.bannerhistory.app/icons/nte/banners/8946cb096002fc27.webp","start_date":"2026-06-03 11:00","end_date":"2026-06-24 05:59","timing_source":"https://bannerhistory.app/tw/nte-pickup-history"},"1.1|2026-06-24|卡厄斯":{"banner_image":"https://assets.bannerhistory.app/icons/nte/banners/dac57258c300b6f2.webp","start_date":"2026-06-24 11:00","end_date":"2026-07-08 05:59","timing_source":"https://bannerhistory.app/tw/nte-pickup-history"},"1.2|2026-07-08|真紅":{"banner_image":"https://assets.bannerhistory.app/icons/nte/banners/285119b0c385dbac.webp","start_date":"2026-07-08 11:00","end_date":"2026-07-29 05:59","timing_source":"https://bannerhistory.app/tw/nte-pickup-history"},"1.2|2026-07-29|伊洛伊":{"banner_image":"https://assets.bannerhistory.app/icons/nte/banners/d156b427d1de610e.webp","start_date":"2026-07-29 11:00","end_date":"2026-08-19 05:59","timing_source":"https://bannerhistory.app/tw/nte-pickup-history"},"1.3|2026-08-19|殘虹、娜娜莉":{"banner_image":"https://assets.bannerhistory.app/icons/nte/banners/2474e39ca3ad4438.webp","start_date":"2026-08-19 11:00","end_date":"2026-09-09 05:59","timing_source":"https://bannerhistory.app/tw/nte-pickup-history"},"1.3|2026-09-09|靈可、潯":{"banner_image":"https://assets.bannerhistory.app/icons/nte/banners/9c5172a6609d1ae9.webp","start_date":"2026-09-09 11:00","end_date":"2026-09-30 05:59","timing_source":"https://bannerhistory.app/tw/nte-pickup-history"},"1.4|2026-09-30|黑羽、安魂曲":{"banner_image":"https://assets.bannerhistory.app/icons/nte/banners/d66f636c73c369f1.webp","start_date":"2026-09-30 11:00","end_date":"2026-10-21 05:59","timing_source":"https://bannerhistory.app/tw/nte-pickup-history"},"1.4|2026-10-21|明音凜":{"banner_image":"https://assets.bannerhistory.app/icons/nte/banners/ee6114f37ee41d06.webp","start_date":"2026-10-21 11:00","end_date":"2026-11-11 05:59","timing_source":"https://bannerhistory.app/tw/nte-pickup-history"},"1.5|2026-11-11|曳爾沐、真紅":{"banner_image":"https://assets.bannerhistory.app/icons/nte/banners/285119b0c385dbac.webp","start_date":"2026-11-11 11:00","end_date":"2026-12-02 05:59","timing_source":"https://bannerhistory.app/tw/nte-pickup-history"},"1.5|2026-12-02|Exe、卡厄斯":{"banner_image":"https://assets.bannerhistory.app/icons/nte/banners/dac57258c300b6f2.webp"}},"bd2":{"奧利維爾 · 泰瑞絲 · 山城戀|2026-09-23|奧利維爾・忠實之翼":{"start_date":"2026-09-23 11:20","end_date":"2026-10-08 07:50","timing_source":"https://bannerhistory.app/tw/bd2-pickup-history"},"奧利維爾 · 泰瑞絲 · 山城戀|2026-09-23|泰瑞絲・保健社":{"start_date":"2026-09-23 11:20","end_date":"2026-10-08 07:50","timing_source":"https://bannerhistory.app/tw/bd2-pickup-history"},"奧利維爾 · 泰瑞絲 · 山城戀|2026-09-23|山城戀・無限宇宙之全一":{"start_date":"2026-09-23 11:20","end_date":"2026-10-08 07:50","timing_source":"https://bannerhistory.app/tw/bd2-pickup-history"},"艾尼爾 · 出雲天花|2026-09-10|艾尼爾・貫穿的魔弓":{"start_date":"2026-09-10 14:20","end_date":"2026-09-23 07:50","timing_source":"https://bannerhistory.app/tw/bd2-pickup-history"},"艾尼爾 · 出雲天花|2026-09-10|出雲天花・天御鳥命":{"start_date":"2026-09-10 14:20","end_date":"2026-10-08 07:50","timing_source":"https://bannerhistory.app/tw/bd2-pickup-history"}},"gfl2":{"招募紀錄|2026-10-29|芙鈴":{"start_date":"2026-10-29 21:00","end_date":"2026-11-19 06:59","timing_source":"https://bannerhistory.app/zh/gf2-pickup-history"},"招募紀錄|2026-10-29|翡圖薩":{"start_date":"2026-10-29 21:00","end_date":"2026-11-19 06:59","timing_source":"https://bannerhistory.app/zh/gf2-pickup-history"},"招募紀錄|2026-10-29|六分儀":{"start_date":"2026-10-29 21:00","end_date":"2026-11-19 06:59","timing_source":"https://bannerhistory.app/zh/gf2-pickup-history"},"招募紀錄|2026-10-29|維爾德":{"start_date":"2026-10-29 21:00","end_date":"2026-11-19 06:59","timing_source":"https://bannerhistory.app/zh/gf2-pickup-history"},"招募紀錄|2026-10-08|夏安":{"start_date":"2026-10-08 21:00","end_date":"2026-10-29 06:59","timing_source":"https://bannerhistory.app/zh/gf2-pickup-history"},"招募紀錄|2026-10-08|劉蒔":{"start_date":"2026-10-08 21:00","end_date":"2026-10-29 06:59","timing_source":"https://bannerhistory.app/zh/gf2-pickup-history"},"招募紀錄|2026-10-08|米蒂爾":{"start_date":"2026-10-08 21:00","end_date":"2026-10-29 06:59","timing_source":"https://bannerhistory.app/zh/gf2-pickup-history"},"招募紀錄|2026-08-06|翡圖薩":{"start_date":"2026-08-06 21:00","end_date":"2026-08-27 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-08-06|六分儀":{"start_date":"2026-08-06 21:00","end_date":"2026-08-27 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-08-06|烏爾麗德":{"start_date":"2026-08-06 21:00","end_date":"2026-08-27 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-07-16|夏安":{"start_date":"2026-07-16 21:00","end_date":"2026-08-06 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-07-16|海倫":{"start_date":"2026-07-16 21:00","end_date":"2026-08-06 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-07-16|劉蒔":{"start_date":"2026-07-16 21:00","end_date":"2026-08-06 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-07-16|幼熙":{"start_date":"2026-07-16 21:00","end_date":"2026-08-06 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-09-17|埃芙":{"start_date":"2026-09-17 21:00","end_date":"2026-10-08 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-09-17|羅蕾萊":{"start_date":"2026-09-17 21:00","end_date":"2026-10-08 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-09-17|索普":{"start_date":"2026-09-17 21:00","end_date":"2026-10-08 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-08-27|貝絲蒂":{"start_date":"2026-08-27 21:00","end_date":"2026-09-17 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-06-04|貝絲蒂":{"start_date":"2026-06-04 21:00","end_date":"2026-06-25 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-06-04|琳德":{"start_date":"2026-06-04 21:00","end_date":"2026-06-25 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-06-04|威瑪西娜":{"start_date":"2026-06-04 21:00","end_date":"2026-06-25 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-05-14|埃芙":{"start_date":"2026-05-14 21:00","end_date":"2026-06-04 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-05-14|杜莎妮":{"start_date":"2026-05-14 21:00","end_date":"2026-06-04 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-05-14|翡圖薩":{"start_date":"2026-05-14 21:00","end_date":"2026-06-04 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-04-23|海倫":{"start_date":"2026-04-23 21:00","end_date":"2026-05-14 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-04-23|萊婭":{"start_date":"2026-04-23 21:00","end_date":"2026-05-14 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"},"招募紀錄|2026-04-23|櫻花":{"start_date":"2026-04-23 21:00","end_date":"2026-05-14 06:59","timing_source":"https://bannerhistory.app/tw/gf2-pickup-history"}},"nikke":{"4週年|2026-10-29|瑪麗安：女王":{"start_date":"2026-10-29 17:00","end_date":"2026-11-19 03:59","timing_source":"https://bannerhistory.app/en/nikke-pickup-history"},"4週年|2026-10-29|長髮公主：庇護所":{"start_date":"2026-10-29 17:00","end_date":"2026-11-19 03:59","timing_source":"https://bannerhistory.app/en/nikke-pickup-history"},"4週年|2026-10-29|灰姑娘、格拉維、娜由塔":{"start_date":"2026-10-29 17:00","end_date":"2026-11-19 03:59","timing_source":"https://bannerhistory.app/en/nikke-pickup-history"},"招募紀錄|2026-10-08|貝洛塔：南瓜女巫":{"start_date":"2026-10-08 17:00","end_date":"2026-10-28 22:59","timing_source":"https://bannerhistory.app/en/nikke-pickup-history"}}}}
+{
+  "schema": 1,
+  "games": {
+    "genshin": {
+      "1.0|2020-09-28|溫迪": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210313/2021031319365596101.jpg",
+        "start_date": "2020-09-28 10:00",
+        "end_date": "2020-10-18 17:59",
+        "timing_source": "https://genshin-impact.fandom.com/wiki/Ballad_in_Goblets/2020-09-28"
+      },
+      "1.0|2020-10-20|可莉": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/06/07/1015537/bf8645444de96287d9d66a813d9f0aa4_2451975548209649534.png",
+        "start_date": "2020-10-20 18:00",
+        "end_date": "2020-11-10 14:59",
+        "timing_source": "https://genshin-impact.fandom.com/wiki/Sparkling_Steps/2020-10-20"
+      },
+      "1.1|2020-11-11|達達利亞": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/04/02/1015537/b23dda81b6b9b0bb8a46b9adcd0e2a70_1479948151736832476.jpg",
+        "start_date": "2020-11-11（版本更新後）",
+        "end_date": "2020-12-01 15:59",
+        "timing_source": "https://genshin.hoyoverse.com/m/en/news/detail/6638"
+      },
+      "1.1|2020-12-01|鍾離": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2020/11/29/1015537/be76b7138352885ab450dcce536a8881_5237494670584433976.png",
+        "start_date": "2020-12-01 18:00",
+        "end_date": "2020-12-22 14:59",
+        "timing_source": "https://genshin-impact.fandom.com/wiki/Gentry_of_Hermitage/2020-12-01"
+      },
+      "1.2|2020-12-23|阿貝多": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20201220/2020122019331828388.jpg",
+        "start_date": "2020-12-23 10:00",
+        "end_date": "2021-01-12 15:59",
+        "timing_source": "https://genshin-impact.fandom.com/wiki/Secretum_Secretorum/2020-12-23"
+      },
+      "1.2|2021-01-12|甘雨": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/01/10/1015537/a4a8e792d76b342c43a3e7f4eb284890_7429454184524275542.jpg",
+        "start_date": "2021-01-12 18:00",
+        "end_date": "2021-02-02 14:59",
+        "timing_source": "https://genshin-impact.fandom.com/wiki/Adrift_in_the_Harbor/2021-01-12"
+      },
+      "1.3|2021-02-03|魈": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/12/29/1015537/a4520be259d355fae87c79a0d67bb567_3206780791230177565.jpg",
+        "start_date": "2021-02-03（版本更新後）",
+        "end_date": "2021-02-17 15:59",
+        "timing_source": "https://genshin.hoyoverse.com/en/news/detail/103838"
+      },
+      "1.3|2021-02-17|刻晴": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210215/2021021513032984210.jpg",
+        "start_date": "2021-02-17 18:00",
+        "end_date": "2021-03-02 15:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "1.3|2021-03-02|胡桃": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210226/2021022618132123378.jpg",
+        "start_date": "2021-03-02 18:00",
+        "end_date": "2021-03-16 14:59",
+        "timing_source": "https://genshin-impact.fandom.com/wiki/Moment_of_Bloom/2021-03-02"
+      },
+      "1.4|2021-03-17|溫迪": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210313/2021031319365596101.jpg",
+        "start_date": "2021-03-17（版本更新後）",
+        "end_date": "2021-04-06 15:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "1.4|2021-04-06|達達利亞": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/04/02/1015537/b23dda81b6b9b0bb8a46b9adcd0e2a70_1479948151736832476.jpg",
+        "start_date": "2021-04-06 18:00",
+        "end_date": "2021-04-27 14:59",
+        "timing_source": "https://genshin-impact.fandom.com/wiki/Farewell_of_Snezhnaya/2021-04-06"
+      },
+      "1.5|2021-04-28|鍾離": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/04/25/1015537/5800bc8cae272566c0c70b2a3a4c452d_8480392818056458896.jpg",
+        "start_date": "2021-04-28（版本更新後）",
+        "end_date": "2021-05-18 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "1.5|2021-05-18|優菈": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210514/2021051417153326710.jpg",
+        "start_date": "2021-05-18 18:00",
+        "end_date": "2021-06-08 14:59",
+        "timing_source": "https://genshin.hoyoverse.com/en/news/detail/12736"
+      },
+      "1.6|2021-06-09|可莉": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/06/07/1015537/bf8645444de96287d9d66a813d9f0aa4_2451975548209649534.png",
+        "start_date": "2021-06-09（版本更新後）",
+        "end_date": "2021-06-29 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "1.6|2021-06-29|楓原萬葉": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/06/25/1015537/c10e1b2bf369543924d7574cbe89ed2d_7365316316733556345.png",
+        "start_date": "2021-06-29 18:00",
+        "end_date": "2021-07-20 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.0|2021-07-21|神里綾華": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/07/19/1015537/9c6070da0fe23081c6ad3389b8ee010d_8307924212594573588.jpg",
+        "start_date": "2021-07-21（版本更新後）",
+        "end_date": "2021-08-10 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.0|2021-08-10|宵宮": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/08/08/1015373/1c615fe28f7e1920c59c2809a26ebc99_5547908425434361125.jpg",
+        "start_date": "2021-08-10 18:00",
+        "end_date": "2021-08-31 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.1|2021-09-01|雷電將軍": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/08/28/1015373/67bcd4d5a5a42fd86e2b96df0e2b459a_791772669412183147.jpg",
+        "start_date": "2021-09-01（版本更新後）",
+        "end_date": "2021-09-21 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.1|2021-09-21|珊瑚宮心海": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/09/19/1015537/1e2277fafba0b0f055dfb08a119ed40a_3673021516991038137.jpg",
+        "start_date": "2021-09-21 18:00",
+        "end_date": "2021-10-12 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.2|2021-10-13|達達利亞": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/10/11/1015537/4dd10fc2a720107ae7a4afa11de2b862_1912484706458659522.jpg",
+        "start_date": "2021-10-13（版本更新後）",
+        "end_date": "2021-11-02 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.2|2021-11-02|胡桃": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/10/29/1015537/3629f5ba1c68abe0dff2461d770a6185_129758626640373609.jpg",
+        "start_date": "2021-11-02 18:00",
+        "end_date": "2021-11-23 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.3|2021-11-24|阿貝多、優菈": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/11/20/1015537/e3c26b0c3cd25383e5a827c93d20b37a_8392711207637783524.jpg",
+        "start_date": "2021-11-24（版本更新後）",
+        "end_date": "2021-12-14 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.3|2021-12-14|荒瀧一斗": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/12/10/1015537/ae7545f9e7407a1182b2f4e7f1e0e51b_629993800131712238.jpg",
+        "start_date": "2021-12-14 18:00",
+        "end_date": "2022-01-04 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.4|2022-01-05|申鶴、魈": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/12/29/1015537/faf4e342339d80440222508d22873f25_7872237798698738193.jpg",
+        "start_date": "2022-01-05（版本更新後）",
+        "end_date": "2022-01-25 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.4|2022-01-25|鍾離、甘雨": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2021/12/29/1015537/132a86dd74435c3feadaefccc3c3e9ca_5724518092295364200.jpg",
+        "start_date": "2022-01-25 18:00",
+        "end_date": "2022-02-15 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.5|2022-02-16|八重神子": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2022/02/14/1015537/b6041665822fb84ab5672dcb29d762c9_4681556231863356769.jpg",
+        "start_date": "2022-02-16（版本更新後）",
+        "end_date": "2022-03-08 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.5|2022-03-08|雷電將軍、珊瑚宮心海": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2022/03/03/1015537/a2a74707cf9b73e79664ea6888be49b6_230241886780402968.jpg",
+        "start_date": "2022-03-08 18:00",
+        "end_date": "2022-03-29 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.6|2022-03-30|神里綾人、溫迪": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2022/03/27/1015373/85d4daed523982619be5a3d689040033_5901542234509684844.jpg",
+        "start_date": "2022-03-30（版本更新後）",
+        "end_date": "2022-04-19 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.6|2022-04-19|神里綾華": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2022/04/13/1015373/a104296d128ca9ec33566493e9975ddc_1135313010584367193.jpg",
+        "start_date": "2022-04-19 18:00",
+        "end_date": "2022-05-31 05:59",
+        "timing_source": "https://genshin-impact.fandom.com/wiki/The_Heron%27s_Court/2022-04-19"
+      },
+      "2.7|2022-05-31|夜蘭、魈": {
+        "banner_image": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/05/28/94f2b1d1225e8b686bff935facfd3e55_8844013541772774375.jpg",
+        "start_date": "2022-05-31（版本更新後）",
+        "end_date": "2022-06-21 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.7|2022-06-21|荒瀧一斗": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2022/06/16/1015537/e724870fe983eed6b5ee20d63e846dc7_7142067552885359265.jpg",
+        "start_date": "2022-06-21 18:00",
+        "end_date": "2022-07-12 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.8|2022-07-13|楓原萬葉、可莉": {
+        "banner_image": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/07/11/8cdf1c48c400e6e269aa988f55b42eba_3100291845721747708.jpg",
+        "start_date": "2022-07-13（版本更新後）",
+        "end_date": "2022-08-02 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "2.8|2022-08-02|宵宮": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2022/07/27/1015537/fc4d38f81af84c331f4c4e16b57c47ef_1593622248482350774.jpg",
+        "start_date": "2022-08-02 18:00",
+        "end_date": "2022-08-23 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.0|2022-08-24|提納里、鍾離": {
+        "banner_image": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/08/22/892f660b771572d75dcc4363912b1dd1_1326359272126447739.jpg",
+        "start_date": "2022-08-24（版本更新後）",
+        "end_date": "2022-09-09 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.0|2022-09-09|甘雨、珊瑚宮心海": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2022/09/08/023eff0e468971eb1ab46f732c5b2cb7_5533267745780253501.jpg",
+        "start_date": "2022-09-09 18:00",
+        "end_date": "2022-09-27 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.1|2022-09-28|賽諾、溫迪": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210313/2021031319365596101.jpg",
+        "start_date": "2022-09-28（版本更新後）",
+        "end_date": "2022-10-14 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.1|2022-10-14|妮露、阿貝多": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2022/10/11/dbd2747ccc9a421c9ba125b4364c935d_7659433574774098925.jpg",
+        "start_date": "2022-10-14 18:00",
+        "end_date": "2022-11-01 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.2|2022-11-02|納西妲、宵宮": {
+        "banner_image": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/10/31/1430189d0125119e75d56156a1793744_2860040185433974888.jpg",
+        "start_date": "2022-11-02（版本更新後）",
+        "end_date": "2022-11-18 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.2|2022-11-18|八重神子、達達利亞": {
+        "banner_image": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/11/15/ecab82cdb9f0bfd9544524fb972be34f_7435423374847538647.jpg",
+        "start_date": "2022-11-18 18:00",
+        "end_date": "2022-12-06 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.3|2022-12-07|流浪者、荒瀧一斗": {
+        "banner_image": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/12/05/1f6504598a3252f61b81319577c45e5d_2698771862057237625.png",
+        "start_date": "2022-12-07（版本更新後）",
+        "end_date": "2022-12-27 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.3|2022-12-27|雷電將軍、神里綾人": {
+        "banner_image": "https://act-webstatic.hoyoverse.com/upload/contentweb/2022/12/22/d86321bf31581abf9af9bc1149fc26bf_6437044065009388280.jpg",
+        "start_date": "2022-12-27 18:00",
+        "end_date": "2023-01-17 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.4|2023-01-18|艾爾海森、魈": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/op-public/2023/01/16/0fd8fe929ab05435b9f1d21c9dd91a54_7360062799986720852.jpg",
+        "start_date": "2023-01-18（版本更新後）",
+        "end_date": "2023-02-07 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.4|2023-02-07|胡桃、夜蘭": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/op-public/2023/01/17/e26579255f5f3b5fcaa3a09a2d596911_2884126442287165301.jpg",
+        "start_date": "2023-02-07 18:00",
+        "end_date": "2023-02-28 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.5|2023-03-01|迪希雅、賽諾": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/op-public/2023/02/27/7757e97cefe768b52c6ea86f8e6599b3_4884972013692035883.jpg",
+        "start_date": "2023-03-01（版本更新後）",
+        "end_date": "2023-03-21 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.5|2023-03-21|申鶴、神里綾華": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/op-public/2023/03/16/58d1a6a5ed756159be8605384d6fa77d_7004535443777210169.jpg",
+        "start_date": "2023-03-21 18:00",
+        "end_date": "2023-04-11 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.6|2023-04-12|納西妲、妮露": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/op-public/2023/04/10/94ef1529e1355a7290b95e63dfd34935_1985823497995094765.jpg",
+        "start_date": "2023-04-12（版本更新後）",
+        "end_date": "2023-05-02 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.6|2023-05-02|白朮、甘雨": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/op-public/2023/04/27/79528f18588e1d335f029d1675f6a9f7_8590544420560843185.jpg",
+        "start_date": "2023-05-02 18:00",
+        "end_date": "2023-05-23 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.7|2023-05-24|宵宮、八重神子": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/op-public/2023/05/22/d21da495d4bdb50161d70d88d3fd8366_1407393040631012851.png",
+        "start_date": "2023-05-24（版本更新後）",
+        "end_date": "2023-06-13 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.7|2023-06-13|艾爾海森、楓原萬葉": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/op-public/2023/06/08/d40d19ba390ebc7c40402f2f243d38e6_4037643072598960729.jpg",
+        "start_date": "2023-06-13 18:00",
+        "end_date": "2023-07-04 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.8|2023-07-05|優菈、可莉": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/op-public/2023/07/03/25446994304b8d399156e7612160f417_7166828042530150258.jpg",
+        "start_date": "2023-07-05（版本更新後）",
+        "end_date": "2023-07-25 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "3.8|2023-07-25|珊瑚宮心海、流浪者": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/op-public/2023/07/20/65c16961f07fb8cacd54f6b3e68509c2_6964341508932784714.jpg",
+        "start_date": "2023-07-25 18:00",
+        "end_date": "2023-08-15 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.0|2023-08-16|林尼、夜蘭": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/op-public/2023/08/14/3880712a38f99075324e40b7a448da79_458458336640996940.jpg",
+        "start_date": "2023-08-16（版本更新後）",
+        "end_date": "2023-09-05 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.0|2023-09-05|達達利亞、鍾離": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/op-public/2023/08/30/37d78c6e07faa870449d0cc8cc4662cf_6224223362133020386.jpg",
+        "start_date": "2023-09-05 18:00",
+        "end_date": "2023-09-26 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.1|2023-09-27|那維萊特、胡桃": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/113105/54f2d96ea6697d99e86381c35c43989d_1102713878045702769.jpg",
+        "start_date": "2023-09-27（版本更新後）",
+        "end_date": "2023-10-17 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.1|2023-10-17|萊歐斯利、溫迪": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/113289/704fada8793c214b79bb06e595be21a8_4200873020895531608.jpg",
+        "start_date": "2023-10-17 18:00",
+        "end_date": "2023-11-07 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.2|2023-11-08|芙寧娜、白朮": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/113503/00802797e7aaaa2f5614edddbb8fe376_4556067203225414488.jpg",
+        "start_date": "2023-11-08（版本更新後）",
+        "end_date": "2023-11-28 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.2|2023-11-28|賽諾、神里綾人": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/113745/1db0f7a275f5dd6feeaaa41624ab8a50_8099312157487016150.jpg",
+        "start_date": "2023-11-28 18:00",
+        "end_date": "2023-12-19 14:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.3|2023-12-20|娜維婭、神里綾華": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/114060/209c04023f451a316e32656502716d08_6841544611433264127.jpg",
+        "start_date": "2023-12-20（版本更新後）",
+        "end_date": "2024-01-09 17:59",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.3|2024-01-09|雷電將軍、宵宮": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/114231/111286cb12cc93e504afb6aaa4bcd902_762062850060941634.jpg",
+        "start_date": "2024-01-09 18:00",
+        "end_date": "2024-01-30 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.4|2024-01-31|閒雲、納西妲": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/122075/0f4712b0e5db12907e014603f312c006_5989586417227275692.jpg",
+        "start_date": "2024-01-31（版本更新後）",
+        "end_date": "2024-02-20 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.4|2024-02-20|魈、八重神子": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/122137/c35aa1238526cbb8eac956ef117f5c59_7748220764482164761.jpg",
+        "start_date": "2024-02-20 18:00",
+        "end_date": "2024-03-12 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.5|2024-03-13|千織、荒瀧一斗": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/122791/2c96bf55703d236ae16cf7b893f670cb_7927316319015024455.jpg",
+        "start_date": "2024-03-13（版本更新後）",
+        "end_date": "2024-04-02 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.5|2024-04-02|那維萊特、楓原萬葉": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/123027/592a6dbaee282628cb43210d0d48d27a_4094900642456856370.jpg",
+        "start_date": "2024-04-02 18:00",
+        "end_date": "2024-04-23 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.5|2024-03-13|優菈、莫娜、阿貝多、可莉、迪盧克、琴": {
+        "banner_image": "https://webstatic.hoyoverse.com/upload/uploadstatic/contentweb/20210514/2021051417153326710.jpg"
+      },
+      "4.6|2024-04-24|阿蕾奇諾、林尼": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/123336/770c96567487ee634ee5d792e5c7df35_2937749118682141014.jpg",
+        "start_date": "2024-04-24（版本更新後）",
+        "end_date": "2024-05-14 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.6|2024-05-14|流浪者、白朮": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/123628/1cc75478c83a137fd2f3d09950108677_418936878502539736.jpg",
+        "start_date": "2024-05-14 18:00",
+        "end_date": "2024-06-04 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.7|2024-06-05|克洛琳德、艾爾海森": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/123933/27246894b10413f620c3709356c985ad_7870637348518835519.jpg",
+        "start_date": "2024-06-05（版本更新後）",
+        "end_date": "2024-06-25 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.7|2024-06-25|希格雯、芙寧娜": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/124188/d61b935a156b62483d5921c48a8f2238_5362735306607665600.jpg",
+        "start_date": "2024-06-25 18:00",
+        "end_date": "2024-07-16 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.8|2024-07-17|娜維婭、妮露": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/124773/98811c3ba93483a4bceb7cdca21c3012_896521160865660852.jpg",
+        "start_date": "2024-07-17（版本更新後）",
+        "end_date": "2024-08-06 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "4.8|2024-08-06|艾梅莉埃、夜蘭": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125075/0d67aa5d097ccc42cc20de31c9ff858d_6828043456457858634.jpg",
+        "start_date": "2024-08-06 18:00",
+        "end_date": "2024-08-27 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.0|2024-08-28|瑪拉妮、楓原萬葉": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125473/bfa495ff5f233dabea9030432ddcd2e9_249835867014740548.jpg",
+        "start_date": "2024-08-28（版本更新後）",
+        "end_date": "2024-09-17 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.0|2024-09-17|基尼奇、雷電將軍": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125821/ac90fede702d4e09857cc9179f7d9c31_3584919884275519924.jpg",
+        "start_date": "2024-09-17 18:00",
+        "end_date": "2024-10-08 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.1|2024-10-09|希諾寧、千織": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/126240/31aff420de7ef6f4776165c27da1e137_5201527505511463320.jpg",
+        "start_date": "2024-10-09（版本更新後）",
+        "end_date": "2024-10-29 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.1|2024-10-29|納西妲、胡桃": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/126570/6e78bb9be3941d46ec7977bda7cd8e6b_877500593505277452.jpg",
+        "start_date": "2024-10-29 18:00",
+        "end_date": "2024-11-19 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.2|2024-11-20|恰斯卡、林尼": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/126974/0695d4ba0c64a506ec7f7f0120f6d81b_4218518119602844141.jpg",
+        "start_date": "2024-11-20（版本更新後）",
+        "end_date": "2024-12-10 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.2|2024-12-10|那維萊特、鍾離": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/127244/99fca291201a9c0bf039d7a7ad93f2c1_665276559861393829.jpg",
+        "start_date": "2024-12-10 18:00",
+        "end_date": "2024-12-31 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.3|2025-01-01|瑪薇卡、茜特菈莉": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/127690/c30ee9b7def3ab740534d6f812512bfc_2924427954654319034.jpg",
+        "start_date": "2025-01-01（版本更新後）",
+        "end_date": "2025-01-21 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.3|2025-01-21|阿蕾奇諾、克洛琳德": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/127691/d6cf82b30f32f2045a0f167e3e95926c_7289956646079898680.jpg",
+        "start_date": "2025-01-21 18:00",
+        "end_date": "2025-02-11 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.3|2025-01-21|白朮、申鶴、刻晴、甘雨、七七、達達利亞、魈": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/129515/c12257354fe730c3cde287a12bd05dc1_1315307346992756195.png"
+      },
+      "5.4|2025-02-12|夢見月瑞希、希格雯": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/129799/5583f19800ed2c801679c1ebe77709cf_24552743300169214.jpg",
+        "start_date": "2025-02-12（版本更新後）",
+        "end_date": "2025-03-04 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.4|2025-03-04|萊歐斯利、芙寧娜": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/154505/0b5551e0599781c5eec20bfde653b3c4_5573697336580646696.jpg",
+        "start_date": "2025-03-04 18:00",
+        "end_date": "2025-03-25 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.5|2025-03-26|瓦雷莎、閒雲": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/155096/3481f6ce31c8b2ffcd72c945d21767f5_5506259103594417611.jpg",
+        "start_date": "2025-03-26（版本更新後）",
+        "end_date": "2025-04-15 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.5|2025-04-15|希諾寧、溫迪": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/155416/ce132746c72b942a105d8564696f619a_5934595809720303608.jpg",
+        "start_date": "2025-04-15 18:00",
+        "end_date": "2025-05-06 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.6|2025-05-07|愛可菲、娜維婭": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/155725/e1d9d6bfd3b7ee33ff4ca4cfcf5c3b61_4219801420954022132.jpg",
+        "start_date": "2025-05-07（版本更新後）",
+        "end_date": "2025-05-27 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.6|2025-05-27|基尼奇、雷電將軍": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/155991/d228d4df8b81032aa51c8736257b02d0_8360065577781911929.jpg",
+        "start_date": "2025-05-27 18:00",
+        "end_date": "2025-06-17 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.6|2025-05-27|神里綾華、神里綾人、宵宮、千織、八重神子、荒瀧一斗、珊瑚宮心海、楓原萬葉": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/156044/37bcb767b11dd6d985b61a586efcd783_6852418448913392865.png"
+      },
+      "5.7|2025-06-18|絲柯克、申鶴": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/156954/88b5e726a2d75980c4c84a4dc56bb400_8886553313817337155.jpg",
+        "start_date": "2025-06-18（版本更新後）",
+        "end_date": "2025-07-08 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.7|2025-07-08|瑪薇卡、艾梅莉埃": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2025/07/03/2ed72b08d782b8cc9e192fc1d296ad71_1585789215226926584.jpg",
+        "start_date": "2025-07-08 18:00",
+        "end_date": "2025-07-29 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.8|2025-07-30|伊涅芙、茜特菈莉": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2025/07/25/f2e3fe80a78a4c7bf653cc1b68e36faf_1732138280627252103.jpg",
+        "start_date": "2025-07-30（版本更新後）",
+        "end_date": "2025-08-19 17:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "5.8|2025-08-19|瑪拉妮、恰斯卡": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/158611/aab402d2f096aa723a455f05f9e53316_1089512484034853780.jpg",
+        "start_date": "2025-08-19 18:00",
+        "end_date": "2025-09-09 14:58",
+        "timing_source": "https://github.com/MadeBaruna/paimon-moe/tree/f6b24bb174ddf1ae3a2db0539b4daf992beec529/src/data"
+      },
+      "6.0|2025-09-10|菈烏瑪、納西妲": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159274/20c9649fdc7d4b38740ffad6f101a3b9_7907033836477809766.jpg"
+      },
+      "6.0|2025-09-30|菲林斯、夜蘭": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159690/2b90bda809e0d618cb3cb4600863a0c3_5075993642325331394.jpg"
+      },
+      "6.0|2025-09-10|迪希雅、艾爾海森、流浪者、賽諾、妮露、提納里": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/159317/a868d0ad1836d4bfcabe938232378b06_1693868332740989455.png",
+        "start_date": "2025-09-10（版本更新後）",
+        "end_date": "2025-09-30 17:59",
+        "timing_source": "https://senseos.gg/guides/genshin-impact/genshin-epitomized-path-and-chronicled-wish/"
+      },
+      "6.1|2025-10-22|奈芙爾、芙寧娜": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/160338/abceb2371599d782a88d6ba6673f594d_2284469706523727795.jpg"
+      },
+      "6.1|2025-11-11|阿蕾奇諾、鍾離": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/160749/9e0c6f676844d78aa719fd4279d76ebc_6405883342379691153.jpg"
+      },
+      "6.2|2025-12-03|杜林、溫迪": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/161137/dbb335dd511336231da36235983c9de6_8006377043810746848.jpg"
+      },
+      "6.2|2025-12-23|瓦雷莎、希諾寧": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/161521/eb628cc1fa1c710d7514e88347efb33b_2407999175219513982.jpg"
+      },
+      "6.3|2026-01-14|哥倫比婭、伊涅芙": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162089/eedde25e32165a1c0829888c21fe737b_8299427508651113220.jpg"
+      },
+      "6.3|2026-02-03|茲白、那維萊特": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162090/7fe2a3f0157b3045f78bb92f69a7db3a_1432435110450683522.jpg"
+      },
+      "6.4|2026-02-25|法爾伽、菲林斯": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162721/4df08696633a4db92b369711589dd84e_540306179551982814.jpg"
+      },
+      "6.4|2026-03-17|絲柯克、愛可菲": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/163094/ddd1ed22534d993acbacc0404ee97be7_8857687299707474410.jpg"
+      },
+      "6.4|2026-02-25|優菈、莫娜、阿貝多、可莉、迪盧克、琴": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162724/97c31ec3c126dd649ce00bfd43f77cb1_5918528908610101554.png"
+      },
+      "6.5|2026-04-08|莉奈婭、恰斯卡": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/163415/305178679df350e4d7bb142f35652d7e_1146057269290493062.jpg"
+      },
+      "6.5|2026-04-28|菈烏瑪、奈芙爾": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/163629/2c8aba63e76d41f7a2c082625073df79_4981352531336011739.jpg"
+      },
+      "6.5|2026-04-28|艾梅莉埃、克洛琳德、希格雯、娜維婭、林尼": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/163709/2fdae09cbc6d40f523a7be9ec0044d25_5841109901595416063.png"
+      },
+      "6.6|2026-05-20|尼可、杜林": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/164019/ce384ca2689c9356df0fab91463be352_1367925047952731926.jpg"
+      },
+      "6.6|2026-06-09|洛恩、瑪薇卡": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/164591/1392aae07e669a1e8bb781d1feb225b6_7912709754901886684.jpg"
+      },
+      "6.7|2026-07-01|桑多涅、茜特菈莉": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/165007/ac5fe206ee89540671f542ac3bb66048_4188342911236425303.jpg",
+        "start_date": "2026-07-01 11:00",
+        "end_date": "2026-07-21 18:00",
+        "timing_source": "https://bannerhistory.app/tw/genshin-pickup-history"
+      },
+      "6.7|2026-07-21|哥倫比婭、雷電將軍": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/165236/06fd5d94ace32d945d34b92b89c2527c_5409157336254630054.jpg",
+        "start_date": "2026-07-21 18:00",
+        "end_date": "2026-08-11 15:00",
+        "timing_source": "https://bannerhistory.app/tw/genshin-pickup-history"
+      },
+      "6.7|2026-07-01|夢見月瑞希、萊歐斯利、賽諾、八重神子、七七": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/129515/a71f33ff7783c675072d587a4453e526_3299948793820144314.png"
+      },
+      "7.0|2026-08-12|奧黛塔、阿蕾奇諾": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/165610/b02047a69257265e6c200d5a3d44046e_388112146566520043.jpg",
+        "start_date": "2026-08-12 11:00",
+        "end_date": "2026-09-01 18:00",
+        "timing_source": "https://bannerhistory.app/tw/genshin-pickup-history"
+      },
+      "7.0|2026-09-01|菲林斯、伊涅芙": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/165901/c323ecc98ebf14befd4eb5ca308e1ead_4371924170254337005.jpg",
+        "start_date": "2026-09-01 18:00",
+        "end_date": "2026-09-22 15:00",
+        "timing_source": "https://bannerhistory.app/tw/genshin-pickup-history"
+      },
+      "7.1|2026-09-23|薇斯納、沃雅妮莎": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/166228/1f0d10c301d4801a10cc8db444438c48_1764871263734950261.jpg",
+        "start_date": "2026-09-23 11:00",
+        "end_date": "2026-10-13 18:00",
+        "timing_source": "https://bannerhistory.app/tw/genshin-pickup-history"
+      },
+      "7.1|2026-10-13|絲柯克、愛可菲": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/166634/4d11b9bdf4120ca7a78f6e09a635eb1d_2851191510710715503.jpg",
+        "start_date": "2026-10-13 18:00",
+        "end_date": "2026-11-03 15:00",
+        "timing_source": "https://bannerhistory.app/tw/genshin-pickup-history"
+      },
+      "7.2|2026-11-04|米提亞、芙寧娜": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/167139/60f9a8c762e392eb8ad659a9133b7c65_2801098210872423311.jpg",
+        "start_date": "2026-11-04 11:00",
+        "end_date": "2026-11-24 18:00",
+        "timing_source": "https://bannerhistory.app/tw/genshin-pickup-history"
+      },
+      "7.2|2026-11-24|茲白、莉奈婭": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/162090/7fe2a3f0157b3045f78bb92f69a7db3a_1432435110450683522.jpg",
+        "start_date": "2026-11-24 18:00",
+        "end_date": "2026-12-15 15:00",
+        "timing_source": "https://bannerhistory.app/tw/genshin-pickup-history"
+      },
+      "7.2|2026-11-24|瓦雷莎、恰斯卡、希諾寧、瑪拉妮、基尼奇": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125821/ac90fede702d4e09857cc9179f7d9c31_3584919884275519924.jpg"
+      }
+    },
+    "starrail": {
+      "4.7|2026-11-11|銀狼LV.999、火花、爻光": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1501.png",
+        "start_date": "2026-11-11 11:00",
+        "end_date": "2026-12-02 11:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.7|2026-12-02|黃泉、丹恆・飲月、景元": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1213.png",
+        "start_date": "2026-12-02 12:00",
+        "end_date": "2026-12-22 15:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.6|2026-09-28|真珠": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1503.png",
+        "start_date": "2026-09-28 11:00",
+        "end_date": "2026-11-10 15:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.6|2026-09-28|緋英": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1505.png",
+        "start_date": "2026-09-28 11:00",
+        "end_date": "2026-10-21 11:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.6|2026-10-21|千冶・刃": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1507.png",
+        "start_date": "2026-10-21 12:00",
+        "end_date": "2026-11-11 03:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.5|2026-08-26|知更鳥・晴歌、風堇": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1512.png",
+        "start_date": "2026-08-26 11:00",
+        "end_date": "2026-09-12 11:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.5|2026-09-12|砂金・戲浪、不死途": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1504.png",
+        "start_date": "2026-09-12 12:00",
+        "end_date": "2026-09-28 03:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.4|2026-07-15|姬子・啟行": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1510.png",
+        "start_date": "2026-07-15 11:00",
+        "end_date": "2026-08-26 03:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.4|2026-07-15|火花、丹恆・騰荒、長夜月": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1414.png",
+        "start_date": "2026-07-15 11:00",
+        "end_date": "2026-08-05 11:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.4|2026-08-05|刻律德菈、那刻夏、砂金": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1412.png",
+        "start_date": "2026-08-05 12:00",
+        "end_date": "2026-08-26 03:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.3|2026-06-01|千冶・刃、爻光": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1507.png",
+        "start_date": "2026-06-01 11:00",
+        "end_date": "2026-06-24 11:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.3|2026-06-24|昔漣、白厄": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1415.png",
+        "start_date": "2026-06-24 12:00",
+        "end_date": "2026-07-15 03:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.2|2026-04-22|銀狼LV.999、大理花、遐蝶、流螢": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1321.png",
+        "start_date": "2026-04-22 11:00",
+        "end_date": "2026-05-13 11:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.2|2026-05-13|緋英、緹寶、星期日、飛霄": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1313.png",
+        "start_date": "2026-05-13 12:00",
+        "end_date": "2026-06-01 03:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.0|2023-04-26|希兒": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1102.png",
+        "start_date": "2023-04-26 11:00",
+        "end_date": "2023-05-17 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.0|2023-05-17|景元": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1204.png",
+        "start_date": "2023-05-17 12:00",
+        "end_date": "2023-06-07 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.1|2023-06-07|銀狼": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1006.png",
+        "start_date": "2023-06-07 11:00",
+        "end_date": "2023-06-28 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.1|2023-06-28|羅剎": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1203.png",
+        "start_date": "2023-06-28 12:00",
+        "end_date": "2023-07-19 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.2|2023-07-19|刃": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1205.png",
+        "start_date": "2023-07-19 11:00",
+        "end_date": "2023-08-09 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.2|2023-08-09|卡芙卡": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1005.png",
+        "start_date": "2023-08-09 12:00",
+        "end_date": "2023-08-30 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.3|2023-08-30|丹恆·飲月": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1213.png",
+        "start_date": "2023-08-30 11:00",
+        "end_date": "2023-09-20 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.3|2023-09-20|符玄": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1208.png",
+        "start_date": "2023-09-20 12:00",
+        "end_date": "2023-10-11 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.4|2023-10-11|鏡流": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1212.png",
+        "start_date": "2023-10-11 11:00",
+        "end_date": "2023-10-27 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.4|2023-10-27|托帕&帳帳、希兒": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1102.png",
+        "start_date": "2023-10-27 12:00",
+        "end_date": "2023-11-15 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.5|2023-11-15|藿藿": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1217.png",
+        "start_date": "2023-11-15 11:00",
+        "end_date": "2023-12-06 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.5|2023-12-06|銀枝、銀狼": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1302.png",
+        "start_date": "2023-12-06 12:00",
+        "end_date": "2023-12-27 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.6|2023-12-27|阮·梅、刃": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1205.png",
+        "start_date": "2023-12-27 11:00",
+        "end_date": "2024-01-17 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "1.6|2024-01-17|真理醫生、卡芙卡": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1005.png",
+        "start_date": "2024-01-17 12:00",
+        "end_date": "2024-02-06 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.0|2024-02-06|黑天鵝、丹恆·飲月": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1213.png",
+        "start_date": "2024-02-06 11:00",
+        "end_date": "2024-02-29 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.0|2024-02-29|花火、景元": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1204.png",
+        "start_date": "2024-02-29 12:00",
+        "end_date": "2024-03-27 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.1|2024-03-27|黃泉、羅剎": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1203.png",
+        "start_date": "2024-03-27 11:00",
+        "end_date": "2024-04-17 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.1|2024-04-17|砂金、鏡流": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1304.png",
+        "start_date": "2024-04-17 12:00",
+        "end_date": "2024-05-08 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.2|2024-05-08|知更鳥、托帕&帳帳": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1112.png",
+        "start_date": "2024-05-08 11:00",
+        "end_date": "2024-05-29 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.2|2024-05-29|波提歐、符玄": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1315.png",
+        "start_date": "2024-05-29 12:00",
+        "end_date": "2024-06-19 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.3|2024-06-19|流螢、阮·梅": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1310.png",
+        "start_date": "2024-06-19 11:00",
+        "end_date": "2024-07-10 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.3|2024-07-10|翡翠、銀枝": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1314.png",
+        "start_date": "2024-07-10 12:00",
+        "end_date": "2024-07-31 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.4|2024-07-31|雲璃、藿藿": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1217.png",
+        "start_date": "2024-07-31 11:00",
+        "end_date": "2024-08-21 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.4|2024-08-21|椒丘、花火": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1218.png",
+        "start_date": "2024-08-21 12:00",
+        "end_date": "2024-09-10 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.5|2024-09-10|飛霄、卡芙卡、黑天鵝、知更鳥": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1005.png",
+        "start_date": "2024-09-10 11:00",
+        "end_date": "2024-10-02 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.5|2024-10-02|靈砂、托帕&帳帳": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1112.png",
+        "start_date": "2024-10-02 12:00",
+        "end_date": "2024-10-23 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.6|2024-10-23|亂破、丹恆·飲月": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1213.png",
+        "start_date": "2024-10-23 11:00",
+        "end_date": "2024-11-13 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.6|2024-11-13|黃泉、砂金": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1304.png",
+        "start_date": "2024-11-13 12:00",
+        "end_date": "2024-12-04 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.7|2024-12-04|星期日、景元": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1313.png",
+        "start_date": "2024-12-04 11:00",
+        "end_date": "2024-12-25 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "2.7|2024-12-25|忘歸人、流螢": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1225.png",
+        "start_date": "2024-12-25 12:00",
+        "end_date": "2025-01-15 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.0|2025-01-15|大黑塔、靈砂、飛霄、翡翠": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1401.png",
+        "start_date": "2025-01-15 11:00",
+        "end_date": "2025-02-05 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.0|2025-02-05|阿格萊雅、波提歐、知更鳥、銀狼": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1315.png",
+        "start_date": "2025-02-05 12:00",
+        "end_date": "2025-02-26 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.1|2025-02-26|緹寶、雲璃": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1403.png",
+        "start_date": "2025-02-26 11:00",
+        "end_date": "2025-03-19 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.1|2025-03-19|萬敵、藿藿": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1404.png",
+        "start_date": "2025-03-19 12:00",
+        "end_date": "2025-04-09 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.2|2025-04-09|遐蝶、忘歸人、椒丘、黃泉": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1225.png",
+        "start_date": "2025-04-09 11:00",
+        "end_date": "2025-04-30 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.2|2025-04-30|那刻夏、真理醫生": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1305.png",
+        "start_date": "2025-04-30 12:00",
+        "end_date": "2025-05-21 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.3|2025-05-21|風堇、大黑塔": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1401.png",
+        "start_date": "2025-05-21 11:00",
+        "end_date": "2025-06-11 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.3|2025-06-11|賽飛兒、阿格萊雅": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1406.png",
+        "start_date": "2025-06-11 12:00",
+        "end_date": "2025-07-02 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.4|2025-07-02|白厄、緹寶、星期日、花火": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1313.png",
+        "start_date": "2025-07-02 11:00",
+        "end_date": "2025-07-23 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.4|2025-07-23|流螢、鏡流、刃": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1205.png",
+        "start_date": "2025-07-23 12:00",
+        "end_date": "2025-08-13 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.5|2025-08-13|海瑟音、卡芙卡": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1005.png",
+        "start_date": "2025-08-13 11:00",
+        "end_date": "2025-09-02 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.5|2025-09-02|刻律德菈、銀狼": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1412.png",
+        "start_date": "2025-09-02 12:00",
+        "end_date": "2025-09-24 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.6|2025-09-24|長夜月、大黑塔": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1401.png",
+        "start_date": "2025-09-24 11:00",
+        "end_date": "2025-10-15 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.6|2025-10-15|丹恆•騰荒、那刻夏": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1414.png",
+        "start_date": "2025-10-15 12:00",
+        "end_date": "2025-11-05 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.7|2025-11-05|昔漣": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1415.png"
+      },
+      "3.7|2025-11-05|風堇、遐蝶、緹寶": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1403.png",
+        "start_date": "2025-11-05 11:00",
+        "end_date": "2025-11-26 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.7|2025-11-26|白厄、賽飛兒、萬敵": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1408.png",
+        "start_date": "2025-11-26 12:00",
+        "end_date": "2025-12-17 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.8|2025-12-17|大理花、流螢": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1321.png",
+        "start_date": "2025-12-17 11:00",
+        "end_date": "2026-01-07 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.8|2026-01-07|忘歸人、靈砂": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1225.png",
+        "start_date": "2026-01-07 12:00",
+        "end_date": "2026-01-28 12:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "3.8|2026-01-28|阿格萊雅、星期日": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1313.png",
+        "start_date": "2026-01-28 12:00",
+        "end_date": "2026-02-13 11:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.0|2026-02-13|爻光": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1502.png",
+        "start_date": "2026-02-13 11:00",
+        "end_date": "2026-03-24 15:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.0|2026-02-13|長夜月、海瑟音、黑天鵝": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1410.png",
+        "start_date": "2026-02-13 11:00",
+        "end_date": "2026-03-03 11:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.0|2026-03-03|火花、刻律德菈、亂破、花火": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1317.png",
+        "start_date": "2026-03-03 12:00",
+        "end_date": "2026-03-24 15:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.1|2026-03-24|不死途": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1504.png",
+        "start_date": "2026-03-25 11:00",
+        "end_date": "2026-04-21 15:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.1|2026-03-24|風堇": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1409.png",
+        "start_date": "2026-03-25 11:00",
+        "end_date": "2026-04-08 11:59",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.1|2026-04-08|波提歐": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1315.png",
+        "start_date": "2026-04-08 12:00",
+        "end_date": "2026-04-21 15:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.7|2026-11-11|星神★阿哈": {
+        "portrait_image": "https://assets.bannerhistory.app/temp/hsr/aha-portrait-s-chart.webp",
+        "start_date": "2026-11-11 11:00",
+        "end_date": "2026-12-22 15:00",
+        "timing_source": "https://bannerhistory.app/tw/hsr-pickup-history"
+      },
+      "4.4|2026-07-24|遠坂凜、吉爾伽美什": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1509.png"
+      },
+      "3.4|2025-07-11|Saber、Archer": {
+        "portrait_image": "https://cdn.jsdelivr.net/gh/Mar-7th/StarRailRes@master/icon/character/1014.png"
+      }
+    },
+    "zzz": {
+      "3.3|2026-10-21|菲歐妮、維琳娜": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/166926/0edc3cb88d9e6fd04d8c085442e5358f_5864864883691406076.png",
+        "start_date": "2026-10-21 11:00",
+        "end_date": "2026-11-11 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "3.3|2026-11-11|賽維里安、諾姆": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/165144/346038b2c6df6a924343a1827920deb0_2375386380768463979.jpg",
+        "start_date": "2026-11-11 12:00",
+        "end_date": "2026-12-01 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.0|2024-07-04|艾蓮": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/124566/6690500950645fa41139f3e533c4bb13_5538933341638210280.png",
+        "weapons": "深海訪客",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2024-07-04 10:00",
+        "end_date": "2024-07-24 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.0|2024-07-24|朱鳶": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/124925/156583f2d499d14d11b03a3e0bab1821_6798407832684405864.png",
+        "weapons": "防暴者Ⅵ型",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2024-07-24 12:00",
+        "end_date": "2024-08-13 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.1|2024-08-14|青衣": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/125222/8df3d00cc2ee13dba5242eca391da9e0_6610946314099956179.png",
+        "weapons": "玉壺青冰",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2024-08-14 11:00",
+        "end_date": "2024-09-04 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.1|2024-09-04|簡": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/125645/4e5bc1a866459aa969f57f0b67a26129_372577246553953403.png",
+        "weapons": "淬鋒鉗刺",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2024-09-04 12:00",
+        "end_date": "2024-09-24 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.2|2024-09-25|凱撒": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/126046/0383bd862ed3b124e31ca97f641a378e_1408612074907269964.png",
+        "weapons": "奔襲獠牙",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2024-09-25 11:00",
+        "end_date": "2024-10-16 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.2|2024-10-16|柏妮思": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/126371/5931baecea5255d29e8f5a15ddab4df2_5254352602091193855.png",
+        "weapons": "灼心搖壺",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2024-10-16 12:00",
+        "end_date": "2024-11-05 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.3|2024-11-27|萊特": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/127095/b9ec41e005b51a6f01ddfd345865d268_284778689061583084.png",
+        "weapons": "焰心桂冠",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2024-11-27 12:00",
+        "end_date": "2024-12-17 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.5|2025-01-22|耀嘉音、艾蓮": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/129524/241e6ee794ddee585caa9aa17cc20da7_6201044687533944823.png",
+        "weapons": "玲瓏妝匣、深海訪客",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2025-01-22 11:00",
+        "end_date": "2025-02-12 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.5|2025-02-12|伊芙琳、青衣": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/129810/7a706bc195ea42c9703a370422bd3403_8121675792245089343.png",
+        "weapons": "心弦夜響、玉壺青冰",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2025-02-12 12:00",
+        "end_date": "2025-03-11 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.6|2025-03-12|零號·安比、柏妮思": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/154645/4e575367e042880dfec71b698c4e4425_4280605289498071002.png",
+        "weapons": "犧牲潔純、灼心搖壺",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2025-03-12 11:00",
+        "end_date": "2025-04-02 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.6|2025-04-02|扳機、朱鳶": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/155217/85a49d5c73a13e8b7426549567adf65a_1597100842366383277.png",
+        "weapons": "索魂影眸、防暴者Ⅵ型",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2025-04-02 12:00",
+        "end_date": "2025-04-22 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.7|2025-04-22|薇薇安、簡": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/155563/4f09d58aa739294223e24d1afd9a931d_3688322018399982365.png",
+        "weapons": "飛鳥星夢、淬鋒鉗刺",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2025-04-23（版本更新後）",
+        "end_date": "2025-05-14 11:59:59",
+        "timing_source": "https://zenless.hoyoverse.com/ja-jp/news/155563"
+      },
+      "1.7|2025-05-14|雨果、萊特": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/155886/581ff7e6c86b38dd5c5a6ef905985e13_92531493403002508.png",
+        "weapons": "千面日隕、焰心桂冠",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2025-05-14 12:00",
+        "end_date": "2025-06-05 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.0|2025-06-06|儀玄、耀嘉音": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/156655/aa76db1d9d747447ca9ea8cc71a8372c_8151134226565730066.jpg",
+        "weapons": "青溟籠舍、玲瓏妝匣",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2025-06-06 11:00",
+        "end_date": "2025-06-25 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.0|2025-06-25|橘福福、凱撒": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/157218/657edbe059d12b1fea4649f62946d426_4037669996525531976.png",
+        "weapons": "福虓爐爐、奔襲獠牙",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2025-06-25 12:00",
+        "end_date": "2025-07-15 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.1|2025-08-06|愛麗絲、月城柳": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/158277/a4ca66c8223f9a74be836c86fdfb58a6_6988252616934886147.png",
+        "weapons": "十方鍛星、時流賢者",
+        "start_date": "2025-08-06 12:00",
+        "end_date": "2025-09-03 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.2|2025-09-04|席德、扳機": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/159104/34cb4b3bfe2d07c700bf65448b5ec743_3295361101747142471.png",
+        "weapons": "機巧心種、索魂影眸",
+        "start_date": "2025-09-04 11:00",
+        "end_date": "2025-09-24 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.2|2025-09-24|奧菲絲＆鬼火、伊芙琳": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/159564/00105f0622c5f5d771a3a1d24bb69083_1518908807518446373.png",
+        "weapons": "囂槍喧焰、心弦夜響",
+        "start_date": "2025-09-24 12:00",
+        "end_date": "2025-10-14 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.3|2025-10-15|盧西婭、薇薇安": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/160175/1c03d70400747cffa5452e2aca58403c_1806410311691087421.png",
+        "weapons": "鑄夢爐歌、飛鳥星夢",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2025-10-15 11:00",
+        "end_date": "2025-11-05 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.3|2025-11-05|伊德海莉、橘福福": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/160694/0de1dbb7f0b3438e4364d06a7c0594a4_4279588225733249962.png",
+        "weapons": "海妖搖籃、福虓爐爐",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2025-11-05 12:00",
+        "end_date": "2025-11-25 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.4|2025-11-26|琉音、雨果": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/161024/39cf32195994ed9420ceafc201fde180_4601098215687373633.png",
+        "weapons": "昨夜來電、千面日隕",
+        "start_date": "2025-11-26 11:00",
+        "end_date": "2025-12-17 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.4|2025-12-17|般岳、艾蓮": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/161417/a295cb4d0ccac7a3264ecd785ad0e223_6505619767004865721.png",
+        "weapons": "怒目金剛、深海訪客",
+        "start_date": "2025-12-17 12:00",
+        "end_date": "2025-12-29 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.5|2025-12-30|葉瞬光、照": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/161695/0d0a61177da0a6952405ea15b96aa78b_2764242073633468333.jpg",
+        "weapons": "葉瞬光：雲霓孤光；照：半糖雪兔"
+      },
+      "2.5|2026-01-21|愛麗絲、零號·安比、耀嘉音": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/158277/a4ca66c8223f9a74be836c86fdfb58a6_6988252616934886147.png"
+      },
+      "2.6|2026-02-06|千夏、儀玄": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/162496/3c69a39563d368e743457becba5730fb_5064207579422581159.png",
+        "weapons": "思絡成歌、青溟籠舍",
+        "start_date": "2026-02-06 11:00",
+        "end_date": "2026-03-04 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.6|2026-03-04|愛芮、浮波柚葉": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/162981/df85bb171901d1eea20dee1f8a409778_4323668885994146757.png",
+        "weapons": "殼中之靈、狸法七變化",
+        "start_date": "2026-03-04 12:00",
+        "end_date": "2026-03-23 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.7|2026-03-24|南宮羽、伊德海莉": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/163213/4c09062c55bf47e59c69333e368c3c5c_2568728396917084140.jpg",
+        "weapons": "霓虹妄想、海妖搖籃",
+        "weapon_source": "https://zzz.mihoyo.com/news/163223",
+        "start_date": "2026-03-24 11:00",
+        "end_date": "2026-04-15 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.7|2026-04-15|希希芙、席德": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/163500/596b6bbc7c49bd6f7b57b1672dfc86cf_1937256738523311625.jpg",
+        "weapons": "鱗齒尋蹤、機巧心種",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2026-04-15 12:00",
+        "end_date": "2026-05-05 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.8|2026-05-06|普羅米婭、盧西婭": {
+        "banner_image": "https://upload-os-bbs.hoyolab.com/upload/2026/05/03/0/90ec60183998e42b77f9cd85fd5c67cb_6732805449643983417.jpeg",
+        "weapons": "朔月裁霜、鑄夢爐歌",
+        "weapon_source": "https://forum.gamer.com.tw/C.php?bsn=74860&snA=9713",
+        "start_date": "2026-05-06 11:00",
+        "end_date": "2026-05-27 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "2.8|2026-05-27|星徽·比利、奧菲絲＆鬼火": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/164330/6d368614286e33d6e750beab3f9bb73b_2466420938756427228.jpg",
+        "weapons": "輝騎面鎧、囂槍喧焰",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2026-05-27 12:00",
+        "end_date": "2026-06-16 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "3.0|2026-06-17|維琳娜、葉瞬光": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/164735/550969565e87d6a2f6a8622796d5f5ea_8892739416197635705.png",
+        "weapons": "琳琅鎏心、雲霓孤光",
+        "start_date": "2026-06-17 11:00",
+        "end_date": "2026-07-08 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "3.0|2026-07-08|諾姆、千夏": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/165144/346038b2c6df6a924343a1827920deb0_2375386380768463979.jpg",
+        "weapons": "首席跟班、思絡成歌",
+        "start_date": "2026-07-08 12:00",
+        "end_date": "2026-07-28 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "3.1|2026-07-29|蕾米埃爾、愛芮": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/165363/10ca157238ee5795dba7276fbc6341e2_7463094576976141626.jpg",
+        "weapons": "空羽復歸之詩、殼中之靈",
+        "weapon_source": "https://zenless.hoyoverse.com/zh-cn/news/165414",
+        "start_date": "2026-07-29 11:00",
+        "end_date": "2026-08-19 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "3.1|2026-08-19|希格莉德、浮波柚葉、琉音、淺羽悠真": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/165737/d86ea0a7107168583f124033ac2b9eb4_6699219052946017732.jpg",
+        "weapons": "驍騎禮讚、狸法七變化、昨夜來電、殘心青囊",
+        "weapon_source": "https://zenless.hoyoverse.com/zh-tw/news/165797",
+        "start_date": "2026-08-19 12:00",
+        "end_date": "2026-09-08 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "3.2|2026-09-09|克拉蕾、南宮羽": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/165979/c87ef18d2981062b3828264a589b63d3_3605722833347990474.jpg",
+        "weapons": "猩紅渴望、霓虹妄想",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2026-09-09 11:00",
+        "end_date": "2026-09-30 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "3.2|2026-09-30|洛克茜、普羅米婭": {
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/166475/3adcbc882541583651ffdb25c92c7cc2_9146969361439404532.jpg",
+        "start_date": "2026-09-30 12:00",
+        "end_date": "2026-10-20 14:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.3|2024-11-06|月城柳": {
+        "portrait_image": "https://enka.network/ui/zzz/IconRoleCircle31.png",
+        "weapons": "時流賢者",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频",
+        "start_date": "2024-11-06 11:00",
+        "end_date": "2024-11-27 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      },
+      "1.4|2024-12-18|星見雅、淺羽悠真": {
+        "portrait_image": "https://enka.network/ui/zzz/IconRoleCircle13.png",
+        "weapons": "霰落星殿、殘心青囊",
+        "weapon_source": "https://wiki.biligame.com/zzz/调频"
+      },
+      "2.1|2025-07-16|浮波柚葉、星見雅": {
+        "portrait_image": "https://enka.network/ui/zzz/IconRoleCircle47.png",
+        "weapons": "狸法七變化、霰落星殿",
+        "start_date": "2025-07-16 11:00",
+        "end_date": "2025-08-06 11:59",
+        "timing_source": "https://bannerhistory.app/tw/zzz-pickup-history"
+      }
+    },
+    "wuwa": {
+      "2.6|2025-08-28|奧古斯塔、珂萊塔、守岸人": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Augusta.png",
+        "start_date": "2025-08-28 11:00",
+        "end_date": "2025-09-17 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.6|2025-09-17|尤諾、夏空": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Ciaccona.png",
+        "start_date": "2025-09-17 10:00",
+        "end_date": "2025-10-08 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.7|2025-10-09|嘉貝莉娜、露帕": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Galbrena.png",
+        "start_date": "2025-10-09 11:00",
+        "end_date": "2025-10-30 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.7|2025-10-30|仇遠、贊妮": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Qiuyuan.png",
+        "start_date": "2025-10-30 10:00",
+        "end_date": "2025-11-19 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.8|2025-11-20|千咲、菲比": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Chisa.png",
+        "start_date": "2025-11-20 11:00",
+        "end_date": "2025-12-11 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.8|2025-12-11|弗洛洛、坎特蕾拉": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Cantarella.png",
+        "start_date": "2025-12-11 10:00",
+        "end_date": "2025-12-24 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.0|2025-12-25|琳奈、尤諾、奧古斯塔": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Augusta.png",
+        "start_date": "2025-12-25 11:00",
+        "end_date": "2026-01-15 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.0|2026-01-15|莫寧、卡提希婭、夏空": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Cartethyia.png",
+        "start_date": "2026-01-15 10:00",
+        "end_date": "2026-02-04 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.1|2026-02-05|愛彌斯、千咲、露帕": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Chisa.png",
+        "start_date": "2026-02-05 11:00",
+        "end_date": "2026-02-26 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.1|2026-02-26|陸·赫斯、嘉貝莉娜": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Galbrena.png",
+        "start_date": "2026-02-26 10:00",
+        "end_date": "2026-03-18 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.2|2026-03-19|西格莉卡、仇遠": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Qiuyuan.png",
+        "start_date": "2026-03-19 11:00",
+        "end_date": "2026-04-09 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.2|2026-04-09|琳奈、贊妮、菲比": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Lynae.png",
+        "start_date": "2026-04-09 10:00",
+        "end_date": "2026-04-29 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.3|2026-04-30|緋雪、莫寧、尤諾": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Iuno.png",
+        "start_date": "2026-04-30 11:00",
+        "end_date": "2026-05-21 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.3|2026-05-21|達妮婭、千咲、弗洛洛": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Chisa.png",
+        "start_date": "2026-05-21 10:00",
+        "end_date": "2026-06-07 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.4|2026-06-08|露西、蕾貝卡": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Rebecca.png"
+      },
+      "3.4|2026-06-18|洛瑟菈、卡提希婭": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Cartethyia.png",
+        "start_date": "2026-06-13 10:00",
+        "end_date": "2026-07-09 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.5|2026-07-10|秧秧·玄翎、琳奈、陸·赫斯": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Lynae.png",
+        "start_date": "2026-07-10 11:00",
+        "end_date": "2026-07-30 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.5|2026-07-10|忌炎、吟霖、今汐、長離、折枝、相里要": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Jinhsi.png"
+      },
+      "3.5|2026-07-30|穗穗、愛彌斯": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Aemeath.png",
+        "start_date": "2026-07-30 10:00",
+        "end_date": "2026-08-19 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.6|2026-08-20|清宵、達妮婭": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Qingxiao.png",
+        "start_date": "2026-08-20 11:00",
+        "end_date": "2026-09-10 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.6|2026-09-10|景燃、緋雪、莫寧": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Jingran.png",
+        "start_date": "2026-09-10 10:00",
+        "end_date": "2026-09-29 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "1.0|2024-05-23|忌炎": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Jiyan.png",
+        "start_date": "2024-05-23 10:00",
+        "end_date": "2024-06-06 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "1.0|2024-06-06|吟霖": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/object/1717516800000/k728ccfz5m48kut8ee-1717568493574.jpg",
+        "start_date": "2024-06-06 10:00",
+        "end_date": "2024-06-26 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "1.1|2024-06-28|今汐": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/object/1719331200000/vusacu2tw8c1ppy1kl-1719403598791.jpg",
+        "start_date": "2024-06-28 13:00",
+        "end_date": "2024-07-22 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "1.1|2024-07-22|長離": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/object/1721318400000/vuiqa3cwlu4zt8kwyg-1721390463277.jpg",
+        "start_date": "2024-07-22 10:00",
+        "end_date": "2024-08-14 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "1.2|2024-08-15|折枝": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/object/1723564800000/yoq89u5fb5d4ao6wrl-1723603901422.jpg",
+        "start_date": "2024-08-15 13:00",
+        "end_date": "2024-09-07 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "1.2|2024-09-07|相里要": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/object/1725465600000/pe26x9l707rtujyfwi-1725539964845.jpg",
+        "start_date": "2024-09-07 10:00",
+        "end_date": "2024-09-28 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "1.3|2024-09-29|守岸人": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/object/1727366400000/m1c4gvgrard5xa0wsc-1727430656221.jpg",
+        "start_date": "2024-09-29 11:00",
+        "end_date": "2024-10-24 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "1.3|2024-10-24|忌炎": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/object/1729612800000/1wh1luzryp88y92t3e-1729647964108.jpg",
+        "start_date": "2024-10-24 10:00",
+        "end_date": "2024-11-13 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "1.4|2024-11-14|椿": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/akiwebsite/website2.0/images/1731340800000/d72k0pfp98uof3thhd-1731404326754.jpg",
+        "start_date": "2024-11-14 11:00",
+        "end_date": "2024-12-12 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "1.4|2024-12-12|吟霖、相里要": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Yinlin.png",
+        "start_date": "2024-12-12 10:00",
+        "end_date": "2025-01-01 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.0|2025-01-02|珂萊塔、折枝": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Zhezhi.png"
+      },
+      "2.0|2025-01-23|洛可可、今汐": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Jinhsi.png",
+        "start_date": "2025-01-23 10:00",
+        "end_date": "2025-02-12 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.1|2025-02-13|菲比": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/akiwebsite/website2.0/images/1739289600000/waj8ht5srhgh7364d3-1739354326471.jpg",
+        "start_date": "2025-02-13 11:00",
+        "end_date": "2025-03-06 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.1|2025-03-06|布蘭特、長離": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Brant.png",
+        "start_date": "2025-03-06 10:00",
+        "end_date": "2025-03-26 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.2|2025-03-27|坎特蕾拉、椿": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Cantarella.png",
+        "start_date": "2025-03-27 11:00",
+        "end_date": "2025-04-17 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.2|2025-04-17|守岸人": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/object/1744732800000/b9xt5bwhft5l6ks7us-1744786364184.jpg",
+        "start_date": "2025-04-17 10:00",
+        "end_date": "2025-04-28 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.3|2025-04-29|贊妮、忌炎、吟霖、折枝、相里要、菲比": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/object/1745769600000/dlv4701rnu1n19fv6a-1745835323743.jpg",
+        "start_date": "2025-04-29 11:00",
+        "end_date": "2025-05-22 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.3|2025-05-22|夏空、今汐、長離、珂萊塔、洛可可、布蘭特": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/object/1747670400000/ah053z8u3tnh6a1buo-1747739790191.jpg",
+        "start_date": "2025-05-22 10:00",
+        "end_date": "2025-06-11 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.4|2025-06-12|卡提希婭": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/object/1749484800000/yom52jj33nd0fiz7kv-1749549866445.jpg",
+        "start_date": "2025-06-12 11:00",
+        "end_date": "2025-07-03 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.4|2025-07-03|露帕": {
+        "banner_image": "https://hw-media-cdn-mingchao.kurogame.com/object/1751385600000/uim4gaz6v5fo924vsp-1751429032404.jpg",
+        "start_date": "2025-07-03 10:00",
+        "end_date": "2025-07-23 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.5|2025-07-24|弗洛洛、洛可可": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Phrolova.png",
+        "start_date": "2025-07-24 11:00",
+        "end_date": "2025-08-14 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "2.5|2025-08-14|坎特蕾拉、布蘭特": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Cantarella.png",
+        "start_date": "2025-08-14 10:00",
+        "end_date": "2025-08-27 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.7|2026-09-30|心、尤諾、千咲": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Chisa.png",
+        "start_date": "2026-09-30 11:00",
+        "end_date": "2026-10-22 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.7|2026-10-22|鎖暝、洛瑟菈、琳奈": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Lucilla.png",
+        "start_date": "2026-10-22 10:00",
+        "end_date": "2026-11-11 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.8|2026-11-12|莉莉、西格莉卡、仇遠": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Qiuyuan.png",
+        "start_date": "2026-11-12 11:00",
+        "end_date": "2026-12-03 09:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.8|2026-12-03|秧秧·玄翎、穗穗、緋雪": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Yangyang_Xuanling.png",
+        "start_date": "2026-12-03 10:00",
+        "end_date": "2026-12-21 11:59",
+        "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
+      },
+      "3.8|2026-11-12|椿、洛可可、菲比、布蘭特": {
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Brant.png"
+      }
+    },
+    "endfield": {
+      "熔火灼痕|2026-01-22|萊萬汀": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/6339ac9472f49290.webp",
+        "start_date": "2026-01-22 11:00",
+        "end_date": "2026-02-07 11:59",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "輕飄飄的信使|2026-02-07|潔爾佩塔": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/883f48117caf33f8.webp",
+        "start_date": "2026-02-07 12:00",
+        "end_date": "2026-02-24 11:59",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "熱烈色彩|2026-02-24|伊馮": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/98d69bbd7449c6b2.webp",
+        "start_date": "2026-02-24 12:00",
+        "end_date": "2026-03-12 06:00",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "河流的女兒|2026-03-12|湯湯": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/260c8171d4504104.webp",
+        "start_date": "2026-03-12 12:00",
+        "end_date": "2026-03-29 11:59",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "狼珀|2026-03-29|洛西": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/ccf7a69e6d0476cb.webp",
+        "start_date": "2026-03-29 12:00",
+        "end_date": "2026-04-17 06:00",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "春雷動，萬物生|2026-04-17|莊方宜": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/922e9cfc8055d7dc.webp",
+        "start_date": "2026-04-17 12:00",
+        "end_date": "2026-05-22 11:59",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "輝光慶典|2026-05-14|萊萬汀、潔爾佩塔": {
+        "portrait_image": "https://assets.bannerhistory.app/icons/endfield/characters/Gilberta.png",
+        "start_date": "2026-05-14 12:00",
+        "end_date": "2026-06-05 06:00",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "拳出無悔|2026-06-05|弭弗": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/aa3825def577e8c8.webp",
+        "start_date": "2026-06-05 12:00",
+        "end_date": "2026-06-26 11:59",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "逐罪者|2026-06-26|卡繆": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/16430d439c9e4f76.webp",
+        "start_date": "2026-06-26 12:00",
+        "end_date": "2026-07-16 06:00",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "臨淵望北|2026-07-16|訣": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/9c1400a1c0d21d16.webp",
+        "start_date": "2026-07-16 12:00",
+        "end_date": "2026-08-09 11:59",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "晨星於此閃耀|2026-08-09|梨諾": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/c233d21eb8ab9cef.webp",
+        "start_date": "2026-08-09 12:00",
+        "end_date": "2026-09-02 06:00",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "冬獵|2026-09-02|提弗洛斯": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/0e915d55ddfb7344.webp",
+        "start_date": "2026-09-02 12:00",
+        "end_date": "2026-09-30 11:59",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "絢麗異彩|2026-09-24|伊馮": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/8d25be9a27f070e0.webp",
+        "start_date": "2026-09-24 12:00",
+        "end_date": "2026-10-15 06:00",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "萬物更新|2026-10-15|祀": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/91593c3a03756f02.webp",
+        "start_date": "2026-10-15 12:00",
+        "end_date": "2026-11-05 11:59",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "祖泉的新流|2026-10-29|湯湯": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/163c99f775c93cef.webp",
+        "start_date": "2026-10-29 12:00",
+        "end_date": "2026-11-19 11:59",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "煙火邀星河|2026-11-05|明河": {
+        "banner_image": "https://assets.bannerhistory.app/icons/endfield/banners/4bbe7f55b127118c.webp",
+        "start_date": "2026-11-05 12:00",
+        "end_date": "2026-11-25 06:00",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      },
+      "鍛砧、行囊與蜜糖|2026-11-25|小刻": {
+        "start_date": "2026-11-25 12:00",
+        "end_date": "2026-12-23 11:59",
+        "timing_source": "https://bannerhistory.app/tw/endfield-pickup-history"
+      }
+    },
+    "nte": {
+      "1.0|2026-04-29|娜娜莉": {
+        "banner_image": "https://assets.bannerhistory.app/icons/nte/banners/b73c223bd58786e6.webp",
+        "start_date": "2026-04-29 11:00",
+        "end_date": "2026-05-13 05:59",
+        "timing_source": "https://bannerhistory.app/tw/nte-pickup-history"
+      },
+      "1.0|2026-05-13|潯": {
+        "banner_image": "https://assets.bannerhistory.app/icons/nte/banners/baa07682de972e67.webp",
+        "start_date": "2026-05-13 11:00",
+        "end_date": "2026-06-03 05:59",
+        "timing_source": "https://bannerhistory.app/tw/nte-pickup-history"
+      },
+      "1.1|2026-06-03|安魂曲": {
+        "banner_image": "https://assets.bannerhistory.app/icons/nte/banners/8946cb096002fc27.webp",
+        "start_date": "2026-06-03 11:00",
+        "end_date": "2026-06-24 05:59",
+        "timing_source": "https://bannerhistory.app/tw/nte-pickup-history"
+      },
+      "1.1|2026-06-24|卡厄斯": {
+        "banner_image": "https://assets.bannerhistory.app/icons/nte/banners/dac57258c300b6f2.webp",
+        "start_date": "2026-06-24 11:00",
+        "end_date": "2026-07-08 05:59",
+        "timing_source": "https://bannerhistory.app/tw/nte-pickup-history"
+      },
+      "1.2|2026-07-08|真紅": {
+        "banner_image": "https://assets.bannerhistory.app/icons/nte/banners/285119b0c385dbac.webp",
+        "start_date": "2026-07-08 11:00",
+        "end_date": "2026-07-29 05:59",
+        "timing_source": "https://bannerhistory.app/tw/nte-pickup-history"
+      },
+      "1.2|2026-07-29|伊洛伊": {
+        "banner_image": "https://assets.bannerhistory.app/icons/nte/banners/d156b427d1de610e.webp",
+        "start_date": "2026-07-29 11:00",
+        "end_date": "2026-08-19 05:59",
+        "timing_source": "https://bannerhistory.app/tw/nte-pickup-history"
+      },
+      "1.3|2026-08-19|殘虹、娜娜莉": {
+        "banner_image": "https://assets.bannerhistory.app/icons/nte/banners/2474e39ca3ad4438.webp",
+        "start_date": "2026-08-19 11:00",
+        "end_date": "2026-09-09 05:59",
+        "timing_source": "https://bannerhistory.app/tw/nte-pickup-history"
+      },
+      "1.3|2026-09-09|靈可、潯": {
+        "banner_image": "https://assets.bannerhistory.app/icons/nte/banners/9c5172a6609d1ae9.webp",
+        "start_date": "2026-09-09 11:00",
+        "end_date": "2026-09-30 05:59",
+        "timing_source": "https://bannerhistory.app/tw/nte-pickup-history"
+      },
+      "1.4|2026-09-30|黑羽、安魂曲": {
+        "banner_image": "https://assets.bannerhistory.app/icons/nte/banners/d66f636c73c369f1.webp",
+        "start_date": "2026-09-30 11:00",
+        "end_date": "2026-10-21 05:59",
+        "timing_source": "https://bannerhistory.app/tw/nte-pickup-history"
+      },
+      "1.4|2026-10-21|明音凜": {
+        "banner_image": "https://assets.bannerhistory.app/icons/nte/banners/ee6114f37ee41d06.webp",
+        "start_date": "2026-10-21 11:00",
+        "end_date": "2026-11-11 05:59",
+        "timing_source": "https://bannerhistory.app/tw/nte-pickup-history"
+      },
+      "1.5|2026-11-11|曳爾沐、真紅": {
+        "banner_image": "https://assets.bannerhistory.app/icons/nte/banners/285119b0c385dbac.webp",
+        "start_date": "2026-11-11 11:00",
+        "end_date": "2026-12-02 05:59",
+        "timing_source": "https://bannerhistory.app/tw/nte-pickup-history"
+      },
+      "1.5|2026-12-02|Exe、卡厄斯": {
+        "banner_image": "https://assets.bannerhistory.app/icons/nte/banners/dac57258c300b6f2.webp"
+      }
+    },
+    "bd2": {
+      "奧利維爾 · 泰瑞絲 · 山城戀|2026-09-23|奧利維爾・忠實之翼": {
+        "start_date": "2026-09-23 11:20",
+        "end_date": "2026-10-08 07:50",
+        "timing_source": "https://bannerhistory.app/tw/bd2-pickup-history"
+      },
+      "奧利維爾 · 泰瑞絲 · 山城戀|2026-09-23|泰瑞絲・保健社": {
+        "start_date": "2026-09-23 11:20",
+        "end_date": "2026-10-08 07:50",
+        "timing_source": "https://bannerhistory.app/tw/bd2-pickup-history"
+      },
+      "奧利維爾 · 泰瑞絲 · 山城戀|2026-09-23|山城戀・無限宇宙之全一": {
+        "start_date": "2026-09-23 11:20",
+        "end_date": "2026-10-08 07:50",
+        "timing_source": "https://bannerhistory.app/tw/bd2-pickup-history"
+      },
+      "艾尼爾 · 出雲天花|2026-09-10|艾尼爾・貫穿的魔弓": {
+        "start_date": "2026-09-10 14:20",
+        "end_date": "2026-09-23 07:50",
+        "timing_source": "https://bannerhistory.app/tw/bd2-pickup-history"
+      },
+      "艾尼爾 · 出雲天花|2026-09-10|出雲天花・天御鳥命": {
+        "start_date": "2026-09-10 14:20",
+        "end_date": "2026-10-08 07:50",
+        "timing_source": "https://bannerhistory.app/tw/bd2-pickup-history"
+      }
+    },
+    "gfl2": {
+      "招募紀錄|2026-10-29|芙鈴": {
+        "start_date": "2026-10-29 21:00",
+        "end_date": "2026-11-19 06:59",
+        "timing_source": "https://bannerhistory.app/zh/gf2-pickup-history"
+      },
+      "招募紀錄|2026-10-29|翡圖薩": {
+        "start_date": "2026-10-29 21:00",
+        "end_date": "2026-11-19 06:59",
+        "timing_source": "https://bannerhistory.app/zh/gf2-pickup-history"
+      },
+      "招募紀錄|2026-10-29|六分儀": {
+        "start_date": "2026-10-29 21:00",
+        "end_date": "2026-11-19 06:59",
+        "timing_source": "https://bannerhistory.app/zh/gf2-pickup-history"
+      },
+      "招募紀錄|2026-10-29|維爾德": {
+        "start_date": "2026-10-29 21:00",
+        "end_date": "2026-11-19 06:59",
+        "timing_source": "https://bannerhistory.app/zh/gf2-pickup-history"
+      },
+      "招募紀錄|2026-10-08|夏安": {
+        "start_date": "2026-10-08 21:00",
+        "end_date": "2026-10-29 06:59",
+        "timing_source": "https://bannerhistory.app/zh/gf2-pickup-history"
+      },
+      "招募紀錄|2026-10-08|劉蒔": {
+        "start_date": "2026-10-08 21:00",
+        "end_date": "2026-10-29 06:59",
+        "timing_source": "https://bannerhistory.app/zh/gf2-pickup-history"
+      },
+      "招募紀錄|2026-10-08|米蒂爾": {
+        "start_date": "2026-10-08 21:00",
+        "end_date": "2026-10-29 06:59",
+        "timing_source": "https://bannerhistory.app/zh/gf2-pickup-history"
+      },
+      "招募紀錄|2026-08-06|翡圖薩": {
+        "start_date": "2026-08-06 21:00",
+        "end_date": "2026-08-27 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-08-06|六分儀": {
+        "start_date": "2026-08-06 21:00",
+        "end_date": "2026-08-27 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-08-06|烏爾麗德": {
+        "start_date": "2026-08-06 21:00",
+        "end_date": "2026-08-27 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-07-16|夏安": {
+        "start_date": "2026-07-16 21:00",
+        "end_date": "2026-08-06 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-07-16|海倫": {
+        "start_date": "2026-07-16 21:00",
+        "end_date": "2026-08-06 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-07-16|劉蒔": {
+        "start_date": "2026-07-16 21:00",
+        "end_date": "2026-08-06 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-07-16|幼熙": {
+        "start_date": "2026-07-16 21:00",
+        "end_date": "2026-08-06 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-09-17|埃芙": {
+        "start_date": "2026-09-17 21:00",
+        "end_date": "2026-10-08 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-09-17|羅蕾萊": {
+        "start_date": "2026-09-17 21:00",
+        "end_date": "2026-10-08 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-09-17|索普": {
+        "start_date": "2026-09-17 21:00",
+        "end_date": "2026-10-08 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-08-27|貝絲蒂": {
+        "start_date": "2026-08-27 21:00",
+        "end_date": "2026-09-17 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-06-04|貝絲蒂": {
+        "start_date": "2026-06-04 21:00",
+        "end_date": "2026-06-25 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-06-04|琳德": {
+        "start_date": "2026-06-04 21:00",
+        "end_date": "2026-06-25 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-06-04|威瑪西娜": {
+        "start_date": "2026-06-04 21:00",
+        "end_date": "2026-06-25 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-05-14|埃芙": {
+        "start_date": "2026-05-14 21:00",
+        "end_date": "2026-06-04 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-05-14|杜莎妮": {
+        "start_date": "2026-05-14 21:00",
+        "end_date": "2026-06-04 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-05-14|翡圖薩": {
+        "start_date": "2026-05-14 21:00",
+        "end_date": "2026-06-04 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-04-23|海倫": {
+        "start_date": "2026-04-23 21:00",
+        "end_date": "2026-05-14 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-04-23|萊婭": {
+        "start_date": "2026-04-23 21:00",
+        "end_date": "2026-05-14 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      },
+      "招募紀錄|2026-04-23|櫻花": {
+        "start_date": "2026-04-23 21:00",
+        "end_date": "2026-05-14 06:59",
+        "timing_source": "https://bannerhistory.app/tw/gf2-pickup-history"
+      }
+    },
+    "nikke": {
+      "4週年|2026-10-29|瑪麗安：女王": {
+        "start_date": "2026-10-29 17:00",
+        "end_date": "2026-11-19 03:59",
+        "timing_source": "https://bannerhistory.app/en/nikke-pickup-history"
+      },
+      "4週年|2026-10-29|長髮公主：庇護所": {
+        "start_date": "2026-10-29 17:00",
+        "end_date": "2026-11-19 03:59",
+        "timing_source": "https://bannerhistory.app/en/nikke-pickup-history"
+      },
+      "4週年|2026-10-29|灰姑娘、格拉維、娜由塔": {
+        "start_date": "2026-10-29 17:00",
+        "end_date": "2026-11-19 03:59",
+        "timing_source": "https://bannerhistory.app/en/nikke-pickup-history"
+      },
+      "招募紀錄|2026-10-08|貝洛塔：南瓜女巫": {
+        "start_date": "2026-10-08 17:00",
+        "end_date": "2026-10-28 22:59",
+        "timing_source": "https://bannerhistory.app/en/nikke-pickup-history"
+      }
+    }
+  }
+}
