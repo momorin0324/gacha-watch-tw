@@ -615,7 +615,10 @@
         "timing_source": "https://genshin.hoyoverse.com/en/news/detail/162721"
       },
       "6.5|2026-04-08|莉奈婭、恰斯卡": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/163415/305178679df350e4d7bb142f35652d7e_1146057269290493062.jpg"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/163415/305178679df350e4d7bb142f35652d7e_1146057269290493062.jpg",
+        "start_date": "2026-04-08（版本更新後）",
+        "end_date": "2026-04-28 17:59",
+        "timing_source": "https://genshin.hoyoverse.com/m/en/news/detail/163415"
       },
       "6.5|2026-04-28|菈烏瑪、奈芙爾": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/163629/2c8aba63e76d41f7a2c082625073df79_4981352531336011739.jpg",
@@ -1310,7 +1313,10 @@
       },
       "2.5|2025-12-30|葉瞬光、照": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/161695/0d0a61177da0a6952405ea15b96aa78b_2764242073633468333.jpg",
-        "weapons": "葉瞬光：雲霓孤光；照：半糖雪兔"
+        "weapons": "葉瞬光：雲霓孤光；照：半糖雪兔",
+        "start_date": "2025-12-30（版本更新後）",
+        "end_date": "2026-02-05 14:59",
+        "timing_source": "https://zenless.hoyoverse.com/fr-fr/news/161695"
       },
       "2.5|2026-01-21|愛麗絲、零號·安比、耀嘉音": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/158277/a4ca66c8223f9a74be836c86fdfb58a6_6988252616934886147.png"
