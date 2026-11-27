@@ -657,7 +657,10 @@
         "timing_source": "https://bannerhistory.app/tw/genshin-pickup-history"
       },
       "6.7|2026-07-01|夢見月瑞希、萊歐斯利、賽諾、八重神子、七七": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/129515/a71f33ff7783c675072d587a4453e526_3299948793820144314.png"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/129515/a71f33ff7783c675072d587a4453e526_3299948793820144314.png",
+        "start_date": "2026-07-01（版本更新後）",
+        "end_date": "2026-07-21 17:59",
+        "timing_source": "https://genshininfo.reh.tw/archives/10059"
       },
       "7.0|2026-08-12|奧黛塔、阿蕾奇諾": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/165610/b02047a69257265e6c200d5a3d44046e_388112146566520043.jpg",
