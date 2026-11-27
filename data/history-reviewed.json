@@ -1319,7 +1319,11 @@
         "timing_source": "https://zenless.hoyoverse.com/fr-fr/news/161695"
       },
       "2.5|2026-01-21|愛麗絲、零號·安比、耀嘉音": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/158277/a4ca66c8223f9a74be836c86fdfb58a6_6988252616934886147.png"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/158277/a4ca66c8223f9a74be836c86fdfb58a6_6988252616934886147.png",
+        "start_date": "2026-01-21 12:00",
+        "end_date": "2026-02-05 14:59",
+        "timing_source": "https://zenless.hoyoverse.com/zh-cn/news/162207",
+        "timing_note": "前次查核官方自選復刻公告；亞洲服 UTC+8。"
       },
       "2.6|2026-02-06|千夏、儀玄": {
         "banner_image": "https://fastcdn.hoyoverse.com/content-v2/nap/162496/3c69a39563d368e743457becba5730fb_5064207579422581159.png",
@@ -1622,7 +1626,11 @@
         "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
       },
       "2.0|2025-01-02|珂萊塔、折枝": {
-        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Zhezhi.png"
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Zhezhi.png",
+        "start_date": "2025-01-02（版本更新後）",
+        "end_date": "2025-01-23 09:59",
+        "timing_source": "https://wutheringwaves.fandom.com/wiki/When_Silence_Tolls/2025-01-02",
+        "timing_note": "亞洲服 UTC+8；折枝同期 https://wutheringwaves.fandom.com/wiki/Chromatic_Prose/2025-01-02；開池精確時分未採用預計維護完成時間。"
       },
       "2.0|2025-01-23|洛可可、今汐": {
         "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Jinhsi.png",
