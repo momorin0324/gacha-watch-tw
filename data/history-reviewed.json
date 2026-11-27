@@ -699,7 +699,10 @@
         "timing_source": "https://bannerhistory.app/tw/genshin-pickup-history"
       },
       "7.2|2026-11-24|瓦雷莎、恰斯卡、希諾寧、瑪拉妮、基尼奇": {
-        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125821/ac90fede702d4e09857cc9179f7d9c31_3584919884275519924.jpg"
+        "banner_image": "https://fastcdn.hoyoverse.com/content-v2/hk4e/125821/ac90fede702d4e09857cc9179f7d9c31_3584919884275519924.jpg",
+        "start_date": "2026-11-24 18:00",
+        "end_date": "2026-12-15 14:59",
+        "timing_source": "https://genshin.hoyoverse.com/zh-tw/news/detail/167370"
       }
     },
     "starrail": {
