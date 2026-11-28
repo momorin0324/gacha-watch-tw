@@ -1741,7 +1741,10 @@
         "timing_source": "https://bannerhistory.app/tw/wuwa-pickup-history"
       },
       "3.8|2026-11-12|椿、洛可可、菲比、布蘭特": {
-        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Brant.png"
+        "portrait_image": "https://bannerhistory.app/icons/wuwa/characters/Brant.png",
+        "start_date": "2026-11-12（版本更新後）",
+        "end_date": "2026-12-21 11:59",
+        "timing_source": "https://www.taptap.cn/moment/869531543377282130"
       }
     },
     "endfield": {
